@@ -1,0 +1,18 @@
+dl {
+
+}
+
+dt {
+  font-weight: bold;
+  display: inline;
+}
+
+dd {
+  display: inline;
+
+  &:after {
+    content:"\a";
+    white-space: pre;
+    line-height: 2em;
+  }
+}

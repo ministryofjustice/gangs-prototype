@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Nominal detail: {{nominal.given_names}} {{nominal.family_name}}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        {{nominal.given_names}} {{nominal.family_name}}
+      </h1>
+      <dl>
+        <dt>Date of birth:</dt>
+        <dd>{{nominal.dob}}</dd>
+
+        <dt>Offender ID:</dt>
+        <dd>{{nominal.offender_id}}</dd>
+
+        <dt>NOMIS ID:</dt>
+        <dd>{{nominal.nomis_id}}</dd>
+
+        <dt>PNC ID:</dt>
+        <dd>{{nominal.pnc_id}}</dd>
+      </dl>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

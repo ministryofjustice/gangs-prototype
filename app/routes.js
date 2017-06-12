@@ -1,17 +1,18 @@
 var express = require('express')
 var router = express.Router()
 
-var data = require('./data/test-person.json');
+var data = require('./data/dataOutput.json'),
+    nominals = data.nominals;
 
 // Route index page
 router.get('/', function (req, res) {
   res.render('index')
 })
 
-router.get('/test/person/:index', function(req, res) {
-  var person = data[req.params.index];
-  res.render('test/person', {
-    person: person
+router.get('/test/nominal/:index', function(req, res) {
+  var nominal = nominals[req.params.index];
+  res.render('test/nominal', {
+    nominal: nominal
   });
 })
 
