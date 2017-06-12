@@ -8,5 +8,3 @@ lib/govuk_template.html
 govuk_modules
 node_modules/*
 .tmuxp.*
-
-app/data/dataOutput.json
