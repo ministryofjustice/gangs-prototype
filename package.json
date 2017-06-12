@@ -21,6 +21,7 @@
     "express": "4.15.2",
     "express-session": "^1.13.0",
     "express-writer": "0.0.4",
+    "faker": "^4.1.0",
     "govuk-elements-sass": "3.0.1",
     "govuk_frontend_toolkit": "5.1.2",
     "govuk_template_jinja": "0.20.0",
