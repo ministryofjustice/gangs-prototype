@@ -35,7 +35,7 @@ function init() {
     data.nominals.push(nominal);
   }
 
-  fs.writeFile('./app/data/dataOutput.json', JSON.stringify(data, null, 2), 'utf-8');
+  fs.writeFile('./app/assets/data/dataOutput.json', JSON.stringify(data, null, 2), 'utf-8');
 }
 
 function generateDob() {
