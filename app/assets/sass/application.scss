@@ -32,3 +32,10 @@ $path: "/public/images/";
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+.cf:after {
+    content:"";
+    display:block;
+    clear:both;
+}

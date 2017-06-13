@@ -2,6 +2,7 @@ var path = require('path');
 var fs = require('fs');
 var faker = require('faker');
 var unique = require('array-unique');
+var dummyAliases = require('./app/sources/aliases.json');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -68,26 +69,8 @@ function generateIdentifyingMarks() {
 }
 
 function generateAliases(firstname) {
-  var dummyAliases = [
-    'Big firstname',
-    'Little firstname',
-    'Sticky firstname',
-    'firstinitial Bomb',
-    'firstinitial Pain',
-    'Lil firstinitial',
-    'Greasy',
-    'Razor',
-    'Needles',
-    'Tiny',
-    'The Gaffer',
-    'Shanks',
-    'Fingers',
-    'Spider',
-    'Chuckles',
-    'Bubbles'
-  ],
-    numAliases = Math.floor(Math.random() * 3),
-    nominalAliases = [];
+  var numAliases = Math.floor(Math.random() * 3),
+      nominalAliases = [];
 
   for(var x = 0; x < numAliases; x++) {
     var alias = rnd(dummyAliases);

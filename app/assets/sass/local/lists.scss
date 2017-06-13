@@ -3,16 +3,27 @@ dl {
 }
 
 dt {
+  float: left;
+  clear: both;
   font-weight: bold;
-  display: inline;
+  margin-top: 10px;
 }
 
 dd {
-  display: inline;
+  float: left;
+  margin-top: 10px;
+  padding-left: 10px;
 
-  &:after {
-    content:"\a";
-    white-space: pre;
-    line-height: 2em;
+  ul, ul.list {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.nav-links {
+  li {
+    display: inline;
+    margin-right: 20px;
   }
 }

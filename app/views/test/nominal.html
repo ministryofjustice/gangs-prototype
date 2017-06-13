@@ -13,7 +13,8 @@
       <h1 class="heading-xlarge">
         {{nominal.given_names}} {{nominal.family_name}}
       </h1>
-      <dl>
+
+      <dl class="cf">
         <dt>Date of birth:</dt>
         <dd>{{nominal.dob}}</dd>
 
@@ -25,7 +26,42 @@
 
         <dt>PNC ID:</dt>
         <dd>{{nominal.pnc_id}}</dd>
+
+        <dt>Identifying marks:</dt>
+        <dd>
+          {% if nominal.identifying_marks.length %}
+            <ul class="list list-bullet">
+              {% for mark in nominal.identifying_marks %}
+              <li>{{mark}}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+          none
+          {% endif %}
+        </dd>
+
+        <dt>Known aliases:</dt>
+        <dd>
+          {% if nominal.aliases.length %}
+            <ul class="list list-bullet">
+              {% for alias in nominal.aliases %}
+              <li>{{alias}}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+          none
+          {% endif %}
+        </dd>
+
       </dl>
+
+
+      <br><br><br><br>
+      <ul class="nav-links">
+        <li><a href="/test/nominal/{{prev}}">Previous</a></li>
+        <li><a href="/test/nominal/rand/">Random</a></li>
+        <li><a href="/test/nominal/{{next}}">Next</a></li>
+      </ul>
 
     </div>
   </div>
