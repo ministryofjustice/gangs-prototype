@@ -17,7 +17,7 @@ if (!nodeModulesExists) {
 var data = {
   nominals: []
 },
-    numNominals = 100;
+    numNominals = 200;
 
 function init() {
   // generate nominals
@@ -36,7 +36,7 @@ function init() {
     data.nominals.push(nominal);
   }
 
-  fs.writeFile('./app/assets/data/dataOutput.json', JSON.stringify(data, null, 2), 'utf-8');
+  fs.writeFile('./app/assets/data/dummyNominals.json', JSON.stringify(data, null, 2), 'utf-8');
 }
 
 function generateDob() {

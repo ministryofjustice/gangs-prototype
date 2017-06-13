@@ -1,0 +1,2611 @@
+{
+  "nominals": [
+    {
+      "given_names": "Presley",
+      "family_name": "Abshire",
+      "dob": "1973-03-20",
+      "identifying_marks": [],
+      "offender_id": "LI5090928694",
+      "nomis_id": "F41613",
+      "pnc_id": "CSCEBRX1",
+      "aliases": [
+        "Mullett"
+      ]
+    },
+    {
+      "given_names": "Denis",
+      "family_name": "Cremin",
+      "dob": "1969-11-18",
+      "identifying_marks": [],
+      "offender_id": "PK264LI13004",
+      "nomis_id": "N19635",
+      "pnc_id": "FRGIHUV1271",
+      "aliases": [
+        "Cheesy"
+      ]
+    },
+    {
+      "given_names": "Kendra",
+      "family_name": "Wuckert",
+      "dob": "1986-12-07",
+      "identifying_marks": [],
+      "offender_id": "IT48F0069306",
+      "nomis_id": "R56298",
+      "pnc_id": "PSMIMGZ1",
+      "aliases": []
+    },
+    {
+      "given_names": "Lillian",
+      "family_name": "Rutherford",
+      "dob": "1988-06-27",
+      "identifying_marks": [
+        "celtic tattoo on right forearm"
+      ],
+      "offender_id": "PK332G182253",
+      "nomis_id": "D92369",
+      "pnc_id": "XEDICEP1193",
+      "aliases": []
+    },
+    {
+      "given_names": "Dale",
+      "family_name": "Cartwright",
+      "dob": "1989-03-05",
+      "identifying_marks": [],
+      "offender_id": "MU94BOXD0061",
+      "nomis_id": "I34508",
+      "pnc_id": "CKXAARG1217",
+      "aliases": [
+        "Greasy"
+      ]
+    },
+    {
+      "given_names": "Joyce",
+      "family_name": "Hintz",
+      "dob": "1975-03-04",
+      "identifying_marks": [
+        "celtic tattoo on left forearm",
+        "birthmark on left cheek"
+      ],
+      "offender_id": "TL4168730660",
+      "nomis_id": "C14469",
+      "pnc_id": "PJVUTNX1",
+      "aliases": []
+    },
+    {
+      "given_names": "Jeanie",
+      "family_name": "Crist",
+      "dob": "2000-07-26",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right forearm"
+      ],
+      "offender_id": "PK96CIM65009",
+      "nomis_id": "T26987",
+      "pnc_id": "FYLECPM1",
+      "aliases": []
+    },
+    {
+      "given_names": "Edgardo",
+      "family_name": "Rippin",
+      "dob": "1969-08-19",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right cheek"
+      ],
+      "offender_id": "DK1120059007",
+      "nomis_id": "N33811",
+      "pnc_id": "VNZOGAQ1",
+      "aliases": []
+    },
+    {
+      "given_names": "Kevon",
+      "family_name": "Bashirian",
+      "dob": "1985-04-19",
+      "identifying_marks": [],
+      "offender_id": "SE4395599250",
+      "nomis_id": "W69313",
+      "pnc_id": "QRZOEHE1",
+      "aliases": []
+    },
+    {
+      "given_names": "Tess",
+      "family_name": "Conroy",
+      "dob": "1970-09-25",
+      "identifying_marks": [],
+      "offender_id": "AZ2850330606",
+      "nomis_id": "D27970",
+      "pnc_id": "XHFEZWT1",
+      "aliases": [
+        "Bubbles",
+        "Frosty"
+      ]
+    },
+    {
+      "given_names": "Nelda",
+      "family_name": "Wolf",
+      "dob": "1986-06-21",
+      "identifying_marks": [
+        "scar on left cheek"
+      ],
+      "offender_id": "DE3750867963",
+      "nomis_id": "M57968",
+      "pnc_id": "HKZEGPZ1079",
+      "aliases": [
+        "Foxy"
+      ]
+    },
+    {
+      "given_names": "Augustine",
+      "family_name": "McClure",
+      "dob": "2000-06-15",
+      "identifying_marks": [
+        "birthmark on right forearm"
+      ],
+      "offender_id": "AT8743359004",
+      "nomis_id": "C87921",
+      "pnc_id": "ZWKATOQ1AUD",
+      "aliases": []
+    },
+    {
+      "given_names": "Leanna",
+      "family_name": "Langosh",
+      "dob": "1982-04-13",
+      "identifying_marks": [
+        "celtic tattoo on right shoulder"
+      ],
+      "offender_id": "CZ9875101703",
+      "nomis_id": "B55627",
+      "pnc_id": "YFVOWSH1",
+      "aliases": [
+        "Soap",
+        "Darth Leanna"
+      ]
+    },
+    {
+      "given_names": "Zackary",
+      "family_name": "White",
+      "dob": "1972-09-16",
+      "identifying_marks": [
+        "scar on left cheek"
+      ],
+      "offender_id": "AT0290062065",
+      "nomis_id": "N03487",
+      "pnc_id": "QKAESCH1223",
+      "aliases": []
+    },
+    {
+      "given_names": "Dan",
+      "family_name": "McDermott",
+      "dob": "1986-11-02",
+      "identifying_marks": [],
+      "offender_id": "HR3570037975",
+      "nomis_id": "P78559",
+      "pnc_id": "XVRIRWH1482",
+      "aliases": [
+        "Big Dan",
+        "Buggy"
+      ]
+    },
+    {
+      "given_names": "Jayne",
+      "family_name": "Nicolas",
+      "dob": "1996-06-15",
+      "identifying_marks": [],
+      "offender_id": "LT1127062190",
+      "nomis_id": "L38419",
+      "pnc_id": "QISIBEL1",
+      "aliases": []
+    },
+    {
+      "given_names": "Jackie",
+      "family_name": "Moore",
+      "dob": "1975-05-19",
+      "identifying_marks": [],
+      "offender_id": "GR543880115L",
+      "nomis_id": "P69799",
+      "pnc_id": "SYKAMZQ1",
+      "aliases": [
+        "Hatchet Jackie"
+      ]
+    },
+    {
+      "given_names": "Doug",
+      "family_name": "Schaefer",
+      "dob": "1977-12-25",
+      "identifying_marks": [],
+      "offender_id": "LV29JRAF9Z7Y",
+      "nomis_id": "B17742",
+      "pnc_id": "GODUMWM1KIX",
+      "aliases": []
+    },
+    {
+      "given_names": "Lambert",
+      "family_name": "Legros",
+      "dob": "1996-02-18",
+      "identifying_marks": [],
+      "offender_id": "ES4157377012",
+      "nomis_id": "S36590",
+      "pnc_id": "VLKOMOA1",
+      "aliases": []
+    },
+    {
+      "given_names": "Judson",
+      "family_name": "D'Amore",
+      "dob": "1976-12-07",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left shoulder"
+      ],
+      "offender_id": "PK7063670615",
+      "nomis_id": "A18866",
+      "pnc_id": "JZDEMNG1937",
+      "aliases": []
+    },
+    {
+      "given_names": "Jeramy",
+      "family_name": "Rempel",
+      "dob": "1981-11-20",
+      "identifying_marks": [],
+      "offender_id": "EE6437972085",
+      "nomis_id": "N81402",
+      "pnc_id": "HTUODOY1416",
+      "aliases": []
+    },
+    {
+      "given_names": "Kelsi",
+      "family_name": "Parisian",
+      "dob": "1991-02-11",
+      "identifying_marks": [
+        "celtic tattoo on right shoulder",
+        "celtic tattoo on right wrist"
+      ],
+      "offender_id": "XK1000040066",
+      "nomis_id": "G29918",
+      "pnc_id": "EBWOGAN1",
+      "aliases": []
+    },
+    {
+      "given_names": "Luciano",
+      "family_name": "Emard",
+      "dob": "1968-07-05",
+      "identifying_marks": [
+        "scar on right forearm"
+      ],
+      "offender_id": "ES0500302003",
+      "nomis_id": "181439",
+      "pnc_id": "MZTOYES1",
+      "aliases": [
+        "Bad L",
+        "Moonie"
+      ]
+    },
+    {
+      "given_names": "Gwen",
+      "family_name": "Ankunding",
+      "dob": "1976-10-25",
+      "identifying_marks": [
+        "celtic tattoo on left shoulder"
+      ],
+      "offender_id": "SK9350090065",
+      "nomis_id": "C78463",
+      "pnc_id": "TXFEBOQ1",
+      "aliases": []
+    },
+    {
+      "given_names": "Janelle",
+      "family_name": "Kuphal",
+      "dob": "1963-10-09",
+      "identifying_marks": [
+        "celtic tattoo on left wrist",
+        "birthmark on right forearm"
+      ],
+      "offender_id": "BR0300600900",
+      "nomis_id": "E00029",
+      "pnc_id": "FJPAPFX1",
+      "aliases": []
+    },
+    {
+      "given_names": "Elza",
+      "family_name": "Murphy",
+      "dob": "2001-09-01",
+      "identifying_marks": [],
+      "offender_id": "LV57UDUTO675",
+      "nomis_id": "P85482",
+      "pnc_id": "FSFUNRU1598",
+      "aliases": [
+        "Spindles",
+        "Ice E"
+      ]
+    },
+    {
+      "given_names": "Kobe",
+      "family_name": "Altenwerth",
+      "dob": "1962-03-20",
+      "identifying_marks": [
+        "birthmark on left forearm",
+        "celtic tattoo on right wrist"
+      ],
+      "offender_id": "MR2776003001",
+      "nomis_id": "S96966",
+      "pnc_id": "OCDUGGU1046",
+      "aliases": []
+    },
+    {
+      "given_names": "Bell",
+      "family_name": "Fritsch",
+      "dob": "1968-12-18",
+      "identifying_marks": [
+        "birthmark on left shoulder"
+      ],
+      "offender_id": "GL3948669730",
+      "nomis_id": "L23350",
+      "pnc_id": "XUUODDR1YOT",
+      "aliases": []
+    },
+    {
+      "given_names": "Jayme",
+      "family_name": "Mraz",
+      "dob": "1983-03-01",
+      "identifying_marks": [],
+      "offender_id": "AZ889C129058",
+      "nomis_id": "S82333",
+      "pnc_id": "YXGOUSP1",
+      "aliases": [
+        "Tasty J"
+      ]
+    },
+    {
+      "given_names": "Cary",
+      "family_name": "Schneider",
+      "dob": "1983-05-21",
+      "identifying_marks": [
+        "celtic tattoo on left wrist",
+        "birthmark on left wrist"
+      ],
+      "offender_id": "NO3953000017",
+      "nomis_id": "D42316",
+      "pnc_id": "GJGEMFM1399",
+      "aliases": [
+        "Strider"
+      ]
+    },
+    {
+      "given_names": "Damian",
+      "family_name": "Treutel",
+      "dob": "1998-02-09",
+      "identifying_marks": [
+        "birthmark on left cheek"
+      ],
+      "offender_id": "ME3555085020",
+      "nomis_id": "Q51059",
+      "pnc_id": "OGWIMKO1",
+      "aliases": [
+        "Blaze",
+        "Big Damian"
+      ]
+    },
+    {
+      "given_names": "Stan",
+      "family_name": "Nitzsche",
+      "dob": "1980-11-04",
+      "identifying_marks": [
+        "birthmark on right forearm",
+        "celtic tattoo on left wrist"
+      ],
+      "offender_id": "MT64ZDEW0098",
+      "nomis_id": "S80384",
+      "pnc_id": "EHCIITL1",
+      "aliases": []
+    },
+    {
+      "given_names": "Stone",
+      "family_name": "Torp",
+      "dob": "1999-06-19",
+      "identifying_marks": [],
+      "offender_id": "LB8724042AO3",
+      "nomis_id": "E42424",
+      "pnc_id": "YFSUKHB1916",
+      "aliases": [
+        "S Bomb"
+      ]
+    },
+    {
+      "given_names": "Donald",
+      "family_name": "Parisian",
+      "dob": "1983-08-08",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right shoulder"
+      ],
+      "offender_id": "DO58YOXV7006",
+      "nomis_id": "W60402",
+      "pnc_id": "EEIEZWH1",
+      "aliases": []
+    },
+    {
+      "given_names": "Chelsie",
+      "family_name": "Jacobi",
+      "dob": "2002-07-26",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right wrist",
+        "tattoo of a spiderweb on right cheek"
+      ],
+      "offender_id": "MC1647002660",
+      "nomis_id": "C29957",
+      "pnc_id": "PDJECPK1686",
+      "aliases": [
+        "C Bomb"
+      ]
+    },
+    {
+      "given_names": "Kiarra",
+      "family_name": "Hodkiewicz",
+      "dob": "1975-07-18",
+      "identifying_marks": [
+        "scar on left forearm",
+        "celtic tattoo on right forearm"
+      ],
+      "offender_id": "SM94Q7794110",
+      "nomis_id": "I33699",
+      "pnc_id": "PYPAMET1",
+      "aliases": [
+        "Tasty K"
+      ]
+    },
+    {
+      "given_names": "Keenan",
+      "family_name": "Hyatt",
+      "dob": "1985-03-16",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left shoulder",
+        "birthmark on left forearm"
+      ],
+      "offender_id": "NL69LADR0047",
+      "nomis_id": "I31955",
+      "pnc_id": "TMROWFZ1572",
+      "aliases": [
+        "Shadow",
+        "Chewy"
+      ]
+    },
+    {
+      "given_names": "Brady",
+      "family_name": "Durgan",
+      "dob": "1980-02-15",
+      "identifying_marks": [],
+      "offender_id": "TN4981085343",
+      "nomis_id": "C22786",
+      "pnc_id": "YPFUPWG1",
+      "aliases": []
+    },
+    {
+      "given_names": "Maverick",
+      "family_name": "McCullough",
+      "dob": "1978-09-02",
+      "identifying_marks": [],
+      "offender_id": "SI3500230450",
+      "nomis_id": "343339",
+      "pnc_id": "ZBFIPMA1773",
+      "aliases": []
+    },
+    {
+      "given_names": "Javier",
+      "family_name": "Strosin",
+      "dob": "1982-06-16",
+      "identifying_marks": [],
+      "offender_id": "LB1458100055",
+      "nomis_id": "T69541",
+      "pnc_id": "ZBJOBHY1",
+      "aliases": [
+        "Bacon",
+        "Mullett"
+      ]
+    },
+    {
+      "given_names": "Johnathan",
+      "family_name": "Lockman",
+      "dob": "1984-10-20",
+      "identifying_marks": [
+        "birthmark on right wrist",
+        "celtic tattoo on right shoulder"
+      ],
+      "offender_id": "XK9380968500",
+      "nomis_id": "X44042",
+      "pnc_id": "IKUOGLD1SIJ",
+      "aliases": [
+        "Needles"
+      ]
+    },
+    {
+      "given_names": "Emmanuel",
+      "family_name": "Mann",
+      "dob": "1969-09-02",
+      "identifying_marks": [
+        "celtic tattoo on left shoulder"
+      ],
+      "offender_id": "IT81A9300980",
+      "nomis_id": "B90150",
+      "pnc_id": "ABTUIRY1",
+      "aliases": [
+        "Chase",
+        "Moonie"
+      ]
+    },
+    {
+      "given_names": "Coby",
+      "family_name": "Pfeffer",
+      "dob": "1993-05-03",
+      "identifying_marks": [
+        "birthmark on right wrist",
+        "celtic tattoo on left cheek"
+      ],
+      "offender_id": "AD9350070090",
+      "nomis_id": "E10447",
+      "pnc_id": "ORHEFXR1",
+      "aliases": []
+    },
+    {
+      "given_names": "Monique",
+      "family_name": "Douglas",
+      "dob": "1969-10-03",
+      "identifying_marks": [
+        "scar on left wrist"
+      ],
+      "offender_id": "GI49TZBX8990",
+      "nomis_id": "P88455",
+      "pnc_id": "NHTIMYX1365",
+      "aliases": [
+        "Tasty M",
+        "Chuckles"
+      ]
+    },
+    {
+      "given_names": "Caterina",
+      "family_name": "Altenwerth",
+      "dob": "2001-09-09",
+      "identifying_marks": [
+        "scar on right wrist",
+        "tattoo of a spiderweb on left cheek"
+      ],
+      "offender_id": "HR2706400148",
+      "nomis_id": "M99075",
+      "pnc_id": "CHEUBHS1610",
+      "aliases": [
+        "Brains"
+      ]
+    },
+    {
+      "given_names": "Everardo",
+      "family_name": "Cartwright",
+      "dob": "1979-05-09",
+      "identifying_marks": [],
+      "offender_id": "GE5017855880",
+      "nomis_id": "S57316",
+      "pnc_id": "HIVITCW1VOZ",
+      "aliases": [
+        "Mullett",
+        "E Pain"
+      ]
+    },
+    {
+      "given_names": "Elmo",
+      "family_name": "Ratke",
+      "dob": "1980-01-25",
+      "identifying_marks": [
+        "celtic tattoo on left wrist"
+      ],
+      "offender_id": "LI3312860920",
+      "nomis_id": "M93466",
+      "pnc_id": "TZOADGK1NUA",
+      "aliases": [
+        "Hatchet Elmo"
+      ]
+    },
+    {
+      "given_names": "Kaycee",
+      "family_name": "Mayer",
+      "dob": "2001-03-27",
+      "identifying_marks": [
+        "birthmark on right forearm"
+      ],
+      "offender_id": "BR9802600866",
+      "nomis_id": "G71531",
+      "pnc_id": "QLSOEUO1",
+      "aliases": [
+        "Shadow",
+        "Plank"
+      ]
+    },
+    {
+      "given_names": "Juana",
+      "family_name": "Rosenbaum",
+      "dob": "1968-02-02",
+      "identifying_marks": [],
+      "offender_id": "BE7819400342",
+      "nomis_id": "I32756",
+      "pnc_id": "TDYAAGD1",
+      "aliases": [
+        "Bacon"
+      ]
+    },
+    {
+      "given_names": "Alize",
+      "family_name": "Ernser",
+      "dob": "1966-06-06",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left shoulder"
+      ],
+      "offender_id": "HR5105400270",
+      "nomis_id": "E02773",
+      "pnc_id": "EPTIDMW1",
+      "aliases": [
+        "Bricktop",
+        "Bugs"
+      ]
+    },
+    {
+      "given_names": "Tiara",
+      "family_name": "Leannon",
+      "dob": "1974-03-28",
+      "identifying_marks": [
+        "celtic tattoo on right cheek"
+      ],
+      "offender_id": "MC6840520898",
+      "nomis_id": "C70494",
+      "pnc_id": "XMEEPLE1",
+      "aliases": [
+        "Spindles"
+      ]
+    },
+    {
+      "given_names": "Ebba",
+      "family_name": "Kessler",
+      "dob": "1962-03-19",
+      "identifying_marks": [],
+      "offender_id": "FR5451940100",
+      "nomis_id": "G36929",
+      "pnc_id": "ESHEOMJ1825",
+      "aliases": [
+        "Greasy",
+        "E Pain"
+      ]
+    },
+    {
+      "given_names": "Wyatt",
+      "family_name": "Predovic",
+      "dob": "1993-01-14",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right wrist",
+        "scar on left forearm"
+      ],
+      "offender_id": "SK7827043060",
+      "nomis_id": "P95345",
+      "pnc_id": "GTHALTK1",
+      "aliases": []
+    },
+    {
+      "given_names": "Alysha",
+      "family_name": "Wisozk",
+      "dob": "1996-11-20",
+      "identifying_marks": [
+        "scar on left wrist"
+      ],
+      "offender_id": "SA1827U54454",
+      "nomis_id": "Y70195",
+      "pnc_id": "ONYABBY1",
+      "aliases": [
+        "Bugs",
+        "Soap"
+      ]
+    },
+    {
+      "given_names": "Andreane",
+      "family_name": "Douglas",
+      "dob": "1962-02-22",
+      "identifying_marks": [
+        "birthmark on left wrist"
+      ],
+      "offender_id": "QA50BLHUX473",
+      "nomis_id": "Q00266",
+      "pnc_id": "AAOUNRQ1",
+      "aliases": [
+        "Brains",
+        "Creepy A"
+      ]
+    },
+    {
+      "given_names": "Adah",
+      "family_name": "Considine",
+      "dob": "2000-05-28",
+      "identifying_marks": [
+        "celtic tattoo on left cheek"
+      ],
+      "offender_id": "IE941T449000",
+      "nomis_id": "L03506",
+      "pnc_id": "YCEAGQS1",
+      "aliases": [
+        "Brains"
+      ]
+    },
+    {
+      "given_names": "Lucio",
+      "family_name": "Goyette",
+      "dob": "1996-06-13",
+      "identifying_marks": [
+        "birthmark on right wrist"
+      ],
+      "offender_id": "TL8034705009",
+      "nomis_id": "C24225",
+      "pnc_id": "FNLINOE1NIK",
+      "aliases": []
+    },
+    {
+      "given_names": "Ross",
+      "family_name": "Herzog",
+      "dob": "1976-09-10",
+      "identifying_marks": [
+        "scar on right forearm",
+        "birthmark on right cheek"
+      ],
+      "offender_id": "PK8651031868",
+      "nomis_id": "I05856",
+      "pnc_id": "ECEINTX1",
+      "aliases": [
+        "Spider"
+      ]
+    },
+    {
+      "given_names": "Rasheed",
+      "family_name": "Daniel",
+      "dob": "1968-02-18",
+      "identifying_marks": [
+        "birthmark on left forearm",
+        "tattoo of a spiderweb on left wrist"
+      ],
+      "offender_id": "QA39SEOG0223",
+      "nomis_id": "C88625",
+      "pnc_id": "FHWEARX1",
+      "aliases": []
+    },
+    {
+      "given_names": "Jeramie",
+      "family_name": "Feeney",
+      "dob": "1988-12-05",
+      "identifying_marks": [],
+      "offender_id": "MD0723HQ1B44",
+      "nomis_id": "P70986",
+      "pnc_id": "ZHNASYT1",
+      "aliases": []
+    },
+    {
+      "given_names": "Deshawn",
+      "family_name": "Wyman",
+      "dob": "1966-06-25",
+      "identifying_marks": [
+        "birthmark on left cheek",
+        "tattoo of a spiderweb on right cheek"
+      ],
+      "offender_id": "ME3659403508",
+      "nomis_id": "R05882",
+      "pnc_id": "LHMIRWX1",
+      "aliases": [
+        "Goose",
+        "Ghost"
+      ]
+    },
+    {
+      "given_names": "Alvena",
+      "family_name": "Shanahan",
+      "dob": "2001-07-14",
+      "identifying_marks": [],
+      "offender_id": "GB75IWZW8100",
+      "nomis_id": "S89462",
+      "pnc_id": "FOHILSG1",
+      "aliases": [
+        "Turkish",
+        "Strider"
+      ]
+    },
+    {
+      "given_names": "Syble",
+      "family_name": "Dickens",
+      "dob": "1982-02-11",
+      "identifying_marks": [],
+      "offender_id": "BA8825246576",
+      "nomis_id": "E86322",
+      "pnc_id": "FFPIMRU1",
+      "aliases": [
+        "Sticky S",
+        "S Pain"
+      ]
+    },
+    {
+      "given_names": "Dena",
+      "family_name": "Jacobi",
+      "dob": "1992-02-16",
+      "identifying_marks": [
+        "scar on right shoulder",
+        "tattoo of a spiderweb on right cheek"
+      ],
+      "offender_id": "BG95QVUS0600",
+      "nomis_id": "T81367",
+      "pnc_id": "KFGUNCI1",
+      "aliases": []
+    },
+    {
+      "given_names": "Francisca",
+      "family_name": "Schowalter",
+      "dob": "1963-03-02",
+      "identifying_marks": [],
+      "offender_id": "LT7600692200",
+      "nomis_id": "M25181",
+      "pnc_id": "IUCETZE1117",
+      "aliases": []
+    },
+    {
+      "given_names": "Bernard",
+      "family_name": "Ward",
+      "dob": "1978-05-14",
+      "identifying_marks": [
+        "birthmark on left shoulder"
+      ],
+      "offender_id": "TN9025678887",
+      "nomis_id": "R79322",
+      "pnc_id": "FAFOAOX1",
+      "aliases": [
+        "Darth Bernard"
+      ]
+    },
+    {
+      "given_names": "Vernice",
+      "family_name": "West",
+      "dob": "1989-07-20",
+      "identifying_marks": [
+        "celtic tattoo on right shoulder",
+        "birthmark on right cheek"
+      ],
+      "offender_id": "MD4321481U81",
+      "nomis_id": "D09777",
+      "pnc_id": "XXFEBBZ1",
+      "aliases": [
+        "Little Vernice"
+      ]
+    },
+    {
+      "given_names": "Leta",
+      "family_name": "Hoppe",
+      "dob": "1963-04-03",
+      "identifying_marks": [],
+      "offender_id": "CZ7745827800",
+      "nomis_id": "M37039",
+      "pnc_id": "YCXOWFL1ZUD",
+      "aliases": [
+        "Tiny"
+      ]
+    },
+    {
+      "given_names": "Lyric",
+      "family_name": "Ullrich",
+      "dob": "2000-08-22",
+      "identifying_marks": [],
+      "offender_id": "ME1242545002",
+      "nomis_id": "D65847",
+      "pnc_id": "VUKEYUI1DUL",
+      "aliases": []
+    },
+    {
+      "given_names": "Mya",
+      "family_name": "Grant",
+      "dob": "1990-11-01",
+      "identifying_marks": [],
+      "offender_id": "JO40UKQU9488",
+      "nomis_id": "C84842",
+      "pnc_id": "JVYESDN1",
+      "aliases": [
+        "Tasty M"
+      ]
+    },
+    {
+      "given_names": "Norberto",
+      "family_name": "Thiel",
+      "dob": "1989-10-01",
+      "identifying_marks": [],
+      "offender_id": "PT8000048235",
+      "nomis_id": "C62925",
+      "pnc_id": "HCFIZMQ1939",
+      "aliases": [
+        "Hatchet Norberto",
+        "Bugs"
+      ]
+    },
+    {
+      "given_names": "Flavie",
+      "family_name": "Effertz",
+      "dob": "1966-02-11",
+      "identifying_marks": [
+        "celtic tattoo on right forearm",
+        "scar on right cheek"
+      ],
+      "offender_id": "GB91AXWZ1950",
+      "nomis_id": "I64053",
+      "pnc_id": "RVROIRO1469",
+      "aliases": []
+    },
+    {
+      "given_names": "Ross",
+      "family_name": "Keebler",
+      "dob": "1998-05-09",
+      "identifying_marks": [],
+      "offender_id": "RS7491700869",
+      "nomis_id": "E11095",
+      "pnc_id": "MYWEANX1FUI",
+      "aliases": []
+    },
+    {
+      "given_names": "Merlin",
+      "family_name": "Legros",
+      "dob": "1979-11-17",
+      "identifying_marks": [
+        "scar on right wrist"
+      ],
+      "offender_id": "LB910349A083",
+      "nomis_id": "P49037",
+      "pnc_id": "FDMOOMJ1",
+      "aliases": [
+        "Sticky Merlin",
+        "Soap"
+      ]
+    },
+    {
+      "given_names": "Ebony",
+      "family_name": "Kautzer",
+      "dob": "1990-11-13",
+      "identifying_marks": [],
+      "offender_id": "SM89C7660095",
+      "nomis_id": "C81491",
+      "pnc_id": "CEIABRY1386",
+      "aliases": [
+        "Darth Ebony"
+      ]
+    },
+    {
+      "given_names": "Magali",
+      "family_name": "O'Connell",
+      "dob": "1980-07-20",
+      "identifying_marks": [
+        "scar on right wrist"
+      ],
+      "offender_id": "BH12AVEE4404",
+      "nomis_id": "G82856",
+      "pnc_id": "AMXOEEP1286",
+      "aliases": [
+        "Lucky M"
+      ]
+    },
+    {
+      "given_names": "Ansel",
+      "family_name": "Daugherty",
+      "dob": "1987-11-12",
+      "identifying_marks": [
+        "birthmark on right shoulder"
+      ],
+      "offender_id": "DO79TSGT0664",
+      "nomis_id": "I75367",
+      "pnc_id": "ZBYEAGP1",
+      "aliases": []
+    },
+    {
+      "given_names": "Tabitha",
+      "family_name": "Bradtke",
+      "dob": "1963-06-22",
+      "identifying_marks": [],
+      "offender_id": "RO16PEFNO188",
+      "nomis_id": "R78577",
+      "pnc_id": "OABAPKN1929",
+      "aliases": [
+        "Hatchet Tabitha"
+      ]
+    },
+    {
+      "given_names": "Dakota",
+      "family_name": "Dickinson",
+      "dob": "1967-03-26",
+      "identifying_marks": [
+        "scar on left shoulder",
+        "tattoo of a spiderweb on left shoulder"
+      ],
+      "offender_id": "LU40356R7722",
+      "nomis_id": "D02999",
+      "pnc_id": "IEGUIRJ1",
+      "aliases": []
+    },
+    {
+      "given_names": "Helene",
+      "family_name": "Bergnaum",
+      "dob": "1979-11-06",
+      "identifying_marks": [
+        "celtic tattoo on right forearm"
+      ],
+      "offender_id": "XK2811725097",
+      "nomis_id": "C67519",
+      "pnc_id": "LYUAEAJ1429",
+      "aliases": []
+    },
+    {
+      "given_names": "Godfrey",
+      "family_name": "D'Amore",
+      "dob": "1969-10-07",
+      "identifying_marks": [
+        "scar on left forearm"
+      ],
+      "offender_id": "LI95900231R3",
+      "nomis_id": "P58247",
+      "pnc_id": "WZRABLV1",
+      "aliases": [
+        "Ice G",
+        "Plank"
+      ]
+    },
+    {
+      "given_names": "Marge",
+      "family_name": "Johnson",
+      "dob": "1968-07-03",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right forearm",
+        "birthmark on right shoulder"
+      ],
+      "offender_id": "DE0589470857",
+      "nomis_id": "F87571",
+      "pnc_id": "FCTIPLN1928",
+      "aliases": [
+        "Monkey"
+      ]
+    },
+    {
+      "given_names": "Zola",
+      "family_name": "Senger",
+      "dob": "1979-03-01",
+      "identifying_marks": [],
+      "offender_id": "TN8429323200",
+      "nomis_id": "L55440",
+      "pnc_id": "XYVEBHP1385",
+      "aliases": [
+        "Plank"
+      ]
+    },
+    {
+      "given_names": "Abbigail",
+      "family_name": "Terry",
+      "dob": "1973-05-17",
+      "identifying_marks": [],
+      "offender_id": "DO45VTPZ0011",
+      "nomis_id": "M64070",
+      "pnc_id": "QPIOTNZ1",
+      "aliases": [
+        "Fast A"
+      ]
+    },
+    {
+      "given_names": "Estelle",
+      "family_name": "Metz",
+      "dob": "1971-03-08",
+      "identifying_marks": [
+        "birthmark on right forearm"
+      ],
+      "offender_id": "NL79APQI5729",
+      "nomis_id": "G93771",
+      "pnc_id": "HVQOTLX1",
+      "aliases": [
+        "Buggy"
+      ]
+    },
+    {
+      "given_names": "Jennie",
+      "family_name": "Welch",
+      "dob": "1991-02-18",
+      "identifying_marks": [
+        "scar on right cheek",
+        "tattoo of a spiderweb on right forearm"
+      ],
+      "offender_id": "JO97KADZ6979",
+      "nomis_id": "T88339",
+      "pnc_id": "RPYIAMZ1",
+      "aliases": [
+        "Buggy",
+        "Plank"
+      ]
+    },
+    {
+      "given_names": "Adrain",
+      "family_name": "Heaney",
+      "dob": "1980-11-22",
+      "identifying_marks": [],
+      "offender_id": "LV82ONRD0O36",
+      "nomis_id": "S35862",
+      "pnc_id": "DGGEAGQ1",
+      "aliases": []
+    },
+    {
+      "given_names": "Pablo",
+      "family_name": "Barton",
+      "dob": "1974-03-25",
+      "identifying_marks": [
+        "celtic tattoo on right wrist",
+        "scar on right shoulder"
+      ],
+      "offender_id": "LB470407Q79J",
+      "nomis_id": "M18549",
+      "pnc_id": "AAJUNPB1",
+      "aliases": []
+    },
+    {
+      "given_names": "Annamarie",
+      "family_name": "Buckridge",
+      "dob": "1999-03-25",
+      "identifying_marks": [
+        "celtic tattoo on left forearm"
+      ],
+      "offender_id": "AD5169770085",
+      "nomis_id": "H71171",
+      "pnc_id": "NNMIAUP1CIK",
+      "aliases": [
+        "Chewy"
+      ]
+    },
+    {
+      "given_names": "Nathanael",
+      "family_name": "Hilpert",
+      "dob": "1960-08-09",
+      "identifying_marks": [],
+      "offender_id": "FO0884530235",
+      "nomis_id": "C78472",
+      "pnc_id": "DZGAKRL1",
+      "aliases": []
+    },
+    {
+      "given_names": "Trent",
+      "family_name": "Homenick",
+      "dob": "1997-07-26",
+      "identifying_marks": [],
+      "offender_id": "EE3330515451",
+      "nomis_id": "A76390",
+      "pnc_id": "YSJOANB1",
+      "aliases": []
+    },
+    {
+      "given_names": "Maddison",
+      "family_name": "Hamill",
+      "dob": "1977-01-26",
+      "identifying_marks": [],
+      "offender_id": "PL4455608724",
+      "nomis_id": "L09115",
+      "pnc_id": "YPLEBIP1",
+      "aliases": []
+    },
+    {
+      "given_names": "Anne",
+      "family_name": "Windler",
+      "dob": "1986-03-08",
+      "identifying_marks": [
+        "birthmark on right wrist"
+      ],
+      "offender_id": "AZ8666267294",
+      "nomis_id": "N82169",
+      "pnc_id": "UJZABGY1",
+      "aliases": [
+        "A Pain"
+      ]
+    },
+    {
+      "given_names": "Leda",
+      "family_name": "Collins",
+      "dob": "1981-10-10",
+      "identifying_marks": [
+        "scar on right shoulder"
+      ],
+      "offender_id": "AL4903008391",
+      "nomis_id": "W23536",
+      "pnc_id": "CGGEAXM1SEL",
+      "aliases": [
+        "Big Leda",
+        "Lil L"
+      ]
+    },
+    {
+      "given_names": "Cassandra",
+      "family_name": "Mueller",
+      "dob": "2002-05-19",
+      "identifying_marks": [],
+      "offender_id": "HU0670608420",
+      "nomis_id": "I61220",
+      "pnc_id": "PTIIGEB1",
+      "aliases": [
+        "Mullett",
+        "Spindles"
+      ]
+    },
+    {
+      "given_names": "Mae",
+      "family_name": "Sporer",
+      "dob": "1979-05-02",
+      "identifying_marks": [
+        "birthmark on left forearm",
+        "birthmark on left cheek"
+      ],
+      "offender_id": "MK79028N486E",
+      "nomis_id": "D43726",
+      "pnc_id": "IPPIASV1379",
+      "aliases": [
+        "Creepy M"
+      ]
+    },
+    {
+      "given_names": "Gene",
+      "family_name": "Olson",
+      "dob": "1999-05-14",
+      "identifying_marks": [],
+      "offender_id": "AE1507643959",
+      "nomis_id": "F02588",
+      "pnc_id": "CGQODGM1",
+      "aliases": [
+        "Chewy"
+      ]
+    },
+    {
+      "given_names": "Jace",
+      "family_name": "Boyle",
+      "dob": "1965-09-06",
+      "identifying_marks": [],
+      "offender_id": "IE6651020803",
+      "nomis_id": "K41458",
+      "pnc_id": "JEOATHL1965",
+      "aliases": [
+        "Bacon",
+        "Big Jace"
+      ]
+    },
+    {
+      "given_names": "Amir",
+      "family_name": "Harris",
+      "dob": "1988-08-22",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left cheek"
+      ],
+      "offender_id": "AZ4657R32439",
+      "nomis_id": "G50446",
+      "pnc_id": "FZUECOD1947",
+      "aliases": [
+        "Shadow"
+      ]
+    },
+    {
+      "given_names": "Rowena",
+      "family_name": "Bogisich",
+      "dob": "1986-07-13",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left wrist"
+      ],
+      "offender_id": "MR8506980906",
+      "nomis_id": "H40068",
+      "pnc_id": "QXPOGWA1",
+      "aliases": []
+    },
+    {
+      "given_names": "Devonte",
+      "family_name": "Brekke",
+      "dob": "1966-09-03",
+      "identifying_marks": [
+        "celtic tattoo on left cheek",
+        "scar on right cheek"
+      ],
+      "offender_id": "RS3360513009",
+      "nomis_id": "T74153",
+      "pnc_id": "EAUOVCW1",
+      "aliases": []
+    },
+    {
+      "given_names": "Lucienne",
+      "family_name": "Murray",
+      "dob": "1969-02-12",
+      "identifying_marks": [],
+      "offender_id": "SA88020I0153",
+      "nomis_id": "D31199",
+      "pnc_id": "UKMIDOL1",
+      "aliases": []
+    },
+    {
+      "given_names": "Addie",
+      "family_name": "Kautzer",
+      "dob": "1978-04-27",
+      "identifying_marks": [
+        "scar on right forearm",
+        "celtic tattoo on left shoulder"
+      ],
+      "offender_id": "LU2952146075",
+      "nomis_id": "R68927",
+      "pnc_id": "WXGIMMC1AIM",
+      "aliases": [
+        "Fingers"
+      ]
+    },
+    {
+      "given_names": "Willard",
+      "family_name": "Howe",
+      "dob": "1992-08-23",
+      "identifying_marks": [
+        "scar on left forearm"
+      ],
+      "offender_id": "PS3840RQ4060",
+      "nomis_id": "I56243",
+      "pnc_id": "JOJOGYY1",
+      "aliases": [
+        "Bubbles",
+        "Fast W"
+      ]
+    },
+    {
+      "given_names": "Angela",
+      "family_name": "Prohaska",
+      "dob": "1966-09-20",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left forearm"
+      ],
+      "offender_id": "LI30780039H5",
+      "nomis_id": "D27989",
+      "pnc_id": "NXYABTW1",
+      "aliases": [
+        "Plank"
+      ]
+    },
+    {
+      "given_names": "Scot",
+      "family_name": "Mills",
+      "dob": "1974-08-16",
+      "identifying_marks": [],
+      "offender_id": "BE4315502842",
+      "nomis_id": "S77447",
+      "pnc_id": "VRQIMOH1528",
+      "aliases": []
+    },
+    {
+      "given_names": "Frieda",
+      "family_name": "O'Hara",
+      "dob": "1983-09-04",
+      "identifying_marks": [
+        "scar on left shoulder",
+        "scar on right cheek"
+      ],
+      "offender_id": "BG82EMCA6820",
+      "nomis_id": "S64645",
+      "pnc_id": "UPTAJOW1823",
+      "aliases": []
+    },
+    {
+      "given_names": "Percival",
+      "family_name": "Morar",
+      "dob": "1966-07-03",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left cheek",
+        "birthmark on right forearm"
+      ],
+      "offender_id": "GE8423070907",
+      "nomis_id": "C88264",
+      "pnc_id": "AXTEPNE1",
+      "aliases": [
+        "Razor"
+      ]
+    },
+    {
+      "given_names": "Andrew",
+      "family_name": "Schinner",
+      "dob": "1968-03-23",
+      "identifying_marks": [
+        "celtic tattoo on left wrist",
+        "birthmark on left wrist"
+      ],
+      "offender_id": "TR2312836075",
+      "nomis_id": "F54450",
+      "pnc_id": "JKUUVAH1",
+      "aliases": [
+        "Tiny"
+      ]
+    },
+    {
+      "given_names": "Shirley",
+      "family_name": "Powlowski",
+      "dob": "1982-01-01",
+      "identifying_marks": [
+        "scar on left cheek"
+      ],
+      "offender_id": "LI8700232K06",
+      "nomis_id": "D79068",
+      "pnc_id": "PDUEDGW1",
+      "aliases": []
+    },
+    {
+      "given_names": "Katelyn",
+      "family_name": "Parker",
+      "dob": "1984-05-11",
+      "identifying_marks": [
+        "scar on left cheek",
+        "celtic tattoo on right shoulder"
+      ],
+      "offender_id": "FR1443043086",
+      "nomis_id": "F54959",
+      "pnc_id": "YDQITFG1EOT",
+      "aliases": [
+        "Chase"
+      ]
+    },
+    {
+      "given_names": "Mike",
+      "family_name": "Gislason",
+      "dob": "1993-09-06",
+      "identifying_marks": [
+        "celtic tattoo on left wrist",
+        "celtic tattoo on right forearm"
+      ],
+      "offender_id": "MD2529896133",
+      "nomis_id": "F64423",
+      "pnc_id": "DBVOJPY1",
+      "aliases": []
+    },
+    {
+      "given_names": "Herman",
+      "family_name": "Balistreri",
+      "dob": "2002-05-16",
+      "identifying_marks": [],
+      "offender_id": "RO30PPAP2J65",
+      "nomis_id": "S90923",
+      "pnc_id": "NTWUAUS1",
+      "aliases": [
+        "Hatchet Herman"
+      ]
+    },
+    {
+      "given_names": "Garry",
+      "family_name": "Rogahn",
+      "dob": "1988-03-23",
+      "identifying_marks": [
+        "scar on left wrist",
+        "tattoo of a spiderweb on left wrist"
+      ],
+      "offender_id": "KZ7877564476",
+      "nomis_id": "N76550",
+      "pnc_id": "KDDIRSI1728",
+      "aliases": [
+        "Cheesy"
+      ]
+    },
+    {
+      "given_names": "Lila",
+      "family_name": "Stracke",
+      "dob": "1976-06-23",
+      "identifying_marks": [],
+      "offender_id": "MT94VKZC0885",
+      "nomis_id": "G85023",
+      "pnc_id": "IHDIATW1104",
+      "aliases": [
+        "Mullett",
+        "Cool L"
+      ]
+    },
+    {
+      "given_names": "Orville",
+      "family_name": "Schowalter",
+      "dob": "1997-06-10",
+      "identifying_marks": [
+        "scar on left cheek"
+      ],
+      "offender_id": "TR5818517942",
+      "nomis_id": "S21140",
+      "pnc_id": "HUWAGIX1",
+      "aliases": []
+    },
+    {
+      "given_names": "Kory",
+      "family_name": "Fahey",
+      "dob": "1996-01-05",
+      "identifying_marks": [
+        "birthmark on left cheek"
+      ],
+      "offender_id": "MR0430900372",
+      "nomis_id": "C50378",
+      "pnc_id": "PCNAMQB1",
+      "aliases": [
+        "Cool K"
+      ]
+    },
+    {
+      "given_names": "Zackery",
+      "family_name": "Koelpin",
+      "dob": "1975-04-23",
+      "identifying_marks": [
+        "scar on left shoulder"
+      ],
+      "offender_id": "LU85300372Y4",
+      "nomis_id": "T12929",
+      "pnc_id": "QTRUANM1",
+      "aliases": []
+    },
+    {
+      "given_names": "Sasha",
+      "family_name": "Greenholt",
+      "dob": "1987-06-23",
+      "identifying_marks": [],
+      "offender_id": "AZ2794C00969",
+      "nomis_id": "O98736",
+      "pnc_id": "LTMEVIF1",
+      "aliases": [
+        "Ghost",
+        "Fast S"
+      ]
+    },
+    {
+      "given_names": "Jessie",
+      "family_name": "Mills",
+      "dob": "1995-10-22",
+      "identifying_marks": [],
+      "offender_id": "TL3007843065",
+      "nomis_id": "H77625",
+      "pnc_id": "CYBEMFU1",
+      "aliases": [
+        "Fast J"
+      ]
+    },
+    {
+      "given_names": "Lori",
+      "family_name": "Kovacek",
+      "dob": "2001-07-27",
+      "identifying_marks": [
+        "scar on left cheek"
+      ],
+      "offender_id": "TL1140589275",
+      "nomis_id": "C63633",
+      "pnc_id": "DAVUEEL1KAZ",
+      "aliases": []
+    },
+    {
+      "given_names": "Chase",
+      "family_name": "Cummings",
+      "dob": "1968-11-01",
+      "identifying_marks": [
+        "birthmark on right cheek"
+      ],
+      "offender_id": "GI26YBFSGT26",
+      "nomis_id": "P57182",
+      "pnc_id": "ZLLUSMR1643",
+      "aliases": [
+        "Blaze"
+      ]
+    },
+    {
+      "given_names": "Donald",
+      "family_name": "Smitham",
+      "dob": "1970-02-28",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right cheek",
+        "birthmark on right shoulder"
+      ],
+      "offender_id": "NL96KMKV0437",
+      "nomis_id": "S06536",
+      "pnc_id": "OAVUMEE1510",
+      "aliases": []
+    },
+    {
+      "given_names": "Aurelie",
+      "family_name": "Satterfield",
+      "dob": "1979-02-24",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left shoulder"
+      ],
+      "offender_id": "BE8206511648",
+      "nomis_id": "M12115",
+      "pnc_id": "CLYAGRY1",
+      "aliases": [
+        "Foxy",
+        "Spider"
+      ]
+    },
+    {
+      "given_names": "Leonora",
+      "family_name": "Torphy",
+      "dob": "1993-01-22",
+      "identifying_marks": [
+        "celtic tattoo on right forearm",
+        "birthmark on right forearm"
+      ],
+      "offender_id": "JO22JWXW0024",
+      "nomis_id": "Q91807",
+      "pnc_id": "SPJIFIR1243",
+      "aliases": []
+    },
+    {
+      "given_names": "Lelah",
+      "family_name": "Macejkovic",
+      "dob": "1991-08-14",
+      "identifying_marks": [],
+      "offender_id": "SK2184155017",
+      "nomis_id": "B66716",
+      "pnc_id": "YDGABHE1",
+      "aliases": [
+        "Mullett",
+        "Razor"
+      ]
+    },
+    {
+      "given_names": "Larissa",
+      "family_name": "Ankunding",
+      "dob": "1998-04-03",
+      "identifying_marks": [],
+      "offender_id": "NO2423670095",
+      "nomis_id": "T55550",
+      "pnc_id": "QIHITAF1",
+      "aliases": []
+    },
+    {
+      "given_names": "Wilfrid",
+      "family_name": "Altenwerth",
+      "dob": "1984-03-21",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left wrist"
+      ],
+      "offender_id": "SK1899901003",
+      "nomis_id": "B68326",
+      "pnc_id": "PNFIPRF1583",
+      "aliases": [
+        "Soap"
+      ]
+    },
+    {
+      "given_names": "Francisco",
+      "family_name": "Moore",
+      "dob": "1979-06-17",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right cheek"
+      ],
+      "offender_id": "HR1800100464",
+      "nomis_id": "A16473",
+      "pnc_id": "EFRONAX1",
+      "aliases": [
+        "F Pain",
+        "Ghost"
+      ]
+    },
+    {
+      "given_names": "Dan",
+      "family_name": "Wyman",
+      "dob": "1980-12-26",
+      "identifying_marks": [],
+      "offender_id": "IT33W0958327",
+      "nomis_id": "F76225",
+      "pnc_id": "JMROGYB1495",
+      "aliases": []
+    },
+    {
+      "given_names": "Pinkie",
+      "family_name": "Nader",
+      "dob": "1993-05-21",
+      "identifying_marks": [],
+      "offender_id": "CY8360030279",
+      "nomis_id": "C88703",
+      "pnc_id": "BKRICUJ1",
+      "aliases": [
+        "Moonie",
+        "Foxy"
+      ]
+    },
+    {
+      "given_names": "Hollis",
+      "family_name": "Hagenes",
+      "dob": "1967-05-23",
+      "identifying_marks": [
+        "birthmark on right cheek"
+      ],
+      "offender_id": "KW22DBRP3215",
+      "nomis_id": "P58185",
+      "pnc_id": "VDPIEGV1",
+      "aliases": []
+    },
+    {
+      "given_names": "Kaia",
+      "family_name": "Schmeler",
+      "dob": "1965-09-14",
+      "identifying_marks": [
+        "birthmark on right wrist"
+      ],
+      "offender_id": "AL6609008056",
+      "nomis_id": "S06587",
+      "pnc_id": "HTNESLO1",
+      "aliases": [
+        "Plank",
+        "Goose"
+      ]
+    },
+    {
+      "given_names": "Burley",
+      "family_name": "Wilderman",
+      "dob": "1964-08-27",
+      "identifying_marks": [],
+      "offender_id": "ME8900203080",
+      "nomis_id": "D65126",
+      "pnc_id": "UJTAMDB1291",
+      "aliases": []
+    },
+    {
+      "given_names": "Wellington",
+      "family_name": "Doyle",
+      "dob": "1989-03-03",
+      "identifying_marks": [
+        "celtic tattoo on right forearm"
+      ],
+      "offender_id": "TL9776767404",
+      "nomis_id": "S92913",
+      "pnc_id": "WIDUPRV1AEZ",
+      "aliases": [
+        "Chuckles"
+      ]
+    },
+    {
+      "given_names": "Amaya",
+      "family_name": "Kerluke",
+      "dob": "1983-11-08",
+      "identifying_marks": [
+        "birthmark on left forearm"
+      ],
+      "offender_id": "TN2471314003",
+      "nomis_id": "I06904",
+      "pnc_id": "YUWIBHW1664",
+      "aliases": []
+    },
+    {
+      "given_names": "Nina",
+      "family_name": "Lang",
+      "dob": "1998-07-04",
+      "identifying_marks": [
+        "celtic tattoo on left forearm",
+        "tattoo of a spiderweb on left cheek"
+      ],
+      "offender_id": "IT32I8610721",
+      "nomis_id": "S42668",
+      "pnc_id": "QJAACSS1821",
+      "aliases": [
+        "Bad N"
+      ]
+    },
+    {
+      "given_names": "Amir",
+      "family_name": "Wolf",
+      "dob": "1983-02-06",
+      "identifying_marks": [
+        "birthmark on left forearm",
+        "scar on right wrist"
+      ],
+      "offender_id": "FO6600170070",
+      "nomis_id": "E69159",
+      "pnc_id": "HEBOTNM1",
+      "aliases": []
+    },
+    {
+      "given_names": "Mathias",
+      "family_name": "Buckridge",
+      "dob": "1990-06-28",
+      "identifying_marks": [],
+      "offender_id": "MU05PUKM1005",
+      "nomis_id": "O34839",
+      "pnc_id": "OVVARSQ1192",
+      "aliases": [
+        "Creepy M"
+      ]
+    },
+    {
+      "given_names": "Felix",
+      "family_name": "Daniel",
+      "dob": "1990-11-15",
+      "identifying_marks": [],
+      "offender_id": "HU3190065006",
+      "nomis_id": "A18558",
+      "pnc_id": "WZYUNZE1",
+      "aliases": [
+        "Chewy"
+      ]
+    },
+    {
+      "given_names": "Heather",
+      "family_name": "Fahey",
+      "dob": "1964-11-03",
+      "identifying_marks": [
+        "birthmark on left wrist",
+        "tattoo of a spiderweb on right shoulder"
+      ],
+      "offender_id": "CZ4836908005",
+      "nomis_id": "S77946",
+      "pnc_id": "SMZECRX1",
+      "aliases": []
+    },
+    {
+      "given_names": "Dino",
+      "family_name": "Wilkinson",
+      "dob": "1960-01-21",
+      "identifying_marks": [],
+      "offender_id": "DK8341781004",
+      "nomis_id": "M63050",
+      "pnc_id": "QPGOSIE1",
+      "aliases": [
+        "Lucky"
+      ]
+    },
+    {
+      "given_names": "Kristina",
+      "family_name": "Schamberger",
+      "dob": "1995-04-17",
+      "identifying_marks": [],
+      "offender_id": "FO0424330809",
+      "nomis_id": "L56598",
+      "pnc_id": "GCGABEF1636",
+      "aliases": [
+        "Cheesy"
+      ]
+    },
+    {
+      "given_names": "Jarrell",
+      "family_name": "Schaefer",
+      "dob": "1987-04-03",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right forearm",
+        "scar on left shoulder"
+      ],
+      "offender_id": "QA17IKLH6340",
+      "nomis_id": "F05822",
+      "pnc_id": "DMEUTFB1NON",
+      "aliases": []
+    },
+    {
+      "given_names": "Cory",
+      "family_name": "Murray",
+      "dob": "2002-06-06",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right wrist"
+      ],
+      "offender_id": "MK0700977523",
+      "nomis_id": "D28435",
+      "pnc_id": "FJBIVIP1",
+      "aliases": []
+    },
+    {
+      "given_names": "Malvina",
+      "family_name": "Miller",
+      "dob": "1973-02-12",
+      "identifying_marks": [],
+      "offender_id": "IL2848300549",
+      "nomis_id": "P22396",
+      "pnc_id": "RJAICKR1",
+      "aliases": []
+    },
+    {
+      "given_names": "Eva",
+      "family_name": "Renner",
+      "dob": "1964-04-12",
+      "identifying_marks": [
+        "birthmark on left shoulder"
+      ],
+      "offender_id": "DK8893904086",
+      "nomis_id": "E26053",
+      "pnc_id": "VALONAK1148",
+      "aliases": []
+    },
+    {
+      "given_names": "Gracie",
+      "family_name": "Wintheiser",
+      "dob": "1997-12-12",
+      "identifying_marks": [],
+      "offender_id": "IE8228045980",
+      "nomis_id": "H44252",
+      "pnc_id": "GMDIBAE1",
+      "aliases": []
+    },
+    {
+      "given_names": "Erna",
+      "family_name": "Abshire",
+      "dob": "1993-09-15",
+      "identifying_marks": [
+        "scar on left shoulder",
+        "birthmark on left forearm"
+      ],
+      "offender_id": "SM08H3887008",
+      "nomis_id": "H59362",
+      "pnc_id": "LEAOITY1887",
+      "aliases": []
+    },
+    {
+      "given_names": "Nicolas",
+      "family_name": "Kunde",
+      "dob": "1998-05-20",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right forearm",
+        "tattoo of a spiderweb on right wrist"
+      ],
+      "offender_id": "GE7531940021",
+      "nomis_id": "C47936",
+      "pnc_id": "RIAUINC1",
+      "aliases": [
+        "Lucky"
+      ]
+    },
+    {
+      "given_names": "Jaden",
+      "family_name": "Orn",
+      "dob": "1973-10-24",
+      "identifying_marks": [],
+      "offender_id": "AD2900088743",
+      "nomis_id": "P76189",
+      "pnc_id": "FAHIBQQ1WEV",
+      "aliases": []
+    },
+    {
+      "given_names": "Alena",
+      "family_name": "Gislason",
+      "dob": "1962-02-07",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left cheek"
+      ],
+      "offender_id": "FI7750030870",
+      "nomis_id": "T84065",
+      "pnc_id": "XFEEZAV1",
+      "aliases": []
+    },
+    {
+      "given_names": "Flo",
+      "family_name": "Littel",
+      "dob": "1998-06-05",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right shoulder",
+        "birthmark on right wrist"
+      ],
+      "offender_id": "NL89NNFE5090",
+      "nomis_id": "J38880",
+      "pnc_id": "OWIOIQU1709",
+      "aliases": []
+    },
+    {
+      "given_names": "Antonetta",
+      "family_name": "Bode",
+      "dob": "1979-03-13",
+      "identifying_marks": [
+        "scar on left forearm",
+        "birthmark on right shoulder"
+      ],
+      "offender_id": "KZ2227834211",
+      "nomis_id": "A08686",
+      "pnc_id": "KGDEHME1",
+      "aliases": [
+        "Young A",
+        "Turkish"
+      ]
+    },
+    {
+      "given_names": "Martin",
+      "family_name": "Rowe",
+      "dob": "1966-01-25",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right cheek",
+        "birthmark on left wrist"
+      ],
+      "offender_id": "SA3564411353",
+      "nomis_id": "R99309",
+      "pnc_id": "ILOAYER1",
+      "aliases": [
+        "Mumbles"
+      ]
+    },
+    {
+      "given_names": "Jennings",
+      "family_name": "Grady",
+      "dob": "1963-08-02",
+      "identifying_marks": [],
+      "offender_id": "KZ53006UA56G",
+      "nomis_id": "F22038",
+      "pnc_id": "RROULKN1",
+      "aliases": [
+        "Chewy",
+        "Fast J"
+      ]
+    },
+    {
+      "given_names": "Destini",
+      "family_name": "Waters",
+      "dob": "1992-05-09",
+      "identifying_marks": [
+        "birthmark on left wrist",
+        "scar on left wrist"
+      ],
+      "offender_id": "TR6200213015",
+      "nomis_id": "S45314",
+      "pnc_id": "JLBIDKR1",
+      "aliases": []
+    },
+    {
+      "given_names": "Aliya",
+      "family_name": "Flatley",
+      "dob": "1992-11-05",
+      "identifying_marks": [],
+      "offender_id": "SE7656142020",
+      "nomis_id": "S02813",
+      "pnc_id": "IKSAESD1",
+      "aliases": [
+        "Bricktop",
+        "Fast A"
+      ]
+    },
+    {
+      "given_names": "Mariam",
+      "family_name": "Hauck",
+      "dob": "1995-09-06",
+      "identifying_marks": [
+        "birthmark on right cheek"
+      ],
+      "offender_id": "EE9491750404",
+      "nomis_id": "I03248",
+      "pnc_id": "LJGENZV1",
+      "aliases": [
+        "Creepy M"
+      ]
+    },
+    {
+      "given_names": "Eldora",
+      "family_name": "Beier",
+      "dob": "1991-12-11",
+      "identifying_marks": [
+        "birthmark on left cheek",
+        "scar on left cheek"
+      ],
+      "offender_id": "IE4513T79230",
+      "nomis_id": "N48743",
+      "pnc_id": "FQCENIW1140",
+      "aliases": [
+        "Lucky E"
+      ]
+    },
+    {
+      "given_names": "Werner",
+      "family_name": "Feil",
+      "dob": "1975-07-19",
+      "identifying_marks": [
+        "scar on left cheek"
+      ],
+      "offender_id": "SM37M2776670",
+      "nomis_id": "V38722",
+      "pnc_id": "UUMOSLD1KIM",
+      "aliases": [
+        "Big Werner",
+        "Goose"
+      ]
+    },
+    {
+      "given_names": "Price",
+      "family_name": "White",
+      "dob": "2000-05-28",
+      "identifying_marks": [
+        "birthmark on left forearm"
+      ],
+      "offender_id": "ES9455950010",
+      "nomis_id": "S32580",
+      "pnc_id": "IDEOTDL1",
+      "aliases": [
+        "Cool P"
+      ]
+    },
+    {
+      "given_names": "Retha",
+      "family_name": "Gibson",
+      "dob": "1974-05-05",
+      "identifying_marks": [],
+      "offender_id": "DE7489426064",
+      "nomis_id": "L72406",
+      "pnc_id": "INXISCE1DAL",
+      "aliases": [
+        "Smokey"
+      ]
+    },
+    {
+      "given_names": "Mustafa",
+      "family_name": "Emmerich",
+      "dob": "1982-09-02",
+      "identifying_marks": [
+        "celtic tattoo on left forearm"
+      ],
+      "offender_id": "TR7200567384",
+      "nomis_id": "X13460",
+      "pnc_id": "EUSOAMO1",
+      "aliases": [
+        "Foxy",
+        "Smokey"
+      ]
+    },
+    {
+      "given_names": "Linda",
+      "family_name": "Lakin",
+      "dob": "1999-02-28",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right wrist",
+        "scar on right wrist"
+      ],
+      "offender_id": "VG31581J9807",
+      "nomis_id": "H56275",
+      "pnc_id": "CCBOFKB1",
+      "aliases": [
+        "Darth Linda"
+      ]
+    },
+    {
+      "given_names": "Fred",
+      "family_name": "Schowalter",
+      "dob": "1982-06-21",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right wrist"
+      ],
+      "offender_id": "QA05YEZTG744",
+      "nomis_id": "S73969",
+      "pnc_id": "FLEUION1",
+      "aliases": [
+        "Moonie"
+      ]
+    },
+    {
+      "given_names": "Roman",
+      "family_name": "Langworth",
+      "dob": "1988-12-10",
+      "identifying_marks": [
+        "celtic tattoo on right forearm"
+      ],
+      "offender_id": "GE1198025007",
+      "nomis_id": "I59271",
+      "pnc_id": "AGZAPGQ1941",
+      "aliases": [
+        "Lil R",
+        "Monkey"
+      ]
+    },
+    {
+      "given_names": "Annie",
+      "family_name": "Cormier",
+      "dob": "1984-10-15",
+      "identifying_marks": [],
+      "offender_id": "IS1806009140",
+      "nomis_id": "M79456",
+      "pnc_id": "UVQULSZ1397",
+      "aliases": [
+        "Big Annie"
+      ]
+    },
+    {
+      "given_names": "Madisen",
+      "family_name": "Harris",
+      "dob": "2002-10-14",
+      "identifying_marks": [
+        "scar on right cheek"
+      ],
+      "offender_id": "GL2600898030",
+      "nomis_id": "P45475",
+      "pnc_id": "CXYASAC1721",
+      "aliases": []
+    },
+    {
+      "given_names": "Jaida",
+      "family_name": "Bruen",
+      "dob": "1976-02-14",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left forearm"
+      ],
+      "offender_id": "IE771YB80868",
+      "nomis_id": "V22047",
+      "pnc_id": "FKAUICE1",
+      "aliases": [
+        "Young J"
+      ]
+    },
+    {
+      "given_names": "Raoul",
+      "family_name": "Ward",
+      "dob": "1981-11-23",
+      "identifying_marks": [
+        "celtic tattoo on left wrist"
+      ],
+      "offender_id": "LV74KZASK989",
+      "nomis_id": "I33032",
+      "pnc_id": "EYQULKP1",
+      "aliases": []
+    },
+    {
+      "given_names": "Margie",
+      "family_name": "Hagenes",
+      "dob": "1985-01-01",
+      "identifying_marks": [],
+      "offender_id": "TL3101855932",
+      "nomis_id": "V86354",
+      "pnc_id": "NTRAKET1612",
+      "aliases": []
+    },
+    {
+      "given_names": "Melany",
+      "family_name": "Hickle",
+      "dob": "1980-11-15",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left wrist"
+      ],
+      "offender_id": "BE8897200320",
+      "nomis_id": "B15167",
+      "pnc_id": "UWJUBMI1XOQ",
+      "aliases": [
+        "Shanks",
+        "Monkey"
+      ]
+    },
+    {
+      "given_names": "Amelia",
+      "family_name": "Moen",
+      "dob": "1995-06-13",
+      "identifying_marks": [
+        "birthmark on left shoulder"
+      ],
+      "offender_id": "LV86FGZRD434",
+      "nomis_id": "C26567",
+      "pnc_id": "PTHUNPT1490",
+      "aliases": [
+        "Frosty"
+      ]
+    },
+    {
+      "given_names": "Kirsten",
+      "family_name": "Gerhold",
+      "dob": "1961-04-17",
+      "identifying_marks": [
+        "scar on left forearm",
+        "birthmark on right cheek"
+      ],
+      "offender_id": "GR814002263N",
+      "nomis_id": "E11738",
+      "pnc_id": "ERRUDJD1",
+      "aliases": [
+        "Fingers"
+      ]
+    },
+    {
+      "given_names": "Alexandre",
+      "family_name": "Roob",
+      "dob": "1979-12-14",
+      "identifying_marks": [
+        "birthmark on right cheek"
+      ],
+      "offender_id": "RO95PUGD2792",
+      "nomis_id": "W30757",
+      "pnc_id": "GGMACUB1",
+      "aliases": []
+    },
+    {
+      "given_names": "Orland",
+      "family_name": "Heathcote",
+      "dob": "1964-07-19",
+      "identifying_marks": [
+        "celtic tattoo on right cheek"
+      ],
+      "offender_id": "ME6215120107",
+      "nomis_id": "I63574",
+      "pnc_id": "HTBASES1",
+      "aliases": [
+        "Spindles"
+      ]
+    },
+    {
+      "given_names": "Mateo",
+      "family_name": "Gaylord",
+      "dob": "1976-07-12",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right cheek"
+      ],
+      "offender_id": "CZ6445290801",
+      "nomis_id": "S09478",
+      "pnc_id": "VQPEHNY1",
+      "aliases": [
+        "Bubbles"
+      ]
+    },
+    {
+      "given_names": "Helga",
+      "family_name": "Muller",
+      "dob": "1991-07-07",
+      "identifying_marks": [
+        "scar on left cheek",
+        "celtic tattoo on left shoulder"
+      ],
+      "offender_id": "IT75M0074004",
+      "nomis_id": "X83296",
+      "pnc_id": "OFBUASE1",
+      "aliases": []
+    },
+    {
+      "given_names": "Loraine",
+      "family_name": "Kunze",
+      "dob": "1966-12-06",
+      "identifying_marks": [],
+      "offender_id": "LT9001323000",
+      "nomis_id": "D54460",
+      "pnc_id": "KLCIKYU1ROD",
+      "aliases": []
+    },
+    {
+      "given_names": "Garret",
+      "family_name": "Klocko",
+      "dob": "1994-08-07",
+      "identifying_marks": [
+        "birthmark on left wrist"
+      ],
+      "offender_id": "VG4668712009",
+      "nomis_id": "C00015",
+      "pnc_id": "MRAOVGT1603",
+      "aliases": [
+        "Little Garret",
+        "Lucky G"
+      ]
+    },
+    {
+      "given_names": "Hayley",
+      "family_name": "Kemmer",
+      "dob": "1968-02-22",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right forearm"
+      ],
+      "offender_id": "CH4200502932",
+      "nomis_id": "U39038",
+      "pnc_id": "QOQAGIL1",
+      "aliases": [
+        "Soap",
+        "Razor"
+      ]
+    },
+    {
+      "given_names": "Reyna",
+      "family_name": "Durgan",
+      "dob": "1981-06-26",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right cheek",
+        "scar on right cheek"
+      ],
+      "offender_id": "TN4330028977",
+      "nomis_id": "S79722",
+      "pnc_id": "KMKENAR1802",
+      "aliases": [
+        "Big Reyna",
+        "Greasy"
+      ]
+    },
+    {
+      "given_names": "Lauren",
+      "family_name": "Cummings",
+      "dob": "1963-11-28",
+      "identifying_marks": [
+        "scar on left cheek"
+      ],
+      "offender_id": "DK5352090030",
+      "nomis_id": "R83581",
+      "pnc_id": "TGSELCC1151",
+      "aliases": [
+        "Bugsy",
+        "Iceman"
+      ]
+    },
+    {
+      "given_names": "Francisca",
+      "family_name": "Kemmer",
+      "dob": "1989-02-03",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right cheek",
+        "tattoo of a spiderweb on right shoulder"
+      ],
+      "offender_id": "ES6786024488",
+      "nomis_id": "P86658",
+      "pnc_id": "DLIIBDK1928",
+      "aliases": [
+        "Cheesy"
+      ]
+    },
+    {
+      "given_names": "Ron",
+      "family_name": "Pouros",
+      "dob": "1977-12-15",
+      "identifying_marks": [
+        "birthmark on left wrist"
+      ],
+      "offender_id": "AD9704000207",
+      "nomis_id": "A83278",
+      "pnc_id": "ORVATDN1",
+      "aliases": [
+        "Turkish",
+        "Sticky Ron"
+      ]
+    },
+    {
+      "given_names": "Dawn",
+      "family_name": "Dicki",
+      "dob": "1971-01-01",
+      "identifying_marks": [
+        "scar on right forearm",
+        "birthmark on right shoulder"
+      ],
+      "offender_id": "MC2674505008",
+      "nomis_id": "S21994",
+      "pnc_id": "GVKACPQ1",
+      "aliases": []
+    },
+    {
+      "given_names": "Lauriane",
+      "family_name": "Wintheiser",
+      "dob": "1980-07-26",
+      "identifying_marks": [],
+      "offender_id": "BH87QPFO2569",
+      "nomis_id": "I61621",
+      "pnc_id": "TQCIALE1882",
+      "aliases": []
+    },
+    {
+      "given_names": "Deangelo",
+      "family_name": "Upton",
+      "dob": "1994-11-23",
+      "identifying_marks": [
+        "tattoo of a spiderweb on right wrist"
+      ],
+      "offender_id": "GI25YNPM1716",
+      "nomis_id": "G73711",
+      "pnc_id": "MTWONGB1738",
+      "aliases": [
+        "Goose",
+        "Little Deangelo"
+      ]
+    },
+    {
+      "given_names": "Margret",
+      "family_name": "Sawayn",
+      "dob": "1994-08-27",
+      "identifying_marks": [],
+      "offender_id": "SM76G2467446",
+      "nomis_id": "P31717",
+      "pnc_id": "YRWIHRL1",
+      "aliases": [
+        "Frosty",
+        "Lucky"
+      ]
+    },
+    {
+      "given_names": "Geoffrey",
+      "family_name": "Bins",
+      "dob": "1967-07-08",
+      "identifying_marks": [
+        "birthmark on left forearm",
+        "tattoo of a spiderweb on right cheek"
+      ],
+      "offender_id": "RO72MQAC9720",
+      "nomis_id": "S37732",
+      "pnc_id": "HRSULVP1",
+      "aliases": []
+    },
+    {
+      "given_names": "Hermann",
+      "family_name": "Waelchi",
+      "dob": "1969-07-02",
+      "identifying_marks": [
+        "scar on right shoulder"
+      ],
+      "offender_id": "GB95VWSF0083",
+      "nomis_id": "C34249",
+      "pnc_id": "BKNATKI1",
+      "aliases": []
+    },
+    {
+      "given_names": "Giles",
+      "family_name": "Deckow",
+      "dob": "1966-06-08",
+      "identifying_marks": [
+        "celtic tattoo on left shoulder",
+        "scar on right wrist"
+      ],
+      "offender_id": "BH12SSHR8W53",
+      "nomis_id": "N19428",
+      "pnc_id": "KGKEMSF1",
+      "aliases": [
+        "Goose"
+      ]
+    },
+    {
+      "given_names": "Ozella",
+      "family_name": "Rowe",
+      "dob": "1963-12-12",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left cheek"
+      ],
+      "offender_id": "SI6525012097",
+      "nomis_id": "B09229",
+      "pnc_id": "SRFEGED1",
+      "aliases": [
+        "Tasty O",
+        "Blaze"
+      ]
+    },
+    {
+      "given_names": "Kaylin",
+      "family_name": "Schinner",
+      "dob": "2001-10-14",
+      "identifying_marks": [],
+      "offender_id": "RO07IYLHC46Q",
+      "nomis_id": "I97881",
+      "pnc_id": "ILAIBOZ1",
+      "aliases": []
+    },
+    {
+      "given_names": "Cory",
+      "family_name": "Bailey",
+      "dob": "1978-02-13",
+      "identifying_marks": [
+        "scar on left cheek"
+      ],
+      "offender_id": "ME3420711096",
+      "nomis_id": "A21175",
+      "pnc_id": "LUEIHTH1",
+      "aliases": [
+        "Big Cory"
+      ]
+    },
+    {
+      "given_names": "Skye",
+      "family_name": "Gottlieb",
+      "dob": "1990-10-18",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left wrist"
+      ],
+      "offender_id": "PL4300106702",
+      "nomis_id": "R56366",
+      "pnc_id": "DUUATZB1",
+      "aliases": []
+    },
+    {
+      "given_names": "Nicolette",
+      "family_name": "Satterfield",
+      "dob": "1979-08-22",
+      "identifying_marks": [
+        "birthmark on left shoulder"
+      ],
+      "offender_id": "MK770052SU60",
+      "nomis_id": "E26986",
+      "pnc_id": "AWSIMOB1",
+      "aliases": [
+        "Bugs",
+        "Ghost"
+      ]
+    },
+    {
+      "given_names": "Ken",
+      "family_name": "Ortiz",
+      "dob": "1993-10-27",
+      "identifying_marks": [
+        "tattoo of a spiderweb on left cheek"
+      ],
+      "offender_id": "RO47CAGOZB41",
+      "nomis_id": "S68690",
+      "pnc_id": "VNUIADO1",
+      "aliases": [
+        "Little Ken",
+        "Foxy"
+      ]
+    },
+    {
+      "given_names": "Darrion",
+      "family_name": "Luettgen",
+      "dob": "1970-01-06",
+      "identifying_marks": [
+        "celtic tattoo on left shoulder",
+        "birthmark on left wrist"
+      ],
+      "offender_id": "IS1000824344",
+      "nomis_id": "A51591",
+      "pnc_id": "KVWETTZ1",
+      "aliases": [
+        "Turkish"
+      ]
+    }
+  ]
+}

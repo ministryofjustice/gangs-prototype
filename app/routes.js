@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var data = require('./assets/data/dataOutput.json'),
+var data = require('./assets/data/dummyNominals.json'),
     nominals = data.nominals;
 
 // Route index page

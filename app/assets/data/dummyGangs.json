@@ -1,0 +1,64 @@
+{
+  "gangs": [
+    {
+      "name": "Peckham Steel Company"
+    },
+    {
+      "name": "Bromley Poor Gang"
+    },
+    {
+      "name": "Brizzle Diamond Family"
+    },
+    {
+      "name": "New Cross Angel Clan"
+    },
+    {
+      "name": "Scarfolk Shady Tribe"
+    },
+    {
+      "name": "Brixton Iron Riders"
+    },
+    {
+      "name": "Coventry Smart Guns"
+    },
+    {
+      "name": "Mersey Joker Collective"
+    },
+    {
+      "name": "Glasgow Tough Mob"
+    },
+    {
+      "name": "Hackney Blind Crew"
+    },
+    {
+      "name": "Southern Rough Skins"
+    },
+    {
+      "name": "Dublin Royal Squad"
+    },
+    {
+      "name": "Toon Rich Posse"
+    },
+    {
+      "name": "West Coast Wild Firm"
+    },
+    {
+      "name": "Norwich Hell Boys"
+    },
+    {
+      "name": "Southwark Dark Lords"
+    },
+    {
+      "name": "Brighton Ghost Group"
+    },
+    {
+      "name": "Deptford Hard Lads"
+    },
+    {
+      "name": "Belfast Ghetto Blades"
+    },
+    {
+      "name": "Dulwich Young Pack"
+    }
+  ]
+}
