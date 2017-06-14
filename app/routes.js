@@ -15,15 +15,15 @@ router.get('/', function (req, res) {
 
 // nominals
 router.get('/test/nominal/rand/', function(req, res) {
-  var n = Math.floor(Math.random() * data.nominals.length);
+  var n = Math.floor(Math.random() * nominals.length);
   res.redirect('/test/nominal/' + n);
 });
 
 router.get('/test/nominal/:index', function(req, res) {
   var nominal = nominals[req.params.index];
   res.render('test/nominal', {
-    next: getNext(req.params.index),
-    prev: getPrev(req.params.index),
+    next: getNext(req.params.index, nominals.length),
+    prev: getPrev(req.params.index, nominals.length),
     nominal: nominal
   });
 });
@@ -35,19 +35,19 @@ router.get('/test/nominal/', function(req, res) {
 
 
 
-function getNext(n) {
+function getNext(n, max) {
   n = parseInt(n, 10) + 1;
-  if(n > data.nominals.length - 1) {
+  if(n > max - 1) {
     n = 0;
   }
 
   return n;
 }
 
-function getPrev(n) {
+function getPrev(n, max) {
   n = parseInt(n, 10) - 1;
   if(n < 0) {
-    n = data.nominals.length - 1;
+    n = max - 1;
   }
 
   return n;
