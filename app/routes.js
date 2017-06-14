@@ -1,8 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-var data = require('./assets/data/dummyNominals.json'),
-    nominals = data.nominals;
+var data = {
+  nominals: require('./assets/data/dummyNominals.json').nominals,
+  gangs: require('./assets/data/dummyGangs.json').gangs
+};
+var nominals = data.nominals;
+var gangs = data.gangs;
 
 // Route index page
 router.get('/', function (req, res) {
@@ -30,6 +34,26 @@ router.get('/test/nominal/:index', function(req, res) {
 
 router.get('/test/nominal/', function(req, res) {
   res.redirect('/test/nominal/0');
+});
+
+
+// gangs
+router.get('/test/gang/rand/', function(req, res) {
+  var n = Math.floor(Math.random() * gangs.length);
+  res.redirect('/test/gang/' + n);
+});
+
+router.get('/test/gang/:index', function(req, res) {
+  var gang = gangs[req.params.index];
+  res.render('test/gang', {
+    next: getNext(req.params.index, gangs.length),
+    prev: getPrev(req.params.index, gangs.length),
+    gang: gang
+  });
+});
+
+router.get('/test/gang/', function(req, res) {
+  res.redirect('/test/gang/0');
 });
 
 

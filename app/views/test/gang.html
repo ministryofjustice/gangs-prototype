@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Gang detail: {{gang.name}}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        {{gang.name}}
+      </h1>
+
+
+      <br><br><br><br>
+      <ul class="nav-links">
+        <li><a href="/test/gang/{{prev}}">Previous</a></li>
+        <li><a href="/test/gang/rand/">Random</a></li>
+        <li><a href="/test/gang/{{next}}">Next</a></li>
+      </ul>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
