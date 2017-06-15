@@ -10,8 +10,6 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <div class="image" style="height:100px;width:100px;background-image:url({{mugshot}})"></div>
-
       <h1 class="heading-xlarge">
         {{nominal.given_names}} {{nominal.family_name}}
       </h1>
@@ -70,7 +68,7 @@
 
     <div class="column-one-third">
       <div class="avatar">
-        <img src="{{asset_path}}/images/avatar-{{nominal.gender | lower}}-512.png" alt="">
+        <img src="{{nominal.mugshot.url}}" alt="{{nominal.given_names}} {{nominal.family_name}}">
       </div>
     </div>
 

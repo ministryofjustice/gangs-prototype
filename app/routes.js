@@ -26,13 +26,10 @@ router.get('/test/nominal/rand/', function(req, res) {
 
 router.get('/test/nominal/:index', function(req, res) {
   var nominal = nominals[req.params.index];
-  var mugshot = mugshots.getImage('male').url; //male or female. Anything else gives you either randomly
-  console.log(mugshot);
   res.render('test/nominal', {
     next: getNext(req.params.index, nominals.length),
     prev: getPrev(req.params.index, nominals.length),
-    nominal: nominal,
-    mugshot: mugshot
+    nominal: nominal
   });
 });
 

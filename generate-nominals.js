@@ -4,6 +4,7 @@ var faker = require('faker');
 var genderGuess = require('gender-guess');
 var unique = require('array-unique');
 var dummyAliases = require('./app/sources/aliases.json');
+var mugshots = require('./app/assets/data/mugshot.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -27,6 +28,7 @@ function init() {
     nominal.given_names = faker.name.firstName();
     nominal.family_name = faker.name.lastName();
     nominal.gender = guessGenderFromName(nominal.given_names);
+    nominal.mugshot = mugshots.getImage(nominal.gender.toLowerCase() === 'm' ? 'male' : 'female');
     nominal.dob = generateDob();
     nominal.identifying_marks = generateIdentifyingMarks();
     nominal.offender_id = generateOffenderId();
