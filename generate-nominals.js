@@ -1,6 +1,7 @@
 var path = require('path');
 var fs = require('fs');
 var faker = require('faker');
+var genderGuess = require('gender-guess');
 var unique = require('array-unique');
 var dummyAliases = require('./app/sources/aliases.json');
 
@@ -17,7 +18,7 @@ if (!nodeModulesExists) {
 var data = {
   nominals: []
 },
-    numNominals = 200;
+    numNominals = 100;
 
 function init() {
   // generate nominals
@@ -25,7 +26,7 @@ function init() {
     var nominal = {};
     nominal.given_names = faker.name.firstName();
     nominal.family_name = faker.name.lastName();
-
+    nominal.gender = guessGenderFromName(nominal.given_names);
     nominal.dob = generateDob();
     nominal.identifying_marks = generateIdentifyingMarks();
     nominal.offender_id = generateOffenderId();
@@ -82,6 +83,19 @@ function generateAliases(firstname) {
   }
 
   return unique(nominalAliases);
+}
+
+function guessGenderFromName(name) {
+  var guess = genderGuess.guess(name),
+      gender;
+
+  if(guess.confidence) {
+    gender = guess.gender;
+  } else {
+    gender = (Math.random() > 0.5 ? 'F' : 'M');
+  }
+
+  return gender;
 }
 
 function generateOffenderId() {
