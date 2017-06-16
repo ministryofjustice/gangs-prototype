@@ -7,7 +7,7 @@ module.exports = {
   serviceName: 'GMT3k',
 
   // Default port that prototype runs on
-  port: '3000',
+  port: '4000',
 
   // Enable or disable password protection on production
   useAuth: 'true',
