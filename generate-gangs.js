@@ -1,8 +1,7 @@
 var path = require('path');
 var fs = require('fs');
-var faker = require('faker');
-var unique = require('array-unique');
 var gangNameParts = require('./app/sources/gangnames.json');
+var quantities = require('./app/sources/quantities.json');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -17,7 +16,7 @@ if (!nodeModulesExists) {
 var data = {
   gangs: []
 },
-    numGangs = 20;
+    numGangs = quantities.gangs;
 
 function init() {
   // generate gangs

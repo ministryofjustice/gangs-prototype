@@ -5,6 +5,7 @@ var genderGuess = require('gender-guess');
 var unique = require('array-unique');
 var dummyAliases = require('./app/sources/aliases.json');
 var mugshots = require('./app/assets/data/mugshot.js');
+var quantities = require('./app/sources/quantities.json');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -19,7 +20,7 @@ if (!nodeModulesExists) {
 var data = {
   nominals: []
 },
-    numNominals = 100;
+    numNominals = quantities.nominals;
 
 function init() {
   // generate nominals
@@ -35,6 +36,7 @@ function init() {
     nominal.nomis_id = generateNomisId();
     nominal.pnc_id = generatePncId();
     nominal.aliases = generateAliases(nominal.given_names);
+    nominal.affiliations = generateAffiliations();
 
     data.nominals.push(nominal);
   }
@@ -112,6 +114,18 @@ function generateNomisId() {
 function generatePncId() {
   return faker.finance.bic();
 }
+
+function generateAffiliations() {
+  var affiliations = [];
+
+  affiliations.push(Math.floor(Math.random() * quantities.gangs));
+
+  if(Math.random() < 0.2) {
+    affiliations.push(Math.floor(Math.random() * quantities.gangs));
+  }
+
+  return unique(affiliations);
+};
 
 function leadingZero(n) {
   return (parseInt(n, 10) < 10 ? '0' + n : n);

@@ -69,6 +69,19 @@
           {% endif %}
         </dd>
 
+        <dt>Known affiliations:</dt>
+        <dd>
+          {% if affiliations.length %}
+            <ul class="list list-bullet">
+              {% for affiliation in affiliations %}
+              <li><a href="/test/gang/{{affiliation.index}}">{{affiliation.name}}</a></li>
+              {% endfor %}
+            </ul>
+          {% else %}
+          none
+          {% endif %}
+        </dd>
+
       </dl>
     </div>
 

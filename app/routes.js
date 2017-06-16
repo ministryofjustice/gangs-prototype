@@ -29,7 +29,8 @@ router.get('/test/nominal/:index', function(req, res) {
   res.render('test/nominal', {
     next: getNext(req.params.index, nominals.length),
     prev: getPrev(req.params.index, nominals.length),
-    nominal: nominal
+    nominal: nominal,
+    affiliations: getAffiliations(nominal.affiliations)
   });
 });
 
@@ -76,6 +77,20 @@ function getPrev(n, max) {
   }
 
   return n;
+}
+
+function getAffiliations(affiliationIndexes) {
+  var affiliations = [];
+
+  affiliationIndexes.forEach(function(index) {
+    var affiliation = {
+      index: index,
+      name: gangs[index].name
+    };
+    affiliations.push(affiliation);
+  });
+
+  return affiliations;
 }
 
 module.exports = router;
