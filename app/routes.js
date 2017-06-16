@@ -19,14 +19,14 @@ router.get('/', function (req, res) {
 // add your routes here
 
 // nominals
-router.get('/test/nominal/rand/', function(req, res) {
+router.get('/nominal/rand/', function(req, res) {
   var n = Math.floor(Math.random() * nominals.length);
-  res.redirect('/test/nominal/' + n);
+  res.redirect('/nominal/' + n);
 });
 
-router.get('/test/nominal/:index', function(req, res) {
+router.get('/nominal/:index', function(req, res) {
   var nominal = nominals[req.params.index];
-  res.render('test/nominal', {
+  res.render('nominal', {
     next: getNext(req.params.index, nominals.length),
     prev: getPrev(req.params.index, nominals.length),
     nominal: nominal,
@@ -34,28 +34,28 @@ router.get('/test/nominal/:index', function(req, res) {
   });
 });
 
-router.get('/test/nominal/', function(req, res) {
-  res.redirect('/test/nominal/0');
+router.get('/nominal/', function(req, res) {
+  res.redirect('/nominal/0');
 });
 
 
 // gangs
-router.get('/test/gang/rand/', function(req, res) {
+router.get('/gang/rand/', function(req, res) {
   var n = Math.floor(Math.random() * gangs.length);
-  res.redirect('/test/gang/' + n);
+  res.redirect('/gang/' + n);
 });
 
-router.get('/test/gang/:index', function(req, res) {
+router.get('/gang/:index', function(req, res) {
   var gang = gangs[req.params.index];
-  res.render('test/gang', {
+  res.render('gang', {
     next: getNext(req.params.index, gangs.length),
     prev: getPrev(req.params.index, gangs.length),
     gang: gang
   });
 });
 
-router.get('/test/gang/', function(req, res) {
-  res.redirect('/test/gang/0');
+router.get('/gang/', function(req, res) {
+  res.redirect('/gang/0');
 });
 
 

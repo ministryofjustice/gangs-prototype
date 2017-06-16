@@ -74,7 +74,7 @@
           {% if affiliations.length %}
             <ul class="list list-bullet">
               {% for affiliation in affiliations %}
-              <li><a href="/test/gang/{{affiliation.index}}">{{affiliation.name}}</a></li>
+              <li><a href="/gang/{{affiliation.index}}">{{affiliation.name}}</a></li>
               {% endfor %}
             </ul>
           {% else %}
@@ -94,9 +94,9 @@
 
       <br><br><br><br>
       <ul class="nav-links">
-        <li><a href="/test/nominal/{{prev}}">Previous</a></li>
-        <li><a href="/test/nominal/rand/">Random</a></li>
-        <li><a href="/test/nominal/{{next}}">Next</a></li>
+        <li><a href="/nominal/{{prev}}">Previous</a></li>
+        <li><a href="/nominal/rand/">Random</a></li>
+        <li><a href="/nominal/{{next}}">Next</a></li>
       </ul>
 
     </div>
