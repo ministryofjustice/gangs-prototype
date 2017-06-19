@@ -48,11 +48,14 @@ router.get('/gang/rand/', function(req, res) {
 });
 
 router.get('/gang/:index', function(req, res) {
-  var gang = gangs[req.params.index];
+  var gang = gangs[req.params.index],
+      gangNominals = getNominals(req.params.index);
+
   res.render('gang', {
     next: getNext(req.params.index, gangs.length),
     prev: getPrev(req.params.index, gangs.length),
-    gang: gang
+    gang: gang,
+    nominals: gangNominals
   });
 });
 
@@ -93,6 +96,23 @@ function getAffiliations(affiliationIndexes) {
   });
 
   return affiliations;
+}
+
+function getNominals(gangIndex) {
+  var gangNominals = [];
+
+  nominals.forEach(function(nominal, n) {
+    var gangContainsNominal = nominal.affiliations.indexOf(parseInt(gangIndex,10)) !== -1;
+
+    if(gangContainsNominal) {
+      gangNominals.push({
+        index: n,
+        name: [nominal.given_names, nominal.family_name].join(' ')
+      });
+    }
+  });
+
+  return gangNominals;
 }
 
 function displayDob(dob) {
