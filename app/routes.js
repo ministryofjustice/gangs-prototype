@@ -30,6 +30,8 @@ router.get('/nominal/:index', function(req, res) {
     next: getNext(req.params.index, nominals.length),
     prev: getPrev(req.params.index, nominals.length),
     nominal: nominal,
+    displayDob: displayDob(nominal.dob),
+    age: getAge(nominal.dob),
     affiliations: getAffiliations(nominal.affiliations)
   });
 });
@@ -91,6 +93,22 @@ function getAffiliations(affiliationIndexes) {
   });
 
   return affiliations;
+}
+
+function displayDob(dob) {
+  var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+  return dob.day + ' ' + months[dob.month - 1] + ' ' + dob.year;
+}
+
+function getAge(dob) {
+  var now = new Date(),
+      then = new Date(dob.year, dob.month - 1, dob.day),
+      elapsed = now.getTime() - then.getTime(),
+      yearInMs = 1000 * 60 * 60 * 24 * 365.25,
+      elapsedYears = Math.floor(elapsed / yearInMs);
+
+  return elapsedYears;
 }
 
 module.exports = router;

@@ -53,7 +53,11 @@ function generateDob() {
       month = Math.floor(Math.random() * 12) + 1,
       day = Math.floor(Math.random() * 28) + 1,
 
-      dob = year + '-' + leadingZero(month) + '-' + leadingZero(day);
+      dob = {
+        day: day,
+        month: month,
+        year: year
+      };
 
   return dob;
 }
