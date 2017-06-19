@@ -24,13 +24,18 @@ router.get('/nominal/rand/', function(req, res) {
   res.redirect('/nominal/' + n);
 });
 
+router.get('/nominal/search/', function(req, res) {
+  var n = Math.floor(Math.random() * nominals.length);
+  res.render('nominal/search', {search: {}});
+});
+
 router.get('/nominal/:index', function(req, res) {
   var nominal = nominals[req.params.index];
-  res.render('nominal', {
+  res.render('nominal/show', {
     next: getNext(req.params.index, nominals.length),
     prev: getPrev(req.params.index, nominals.length),
     nominal: nominal,
-    affiliations: getAffiliations(nominal.affiliations)
+    affiliations: getAffiliations(nominal.affilliations)
   });
 });
 
@@ -82,13 +87,15 @@ function getPrev(n, max) {
 function getAffiliations(affiliationIndexes) {
   var affiliations = [];
 
-  affiliationIndexes.forEach(function(index) {
-    var affiliation = {
-      index: index,
-      name: gangs[index].name
-    };
-    affiliations.push(affiliation);
-  });
+  if(typeof(affiliationIndexes) != 'undefined') {
+    affiliationIndexes.forEach(function(index) {
+      var affiliation = {
+        index: index,
+        name: gangs[index].name
+      };
+      affiliations.push(affiliation);
+    });
+  }
 
   return affiliations;
 }
