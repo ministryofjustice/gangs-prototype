@@ -1,0 +1,129 @@
+{% extends "layouts/govuk_branded.html" %}
+
+{% block page_title %}
+  Nominal search
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Nominal Search
+      </h1>
+
+    </div>
+  </div>
+
+
+  <div class="grid-row">
+    <form action="/nominal/search/action" method="POST" id="nominal-search">
+      <div class="column-two-thirds form-section">
+
+        <div class='form-group'>
+          <fieldset>
+            <legend class="form-label">Date of birth:</legend>
+            <div class="form-date">
+              <div class="form-group form-group-match-type">
+                <label class="label-match-type">type</label>
+                <select name="dob-match-type" id="dob-match-type" class="dob-match-type form-control">
+                  {% for type in ['matches', 'before', 'after'] %}
+                    {% if data['dob-match-type'] == type %}
+                      <option value="{{ type }}" selected>
+                    {% else %}
+                      <option value="{{ type }}">
+                    {% endif %}
+                      {{ type }}
+                    </option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="form-group form-group-day">
+                <label for="dob-day">Day</label>
+                <input type="text" class="form-control" name="dob-day" id="dob-day" value="{{data['dob-day']}}" placeholder="1" />
+              </div>
+              <div class="form-group form-group-month">
+                <label for="dob-month">Month</label>
+                <input type="text" class="form-control" name="dob-month" id="dob-month" value="{{data['dob-month']}}" placeholder="1 or Nov" />
+              </div>
+              <div class="form-group form-group-year">
+                <label for="dob-year">Year</label>
+                <input type="text" class="form-control" name="dob-year" id="dob-year" value="{{data['dob-year']}}" placeholder="1" />
+              </div>
+            </div>
+          </fieldset>
+
+
+        </div>
+
+        <div class='form-group'>
+          <h3>Gender</h3>
+          <fieldset class="inline">
+            <legend class="visually-hidden">Gender</legend>
+            <div class="multiple-choice">
+              <input type="radio" id="gender-m" name="gender" value="M" selected="{{search.gender == 'M'}}" />
+              <label for="gender-m" class="form-label">Male</label>
+            </div>
+            <div class="multiple-choice">
+              <input type="radio" name="gender" value="M" selected="{{search.gender == 'F'}}" />
+              <label class="form-label">Female</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class='form-group'>
+          <label class="form-label">Offender ID:</label>
+          <input type="text" class="form-control" name="offender_id" value="{{search.offender_id}}" placeholder="for example, 1234567"/>
+        </div>
+
+        <div class='form-group'>
+          <label class="form-label">NOMIS ID:</label>
+          <input type="text" class="form-control" name="nomis_id" value="{{search.nomis_id}}" placeholder="for example, A1234BC"/>
+        </div>
+
+        <div class='form-group'>
+          <label class="form-label">PNC ID:</label>
+          <input type="text" class="form-control" name="pnc_id" placeholder="for example, 12/345678A" value="{{search.pnc_id}}" />
+        </div>
+
+        <div class='form-group'>
+          <label class="form-label">Identifying marks:</label>
+          <input type="text" class="form-control" name="identifying_marks" value="" placeholder="for example, scar on right shoulder" />
+        </div>
+
+        <div class='form-group'>
+          <label class="form-label">Known aliases:</label>
+          <input type="text" class="form-control" name="aliases" value="" placeholder="for example, Eazy F"/>
+        </div>
+
+        <div class='form-group'>
+          <label class="form-label">Known affiliations:</label>
+          <input type="text" class="form-control" name="affiliated_gang_name" value="" placeholder="OCG name or partial OCG name, for example 'Gas Gang'" />
+        </div>
+
+        <input type="submit" class="button" value="Search" />
+      </div>
+    </form>
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <br><br><br><br>
+      <ul class="nav-links">
+        <li><a href="/nominal/{{prev}}">Previous</a></li>
+        <li><a href="/nominal/rand/">Random</a></li>
+        <li><a href="/nominal/{{next}}">Next</a></li>
+      </ul>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
