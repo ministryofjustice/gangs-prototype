@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Nominal search
+  Nominal Search Results
 {% endblock %}
 
 {% block content %}
@@ -11,19 +11,34 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        Nominal Search
+        Nominal Search Results
       </h1>
 
     </div>
   </div>
 
+
   <div class="grid-row">
-  {% include 'includes/search_form.html' %}
+    <details>
+      <summary><span class="summary">Refine your search</span></summary>
+      <div class="panel panel-border-narrow">
+        {% include 'includes/search_form.html' %}
+      </div>
+    </details>
   </div>
-  
+  <div class="grid-row">
+    <ol class="results-list">
+    {% for result in search_results %}
+      <li class="grid-row">
+        {% include 'includes/search_result.html' %}
+      </li>
+    {% endfor %}
+    </ol>
+  </div>
+
+
   <div class="grid-row">
     <div class="column-two-thirds">
-
 
       <br><br><br><br>
       <ul class="nav-links">

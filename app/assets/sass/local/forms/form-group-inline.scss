@@ -1,0 +1,22 @@
+
+.form-group-inline {
+  float: left;
+  width: 150px;
+
+  margin-right: 20px;
+  margin-bottom: 0;
+  clear: none;
+
+  label {
+    display: block;
+    padding-bottom: 2px;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+.form-group-inline-long {
+  width: 300px;
+}

@@ -24,11 +24,25 @@ router.get('/nominal/rand/', function(req, res) {
   res.redirect('/nominal/' + n);
 });
 
+// search-related routes
 router.get('/nominal/search/', function(req, res) {
   res.redirect('/nominal/search/new');
 });
 router.get('/nominal/search/new', function(req, res) {
   res.render('nominal/search/new', {search: {}});
+});
+router.get('/nominal/search/results', function(req, res) {
+  var results = nominal_search(req.params);
+  var page=req.query['page'] || 1;
+  var per_page=req.query['per_page'] || 20;
+
+  var paginated_results = paginate(results, page, per_page);
+
+  res.render('nominal/search/results', {
+    search_results: paginated_results,
+    page: page,
+    per_page: page
+  });
 });
 
 router.get('/nominal/:index', function(req, res) {
@@ -100,6 +114,21 @@ function getAffiliations(affiliationIndexes) {
   }
 
   return affiliations;
+}
+
+function nominal_search(params) {
+  var filtered_nominals = nominals.map( function(element, index){ element['index'] = index; return element; } );
+  return nominals;
+}
+
+function paginate(array, page, per_page) {
+  page=page || 1;
+  per_page=per_page || 20;
+
+  var start=(page - 1) * per_page;
+  var end=start + per_page;
+
+  return array.slice(start, end);
 }
 
 module.exports = router;
