@@ -15,11 +15,21 @@
       </h1>
 
       <h2 class="heading-medium">Known nominals:</h2>
-
       {% if nominals.length %}
         <ul class="list list-bullet">
           {% for nominal in nominals %}
           <li><a href="/nominal/{{nominal.index}}">{{nominal.name}}</a></li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>none</p>
+      {% endif %}
+
+      <h2 class="heading-medium">Known tensions:</h2>
+      {% if tensions.length %}
+        <ul class="list list-bullet">
+          {% for tension in tensions %}
+          <li><a href="/gang/{{tension.gang.index}}">{{tension.gang.name}}</a> - Tension level: {{tension.tensionLevel}}</li>
           {% endfor %}
         </ul>
       {% else %}

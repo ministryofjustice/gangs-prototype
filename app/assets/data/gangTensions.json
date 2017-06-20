@@ -1,0 +1,74 @@
+{
+  "tensions": [
+    {
+      "indices": [
+        5,
+        11
+      ],
+      "tensionLevel": "high"
+    },
+    {
+      "indices": [
+        2,
+        11
+      ],
+      "tensionLevel": "high"
+    },
+    {
+      "indices": [
+        7,
+        11
+      ],
+      "tensionLevel": "low"
+    },
+    {
+      "indices": [
+        8,
+        13
+      ],
+      "tensionLevel": "medium"
+    },
+    {
+      "indices": [
+        6,
+        16
+      ],
+      "tensionLevel": "high"
+    },
+    {
+      "indices": [
+        1,
+        14
+      ],
+      "tensionLevel": "low"
+    },
+    {
+      "indices": [
+        0,
+        2
+      ],
+      "tensionLevel": "low"
+    },
+    {
+      "indices": [
+        0,
+        11
+      ],
+      "tensionLevel": "high"
+    },
+    {
+      "indices": [
+        12,
+        17
+      ],
+      "tensionLevel": "high"
+    },
+    {
+      "indices": [
+        1,
+        17
+      ],
+      "tensionLevel": "high"
+    }
+  ]
+}

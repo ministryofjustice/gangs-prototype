@@ -3,7 +3,8 @@ var router = express.Router();
 
 var data = {
   nominals: require('./assets/data/dummyNominals.json').nominals,
-  gangs: require('./assets/data/dummyGangs.json').gangs
+  gangs: require('./assets/data/dummyGangs.json').gangs,
+  tensions: require('./assets/data/gangTensions.json').tensions
 };
 var nominals = data.nominals;
 var gangs = data.gangs;
@@ -49,13 +50,15 @@ router.get('/gang/rand/', function(req, res) {
 
 router.get('/gang/:index', function(req, res) {
   var gang = gangs[req.params.index],
-      gangNominals = getNominals(req.params.index);
+      gangNominals = getNominals(req.params.index),
+      tensions = getGangTensions(req.params.index);
 
   res.render('gang', {
     next: getNext(req.params.index, gangs.length),
     prev: getPrev(req.params.index, gangs.length),
     gang: gang,
-    nominals: gangNominals
+    nominals: gangNominals,
+    tensions: tensions
   });
 });
 
@@ -113,6 +116,28 @@ function getNominals(gangIndex) {
   });
 
   return gangNominals;
+}
+
+function getGangTensions(gangIndex) {
+  var gangTensions = [];
+
+  data.tensions.forEach(function(tension) {
+    var gangIndexPosition = tension.indices.indexOf(parseInt(gangIndex, 10));
+
+    if(gangIndexPosition !== -1) {
+      // one of the parties in this tension is gangIndex
+      var otherGang = parseInt((gangIndexPosition === 0 ? tension.indices[1] : tension.indices[0]), 10);
+      gangTensions.push({
+        gang: {
+          index: otherGang,
+          name: data.gangs[otherGang].name
+        },
+        tensionLevel: tension.tensionLevel
+      });
+    }
+  });
+
+  return gangTensions;
 }
 
 function displayDob(dob) {
