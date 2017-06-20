@@ -25,8 +25,10 @@ router.get('/nominal/rand/', function(req, res) {
 });
 
 router.get('/nominal/search/', function(req, res) {
-  var n = Math.floor(Math.random() * nominals.length);
-  res.render('nominal/search', {search: {}});
+  res.redirect('/nominal/search/new');
+});
+router.get('/nominal/search/new', function(req, res) {
+  res.render('nominal/search/new', {search: {}});
 });
 
 router.get('/nominal/:index', function(req, res) {
