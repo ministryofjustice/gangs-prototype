@@ -10,9 +10,11 @@ var nominals = data.nominals;
 var gangs = data.gangs;
 var mugshots = require('./assets/data/mugshot.js');
 
-// Route index page
+
+
+// Temporarily route index page to default first nominal
 router.get('/', function (req, res) {
-  res.render('index');
+  res.redirect('/nominal/0');
 });
 
 
