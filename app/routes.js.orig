@@ -139,8 +139,6 @@ function paginate(array, page, per_page) {
   var end=start + per_page;
 
   return array.slice(start, end);
-}
-
 function getNominals(gangIndex) {
   var gangNominals = [];
 
