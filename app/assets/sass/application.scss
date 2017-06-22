@@ -13,8 +13,11 @@ $path: "/public/images/";
 // local styles
 @import 'local/lists';
 @import 'local/images';
+@import 'local/forms/tick.scss';
 @import 'local/forms/form-date.scss';
 @import 'local/forms/form-group-inline.scss';
+
+
 
 // Related items
 // (These styles will be moved to GOV.UK elements, duplicating here for now.)
@@ -42,3 +45,5 @@ $path: "/public/images/";
     display:block;
     clear:both;
 }
+
+

@@ -1,0 +1,56 @@
+//adjust input to allow tick to be aligned
+.form-control{
+  float:left;
+  -webkit-transition: width 0.15s;
+  -moz-transition: width 0.15s;
+  -ms-transition: width 0.15s;
+  -o-transition: width 0.15s;
+  transition: width 0.15s;
+}
+.form-validated{
+  @include media(mobile) {
+      width:calc(100% - 3.5em);
+      -webkit-transition: width 0.15s;
+      -moz-transition: width 0.15s;
+      -ms-transition: width 0.15s;
+      -o-transition: width 0.15s;
+      transition: width 0.15s;
+  }
+}
+.validate{
+  height:2em;
+  width:2em;
+  float:left;
+  margin-left:1.5em;
+  @include media(mobile) {
+    position:absolute;
+    right:1em;
+  }
+}
+.hidden{
+  visibility: none;
+}
+.circ{
+  opacity: 0;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.tick{
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  -webkit-transition: stroke-dashoffset 0.5s 0s ease-out;
+  -moz-transition: stroke-dashoffset 0.5s 0s ease-out;
+  -ms-transition: stroke-dashoffset 0.5s 0s ease-out;
+  -o-transition: stroke-dashoffset 0.5s 0s ease-out;
+  transition: stroke-dashoffset 0.5s 0s ease-out;
+}
+.drawn + svg .path{
+  opacity: 1;
+  stroke-dashoffset: 0;
+  transition-delay: 0.15s;
+}
