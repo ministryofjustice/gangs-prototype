@@ -11,9 +11,9 @@ var ocgs = require('./assets/data/dummyOcgs.json').ocgs;
 
 
 
-// Temporarily route index page to default first nominal
+// root - login page
 router.get('/', function (req, res) {
-  res.redirect('/nominal/0');
+  res.render('index');
 });
 
 

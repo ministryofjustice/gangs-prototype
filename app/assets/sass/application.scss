@@ -11,6 +11,8 @@ $path: "/public/images/";
 @import 'patterns/task-list';
 
 // local styles
+@import 'local/demo';
+@import 'local/typography';
 @import 'local/lists';
 @import 'local/images';
 @import 'local/forms/tick.scss';

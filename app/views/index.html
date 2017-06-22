@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  SGO Data Sharing Platform
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">
+    SGO Data Sharing Platform
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h2 class="heading-large">Sign in</h2>
+
+      <form action="home" method="post">
+        <div class="form-group">
+          <label class="form-label" for="username">Username:</label>
+          <input class="form-control" type="text" name="username" id="username" value="prison-officer@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Password:</label>
+          <input class="form-control" type="password" name="password" id="password" value="12345678">
+        </div>
+
+        <input type="hidden" id="user_type" name="user_type" value="prison-officer">
+
+        <input type="submit" class="button" value="Sign in">
+      </form>
+
+    </div>
+
+    <div class="column-one-third">
+
+      <div class="demo">
+
+        <h2 class="heading-medium">Simulate sign in as:</h2>
+        <fieldset class="user-type">
+          <div class="multiple-choice">
+            <input type="radio" id="select-user-type_prison-officer" name="select-user-type" value="prison-officer" checked>
+            <label for="select-user-type_prison-officer">Prison officer</label>
+          </div>
+          <div class="multiple-choice">
+            <input type="radio" id="select-user-type_probation-officer" name="select-user-type" value="probation-officer">
+            <label for="select-user-type_probation-officer">Probation officer</label>
+          </div>
+          <div class="multiple-choice">
+            <input type="radio" id="select-user-type_police-officer" name="select-user-type" value="police-officer">
+            <label for="select-user-type_police-officer">Police officer</label>
+          </div>
+        </fieldset>
+
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

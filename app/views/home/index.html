@@ -1,0 +1,15 @@
+{% extends "govuk_template_unbranded.html" %}
+
+{% block page_title %}
+  Mock Home Page
+{% endblock %}
+
+{% block content %}
+
+<h1>Home</h1>
+
+<p>
+The user is logged in as user type '<strong>{{data['user_type']}}</strong>' and their home page displays here.
+</p>
+
+{% endblock %}
