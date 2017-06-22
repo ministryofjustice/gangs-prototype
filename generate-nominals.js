@@ -122,10 +122,10 @@ function generatePncId() {
 function generateAffiliations() {
   var affiliations = [];
 
-  affiliations.push(Math.floor(Math.random() * quantities.gangs));
+  affiliations.push(Math.floor(Math.random() * quantities.ocgs));
 
   if(Math.random() < 0.2) {
-    affiliations.push(Math.floor(Math.random() * quantities.gangs));
+    affiliations.push(Math.floor(Math.random() * quantities.ocgs));
   }
 
   return unique(affiliations);

@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Gang detail: {{gang.name}}
+  OCG detail: {{ocg.name}}
 {% endblock %}
 
 {% block content %}
@@ -11,7 +11,7 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        {{gang.name}}
+        {{ocg.name}}
       </h1>
 
       <h2 class="heading-medium">Known nominals:</h2>
@@ -29,7 +29,7 @@
       {% if tensions.length %}
         <ul class="list list-bullet">
           {% for tension in tensions %}
-          <li><a href="/gang/{{tension.gang.index}}">{{tension.gang.name}}</a> - Tension level: {{tension.tensionLevel}}</li>
+          <li><a href="/ocg/{{tension.ocg.index}}">{{tension.ocg.name}}</a> - Tension level: {{tension.tensionLevel}}</li>
           {% endfor %}
         </ul>
       {% else %}
@@ -39,9 +39,9 @@
 
       <br><br><br><br>
       <ul class="nav-links">
-        <li><a href="/gang/{{prev}}">Previous</a></li>
-        <li><a href="/gang/rand/">Random</a></li>
-        <li><a href="/gang/{{next}}">Next</a></li>
+        <li><a href="/ocg/{{prev}}">Previous</a></li>
+        <li><a href="/ocg/rand/">Random</a></li>
+        <li><a href="/ocg/{{next}}">Next</a></li>
       </ul>
 
     </div>

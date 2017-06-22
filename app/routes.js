@@ -4,10 +4,10 @@ var router = express.Router();
 var mugshots = require('./modules/mugshot.js');
 var nav = require('./modules/navigation.js');
 var nominalTools = require('./modules/nominal-tools.js');
-var gangTools = require('./modules/gang-tools.js');
+var ocgTools = require('./modules/ocg-tools.js');
 
 var nominals = require('./assets/data/dummyNominals.json').nominals;
-var gangs = require('./assets/data/dummyGangs.json').gangs;
+var ocgs = require('./assets/data/dummyOcgs.json').ocgs;
 
 
 
@@ -61,28 +61,28 @@ router.get('/nominal/', function(req, res) {
 });
 
 
-// gangs
-router.get('/gang/rand/', function(req, res) {
-  var n = Math.floor(Math.random() * gangs.length);
-  res.redirect('/gang/' + n);
+// ocgs
+router.get('/ocg/rand/', function(req, res) {
+  var n = Math.floor(Math.random() * ocgs.length);
+  res.redirect('/ocg/' + n);
 });
 
-router.get('/gang/:index', function(req, res) {
-  var gang = gangs[req.params.index],
-      gangNominals = gangTools.getNominals(req.params.index),
-      tensions = gangTools.getGangTensions(req.params.index);
+router.get('/ocg/:index', function(req, res) {
+  var ocg = ocgs[req.params.index],
+      ocgNominals = ocgTools.getNominals(req.params.index),
+      tensions = ocgTools.getOcgTensions(req.params.index);
 
-  res.render('gang', {
-    next: nav.next(req.params.index, gangs.length),
-    prev: nav.prev(req.params.index, gangs.length),
-    gang: gang,
-    nominals: gangNominals,
+  res.render('ocg', {
+    next: nav.next(req.params.index, ocgs.length),
+    prev: nav.prev(req.params.index, ocgs.length),
+    ocg: ocg,
+    nominals: ocgNominals,
     tensions: tensions
   });
 });
 
-router.get('/gang/', function(req, res) {
-  res.redirect('/gang/0');
+router.get('/ocg/', function(req, res) {
+  res.redirect('/ocg/0');
 });
 
 

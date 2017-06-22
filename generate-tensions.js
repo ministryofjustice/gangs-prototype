@@ -15,7 +15,7 @@ if (!nodeModulesExists) {
 var data = {
   tensions: []
 },
-    numGangs = quantities.gangs,
+    numOcgs = quantities.ocgs,
     numTensions = quantities.tensions,
     tensionLevels = ['high', 'medium', 'low'];
 
@@ -55,18 +55,18 @@ function addtensionLevels() {
 }
 
 function writeTensionsFile() {
-  fs.writeFile('./app/assets/data/gangTensions.json', JSON.stringify(data, null, 2), 'utf-8');
+  fs.writeFile('./app/assets/data/ocgTensions.json', JSON.stringify(data, null, 2), 'utf-8');
 }
 
 function createTension() {
-  var gang1 = Math.floor(Math.random() * numGangs),
-      gang2 = Math.floor(Math.random() * numGangs);
+  var ocg1 = Math.floor(Math.random() * numOcgs),
+      ocg2 = Math.floor(Math.random() * numOcgs);
 
-  if(gang1 === gang2) {
+  if(ocg1 === ocg2) {
     return false;
   }
 
-  var beef = [gang1, gang2];
+  var beef = [ocg1, ocg2];
   beef.sort(function(a, b) {
     return a - b;
   });

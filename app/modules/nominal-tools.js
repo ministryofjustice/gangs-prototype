@@ -1,5 +1,5 @@
 // nominal tools module
-var gangs = require('../assets/data/dummyGangs.json').gangs;
+var ocgs = require('../assets/data/dummyOcgs.json').ocgs;
 
 var nominal = {
   displayDob: function(dob) {
@@ -22,7 +22,7 @@ var nominal = {
     affiliationIndexes.forEach(function(index) {
       var affiliation = {
         index: index,
-        name: gangs[index].name
+        name: ocgs[index].name
       };
       affiliations.push(affiliation);
     });
