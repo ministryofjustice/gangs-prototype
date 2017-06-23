@@ -2,11 +2,6 @@
 var ocgs = require('../assets/data/dummyOcgs.json').ocgs;
 
 var nominal = {
-  displayDob: function(dob) {
-    var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-
-    return dob.day + ' ' + months[dob.month - 1] + ' ' + dob.year;
-  },
   getAge: function(dob) {
     var now = new Date(),
         then = new Date(dob.year, dob.month - 1, dob.day),

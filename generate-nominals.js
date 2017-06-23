@@ -4,7 +4,7 @@ var faker = require('faker');
 var genderGuess = require('gender-guess');
 var unique = require('array-unique');
 var dummyAliases = require('./app/sources/aliases.json');
-var mugshots = require('./app/assets/data/mugshot.js');
+var mugshots = require('./app/modules/mugshot.js');
 var quantities = require('./app/sources/quantities.json');
 
 // Check if node_modules folder exists
@@ -52,12 +52,14 @@ function generateDob() {
       year = Math.floor(Math.random() * yearRange) + yearRangeLow,
       month = Math.floor(Math.random() * 12) + 1,
       day = Math.floor(Math.random() * 28) + 1,
-
+      monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
       dob = {
         day: day,
         month: month,
         year: year
       };
+
+  dob.displayDob = dob.day + ' ' + monthNames[dob.month - 1] + ' ' + dob.year;
 
   return dob;
 }

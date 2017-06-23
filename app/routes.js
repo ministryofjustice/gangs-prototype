@@ -50,7 +50,6 @@ router.get('/nominal/:index', function(req, res) {
     next: nav.next(req.params.index, nominals.length),
     prev: nav.prev(req.params.index, nominals.length),
     nominal: nominal,
-    displayDob: nominalTools.displayDob(nominal.dob),
     age: nominalTools.getAge(nominal.dob),
     affiliations: nominalTools.getAffiliations(nominal.affiliations)
   });
