@@ -49,11 +49,10 @@
           {% if i == page %}
             <li><strong>{{ i }}</strong></li>
           {% else %}
-            <li><a href="/nominal/search/results?page={{i}}&per_page={{per_page}}">{{ i }}</a></li>          
+            <li><a href="/nominal/search/results?page={{i}}&per_page={{per_page}}">{{ i }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
-
     </div>
   </div>
 </main>
