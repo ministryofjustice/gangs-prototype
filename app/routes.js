@@ -9,6 +9,7 @@ var ocgTools = require('./modules/ocg-tools.js');
 var nominals = require('./assets/data/dummyNominals.json').nominals;
 var ocgs = require('./assets/data/dummyOcgs.json').ocgs;
 
+var paginator = require('./modules/paginator.js')
 
 
 // root - login page
@@ -31,16 +32,18 @@ router.get('/nominal/search/new', function(req, res) {
   res.render('nominal/search/new', {search: {}});
 });
 router.get('/nominal/search/results', function(req, res) {
-  var results = nominal_search(req.params);
+  var results = nominalTools.search(req.params);
   var page=req.query['page'] || 1;
   var per_page=req.query['per_page'] || 20;
+  var pages=results.length / (per_page > 0 ? per_page : 1);
 
-  var paginated_results = paginate(results, page, per_page);
+  var paginated_results = paginator.visibleElements(results, page, per_page);
 
   res.render('nominal/search/results', {
     search_results: paginated_results,
     page: page,
-    per_page: page
+    pages: pages,
+    per_page: per_page
   });
 });
 

@@ -31,7 +31,7 @@
   <div class="grid-row">
     <ol class="results-list">
     {% for result in search_results %}
-      <li class="grid-row">
+      <li class="search-result">
         {% include 'includes/search_result.html' %}
       </li>
     {% endfor %}
@@ -44,9 +44,14 @@
 
       <br><br><br><br>
       <ul class="nav-links">
-        <li><a href="/nominal/{{prev}}">Previous</a></li>
-        <li><a href="/nominal/rand/">Random</a></li>
-        <li><a href="/nominal/{{next}}">Next</a></li>
+        <li>Page: </li>
+        {% for i in range(1,pages) %}
+          {% if i == page %}
+            <li><strong>{{ i }}</strong></li>
+          {% else %}
+            <li><a href="/nominal/search/results?page={{i}}&per_page={{per_page}}">{{ i }}</a></li>          
+          {% endif %}
+        {% endfor %}
       </ul>
 
     </div>

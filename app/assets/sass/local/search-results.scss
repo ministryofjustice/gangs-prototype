@@ -1,0 +1,42 @@
+.search-result {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.search-result-avatar-wrapper {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+
+  @include media(mobile) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.search-result-detail {
+  float: left;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+/* inline dl's for the nominal search results */
+.results-list dl {
+  clear: both;
+  
+  dt, dd {
+    clear: none;
+    display: inline-block;
+    float: none;
+  }
+  dd {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  dt {
+    font-weight: normal;
+  }
+}

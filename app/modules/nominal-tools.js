@@ -1,5 +1,6 @@
 // nominal tools module
 var ocgs = require('../assets/data/dummyOcgs.json').ocgs;
+var nominals = require('../assets/data/dummyNominals.json').nominals;
 
 var nominal = {
   getAge: function(dob) {
@@ -23,6 +24,11 @@ var nominal = {
     });
 
     return affiliations;
+  },
+
+  search: function(params) {
+    var filtered_nominals = nominals.map( function(element, index){ element['index'] = index; return element; } );
+    return nominals;
   }
 };
 
