@@ -1,10 +1,16 @@
 .heading-inner{
   float:left;
+  @include media(mobile) {
+    float:none;
+  }
 }
 .system-ids{
   float:right;
   font-size:0.8em;
   color:#888;
+  @include media(mobile) {
+    float:none;
+  }
 }
 .search-result {
   margin-bottom: 35px;
@@ -26,6 +32,10 @@
 .search-result-detail {
   float: left;
   width:82%;
+  @include media(mobile) {
+    padding: 0 15px;
+    width: calc(100% - 30px);
+  }
   h3 {
     margin: 0;
   }
