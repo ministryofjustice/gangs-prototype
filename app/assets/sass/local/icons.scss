@@ -1,0 +1,21 @@
+.search-outer{
+	height:2em;
+	width:2em;
+	position:absolute;
+	right: $gutter;
+	top:1em;
+	@include media(tablet) {
+		right: $gutter;
+	}	
+	@include media(mobile) {
+		right: $gutter-half;
+	}
+	@media (min-width: 960px) {
+		right: calc((100% - 960px)/2);	
+	}	
+}
+.search-inner{
+	@include icon('icon-search', 30 , 22 , false);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
