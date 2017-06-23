@@ -5,60 +5,58 @@
 
 
 <div class="search-result-detail">
-  <h3 class="heading-medium">
-    <a href="/nominal/{{result.index}}">{{result.given_names}} {{result.family_name}}</a>
-  </h3>
-  <dl class="aliases">
-    <dt>Known aliases:</dt>
+  <div class="heading-container">
+    <div class = "heading-inner">
+      <h3 class="heading-medium">
+        <a href="/nominal/{{result.index}}">{{result.given_names}} {{result.family_name}}</a>
+      </h3>
+    </div>
+    <div class="system-ids">
+      <span>NOMIS ID:</span>
+      <span>{{result.nomis_id}}</span>
+      <span>PNC ID:</span>
+      <span>{{result.pnc_id}}</span>
+    </div>
+  </div>
+  <dl>
+    <dt>Gender:</dt>
     <dd>
-      {% if result.aliases.length %}
-        {{ result.aliases.join(', ') }}
+      {% if result.gender === 'M' %}
+      Male
       {% else %}
-      none
+      Female
       {% endif %}
     </dd>
-  </dl>
-  <dl>
     <dt>Date of birth:</dt>
     <dd>{{result.dob.displayDob}}</dd>
-
-    <dt>Gender:</dt>
-    <dd>{{result.gender}}</dd>
   </dl>
+  {% if result.aliases.length %}
+    <dl class="aliases">
+      <dt>Known aliases:</dt>
+      <dd>
+          {{ result.aliases.join(', ') }}
+      </dd>
+    </dl>
+  {% endif %}
 
-  <dl class="system-ids">
-    <dt>Offender ID:</dt>
-    <dd>{{result.offender_id}}</dd>
-
-    <dt>NOMIS ID:</dt>
-    <dd>{{result.nomis_id}}</dd>
-
-    <dt>PNC ID:</dt>
-    <dd>{{result.pnc_id}}</dd>
-  </dl>
-  <dl class="marks">
-    <dt>Identifying marks:</dt>
-    <dd>
-      {% if result.identifying_marks.length %}
-        {{ result.identifying_marks.join(', ') }}
-      {% else %}
-        none
-      {% endif %}
-    </dd>
-  </dl>
-  <dl class="affiliations">
-    <dt>Known affiliations:</dt>
-    <dd>
-      {% if affiliations.length %}
-        <ul class="list list-bullet">
-          {% for affiliation in affiliations %}
-          <li><a href="/ocg/{{affiliation.index}}">{{affiliation.name}}</a></li>
-          {% endfor %}
-        </ul>
-      {% else %}
-      none
-      {% endif %}
-    </dd>
-
-  </dl>
+  {% if result.identifying_marks.length %}
+    <dl class="marks">
+      <dt>Identifying marks:</dt>
+      <dd>     
+          {{ result.identifying_marks.join(', ') }}
+      </dd>
+    </dl>
+  {% endif %}
+  {% if affiliations.length %}
+    <dl class="affiliations">
+      <dt>Known affiliations:</dt>
+      <dd>
+          <ul class="list list-bullet">
+            {% for affiliation in affiliations %}
+            <li><a href="/ocg/{{affiliation.index}}">{{affiliation.name}}</a></li>
+            {% endfor %}
+          </ul>
+      </dd>
+    </dl>
+  {% endif %}
 </div>

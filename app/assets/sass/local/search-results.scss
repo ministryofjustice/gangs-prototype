@@ -1,5 +1,13 @@
+.heading-inner{
+  float:left;
+}
+.system-ids{
+  float:right;
+  font-size:0.8em;
+  color:#888;
+}
 .search-result {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   margin-top: 20px;
   overflow: hidden;
 }
@@ -7,7 +15,7 @@
 .search-result-avatar-wrapper {
   display: inline-block;
   float: left;
-  margin-right: 10px;
+  margin-right: 25px;
 
   @include media(mobile) {
     text-align: center;
@@ -17,7 +25,7 @@
 
 .search-result-detail {
   float: left;
-
+  width:82%;
   h3 {
     margin: 0;
   }
