@@ -28,16 +28,3 @@ dd {
   }
 }
 
-/* inline dl's for the nominal search results */
-.results-list dl {
-  clear: both;
-  
-  dt, dd {
-    clear: none;
-    display: inline-block;
-    float: none;
-  }
-  dd {
-    margin-right: 10px;
-  }
-}

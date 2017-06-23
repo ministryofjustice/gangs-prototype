@@ -19,7 +19,6 @@
     </div>
   </div>
 
-
   <div class="grid-row">
     <details>
       <summary><span class="summary">Refine your search</span></summary>
@@ -28,29 +27,20 @@
       </div>
     </details>
   </div>
+  
+  {% include 'includes/pagination.html' %}
+  
   <div class="grid-row">
     <ol class="results-list">
     {% for result in search_results %}
-      <li class="grid-row">
+      <li class="search-result">
         {% include 'includes/search_result.html' %}
       </li>
     {% endfor %}
     </ol>
   </div>
 
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
-
-      <br><br><br><br>
-      <ul class="nav-links">
-        <li><a href="/nominal/{{prev}}">Previous</a></li>
-        <li><a href="/nominal/rand/">Random</a></li>
-        <li><a href="/nominal/{{next}}">Next</a></li>
-      </ul>
-
-    </div>
-  </div>
+  {% include 'includes/pagination.html' %}
 </main>
 
 {% endblock %}

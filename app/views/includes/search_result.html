@@ -1,11 +1,13 @@
-<div class="column-one-third">
+<div class="search-result-avatar-wrapper">
   <div class="avatar avatar-thumb" style="background-image:url({{result.mugshot.url}})" title="{{result.given_names}} {{result.family_name}}">
   </div>
 </div>
 
-<h3 class="heading-medium">
-  <a href="/nominal/{{result.index}}">{{result.given_names}} {{result.family_name}}</a></h3>
-<div class="column-two-thirds">
+
+<div class="search-result-detail">
+  <h3 class="heading-medium">
+    <a href="/nominal/{{result.index}}">{{result.given_names}} {{result.family_name}}</a>
+  </h3>
   <dl class="aliases">
     <dt>Known aliases:</dt>
     <dd>
@@ -18,11 +20,12 @@
   </dl>
   <dl>
     <dt>Date of birth:</dt>
-    <dd>{{result.dob}}</dd>
+    <dd>{{result.dob.displayDob}}</dd>
 
     <dt>Gender:</dt>
     <dd>{{result.gender}}</dd>
   </dl>
+
   <dl class="system-ids">
     <dt>Offender ID:</dt>
     <dd>{{result.offender_id}}</dd>
@@ -33,21 +36,17 @@
     <dt>PNC ID:</dt>
     <dd>{{result.pnc_id}}</dd>
   </dl>
-  <dl>
+  <dl class="marks">
     <dt>Identifying marks:</dt>
     <dd>
       {% if result.identifying_marks.length %}
-        <ul class="list list-bullet">
-          {% for mark in result.identifying_marks %}
-          <li>{{mark}}</li>
-          {% endfor %}
-        </ul>
+        {{ result.identifying_marks.join(', ') }}
       {% else %}
-      none
+        none
       {% endif %}
     </dd>
-
-
+  </dl>
+  <dl class="affiliations">
     <dt>Known affiliations:</dt>
     <dd>
       {% if affiliations.length %}
