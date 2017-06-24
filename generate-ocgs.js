@@ -27,11 +27,26 @@ function init() {
         suffix = getOcgPart('suffixes');
 
     ocg.name = [area, prefix, suffix].join(' ');
-
+    ocg.aliases = generateOCGAliases(name, area, prefix, suffix);
     data.ocgs.push(ocg);
   }
 
   fs.writeFile('./app/assets/data/dummyOcgs.json', JSON.stringify(data, null, 2), 'utf-8');
+}
+
+
+function generateOCGAliases(name, area, prefix, suffix) {
+  var aliases = [];
+  for( i = 0; i < 2; i++ ){
+    var aliasPartIndex = 0
+    if( Math.random > 0.9 ){
+      aliasPartIndex = aliasPartIndex + 1;
+      var aliasPart = ['areas', 'prefixes', 'suffixes'][aliasPartIndex];
+      var newPart = getOcgPart(aliasPart);
+      if( aliases.push(alias);
+    }
+  }
+
 }
 
 function getOcgPart(partType) {
