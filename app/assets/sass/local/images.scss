@@ -21,4 +21,10 @@
 .avatar-thumb {
   width: 10vw;
   height: 10vw;
+  @include media(mobile) {
+    width: calc(100% - 30px);
+    height: 85vw; 
+    border-radius: 3vw;
+    margin-bottom: 1em;   
+  }
 }
