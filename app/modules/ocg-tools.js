@@ -40,6 +40,11 @@ var ocg = {
     });
 
     return ocgTensions;
+  },
+
+  search: function(params) {
+    var filtered_ocgs = ocgs.map( function(element, index){ element['index'] = index; return element; } );
+    return ocgs;
   }
 };
 
