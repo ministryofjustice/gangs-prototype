@@ -26,6 +26,7 @@ function init() {
 
     ocg.name = nameAsString(name);
     ocg.aliases = generateOCGAliases(name).map(nameAsString);
+    ocg.territory = generateTerritory(name);
     data.ocgs.push(ocg);
   }
 
@@ -44,8 +45,11 @@ function generateOCGAliases(name) {
 }
 
 function getOcgPart(partType) {
-  var index = Math.floor(Math.random() * ocgNameParts[partType].length),
-      part = ocgNameParts[partType].splice(index, 1)[0];
+  var part, values;
+  values = (partType == 'areas' ? Object.keys(ocgNameParts['areas']) : ocgNameParts[partType]);
+
+  var index = Math.floor(Math.random() * values.length);  
+  part = values.splice(index, 1)[0];
 
   return part;
 }
@@ -65,8 +69,7 @@ function generateAliasFor(name, part) {
     'suffixes': name['suffixes'],
   }, attempts = 0;
 
-  // avoid infinite loop!
-  while( alias[part] == name[part] && attempts < 10){
+  while( alias[part] == name[part] ){
     alias[part] = getOcgPart(part);
     attempts += 1;
   }
@@ -75,6 +78,12 @@ function generateAliasFor(name, part) {
 
 function nameAsString(name) {
   return [name['areas'], name['prefixes'], name['suffixes']].join(' ');
+}
+
+function generateTerritory(name) { 
+  if( Math.random() > 0.6 ) {
+    return ocgNameParts['areas'][name['areas']];
+  }
 }
 
 init();

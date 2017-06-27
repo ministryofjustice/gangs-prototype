@@ -1,93 +1,98 @@
 {
   "ocgs": [
     {
-      "name": "Southern Dark Group",
-      "aliases": []
-    },
-    {
-      "name": "Dublin Killa Posse",
-      "aliases": []
-    },
-    {
-      "name": "Dulwich Iron Pack",
-      "aliases": []
-    },
-    {
-      "name": "Southwark Chopper Clan",
-      "aliases": []
-    },
-    {
-      "name": "Belfast Smart Blades",
-      "aliases": []
-    },
-    {
-      "name": "Brizzle Tough Crew",
+      "name": "Manc Scooter Squad",
       "aliases": [
-        "Brizzle Tough Riders"
-      ]
+        "Manc Iron Squad",
+        "Manc Scooter Thugs"
+      ],
+      "territory": "Longsight, Moss Side, Hulme, Rusholme"
     },
     {
-      "name": "Hackney Rich Lads",
+      "name": "Deptford Angel Tribe",
       "aliases": []
     },
     {
-      "name": "Norwich Royal Squad",
+      "name": "Deptford Hard Group",
+      "aliases": []
+    },
+    {
+      "name": "Deptford Chopper Firm",
+      "aliases": [],
+      "territory": "Aylesbury Estate, New Cross Road"
+    },
+    {
+      "name": "Brizzle Blind Crew",
+      "aliases": []
+    },
+    {
+      "name": "Croydon Smart Mob",
+      "aliases": [],
+      "territory": "Monks Hill Estate, West Croydon"
+    },
+    {
+      "name": "New Cross Dark Company",
+      "aliases": []
+    },
+    {
+      "name": "Bromley Paper Collective",
+      "aliases": [],
+      "territory": "Penge Block, Bromley Park"
+    },
+    {
+      "name": "Deptford Young Dogs",
+      "aliases": []
+    },
+    {
+      "name": "Brixton Shady Clan",
+      "aliases": []
+    },
+    {
+      "name": "Brizzle Rich Boys",
       "aliases": [
-        "Norwich Joker Squad",
-        "Norwich Royal Boys"
-      ]
+        "Brizzle Killa Boys"
+      ],
+      "territory": "St Pauls, Easton, Stokes Croft"
     },
     {
-      "name": "New Cross Diamond Massiv",
+      "name": "Brizzle Tough Posse",
+      "aliases": []
+    },
+    {
+      "name": "Croydon Wild Guns",
+      "aliases": []
+    },
+    {
+      "name": "Brixton Shank Massiv",
+      "aliases": [],
+      "territory": "Brixton, Angell Town, SW9, SW2"
+    },
+    {
+      "name": "Peckham Callajeros Lads",
+      "aliases": []
+    },
+    {
+      "name": "Manc Joker Blades",
+      "aliases": [],
+      "territory": "Longsight, Moss Side, Hulme, Rusholme"
+    },
+    {
+      "name": "Dulwich Steel Lords",
+      "aliases": []
+    },
+    {
+      "name": "West Coast Poor Bluds",
+      "aliases": []
+    },
+    {
+      "name": "Mersey Rough Riders",
+      "aliases": []
+    },
+    {
+      "name": "Manc Cash Cartel",
       "aliases": [
-        "New Cross Diamond Guns"
+        "Manc Ghetto Cartel"
       ]
-    },
-    {
-      "name": "West Coast Blind Company",
-      "aliases": []
-    },
-    {
-      "name": "Brighton Angel Fam",
-      "aliases": []
-    },
-    {
-      "name": "Bromley Scooter Mob",
-      "aliases": []
-    },
-    {
-      "name": "Croxteth Wild Collective",
-      "aliases": []
-    },
-    {
-      "name": "Scarfolk Poor Tribe",
-      "aliases": []
-    },
-    {
-      "name": "Peckham Hard Family",
-      "aliases": []
-    },
-    {
-      "name": "Toon Shady Lords",
-      "aliases": []
-    },
-    {
-      "name": "Deptford Young Skins",
-      "aliases": [
-        "Deptford Ghetto Skins"
-      ]
-    },
-    {
-      "name": "Mersey Ghost Firm",
-      "aliases": []
-    },
-    {
-      "name": "Croydon Hell Gang",
-      "aliases": []
-    },
-    {
-      "name": "Staines Steel ",
-      "aliases": []
     }
   ]
 }

@@ -1,30 +1,30 @@
 {
-  "areas": [
-    "Peckham",
-    "Brixton",
-    "Brighton",
-    "Hackney",
-    "Glasgow",
-    "Mersey",
-    "Deptford",
-    "Southwark",
-    "Bromley",
-    "Toon",
-    "New Cross",
-    "Dulwich",
-    "Norwich",
-    "Brizzle",
-    "Coventry",
-    "Scarfolk",
-    "Southern",
-    "Belfast",
-    "Dublin",
-    "West Coast",
-    "Croydon",
-    "Staines",
-    "Manc",
-    "Croxteth"
-  ],
+  "areas": {
+    "Peckham": "SE15, Peckham, Peckham Rye",
+    "Brixton": "Brixton, Angell Town, SW9, SW2",
+    "Brighton": "West Street, Whitehawk, Moulescoomb, Hove Park Villas",
+    "Hackney": "Trelawny Estate, Mare Street, E5, Lower Clapton",
+    "Glasgow": "Drumchapel, Maryhill, Sighthill",
+    "Mersey": "Wordsworth street, Jericho Close, Kirkby",
+    "Deptford": "Aylesbury Estate, New Cross Road",
+    "Southwark": "Layard Square, Cathedrals, The Lane",
+    "Bromley": "Penge Block, Bromley Park",
+    "Toon": "Gilesgate (Durham), Heaton, Jesmond, Walker",
+    "New Cross": "New Cross Gate, Woodpecker Estate, Ludwick Mews",
+    "Dulwich": "East Dulwich, Grove Vale",
+    "Norwich": "Spring Bank, Havelock Road, Canterbury Place",
+    "Brizzle": "St Pauls, Easton, Stokes Croft",
+    "Coventry": "Wyken, Bell Green, Foleshill",
+    "Scarfolk": "West Side, Rotherham Green",
+    "Barnet": "East Finchley, N2, N12",
+    "Belfast": "Shankhill Road, East Belfast, Portadown",
+    "Dublin": "Crumlin, Pearse Street, Drimnagh",
+    "West Coast": "Trowbridge, Salisbury, Swindon",
+    "Croydon": "Monks Hill Estate, West Croydon",
+    "Staines": "West Staines",
+    "Manc": "Longsight, Moss Side, Hulme, Rusholme",
+    "Croxteth": "L11, Croxteth, Norris Green, West Derby"
+  },
   "prefixes": [
     "Hard",
     "Rough",
@@ -48,7 +48,12 @@
     "Rich",
     "Killa",
     "Chopper",
-    "Scooter"
+    "Scooter",
+    "Money",
+    "Cash",
+    "Paper",
+    "Shank",
+    "Callajeros"
   ],
   "suffixes": [
     "Boys",
@@ -72,6 +77,11 @@
     "Posse",
     "Pack",
     "Fam",
-    "Massiv"
+    "Massiv",
+    "Thugs",
+    "Bloodline",
+    "Bluds",
+    "Cartel",
+    "Dogs"
   ]
 }
