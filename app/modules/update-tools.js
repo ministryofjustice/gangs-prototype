@@ -83,8 +83,6 @@ var updateTools = {
       updates[x].timeAgo = self.getTimeAgo(minutesArray[x]);
     }
 
-    console.log(updates);
-
     return updates;
   },
 
