@@ -27,6 +27,9 @@ function init() {
     ocg.name = nameAsString(name);
     ocg.aliases = generateOCGAliases(name).map(nameAsString);
     ocg.territory = generateTerritory(name);
+    ocg.pnd_id = generatePNDID();
+    ocg.grits_id = generateGRITSID();
+    ocg.ocgm_urn = generateOCGMURN();
     data.ocgs.push(ocg);
   }
 

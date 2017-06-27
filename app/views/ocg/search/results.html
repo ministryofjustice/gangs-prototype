@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Organised Crime Group Search Results
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% include 'includes/phase_banner_prototype.html' %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Organised Crime Group Search Results
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <details>
+      <summary><span class="summary">Refine your search</span></summary>
+      <div class="panel panel-border-narrow">
+        {% include 'includes/ocg_search_form.html' %}
+      </div>
+    </details>
+  </div>
+  
+  {% include 'includes/pagination.html' %}
+  
+  <div class="grid-row">
+    <ol class="results-list">
+    {% for result in search_results %}
+      <li class="search-result">
+        {% include 'includes/ocg_search_result.html' %}
+      </li>
+    {% endfor %}
+    </ol>
+  </div>
+
+  {% include 'includes/pagination.html' %}
+</main>
+
+{% endblock %}
+
+

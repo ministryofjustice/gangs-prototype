@@ -1,0 +1,51 @@
+
+<div class="search-result-detail">
+  <div class="heading-container">
+    <div class = "heading-inner">
+      <h3 class="heading-medium">
+        <a href="/ocg/{{result.index}}">{{result.name}}</a>
+      </h3>
+    </div>
+    <div class="system-ids">
+      <span>GRITS ID:</span>
+      <span>{{result.grits_id}}</span>
+      <span>PND ID:</span>
+      <span>{{result.pnd_id}}</span>
+      <span>OCGM URN:</span>
+      <span>{{result.ocgm_urn}}</span>
+    </div>
+  </div>
+
+  {% if result.aliases.length %}
+    <dl class="aliases">
+      <dt>Known aliases:</dt>
+      <dd>
+          {{ result.aliases.join(', ') }}
+      </dd>
+    </dl>
+  {% endif %}
+
+  {% if result.territory.length %}
+    <dl class="territory">
+      <dt>Territory:</dt>
+      <dd>     
+          {{ result.territory }}
+      </dd>
+    </dl>
+  {% endif %}
+
+  
+
+  {% if affiliations.length %}
+    <dl class="affiliations">
+      <dt>Known affiliations:</dt>
+      <dd>
+          <ul class="list list-bullet">
+            {% for affiliation in affiliations %}
+            <li><a href="/ocg/{{affiliation.index}}">{{affiliation.name}}</a></li>
+            {% endfor %}
+          </ul>
+      </dd>
+    </dl>
+  {% endif %}
+</div>

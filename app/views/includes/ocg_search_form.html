@@ -1,110 +1,49 @@
 
   <form action="/ocg/search/action" method="POST" id="ocg-search">
-    <div class="column-two-thirds form-section">
+    <div class="column-full form-section">
       <div class="form-group">
-        <h3>Names</h3>
         <fieldset class="inline">
-          <legend class="visually-hidden">Names</legend>
+          <legend class="visually-hidden">Name or alias</legend>
 
-          <div class="form-group-inline form-group-inline-long">
-            <label class="form-label" for="given_names">Given names:</label>
-            <input type="text" class="form-control" name="given_names" placeholder="e.g. Malcolm Peter" value="{{data['pnc_id']}}" />
-          </div>
-          <div class="form-group-inline">
-            <label class="form-label" for="family_name">Family name:</label>
-            <input type="text" class="form-control" name="family_name" placeholder="e.g. Smith" value="{{data['pnc_id']}}" />
-          </div>
-
-        </fieldset>
-      </div>
-      <div class='form-group'>
-        <fieldset>
-          <legend class="form-label">Date of birth:</legend>
-          <div class="form-date">
-            <div class="form-group form-group-match-type">
-              <label class="label-match-type">type</label>
-              <select name="dob-match-type" id="dob-match-type" class="dob-match-type form-control">
-                {% for type in ['matches', 'before', 'after'] %}
-                  {% if data['dob-match-type'] == type %}
-                    <option value="{{ type }}" selected>
-                  {% else %}
-                    <option value="{{ type }}">
-                  {% endif %}
-                    {{ type }}
-                  </option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="form-group form-group-day">
-              <label for="dob-day">Day</label>
-              <input type="text" class="form-control" name="dob-day" id="dob-day" value="{{data['dob-day']}}" placeholder="1" />
-            </div>
-            <div class="form-group form-group-month">
-              <label for="dob-month">Month</label>
-              <input type="text" class="form-control" name="dob-month" id="dob-month" value="{{data['dob-month']}}" placeholder="1 or Nov" />
-            </div>
-            <div class="form-group form-group-year">
-              <label for="dob-year">Year</label>
-              <input type="text" class="form-control" name="dob-year" id="dob-year" value="{{data['dob-year']}}" placeholder="1" />
-            </div>
+          <div class="form-group">
+            <label class="form-label" for="given_names">Name / alias</label>
+            <input type="text" class="form-control" name="name_or_alias" placeholder="e.g. Brixton Crew" value="{{name_or_alias}}" />
           </div>
         </fieldset>
-
-
-      </div>
-
-      <div class='form-group'>
-        <h3>Gender</h3>
-        <fieldset class="inline">
-          <legend class="visually-hidden">Gender</legend>
-          <div class="multiple-choice">
-            <input type="radio" id="gender-m" name="gender" value="M" selected="{{data['gender'] == 'M'}}" />
-            <label for="gender-m" class="form-label">Male</label>
-          </div>
-          <div class="multiple-choice">
-            <input type="radio" id="gender-f" name="gender" value="F" selected="{{data['gender'] == 'F'}}" />
-            <label for="gender-f" class="form-label">Female</label>
-          </div>
-        </fieldset>
-      </div>
-
-      <div class='form-group'>
-        <label class="form-label">Offender ID:</label>
-      <input type="text" class="form-control" name="offender_id" value="{{data['offender_id']}}" placeholder="e.g. 1234567"/>
-        <div class="validate offender_id">
-          {% include "./tick.html" %}
-        </div>
-      </div>
-
-      <div class='form-group'>
-        <label class="form-label">NOMIS ID:</label>
-        <input type="text" class="form-control" name="nomis_id" value="{{data['nomis_id']}}" placeholder="e.g. A1234BC"/>
-        <div class="validate nomis_id">
-          {% include "./tick.html" %}
-        </div>
-      </div>
-
-      <div class='form-group'>
-        <label class="form-label">PNC ID:</label>
-        <input type="text" class="form-control" name="pnc_id" placeholder="e.g. 12/345678A" value="{{data['pnc_id']}}" />
-        <div class="validate pnc_id">
-          {% include "./tick.html" %}
-        </div>
       </div>
 
       <div class='form-group'>
         <label class="form-label">Identifying marks:</label>
-        <input type="text" class="form-control" name="identifying_marks" value="{{data['identifying_marks']}}" placeholder="e.g. scar on right shoulder" />
+        <input type="text" class="form-control" name="identifying_marks" value="{{data['identifying_marks']}}" placeholder="e.g. eagle tattoo" />
       </div>
 
       <div class='form-group'>
-        <label class="form-label">Known aliases:</label>
-        <input type="text" class="form-control" name="aliases" value="{{data['aliases']}}" placeholder="e.g. Eazy F"/>
+        <label class="form-label">Territory:</label>
+        <input type="text" class="form-control" name="territory" value="{{data['territory']}}" placeholder="e.g. N2, Barnet"/>
       </div>
 
       <div class='form-group'>
-        <label class="form-label">Known affiliations:</label>
-        <input type="text" class="form-control" name="affiliated_ocg_name" value="{{data['affiliated_ocg_name']}}" placeholder="Full or partial OCG name e.g.'Gas Gang'" />
+        <label class="form-label">GRITS ID:</label>
+        <input type="text" class="form-control" name="nomis_id" value="{{data['grits_id']}}" placeholder="e.g. A1234BC"/>
+        <div class="validate grits_id">
+          {% include "./tick.html" %}
+        </div>
+      </div>
+
+      <div class='form-group'>
+        <label class="form-label">PND ID:</label>
+        <input type="text" class="form-control" name="pnc_id" placeholder="e.g. 12/345678A" value="{{data['pnd_id']}}" />
+        <div class="validate pnd_id">
+          {% include "./tick.html" %}
+        </div>
+      </div>
+
+      <div class='form-group'>
+        <label class="form-label">OCGM Unique Reference Number:</label>
+        <input type="text" class="form-control" name="ocgm_urn" placeholder="e.g. 12/345678A" value="{{data['ocgm_urn']}}" />
+        <div class="validate pnd_id">
+          {% include "./tick.html" %}
+        </div>
       </div>
 
       <input type="submit" class="button" value="Search" />
