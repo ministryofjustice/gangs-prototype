@@ -22,25 +22,69 @@ function init() {
   // generate ocgs
   for(x = 0; x < numOcgs; x++) {
     var ocg = {},
-        area = getOcgPart('areas'),
-        prefix = getOcgPart('prefixes'),
-        suffix = getOcgPart('suffixes');
+        name = generateOcgName();
 
-    ocg.name = [area, prefix, suffix].join(' ');
-
+    ocg.name = nameAsString(name);
+    ocg.aliases = generateOCGAliases(name).map(nameAsString);
+    ocg.territory = generateTerritory(name);
     data.ocgs.push(ocg);
   }
 
   fs.writeFile('./app/assets/data/dummyOcgs.json', JSON.stringify(data, null, 2), 'utf-8');
 }
 
+
+function generateOCGAliases(name) {
+  var aliases = [];
+  for( let part of ['prefixes', 'suffixes'] ){
+    if( Math.random() > 0.9 ){
+      aliases.push( generateAliasFor(name, part) );
+    }
+  }
+  return aliases;
+}
+
 function getOcgPart(partType) {
-  var index = Math.floor(Math.random() * ocgNameParts[partType].length),
-      part = ocgNameParts[partType].splice(index, 1)[0];
+  var part, values;
+  values = (partType == 'areas' ? Object.keys(ocgNameParts['areas']) : ocgNameParts[partType]);
+
+  var index = Math.floor(Math.random() * values.length);  
+  part = values.splice(index, 1)[0];
 
   return part;
 }
 
+function generateOcgName() {
+  return {
+    'areas': getOcgPart('areas'),
+    'prefixes': getOcgPart('prefixes'),
+    'suffixes': getOcgPart('suffixes'),
+  };
+}
+
+function generateAliasFor(name, part) {
+  var alias = {
+    'areas': name['areas'],
+    'prefixes': name['prefixes'],
+    'suffixes': name['suffixes'],
+  }, attempts = 0;
+
+  while( alias[part] == name[part] ){
+    alias[part] = getOcgPart(part);
+    attempts += 1;
+  }
+  return alias;
+}
+
+function nameAsString(name) {
+  return [name['areas'], name['prefixes'], name['suffixes']].join(' ');
+}
+
+function generateTerritory(name) { 
+  if( Math.random() > 0.6 ) {
+    return ocgNameParts['areas'][name['areas']];
+  }
+}
 
 init();
 

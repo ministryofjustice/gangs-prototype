@@ -47,6 +47,28 @@ router.get('/nominal/search/results', function(req, res) {
   });
 });
 
+router.get('/ocg/search/', function(req, res) {
+  res.redirect('/ocg/search/new');
+});
+router.get('/ocg/search/new', function(req, res) {
+  res.render('ocg/search/new', {search: {}});
+});
+router.get('/ocg/search/results', function(req, res) {
+  var results = ocgTools.search(req.params);
+  var page=req.query['page'] || 1;
+  var per_page=req.query['per_page'] || 20;
+  var pages=results.length / (per_page > 0 ? per_page : 1);
+
+  var paginated_results = paginator.visibleElements(results, page, per_page);
+
+  res.render('ocg/search/results', {
+    search_results: paginated_results,
+    page: page,
+    pages: pages,
+    per_page: per_page
+  });
+});
+
 router.get('/nominal/:index', function(req, res) {
   var nominal = nominals[req.params.index];
   res.render('nominal/show', {
@@ -74,7 +96,7 @@ router.get('/ocg/:index', function(req, res) {
       ocgNominals = ocgTools.getNominals(req.params.index),
       tensions = ocgTools.getOcgTensions(req.params.index);
 
-  res.render('ocg', {
+  res.render('ocg/show', {
     next: nav.next(req.params.index, ocgs.length),
     prev: nav.prev(req.params.index, ocgs.length),
     ocg: ocg,

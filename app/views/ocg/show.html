@@ -10,12 +10,27 @@
   {% include 'includes/phase_banner_prototype.html' %}
 
   <div class="grid-row">
-    <div class="column-two-thirds">
+    <h1 class="heading-xlarge">
+      {{ocg.name}}
+    </h1>
+    <div class="column-full">
+      <dl>
+      {% if ocg.aliases.length %}
+          <dt>Known aliases:</dt>
+            <dd>{{ ocg.aliases.join(', ') }}</dd>
+      {% endif %}
 
-      <h1 class="heading-xlarge">
-        {{ocg.name}}
-      </h1>
+        <dt>Territory:</dt>
+          <dd>{{ ocg.territory }}</dd>
 
+        <dt>Identifying marks:</dt>
+          <dd>{{ ocg.identifying_marks }}</dd>
+      </dl>
+    </div>
+  </div>
+  
+  <div class="grid-row">
+    <div class="column-half">
       <h2 class="heading-medium">Known nominals:</h2>
       {% if nominals.length %}
         <ul class="list list-bullet">
@@ -26,7 +41,9 @@
       {% else %}
         <p>none</p>
       {% endif %}
-
+    </div>
+  
+    <div class="column-half">
       <h2 class="heading-medium">Known tensions:</h2>
       {% if tensions.length %}
         <ul class="list list-bullet">
@@ -37,16 +54,14 @@
       {% else %}
         <p>none</p>
       {% endif %}
-
-
-      <br><br><br><br>
-      <ul class="nav-links">
-        <li><a href="/ocg/{{prev}}">Previous</a></li>
-        <li><a href="/ocg/rand/">Random</a></li>
-        <li><a href="/ocg/{{next}}">Next</a></li>
-      </ul>
-
     </div>
+  </div>
+  <div class="grid-row">
+    <ul class="nav-links">
+      <li><a href="/ocg/{{prev}}">Previous</a></li>
+      <li><a href="/ocg/rand/">Random</a></li>
+      <li><a href="/ocg/{{next}}">Next</a></li>
+    </ul>
   </div>
 </main>
 
