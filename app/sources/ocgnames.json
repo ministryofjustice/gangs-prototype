@@ -19,7 +19,11 @@
     "Southern",
     "Belfast",
     "Dublin",
-    "West Coast"
+    "West Coast",
+    "Croydon",
+    "Staines",
+    "Manc",
+    "Croxteth"
   ],
   "prefixes": [
     "Hard",
@@ -41,7 +45,10 @@
     "Royal",
     "Blind",
     "Hell",
-    "Rich"
+    "Rich",
+    "Killa",
+    "Chopper",
+    "Scooter"
   ],
   "suffixes": [
     "Boys",
@@ -63,6 +70,8 @@
     "Mob",
     "Family",
     "Posse",
-    "Pack"
+    "Pack",
+    "Fam",
+    "Massiv"
   ]
 }

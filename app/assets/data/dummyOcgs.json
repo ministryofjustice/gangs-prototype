@@ -1,64 +1,93 @@
 {
   "ocgs": [
     {
-      "name": "Peckham Steel Company"
+      "name": "Southern Dark Group",
+      "aliases": []
     },
     {
-      "name": "Bromley Poor Gang"
+      "name": "Dublin Killa Posse",
+      "aliases": []
     },
     {
-      "name": "Brizzle Diamond Family"
+      "name": "Dulwich Iron Pack",
+      "aliases": []
     },
     {
-      "name": "New Cross Angel Clan"
+      "name": "Southwark Chopper Clan",
+      "aliases": []
     },
     {
-      "name": "Scarfolk Shady Tribe"
+      "name": "Belfast Smart Blades",
+      "aliases": []
     },
     {
-      "name": "Brixton Iron Riders"
+      "name": "Brizzle Tough Crew",
+      "aliases": [
+        "Brizzle Tough Riders"
+      ]
     },
     {
-      "name": "Coventry Smart Guns"
+      "name": "Hackney Rich Lads",
+      "aliases": []
     },
     {
-      "name": "Mersey Joker Collective"
+      "name": "Norwich Royal Squad",
+      "aliases": [
+        "Norwich Joker Squad",
+        "Norwich Royal Boys"
+      ]
     },
     {
-      "name": "Glasgow Tough Mob"
+      "name": "New Cross Diamond Massiv",
+      "aliases": [
+        "New Cross Diamond Guns"
+      ]
     },
     {
-      "name": "Hackney Blind Crew"
+      "name": "West Coast Blind Company",
+      "aliases": []
     },
     {
-      "name": "Southern Rough Skins"
+      "name": "Brighton Angel Fam",
+      "aliases": []
     },
     {
-      "name": "Dublin Royal Squad"
+      "name": "Bromley Scooter Mob",
+      "aliases": []
     },
     {
-      "name": "Toon Rich Posse"
+      "name": "Croxteth Wild Collective",
+      "aliases": []
     },
     {
-      "name": "West Coast Wild Firm"
+      "name": "Scarfolk Poor Tribe",
+      "aliases": []
     },
     {
-      "name": "Norwich Hell Boys"
+      "name": "Peckham Hard Family",
+      "aliases": []
     },
     {
-      "name": "Southwark Dark Lords"
+      "name": "Toon Shady Lords",
+      "aliases": []
     },
     {
-      "name": "Brighton Ghost Group"
+      "name": "Deptford Young Skins",
+      "aliases": [
+        "Deptford Ghetto Skins"
+      ]
     },
     {
-      "name": "Deptford Hard Lads"
+      "name": "Mersey Ghost Firm",
+      "aliases": []
     },
     {
-      "name": "Belfast Ghetto Blades"
+      "name": "Croydon Hell Gang",
+      "aliases": []
     },
     {
-      "name": "Dulwich Young Pack"
+      "name": "Staines Steel ",
+      "aliases": []
     }
   ]
 }
