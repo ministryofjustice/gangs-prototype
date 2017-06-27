@@ -1,5 +1,6 @@
 {
   "nominals": 100,
   "ocgs": 20,
-  "tensions": 10
+  "tensions": 10,
+  "updates": 50
 }

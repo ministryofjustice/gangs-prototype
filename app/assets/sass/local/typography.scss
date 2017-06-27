@@ -1,3 +1,15 @@
 strong {
   font-weight: bold;
 }
+
+#proposition-links * {
+  color: $white;
+}
+
+.update-time-ago {
+  @include core-14;
+
+  color: $grey-1;
+  float: right;
+  padding-left: 1em;
+}

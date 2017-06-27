@@ -1,0 +1,275 @@
+{
+  "updateEvents": [
+    {
+      "type": "affiliation",
+      "nominal": 23,
+      "ocg": 18
+    },
+    {
+      "type": "affiliation",
+      "nominal": 90,
+      "ocg": 4
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 14,
+      "ocg2": 16,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 5,
+      "ocg2": 8,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 84,
+      "ocg": 15
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 8,
+      "ocg2": 12,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 2,
+      "ocg2": 0,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 66,
+      "ocg": 11
+    },
+    {
+      "type": "affiliation",
+      "nominal": 56,
+      "ocg": 0
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 16,
+      "ocg2": 1,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 2,
+      "ocg": 8
+    },
+    {
+      "type": "incarceration",
+      "nominal": 29,
+      "location": "Dartmoor"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 8,
+      "ocg2": 7,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 3,
+      "ocg2": 1,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 8,
+      "ocg2": 2,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 5,
+      "ocg2": 14,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 9,
+      "ocg2": 13,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 8,
+      "ocg2": 7,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "incarceration",
+      "nominal": 76,
+      "location": "Wandsworth"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 25,
+      "ocg": 9
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 3,
+      "ocg2": 15,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 6,
+      "ocg2": 4,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 60,
+      "ocg": 0
+    },
+    {
+      "type": "affiliation",
+      "nominal": 2,
+      "ocg": 8
+    },
+    {
+      "type": "affiliation",
+      "nominal": 88,
+      "ocg": 4
+    },
+    {
+      "type": "affiliation",
+      "nominal": 56,
+      "ocg": 11
+    },
+    {
+      "type": "affiliation",
+      "nominal": 98,
+      "ocg": 13
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 16,
+      "ocg2": 5,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 3,
+      "ocg2": 0,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 44,
+      "ocg": 4
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 10,
+      "ocg2": 13,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "incarceration",
+      "nominal": 14,
+      "location": "Brixton"
+    },
+    {
+      "type": "incarceration",
+      "nominal": 49,
+      "location": "Wetherby"
+    },
+    {
+      "type": "incarceration",
+      "nominal": 69,
+      "location": "Wormwood Scrubs"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 38,
+      "ocg": 12
+    },
+    {
+      "type": "incarceration",
+      "nominal": 96,
+      "location": "Wetherby"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 5,
+      "ocg2": 1,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 65,
+      "ocg": 6
+    },
+    {
+      "type": "affiliation",
+      "nominal": 28,
+      "ocg": 1
+    },
+    {
+      "type": "affiliation",
+      "nominal": 38,
+      "ocg": 12
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 1,
+      "ocg2": 19,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 24,
+      "ocg": 6
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 17,
+      "ocg2": 2,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 86,
+      "ocg": 15
+    },
+    {
+      "type": "affiliation",
+      "nominal": 67,
+      "ocg": 1
+    },
+    {
+      "type": "affiliation",
+      "nominal": 51,
+      "ocg": 3
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 0,
+      "ocg2": 4,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 6,
+      "ocg": 2
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 12,
+      "ocg2": 16,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "incarceration",
+      "nominal": 3,
+      "location": "Wormwood Scrubs"
+    }
+  ]
+}

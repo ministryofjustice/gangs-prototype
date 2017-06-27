@@ -11,6 +11,7 @@ $path: "/public/images/";
 @import 'patterns/task-list';
 
 // local styles
+@import 'local/mixins';
 @import 'local/demo';
 @import 'local/typography';
 @import 'local/lists';

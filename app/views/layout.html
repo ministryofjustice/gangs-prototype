@@ -20,6 +20,12 @@
             {% if serviceName %} {{ serviceName }} {% endif %}
           {% endblock %}
         </a>
+        {% if userType %}
+        <ul id="proposition-links">
+          <li>Signed in as {{userType}}@example.com</li>
+          <li><a href="/">Sign out</a></li>
+        </ul>
+        {% endif %}
       </nav>
     </div>
   </div>

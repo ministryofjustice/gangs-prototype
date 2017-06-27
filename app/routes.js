@@ -5,6 +5,7 @@ var mugshots = require('./modules/mugshot.js');
 var nav = require('./modules/navigation.js');
 var nominalTools = require('./modules/nominal-tools.js');
 var ocgTools = require('./modules/ocg-tools.js');
+var updateTools = require('./modules/update-tools.js');
 
 var nominals = require('./assets/data/dummyNominals.json').nominals;
 var ocgs = require('./assets/data/dummyOcgs.json').ocgs;
@@ -16,6 +17,20 @@ var paginator = require('./modules/paginator.js')
 router.get('/', function (req, res) {
   res.render('index');
 });
+
+
+
+// home page with updates
+router.get('/home', function (req, res) {
+  var updates = updateTools.updatesForDisplay(20);
+  var userType = req.session.data['user_type'] || 'prison-officer';
+
+  res.render('home/index', {
+    updates: updates,
+    userType: userType
+  });
+});
+
 
 
 // nominals
