@@ -22,12 +22,19 @@ router.get('/', function (req, res) {
 
 // home page with updates
 router.get('/home', function (req, res) {
-  var updates = updateTools.updatesForDisplay(20);
-  var userType = req.session.data['user_type'] || 'prison-officer';
-
+  var updatesToDisplay = updateTools.updatesForDisplay(10);
   res.render('home/index', {
-    updates: updates,
-    userType: userType
+    updates: updatesToDisplay
+  });
+});
+
+
+
+// all updates page
+router.get('/updates', function (req, res) {
+  var updatesToDisplay = updateTools.updatesForDisplay();
+  res.render('updates/index', {
+    updates: updatesToDisplay
   });
 });
 

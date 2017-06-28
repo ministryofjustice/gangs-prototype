@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  All updates
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% include 'includes/phase_banner_prototype.html' %}
+
+  <h1 class="heading-xlarge">Updates</h1>
+
+  {% include 'includes/updates_list.html' %}
+
+</main>
+
+{% endblock %}

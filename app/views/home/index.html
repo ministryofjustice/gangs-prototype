@@ -9,9 +9,7 @@
 <main id="content" role="main">
   {% include 'includes/phase_banner_prototype.html' %}
 
-  <h1 class="heading-xlarge">Home</h1>
-
-  <p class="lede">The user is logged in as user type '<strong>{{userType}}</strong>' and their home page displays here.</p>
+  <h1 class="heading-xlarge">Dashboard</h1>
 
   <div class="grid-row">
 
@@ -19,11 +17,11 @@
 
       <h2 class="heading-medium">Recent updates</h2>
 
-      <ul class="updates-list">
-      {% for update in updates %}
-        <li class="{{update.updateType}}">{{ update.updateDisplay | safe }} <span class="update-time-ago">{{update.timeAgo}}</span></li>
-      {% endfor %}
-      </ul>
+      {% include 'includes/updates_list.html' %}
+
+      <p>
+        <a href="/updates">More...</a>
+      </p>
 
     </div>
 

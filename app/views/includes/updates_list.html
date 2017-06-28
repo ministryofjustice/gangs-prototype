@@ -1,0 +1,5 @@
+<ul class="updates-list">
+{% for update in updates %}
+  <li class="{{update.updateType}}">{{ update.updateDisplay | safe }} <span class="update-time-ago">{{update.timeAgo}}</span></li>
+{% endfor %}
+</ul>

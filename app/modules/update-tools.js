@@ -10,7 +10,7 @@ var updateTools = {
   updatesForDisplay: function(quantity) {
     var self = this;
 
-    if(quantity > quantities.updates) {
+    if(!quantity || (quantity > quantities.updates)) {
       quantity = quantities.updates;
     }
 
