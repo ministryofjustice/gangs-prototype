@@ -29,6 +29,13 @@ dd {
   float: right;
 }
 .pages, .per_page{
+  @include media(mobile) {
+    width: 100%;
+
+    li:first-child {
+      width: 4.5em;
+    }
+  }
   li {
     display: inline-block;
     margin-right: 10px;
