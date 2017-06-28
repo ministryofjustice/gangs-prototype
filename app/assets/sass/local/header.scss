@@ -69,3 +69,11 @@
 .js-enabled #global-header .header-proposition #proposition-links.js-visible {
   width: 100%;
 }
+
+.user-menu {
+  margin-left: 15px;
+
+  li, a {
+    color: $white;
+  }
+}
