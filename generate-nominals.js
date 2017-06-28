@@ -6,6 +6,7 @@ var unique = require('array-unique');
 var dummyAliases = require('./app/sources/aliases.json');
 var mugshots = require('./app/modules/mugshot.js');
 var quantities = require('./app/sources/quantities.json');
+var randomPicker = require('./app/modules/randompicker.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -73,7 +74,7 @@ function generateIdentifyingMarks() {
       numMarks = Math.floor(Math.random() * maxMarks);
 
   for(var x = 0; x < numMarks; x++) {
-    var mark = rnd(marks) + ' on ' + rnd(sides) + ' ' + rnd(locations);
+    var mark = randomPicker.rnd(marks) + ' on ' + randomPicker.rnd(sides) + ' ' + randomPicker.rnd(locations);
     nominalMarks.push(mark);
   }
 
@@ -85,7 +86,7 @@ function generateAliases(firstname) {
       nominalAliases = [];
 
   for(var x = 0; x < numAliases; x++) {
-    var alias = rnd(dummyAliases);
+    var alias = randomPicker.rnd(dummyAliases);
 
     alias = alias.replace(/firstname/g, firstname);
     alias = alias.replace(/firstinitial/g, firstname.slice(0, 1));
@@ -111,13 +112,13 @@ function guessGenderFromName(name) {
 
 function generateNomisId() {
   // e.g. A1417AE
-  var str = rndLetters(1) + rndDigits(4) + rndLetters(2);
+  var str = randomPicker.rndLetters(1) + randomPicker.rndDigits(4) + randomPicker.rndLetters(2);
   return str;
 }
 
 function generatePncId() {
   // e.g. 76/198452G
-  var str = rndDigits(2) + '/' + rndDigits(6) + rndLetters(1);
+  var str = randomPicker.rndDigits(2) + '/' + randomPicker.rndDigits(6) + randomPicker.rndLetters(1);
   return str;
 }
 
@@ -137,25 +138,7 @@ function leadingZero(n) {
   return (parseInt(n, 10) < 10 ? '0' + n : n);
 }
 
-function rnd(array) {
-  return array[Math.floor(Math.random() * array.length)];
-}
 
-function rndDigits(chars) {
-  var str = '';
-  for(var x = 0; x < chars; x++) {
-    str += Math.floor(Math.random() * 10);
-  }
-  return str;
-}
-function rndLetters(chars) {
-  var str = '';
-  for(var x = 0; x < chars; x++) {
-    var rndLetter = Math.floor(Math.random() * 26);
-    str += String.fromCharCode(65 + rndLetter);
-  }
-  return str;
-}
 
 
 init();

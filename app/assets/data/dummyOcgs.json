@@ -1,98 +1,233 @@
 {
   "ocgs": [
     {
-      "name": "Manc Scooter Squad",
-      "aliases": [
-        "Manc Iron Squad",
-        "Manc Scooter Thugs"
+      "name": "Bromley Dark Skins",
+      "aliases": [],
+      "territory": "Penge Block, Bromley Park",
+      "identifying_features": [
+        "tracksuit top",
+        "backwards baseball cap",
+        "bleached hairstyle"
       ],
-      "territory": "Longsight, Moss Side, Hulme, Rusholme"
+      "pnd_id": "53/095876G",
+      "grits_id": "M3454MF",
+      "ocgm_urn": "73517012"
     },
     {
-      "name": "Deptford Angel Tribe",
-      "aliases": []
-    },
-    {
-      "name": "Deptford Hard Group",
-      "aliases": []
-    },
-    {
-      "name": "Deptford Chopper Firm",
-      "aliases": [],
-      "territory": "Aylesbury Estate, New Cross Road"
-    },
-    {
-      "name": "Brizzle Blind Crew",
-      "aliases": []
-    },
-    {
-      "name": "Croydon Smart Mob",
-      "aliases": [],
-      "territory": "Monks Hill Estate, West Croydon"
-    },
-    {
-      "name": "New Cross Dark Company",
-      "aliases": []
-    },
-    {
-      "name": "Bromley Paper Collective",
-      "aliases": [],
-      "territory": "Penge Block, Bromley Park"
-    },
-    {
-      "name": "Deptford Young Dogs",
-      "aliases": []
-    },
-    {
-      "name": "Brixton Shady Clan",
-      "aliases": []
-    },
-    {
-      "name": "Brizzle Rich Boys",
+      "name": "Peckham Blind Bluds",
       "aliases": [
-        "Brizzle Killa Boys"
+        "Peckham Young Bluds"
       ],
-      "territory": "St Pauls, Easton, Stokes Croft"
+      "territory": "SE15, Peckham, Peckham Rye",
+      "identifying_features": [
+        "axe tattoo on the right hand"
+      ],
+      "pnd_id": "69/315275D",
+      "grits_id": "Y1122LZ",
+      "ocgm_urn": "58156346"
     },
     {
-      "name": "Brizzle Tough Posse",
-      "aliases": []
-    },
-    {
-      "name": "Croydon Wild Guns",
-      "aliases": []
-    },
-    {
-      "name": "Brixton Shank Massiv",
+      "name": "Mersey Killa Dogs",
       "aliases": [],
-      "territory": "Brixton, Angell Town, SW9, SW2"
+      "identifying_features": [
+        "oversize grey combats",
+        "excessive jewellery",
+        "slicked-back hairstyle"
+      ],
+      "pnd_id": "74/398394I",
+      "grits_id": "G8075QD",
+      "ocgm_urn": "49582502"
     },
     {
-      "name": "Peckham Callajeros Lads",
-      "aliases": []
-    },
-    {
-      "name": "Manc Joker Blades",
-      "aliases": [],
-      "territory": "Longsight, Moss Side, Hulme, Rusholme"
-    },
-    {
-      "name": "Dulwich Steel Lords",
-      "aliases": []
-    },
-    {
-      "name": "West Coast Poor Bluds",
-      "aliases": []
-    },
-    {
-      "name": "Mersey Rough Riders",
-      "aliases": []
-    },
-    {
-      "name": "Manc Cash Cartel",
+      "name": "Bromley Money Company",
       "aliases": [
-        "Manc Ghetto Cartel"
-      ]
+        "Bromley Callajeros Company"
+      ],
+      "identifying_features": [],
+      "pnd_id": "71/475765H",
+      "grits_id": "V5036NC",
+      "ocgm_urn": "76751415"
+    },
+    {
+      "name": "West Coast Hell Fam",
+      "aliases": [],
+      "territory": "Trowbridge, Salisbury, Swindon",
+      "identifying_features": [
+        "bleached hairstyle"
+      ],
+      "pnd_id": "32/599895O",
+      "grits_id": "C3172YI",
+      "ocgm_urn": "75368625"
+    },
+    {
+      "name": "Norwich Steel Clan",
+      "aliases": [],
+      "identifying_features": [
+        "backwards jeans",
+        "backwards grey bandana",
+        "afro hair"
+      ],
+      "pnd_id": "65/531203S",
+      "grits_id": "O9194GS",
+      "ocgm_urn": "64036823"
+    },
+    {
+      "name": "Hackney Paper Thugs",
+      "aliases": [],
+      "identifying_features": [
+        "black kagoul",
+        "excessive jewellery"
+      ],
+      "pnd_id": "63/708287W",
+      "grits_id": "U4125NC",
+      "ocgm_urn": "51367794"
+    },
+    {
+      "name": "Croxteth Smart Pack",
+      "aliases": [],
+      "identifying_features": [],
+      "pnd_id": "62/498588C",
+      "grits_id": "H6249DM",
+      "ocgm_urn": "64414399"
+    },
+    {
+      "name": "Staines Shank Riders",
+      "aliases": [
+        "Staines Shank Squad"
+      ],
+      "identifying_features": [
+        "loose tracksuit top",
+        "grey kagoul",
+        "buzz cut hairstyle",
+        "axe tattoo on the chest"
+      ],
+      "pnd_id": "78/041091F",
+      "grits_id": "O5758FI",
+      "ocgm_urn": "61303674"
+    },
+    {
+      "name": "Bromley Rich Tribe",
+      "aliases": [],
+      "identifying_features": [],
+      "pnd_id": "04/359467U",
+      "grits_id": "Q0375XN",
+      "ocgm_urn": "38311903"
+    },
+    {
+      "name": "Brighton Ghetto Posse",
+      "aliases": [],
+      "territory": "West Street, Whitehawk, Moulescoomb, Hove Park Villas",
+      "identifying_features": [],
+      "pnd_id": "80/950167B",
+      "grits_id": "H7709ZB",
+      "ocgm_urn": "95548520"
+    },
+    {
+      "name": "Staines Diamond Lords",
+      "aliases": [],
+      "identifying_features": [
+        "loose white trainers"
+      ],
+      "pnd_id": "93/256074N",
+      "grits_id": "U6267WB",
+      "ocgm_urn": "99307503"
+    },
+    {
+      "name": "Glasgow Iron Gang",
+      "aliases": [],
+      "identifying_features": [
+        "loose trainers",
+        "slicked-back hair"
+      ],
+      "pnd_id": "31/239775P",
+      "grits_id": "F3167VN",
+      "ocgm_urn": "03345712"
+    },
+    {
+      "name": "Peckham Chopper Massiv",
+      "aliases": [],
+      "identifying_features": [
+        "red hoodie",
+        "backwards black combats",
+        "ghost mask"
+      ],
+      "pnd_id": "40/054662M",
+      "grits_id": "T9956YT",
+      "ocgm_urn": "13694097"
+    },
+    {
+      "name": "Hackney Scooter Firm",
+      "aliases": [
+        "Hackney Joker Firm"
+      ],
+      "identifying_features": [
+        "combats",
+        "oversize hoodie",
+        "yellow bandana",
+        "gold chain"
+      ],
+      "pnd_id": "22/386861N",
+      "grits_id": "W9428PU",
+      "ocgm_urn": "63639496"
+    },
+    {
+      "name": "Scarfolk Shady Blades",
+      "aliases": [],
+      "identifying_features": [
+        "kagoul",
+        "loose combats",
+        "buzz cut hairstyle"
+      ],
+      "pnd_id": "12/954343H",
+      "grits_id": "Z0886BR",
+      "ocgm_urn": "10088776"
+    },
+    {
+      "name": "Peckham Rough Mob",
+      "aliases": [
+        "Peckham Hard Mob"
+      ],
+      "identifying_features": [
+        "slicked-back hairstyle",
+        "eagle tattoo on shoulders"
+      ],
+      "pnd_id": "46/758904H",
+      "grits_id": "A9651BY",
+      "ocgm_urn": "15929054"
+    },
+    {
+      "name": "Norwich Poor Family",
+      "aliases": [
+        "Norwich Poor Boys"
+      ],
+      "identifying_features": [
+        "red bandana",
+        "oversize blue hoodie",
+        "oakley shades"
+      ],
+      "pnd_id": "71/928018X",
+      "grits_id": "S8587FN",
+      "ocgm_urn": "34758208"
+    },
+    {
+      "name": "Brighton Angel Cartel",
+      "aliases": [],
+      "territory": "West Street, Whitehawk, Moulescoomb, Hove Park Villas",
+      "identifying_features": [],
+      "pnd_id": "89/922631B",
+      "grits_id": "H4084XS",
+      "ocgm_urn": "02440575"
+    },
+    {
+      "name": "Southwark Royal Crew",
+      "aliases": [],
+      "identifying_features": [
+        "grey bandana",
+        "silver rings"
+      ],
+      "pnd_id": "63/140776M",
+      "grits_id": "R8605NH",
+      "ocgm_urn": "52975749"
     }
   ]
 }
