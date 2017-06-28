@@ -2,6 +2,8 @@ var path = require('path');
 var fs = require('fs');
 var ocgNameParts = require('./app/sources/ocgnames.json');
 var quantities = require('./app/sources/quantities.json');
+var ocgIdentifyingFeatures = require('./app/sources/ocgidentifyingfeatures.json');
+var randomPicker = require('./app/modules/randompicker.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -27,6 +29,7 @@ function init() {
     ocg.name = nameAsString(name);
     ocg.aliases = generateOCGAliases(name).map(nameAsString);
     ocg.territory = generateTerritory(name);
+    ocg.identifying_features = generateIdentifyingFeatures(name);
     ocg.pnd_id = generatePNDID();
     ocg.grits_id = generateGRITSID();
     ocg.ocgm_urn = generateOCGMURN();
@@ -36,6 +39,38 @@ function init() {
   fs.writeFile('./app/assets/data/dummyOcgs.json', JSON.stringify(data, null, 2), 'utf-8');
 }
 
+function featureTypes(){
+  return [
+    ['garment'],
+    ['style_of_wear', 'garment'],
+    ['colour', 'garment'],
+    ['style_of_wear', 'colour', 'garment',],
+    ['accessory'],
+    ['hair', 'hair_suffix'],
+    ['tattoo', 'tattoo_location_prefix', 'tattoo_location']
+  ];
+}
+
+function generateIdentifyingFeatures(name){
+  var features = [], types = featureTypes();
+
+  for( i=0; i < types.length; i++ ){
+    if( Math.random() > 0.75 ){
+      features.push( generateFeatureOfType(types[i]) );
+    }
+  }
+  return features;
+}
+
+function generateFeatureOfType(featureType){
+  return featureType.map(randomFeatureSegment).join(' ');
+}
+
+function randomFeatureSegment(segment) {
+  var options = ocgIdentifyingFeatures[segment];
+  var index = Math.floor(Math.random() * options.length);
+  return options[index];
+}
 
 function generateOCGAliases(name) {
   var aliases = [];
@@ -87,6 +122,23 @@ function generateTerritory(name) {
   if( Math.random() > 0.6 ) {
     return ocgNameParts['areas'][name['areas']];
   }
+}
+
+function generateGRITSID() {
+  // e.g. A1417AE
+  var str = randomPicker.rndLetters(1) + randomPicker.rndDigits(4) + randomPicker.rndLetters(2);
+  return str;
+}
+
+function generatePNDID() {
+  // e.g. 76/198452G
+  var str = randomPicker.rndDigits(2) + '/' + randomPicker.rndDigits(6) + randomPicker.rndLetters(1);
+  return str;
+}
+
+function generateOCGMURN() {
+  var str = randomPicker.rndDigits(8);
+  return str;
 }
 
 init();

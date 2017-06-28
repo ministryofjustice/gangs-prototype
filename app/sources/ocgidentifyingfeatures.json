@@ -1,0 +1,79 @@
+{
+  "colour": [
+    "red",
+    "blue",
+    "black",
+    "grey",
+    "yellow",
+    "green",
+    "white"
+  ],
+  "garment": [
+    "t-shirt",
+    "bandana",
+    "baseball cap",
+    "trainers",
+    "jeans",
+    "combats",
+    "shell suit",
+    "tracksuit top",
+    "hoodie",
+    "puffa jacket",
+    "kagoul",
+    "suit"
+  ],
+  "accessory": [
+    "gold chain",
+    "silver rings",
+    "gold tooth",
+    "Rolex watch",
+    "hockey mask",
+    "ghost mask",
+    "ski goggles",
+    "oakley shades",
+    "excessive jewellery",
+    "balaclava"
+  ],
+  "style_of_wear": [
+    "backwards",
+    "oversize",
+    "loose"
+  ],
+  "hair": [
+    "afro",
+    "mop top",
+    "buzz cut",
+    "braided",
+    "bleached",
+    "slicked-back"
+  ],
+  "hair_suffix": [
+    "hair",
+    "hairstyle"
+  ],
+  "tattoo": [
+    "eagle",
+    "shark",
+    "rose",
+    "knife",
+    "axe",
+    "maze",
+    "tally (of kills)"
+  ],
+  "tattoo_location_prefix": [
+    "tattoo on the",
+    "tattoo, on",
+    "tattoo on"
+  ],
+  "tattoo_location": [
+    "back",
+    "shoulders",
+    "chest",
+    "left arm",
+    "right hand",
+    "forehead",
+    "shaven head",
+    "cheek",
+    "back of neck"
+  ]
+}
