@@ -1,0 +1,22 @@
+{% extends "govuk_template_unbranded.html" %}
+
+{% block page_title %}
+  Mock Search Action Page
+{% endblock %}
+
+{% block content %}
+
+  <h1>Search</h1>
+
+  <p>
+  I search the {{ data['search-scope'] }} for names matching &quot;{{ data['q'] }}&quot;
+  </p>
+  <p>
+    I then redirect to the 
+    {% if data['search-scope'] == 'nominals' %}
+      <a href="/nominal/search/results?name={{data['q']}}">Nominal Search Results</a> page.
+    {% else %}
+      <a href="/ocg/search/results?name_or_alias={{data['q']}}">OCG Search Results</a> page.
+    {% endif %}
+  </p>
+{% endblock %}
