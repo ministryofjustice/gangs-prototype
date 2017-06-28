@@ -108,7 +108,7 @@ router.get('/nominal/:index', function(req, res) {
 });
 
 router.get('/nominal/', function(req, res) {
-  res.redirect('/nominal/0');
+  res.redirect('/nominal/search/new');
 });
 
 
@@ -133,7 +133,7 @@ router.get('/ocg/:index', function(req, res) {
 });
 
 router.get('/ocg/', function(req, res) {
-  res.redirect('/ocg/0');
+  res.redirect('/ocg/search/new');
 });
 
 

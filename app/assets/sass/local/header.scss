@@ -1,0 +1,79 @@
+.simple-search-outer {
+  @include media(tablet) {
+    float: right;
+    display: inline-block;
+  }
+  @include media(mobile) {
+    position: relative;
+    float: none;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+  .form-control {
+    height: 2em;
+    font-size: 90%;
+    width: auto;
+    @include media(mobile) {
+      width: 100%;
+    }
+  }
+  .button-search {
+    margin-top:0.25em;
+    background-color:transparent;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 2em;
+    width: 2em;
+
+    @include media(mobile) {
+      background-size: 2em, 2em;
+      background-position: center;
+      border: 1px outset white;
+      margin: 0 0 0 2px;
+      padding: 0;
+      width: calc(100% - 4px);
+    }
+  }
+}
+
+#proposition-name {
+  display: block;
+}
+#proposition-links {
+  display: inline-block;
+  float: left;
+}
+
+#global-header .header-proposition #proposition-link li,
+#global-header .header-proposition #proposition-links li {
+  @include media(tablet) {
+    display: block;
+    a {
+      display: block;
+    }
+  }
+  @include media(mobile) {
+    display: block;
+    a {
+      display: block;
+    }
+  }
+}
+
+.js-enabled #global-header .header-proposition #proposition-links.js-visible {
+  width: 100%;
+}
+
+.user-menu {
+  margin-left: 15px;
+
+  li, a {
+    color: $white;
+  }
+}
