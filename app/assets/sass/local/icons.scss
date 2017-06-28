@@ -3,10 +3,14 @@
 	position:absolute;
 	right: $gutter;
 	@include media(tablet) {
+		position:absolute;
 		right: $gutter;
+		top: 15px;
 	}	
 	@include media(mobile) {
+		position:absolute;
 		right: $gutter-half;
+		top: 15px;
 	}
 	@media (min-width: 960px) {
 		right: calc((100% - 960px)/2);	
@@ -35,6 +39,8 @@
 	}
 	.button-search{
 		@include icon('icon-search', 30 , 22 , false);
+		margin-top:0.25em;
+		background-color:transparent;
 		background-size:cover;
 		background-repeat:no-repeat;
 		height: 2em;
