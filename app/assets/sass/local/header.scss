@@ -24,12 +24,16 @@
     }
   }
   .button-search {
-    margin-top:0.25em;
     background-color:transparent;
-    background-size:cover;
-    background-repeat:no-repeat;
-    height: 2em;
-    width: 2em;
+    background-size: 1.8em;
+    background-position: 0.1em 0.2em;
+    background-repeat: no-repeat;
+    border: 1px outset white;
+    border-left: none;
+    height: 1.75em;
+    margin-left: 0;
+    margin-top: 2px;
+    width: 1.8em;
 
     @include media(mobile) {
       background-size: 2em, 2em;
@@ -49,7 +53,12 @@
   display: inline-block;
   float: left;
 }
-
+#global-header.with-proposition .header-wrapper .header-proposition {
+  width: auto;
+}
+#global-header.with-proposition .header-wrapper .header-global {
+  width: auto;
+}
 #global-header .header-proposition #proposition-link li,
 #global-header .header-proposition #proposition-links li {
   @include media(tablet) {
@@ -70,10 +79,15 @@
   width: 100%;
 }
 
+#user-and-search {
+  
+}
 .user-menu {
-  margin-left: 15px;
+  float: left;
 
   li, a {
     color: $white;
+    display: inline-block;
+    list-style-type: none;
   }
 }

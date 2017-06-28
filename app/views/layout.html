@@ -14,10 +14,7 @@
 {% endif %}
 
 {% block inside_header %}
-<ul class="user-menu">
-  <li>{{userType}}@example.com</li>
-  <li><a href="/signout">Sign out</a></li>
-</ul>
+
 {% endblock %}
 
 {% block proposition_header %}
@@ -27,31 +24,39 @@
       <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
 
       <nav id="proposition-menu">
-        <a href="/" id="proposition-name">
-          {# Set serviceName in config.js. Use a block to override on a page. #}
-          {% block service_name %}
-            {% if serviceName %} {{ serviceName }} {% endif %}
-          {% endblock %}
-        </a>
-        <ul id="proposition-links">
-          <li><a href="/nominal">Nominals</a></li>
-          <li><a href="/ocg">OCGs</a></li>
-        </ul>
-        <div class='simple-search-outer'>
-          <form id="simple-search" action="/simple_search_action.html" method="get">
-            <div class="form-group">
-              <fieldset class="inline">
-                <select name="search-scope" class="form-control">
-                {% for scope in ['Nominals', 'OCGs'] %}
-                  <option value='{{ scope | lower }}'>{{ scope }}</option>
-                {% endfor %}
-                </select>
-                <label class="visually-hidden" for="q">Search for</label>
-                <input name="q" id="q" placeholder="search" class="form-control" value="{{data['q']}}" />
-                <input type="submit" class="button-search form-control" value="" />
-              </fieldset>
-            </div>
-          </form>
+        <div id="name-and-menu">
+          <a href="/" id="proposition-name">
+            {# Set serviceName in config.js. Use a block to override on a page. #}
+            {% block service_name %}
+              {% if serviceName %} {{ serviceName }} {% endif %}
+            {% endblock %}
+          </a>
+          <ul id="proposition-links">
+            <li><a href="/nominal">Nominals</a></li>
+            <li><a href="/ocg">OCGs</a></li>
+          </ul>
+        </div>
+        <div id="user-and-search">
+          <ul class="user-menu">
+            <li>{{userType}}@example.com</li>
+            <li><a href="/signout">Sign out</a></li>
+          </ul>
+          <div class='simple-search-outer'>
+            <form id="simple-search" action="/simple_search_action.html" method="get">
+              <div class="form-group">
+                <fieldset class="inline">
+                  <select name="search-scope" class="form-control">
+                  {% for scope in ['Nominals', 'OCGs'] %}
+                    <option value='{{ scope | lower }}'>{{ scope }}</option>
+                  {% endfor %}
+                  </select>
+                  <label class="visually-hidden" for="q">Search for</label>
+                  <input name="q" id="q" placeholder="search" class="form-control" value="{{data['q']}}" />
+                  <input type="submit" class="button-search form-control" value="" />
+                </fieldset>
+              </div>
+            </form>
+          </div>
         </div>
       </nav>
 
