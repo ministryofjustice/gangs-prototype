@@ -19,6 +19,11 @@ router.get('/', function (req, res) {
 });
 
 
+// signout route
+router.get('/signout', function (req, res) {
+  req.session.destroy();
+  res.redirect('/');
+});
 
 // home page with updates
 router.get('/home', function (req, res) {

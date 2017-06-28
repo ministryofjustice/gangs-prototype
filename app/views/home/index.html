@@ -29,9 +29,15 @@
       <h2 class="heading-medium">Common tasks</h2>
 
       <ul class="list list-bullet">
-        <li><a href="#">Book in an offender</a></li>
-        <li><a href="#">Nominal search</a></li>
-        <li><a href="#">OCG search</a></li>
+        {% if data['user_type'] == 'prison-officer' %}
+          <li><a href="#">Book in an offender</a></li>
+        {% elif data['user_type'] == 'probation-officer' %}
+          <li><a href="#">Probation officer tasks here...</a></li>
+        {% elif data['user_type'] == 'police-officer' %}
+          <li><a href="#">Police officer tasks here...</a></li>
+        {% endif %}
+        <li><a href="/nominal/search">Nominal search</a></li>
+        <li><a href="/ocg/search">OCG search</a></li>
       </ul>
     </div>
 
