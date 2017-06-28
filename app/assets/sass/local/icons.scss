@@ -1,49 +1,5 @@
 .simple-search-outer{
-	height:2em;
-	position:absolute;
-	right: $gutter;
-	@include media(tablet) {
-		position:absolute;
-		right: $gutter;
-		top: 15px;
-	}	
-	@include media(mobile) {
-		position:absolute;
-		right: $gutter-half;
-		top: 15px;
-	}
-	@media (min-width: 960px) {
-		right: calc((100% - 960px)/2);	
-	}	
-
-	.form-group {
-		margin: 2px 0;
-	}
-	.form-control {
-		height: 2em;
-		font-size: 90%;
-		width: auto;
-	}
-	select {
-		/*
-	  -webkit-appearance: none;
-	  -webkit-border-radius: 0px;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-		*/
-		/*
-		border: 0;
-    outline: 1px solid #CCC;
-    background-color: white;
-    */
-	}
 	.button-search{
 		@include icon('icon-search', 30 , 22 , false);
-		margin-top:0.25em;
-		background-color:transparent;
-		background-size:cover;
-		background-repeat:no-repeat;
-		height: 2em;
-		width: 2em;
 	}
 }
