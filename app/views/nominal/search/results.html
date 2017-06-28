@@ -16,12 +16,14 @@
   </div>
 
   <div class="grid-row">
-    <details>
-      <summary><span class="summary">Refine your search</span></summary>
-      <div class="panel panel-border-narrow">
-        {% include 'includes/nominal_search_form.html' %}
-      </div>
-    </details>
+    <div class="column-full">
+      <details>
+        <summary><span class="summary">Refine your search</span></summary>
+        <div class="panel panel-border-narrow">
+          {% include 'includes/nominal_search_form.html' %}
+        </div>
+      </details>
+    </div>
   </div>
   
   {% include 'includes/pagination.html' %}

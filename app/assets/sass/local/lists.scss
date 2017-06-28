@@ -21,10 +21,24 @@ dd {
   }
 }
 
-.nav-links {
+/* pagination */
+.pages {
+  float: left;
+}
+.per_page {
+  float: right;
+}
+.pages, .per_page{
+  @include media(mobile) {
+    width: 100%;
+
+    li:first-child {
+      width: 4.5em;
+    }
+  }
   li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin-right: 10px;
   }
 }
 
