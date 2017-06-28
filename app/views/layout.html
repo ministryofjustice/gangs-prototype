@@ -8,6 +8,11 @@
   <p>{{cookieText | safe }}</p>
 {% endblock %}
 
+{% set userType = "prison-officer" %}
+{% if data['user_type'] %}
+  {% set userType = data['user_type'] %}
+{% endif %}
+
 {% block proposition_header %}
 
   <div class="header-proposition">
@@ -20,12 +25,14 @@
             {% if serviceName %} {{ serviceName }} {% endif %}
           {% endblock %}
         </a>
-        {% if data['user_type'] %}
-        <ul id="proposition-links">
-          <li>Signed in as {{data['user_type']}}@example.com</li>
-          <li><a href="/signout">Sign out</a></li>
-        </ul>
-        {% endif %}
+
+        {% block user_items %}
+          <ul id="proposition-links">
+            <li>Signed in as {{userType}}@example.com</li>
+            <li><a href="/signout">Sign out</a></li>
+          </ul>
+        {% endblock %}
+
       </nav>
     </div>
   </div>
