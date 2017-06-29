@@ -13,58 +13,27 @@
   {% set userType = data['user_type'] %}
 {% endif %}
 
+{% set homepage_url = "/" %}
+{% set global_header_text=serviceName %}
 {% block inside_header %}
 
 {% endblock %}
 
 {% block proposition_header %}
-
-  <div class="header-proposition">
-    <div class="content">
-      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
-
-      <nav id="proposition-menu">
-        <div id="name-and-menu">
-          <a href="/" id="proposition-name">
-            {# Set serviceName in config.js. Use a block to override on a page. #}
-            {% block service_name %}
-              {% if serviceName %} {{ serviceName }} {% endif %}
-            {% endblock %}
-          </a>
-          <ul id="proposition-links">
-            <li><a href="/nominal">Nominals</a></li>
-            <li><a href="/ocg">OCGs</a></li>
-          </ul>
-        </div>
-        <div id="user-and-search">
-          <ul class="user-menu">
-            <li>{{userType}}@example.com</li>
-            <li><a href="/signout">Sign out</a></li>
-          </ul>
-          <div class='simple-search-outer'>
-            <form id="simple-search" action="/simple_search_action.html" method="get">
-              <div class="form-group">
-                <fieldset class="inline">
-                  <select name="search-scope" class="form-control">
-                  {% for scope in ['Nominals', 'OCGs'] %}
-                    <option value='{{ scope | lower }}'>{{ scope }}</option>
-                  {% endfor %}
-                  </select>
-                  <label class="visually-hidden" for="q">Search for</label>
-                  <input name="q" id="q" placeholder="search" class="form-control" value="{{data['q']}}" />
-                  <input type="submit" class="button-search form-control" value="" />
-                </fieldset>
-              </div>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-
+  <div id="user-and-search">
+    <ul class="user-menu">
+      <li>{{userType}}@example.com</li>
+      <li><a href="/signout">Sign out</a></li>
+    </ul>
+    <div class='simple-search-outer'>
+      {% include 'includes/simple_search_form.html' %}
     </div>
-
   </div>
 
+  <ul id="proposition-links">
+    <li><a href="/nominal">Nominals</a></li>
+    <li><a href="/ocg">OCGs</a></li>
+  </ul>
 {% endblock %}
 
 
