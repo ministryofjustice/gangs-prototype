@@ -76,7 +76,12 @@
           {% if affiliations.length %}
             <ul class="list list-bullet">
               {% for affiliation in affiliations %}
-              <li><a href="/ocg/{{affiliation.index}}">{{affiliation.name}}</a></li>
+              <li>
+                <a href="/ocg/{{affiliation.index}}">{{affiliation.name}}</a>
+                {% if affiliation.role %}
+                (role: {{affiliation.role}})
+                {% endif %}
+              </li>
               {% endfor %}
             </ul>
           {% else %}

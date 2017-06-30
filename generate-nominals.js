@@ -4,6 +4,8 @@ var faker = require('faker');
 var genderGuess = require('gender-guess');
 var unique = require('array-unique');
 var dummyAliases = require('./app/sources/aliases.json');
+var nominalRoles = require('./app/sources/roles.json').roles;
+
 var mugshots = require('./app/modules/mugshot.js');
 var quantities = require('./app/sources/quantities.json');
 var randomPicker = require('./app/modules/randompicker.js');
@@ -127,11 +129,21 @@ function generateAffiliations() {
 
   affiliations.push(Math.floor(Math.random() * quantities.ocgs));
 
-  if(Math.random() < 0.2) {
+  if(Math.random() < 0.15) {
     affiliations.push(Math.floor(Math.random() * quantities.ocgs));
   }
 
-  return unique(affiliations);
+  affiliations = unique(affiliations);
+
+  affiliations.forEach(function(affiliation, n) {
+    affiliations[n] = [affiliation];
+    if(Math.random() < 0.3) {
+      var roleIndex = Math.floor(Math.random() * nominalRoles.length);
+      affiliations[n].push(roleIndex);
+    }
+  });
+
+  return affiliations;
 };
 
 function leadingZero(n) {

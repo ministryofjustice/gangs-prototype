@@ -1,0 +1,10 @@
+{
+  "roles": [
+    "enforcer",
+    "courier",
+    "street dealer",
+    "armourer",
+    "street thief",
+    "planner"
+  ]
+}

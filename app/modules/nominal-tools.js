@@ -1,6 +1,7 @@
 // nominal tools module
 var ocgs = require('../assets/data/dummyOcgs.json').ocgs;
 var nominals = require('../assets/data/dummyNominals.json').nominals;
+var nominalRoles = require('../../app/sources/roles.json').roles;
 
 var nominal = {
   getAge: function(dob) {
@@ -12,13 +13,14 @@ var nominal = {
 
     return elapsedYears;
   },
-  getAffiliations: function(affiliationIndexes) {
+  getAffiliations: function(affiliationsIn) {
     var affiliations = [];
 
-    affiliationIndexes.forEach(function(index) {
+    affiliationsIn.forEach(function(affiliationIn) {
       var affiliation = {
-        index: index,
-        name: ocgs[index].name
+        index: affiliationIn[0],
+        name: ocgs[affiliationIn[0]].name,
+        role: nominalRoles[affiliationIn[1]]
       };
       affiliations.push(affiliation);
     });
