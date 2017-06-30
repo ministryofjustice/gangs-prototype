@@ -1,0 +1,15 @@
+
+<form id="simple-search" action="/simple_search_action.html" method="get">
+  <div class="form-group">
+    <fieldset class="inline">
+      <select name="search-scope" class="form-control">
+      {% for scope in ['Nominals', 'OCGs'] %}
+        <option value='{{ scope | lower }}'>{{ scope }}</option>
+      {% endfor %}
+      </select>
+      <label class="visually-hidden" for="q">Search for</label>
+      <input name="q" id="q" placeholder="search" class="form-control" value="{{data['q']}}" />
+      <input type="submit" class="button-search form-control" value="" />
+    </fieldset>
+  </div>
+</form>

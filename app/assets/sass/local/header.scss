@@ -1,14 +1,11 @@
 .simple-search-outer {
   @include media(tablet) {
     float: right;
-    display: inline-block;
+    clear: both;
   }
   @include media(mobile) {
-    position: relative;
     float: none;
-    right: 0;
     text-align: center;
-    top: 0;
     width: 100%;
   }
 
@@ -24,12 +21,16 @@
     }
   }
   .button-search {
-    margin-top:0.25em;
     background-color:transparent;
-    background-size:cover;
-    background-repeat:no-repeat;
-    height: 2em;
-    width: 2em;
+    background-size: 1.8em;
+    background-position: 0.1em 0.2em;
+    background-repeat: no-repeat;
+    border: 1px outset white;
+    border-left: none;
+    height: 1.75em;
+    margin-left: 0;
+    margin-top: 2px;
+    width: 1.8em;
 
     @include media(mobile) {
       background-size: 2em, 2em;
@@ -46,34 +47,86 @@
   display: block;
 }
 #proposition-links {
+  clear: left;
   display: inline-block;
   float: left;
-}
+  margin-left: 5px;
 
-#global-header .header-proposition #proposition-link li,
-#global-header .header-proposition #proposition-links li {
-  @include media(tablet) {
-    display: block;
+  li {
+    float: left;
     a {
-      display: block;
+      font-weight: 700;
+      padding: 2px 10px;
+      text-decoration: none;
+      width: 7em;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   }
+
   @include media(mobile) {
     display: block;
-    a {
-      display: block;
+    float: none;
+    overflow: hidden;
+    width: 100%;
+
+    li {
+      display: inline-block;
+      width: 49%;
+
+      a {
+        display: block;
+      }
     }
   }
 }
-
-.js-enabled #global-header .header-proposition #proposition-links.js-visible {
+.js-enabled #proposition-links.js-visible {
   width: 100%;
 }
 
+#global-header.with-proposition .header-wrapper {
+  padding: 10px 20px;
+}
+#global-header.with-proposition .header-wrapper .header-global {
+  width: auto;
+}
+#global-header.with-proposition .header-wrapper .header-proposition  {
+  padding-top: 6px;
+  width: 80%;
+  
+  @include media(mobile) {
+    width: 100%;
+  }
+
+
+}
+
+#user-and-search {
+  float: right;
+  margin-right: 15px;
+  overflow: hidden;
+  width: auto;
+
+  @include media(mobile) {
+    float: none;
+    width: 100%;
+  }
+  input {
+    padding: 9px;
+  }
+}
+#name-and-menu {
+  float: left;
+}
+
+
 .user-menu {
-  margin-left: 15px;
+  float: right;
 
   li, a {
     color: $white;
+    display: inline-block;
+    list-style-type: none;
   }
 }
