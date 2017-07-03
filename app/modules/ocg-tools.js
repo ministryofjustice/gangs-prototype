@@ -2,18 +2,28 @@
 var ocgs = require('../assets/data/dummyOcgs.json').ocgs;
 var nominals = require('../assets/data/dummyNominals.json').nominals;
 var tensions = require('../assets/data/ocgTensions.json').tensions;
+var nominalRoles = require('../../app/sources/roles.json').roles;
 
 var ocg = {
   getNominals: function(ocgIndex) {
     var ocgNominals = [];
 
     nominals.forEach(function(nominal, n) {
-      var ocgContainsNominal = nominal.affiliations.indexOf(parseInt(ocgIndex,10)) !== -1;
+      var ocgContainsNominal = false,
+          role;
+
+      nominal.affiliations.forEach(function(affiliation) {
+        if(affiliation[0] === parseInt(ocgIndex, 10)) {
+          ocgContainsNominal = true;
+          role = nominalRoles[affiliation[1]];
+        }
+      });
 
       if(ocgContainsNominal) {
         ocgNominals.push({
           index: n,
-          name: [nominal.given_names, nominal.family_name].join(' ')
+          name: [nominal.given_names, nominal.family_name].join(' '),
+          role: role
         });
       }
     });
