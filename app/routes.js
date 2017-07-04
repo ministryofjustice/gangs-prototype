@@ -7,8 +7,8 @@ var nominalTools = require('./modules/nominal-tools.js');
 var ocgTools = require('./modules/ocg-tools.js');
 var updateTools = require('./modules/update-tools.js');
 
-var nominals = require('./assets/data/dummyNominals.json').nominals;
-var ocgs = require('./assets/data/dummyOcgs.json').ocgs;
+var nominals = require('./assets/data/dummy-nominals.json').nominals;
+var ocgs = require('./assets/data/dummy-ocgs.json').ocgs;
 
 var paginator = require('./modules/paginator.js')
 

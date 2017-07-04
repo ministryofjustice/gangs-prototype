@@ -1,8 +1,8 @@
 // nominal tools module
 var humanize = require('humanize');
 
-var ocgs = require('../assets/data/dummyOcgs.json').ocgs;
-var nominals = require('../assets/data/dummyNominals.json').nominals;
+var ocgs = require('../assets/data/dummy-ocgs.json').ocgs;
+var nominals = require('../assets/data/dummy-nominals.json').nominals;
 var updates = require('../assets/data/updates.json').updateEvents;
 var quantities = require('../sources/quantities.json');
 

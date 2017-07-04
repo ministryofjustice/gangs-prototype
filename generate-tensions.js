@@ -55,7 +55,7 @@ function addtensionLevels() {
 }
 
 function writeTensionsFile() {
-  fs.writeFile('./app/assets/data/ocgTensions.json', JSON.stringify(data, null, 2), 'utf-8');
+  fs.writeFile('./app/assets/data/ocg-tensions.json', JSON.stringify(data, null, 2), 'utf-8');
 }
 
 function createTension() {

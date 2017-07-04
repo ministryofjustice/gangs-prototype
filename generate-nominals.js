@@ -8,7 +8,7 @@ var nominalRoles = require('./app/sources/roles.json').roles;
 
 var mugshots = require('./app/modules/mugshot.js');
 var quantities = require('./app/sources/quantities.json');
-var randomPicker = require('./app/modules/randompicker.js');
+var randomPicker = require('./app/modules/random-picker.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -45,7 +45,7 @@ function init() {
     data.nominals.push(nominal);
   }
 
-  fs.writeFile('./app/assets/data/dummyNominals.json', JSON.stringify(data, null, 2), 'utf-8');
+  fs.writeFile('./app/assets/data/dummy-nominals.json', JSON.stringify(data, null, 2), 'utf-8');
 }
 
 function generateDob() {

@@ -1,11 +1,11 @@
 var path = require('path');
 var fs = require('fs');
 var unique = require('array-unique');
-var ocgNameParts = require('./app/sources/ocgnames.json');
+var ocgNameParts = require('./app/sources/ocg-names.json');
 var quantities = require('./app/sources/quantities.json');
-var ocgIdentifyingFeatures = require('./app/sources/ocgidentifyingfeatures.json');
-var ocgActivities = require('./app/sources/ocgactivities.json');
-var randomPicker = require('./app/modules/randompicker.js');
+var ocgIdentifyingFeatures = require('./app/sources/ocg-identifying-features.json');
+var ocgActivities = require('./app/sources/ocg-activities.json');
+var randomPicker = require('./app/modules/random-picker.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -39,7 +39,7 @@ function init() {
     data.ocgs.push(ocg);
   }
 
-  fs.writeFile('./app/assets/data/dummyOcgs.json', JSON.stringify(data, null, 2), 'utf-8');
+  fs.writeFile('./app/assets/data/dummy-ocgs.json', JSON.stringify(data, null, 2), 'utf-8');
 }
 
 function featureTypes(){

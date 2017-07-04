@@ -1,7 +1,7 @@
 // ocg tools module
-var ocgs = require('../assets/data/dummyOcgs.json').ocgs;
-var nominals = require('../assets/data/dummyNominals.json').nominals;
-var tensions = require('../assets/data/ocgTensions.json').tensions;
+var ocgs = require('../assets/data/dummy-ocgs.json').ocgs;
+var nominals = require('../assets/data/dummy-nominals.json').nominals;
+var tensions = require('../assets/data/ocg-tensions.json').tensions;
 var nominalRoles = require('../../app/sources/roles.json').roles;
 
 var ocg = {

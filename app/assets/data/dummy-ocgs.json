@@ -1,0 +1,281 @@
+{
+  "ocgs": [
+    {
+      "name": "Barnet Ghost Thugs",
+      "aliases": [],
+      "territory": "East Finchley, N2, N12",
+      "identifying_features": [],
+      "pnd_id": "57/192373Q",
+      "grits_id": "J7672ZU",
+      "ocgm_urn": "69297624",
+      "known_activities": []
+    },
+    {
+      "name": "Brixton Joker Dogs",
+      "aliases": [
+        "Brixton Angel Dogs"
+      ],
+      "identifying_features": [
+        "blue baseball cap",
+        "braided hairstyle"
+      ],
+      "pnd_id": "37/223702Q",
+      "grits_id": "F2519MI",
+      "ocgm_urn": "26826780",
+      "known_activities": [
+        "People trafficking"
+      ]
+    },
+    {
+      "name": "Norwich Cash Blades",
+      "aliases": [],
+      "identifying_features": [
+        "buzz cut hairstyle",
+        "knife tattoo on back"
+      ],
+      "pnd_id": "54/468566Y",
+      "grits_id": "H9837KB",
+      "ocgm_urn": "92081081",
+      "known_activities": [
+        "People trafficking"
+      ]
+    },
+    {
+      "name": "Brizzle Young Crew",
+      "aliases": [],
+      "territory": "St Pauls, Easton, Stokes Croft",
+      "identifying_features": [
+        "loose yellow hoodie",
+        "excessive jewellery",
+        "maze tattoo, on right hand"
+      ],
+      "pnd_id": "47/294704Y",
+      "grits_id": "U8813DO",
+      "ocgm_urn": "46795138",
+      "known_activities": [
+        "Home invasions"
+      ]
+    },
+    {
+      "name": "Deptford Ghetto Family",
+      "aliases": [
+        "Deptford Ghetto Squad"
+      ],
+      "territory": "Aylesbury Estate, New Cross Road",
+      "identifying_features": [
+        "t-shirt",
+        "loose baseball cap",
+        "oversize blue combats"
+      ],
+      "pnd_id": "01/441696L",
+      "grits_id": "K7763ZI",
+      "ocgm_urn": "17138162",
+      "known_activities": []
+    },
+    {
+      "name": "Deptford Rough Skins",
+      "aliases": [
+        "Deptford Rough Cartel"
+      ],
+      "territory": "Aylesbury Estate, New Cross Road",
+      "identifying_features": [],
+      "pnd_id": "05/161824B",
+      "grits_id": "L0556AI",
+      "ocgm_urn": "29872574",
+      "known_activities": [
+        "Drug dealing"
+      ]
+    },
+    {
+      "name": "Hackney Blind Tribe",
+      "aliases": [],
+      "territory": "Trelawny Estate, Mare Street, E5, Lower Clapton",
+      "identifying_features": [],
+      "pnd_id": "70/015894L",
+      "grits_id": "H7963WT",
+      "ocgm_urn": "36956408",
+      "known_activities": []
+    },
+    {
+      "name": "Manc Steel Bluds",
+      "aliases": [
+        "Manc Steel Posse"
+      ],
+      "identifying_features": [
+        "red trainers",
+        "buzz cut hairstyle"
+      ],
+      "pnd_id": "16/863890Y",
+      "grits_id": "J6470VC",
+      "ocgm_urn": "84154180",
+      "known_activities": [
+        "People trafficking"
+      ]
+    },
+    {
+      "name": "Deptford Scooter Pack",
+      "aliases": [],
+      "identifying_features": [
+        "oversize grey trainers"
+      ],
+      "pnd_id": "93/604746R",
+      "grits_id": "E4191LF",
+      "ocgm_urn": "81359375",
+      "known_activities": [
+        "People trafficking",
+        "Phone snatching"
+      ]
+    },
+    {
+      "name": "Brizzle Shank Guns",
+      "aliases": [
+        "Brizzle Paper Guns"
+      ],
+      "identifying_features": [
+        "backwards bandana"
+      ],
+      "pnd_id": "80/683888X",
+      "grits_id": "M2333SJ",
+      "ocgm_urn": "66648168",
+      "known_activities": [
+        "Smuggling",
+        "Drug dealing"
+      ]
+    },
+    {
+      "name": "Deptford Royal Fam",
+      "aliases": [],
+      "territory": "Aylesbury Estate, New Cross Road",
+      "identifying_features": [
+        "combats",
+        "loose trainers"
+      ],
+      "pnd_id": "50/302764H",
+      "grits_id": "T9963RH",
+      "ocgm_urn": "13492575",
+      "known_activities": []
+    },
+    {
+      "name": "Southwark Callajeros Group",
+      "aliases": [
+        "Southwark Smart Group"
+      ],
+      "identifying_features": [
+        "white baseball cap",
+        "ghost mask"
+      ],
+      "pnd_id": "36/458719O",
+      "grits_id": "U7613UN",
+      "ocgm_urn": "66515733",
+      "known_activities": []
+    },
+    {
+      "name": "Peckham Chopper Company",
+      "aliases": [],
+      "identifying_features": [
+        "loose black baseball cap"
+      ],
+      "pnd_id": "22/228204B",
+      "grits_id": "V1649TA",
+      "ocgm_urn": "29390275",
+      "known_activities": []
+    },
+    {
+      "name": "Dulwich Money Collective",
+      "aliases": [
+        "Dulwich Money Bloodline"
+      ],
+      "identifying_features": [
+        "suit",
+        "mop top hair",
+        "tally (of kills) tattoo on the left arm"
+      ],
+      "pnd_id": "92/836384D",
+      "grits_id": "I3765KE",
+      "ocgm_urn": "60613645",
+      "known_activities": [
+        "Home invasions",
+        "Arms dealing"
+      ]
+    },
+    {
+      "name": "Peckham Killa Boys",
+      "aliases": [],
+      "territory": "SE15, Peckham, Peckham Rye",
+      "identifying_features": [
+        "green bandana"
+      ],
+      "pnd_id": "27/119467Q",
+      "grits_id": "T5610VG",
+      "ocgm_urn": "58922130",
+      "known_activities": []
+    },
+    {
+      "name": "Belfast Wild Firm",
+      "aliases": [],
+      "territory": "Shankhill Road, East Belfast, Portadown",
+      "identifying_features": [],
+      "pnd_id": "95/576228M",
+      "grits_id": "B9250OJ",
+      "ocgm_urn": "00076579",
+      "known_activities": []
+    },
+    {
+      "name": "Dublin Dark Massiv",
+      "aliases": [],
+      "identifying_features": [
+        "yellow suit",
+        "balaclava",
+        "bleached hair"
+      ],
+      "pnd_id": "47/899221C",
+      "grits_id": "Z6058KH",
+      "ocgm_urn": "63113679",
+      "known_activities": [
+        "Home invasions"
+      ]
+    },
+    {
+      "name": "Belfast Iron Gang",
+      "aliases": [],
+      "territory": "Shankhill Road, East Belfast, Portadown",
+      "identifying_features": [
+        "oversize kagoul",
+        "oversize red suit",
+        "tally (of kills) tattoo on chest"
+      ],
+      "pnd_id": "63/953499X",
+      "grits_id": "D5712JE",
+      "ocgm_urn": "90220263",
+      "known_activities": [
+        "Drug dealing"
+      ]
+    },
+    {
+      "name": "Mersey Shady Lords",
+      "aliases": [],
+      "identifying_features": [
+        "grey combats"
+      ],
+      "pnd_id": "42/412277E",
+      "grits_id": "U6737QZ",
+      "ocgm_urn": "68309836",
+      "known_activities": []
+    },
+    {
+      "name": "New Cross Tough Riders",
+      "aliases": [
+        "New Cross Tough Lads"
+      ],
+      "identifying_features": [
+        "eagle tattoo on left arm"
+      ],
+      "pnd_id": "99/210476C",
+      "grits_id": "A9828GB",
+      "ocgm_urn": "29359128",
+      "known_activities": [
+        "Home invasions"
+      ]
+    }
+  ]
+}
