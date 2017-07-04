@@ -28,21 +28,26 @@
       </dl>
     </div>
   </div>
-  
+
   <div class="grid-row">
     <div class="column-half">
       <h2 class="heading-medium">Known nominals:</h2>
       {% if nominals.length %}
         <ul class="list list-bullet">
           {% for nominal in nominals %}
-          <li><a href="/nominal/{{nominal.index}}">{{nominal.name}}</a></li>
+          <li>
+            <a href="/nominal/{{nominal.index}}">{{nominal.name}}</a>
+            {% if nominal.role %}
+            ({{nominal.role}})
+            {% endif %}
+          </li>
           {% endfor %}
         </ul>
       {% else %}
         <p>none</p>
       {% endif %}
     </div>
-  
+
     <div class="column-half">
       <h2 class="heading-medium">Known tensions:</h2>
       {% if tensions.length %}
