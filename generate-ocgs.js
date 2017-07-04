@@ -1,8 +1,10 @@
 var path = require('path');
 var fs = require('fs');
+var unique = require('array-unique');
 var ocgNameParts = require('./app/sources/ocgnames.json');
 var quantities = require('./app/sources/quantities.json');
 var ocgIdentifyingFeatures = require('./app/sources/ocgidentifyingfeatures.json');
+var ocgActivities = require('./app/sources/ocgactivities.json');
 var randomPicker = require('./app/modules/randompicker.js');
 
 // Check if node_modules folder exists
@@ -33,6 +35,7 @@ function init() {
     ocg.pnd_id = generatePNDID();
     ocg.grits_id = generateGRITSID();
     ocg.ocgm_urn = generateOCGMURN();
+    ocg.known_activities = generateOCGActivities();
     data.ocgs.push(ocg);
   }
 
@@ -86,7 +89,7 @@ function getOcgPart(partType) {
   var part, values;
   values = (partType == 'areas' ? Object.keys(ocgNameParts['areas']) : ocgNameParts[partType]);
 
-  var index = Math.floor(Math.random() * values.length);  
+  var index = Math.floor(Math.random() * values.length);
   part = values.splice(index, 1)[0];
 
   return part;
@@ -118,7 +121,7 @@ function nameAsString(name) {
   return [name['areas'], name['prefixes'], name['suffixes']].join(' ');
 }
 
-function generateTerritory(name) { 
+function generateTerritory(name) {
   if( Math.random() > 0.6 ) {
     return ocgNameParts['areas'][name['areas']];
   }
@@ -139,6 +142,22 @@ function generatePNDID() {
 function generateOCGMURN() {
   var str = randomPicker.rndDigits(8);
   return str;
+}
+
+function generateOCGActivities() {
+  var activities = [];
+
+  if(Math.random() < 0.5) {
+    activities.push(randomPicker.rnd(ocgActivities));
+  }
+  if(Math.random() < 0.2) {
+    activities.push(randomPicker.rnd(ocgActivities));
+  }
+  if(Math.random() < 0.1) {
+    activities.push(randomPicker.rnd(ocgActivities));
+  }
+
+  return unique(activities);
 }
 
 init();

@@ -23,6 +23,11 @@
         <dt>Territory:</dt>
           <dd>{{ ocg.territory }}</dd>
 
+        {% if ocg.known_activities.length %}
+        <dt>Known activities:</dt>
+          <dd>{{ ocg.known_activities.join(', ') }}</dd>
+        {% endif %}
+
         <dt>Identifying features:</dt>
           <dd>{{ ocg.identifying_features.join(', ') }}</dd>
       </dl>
