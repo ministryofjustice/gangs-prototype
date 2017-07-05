@@ -1,5 +1,5 @@
 <div class="search-result-avatar-wrapper">
-  <div class="avatar avatar-thumb" style="background-image:url({{result.mugshot.url}})" title="{{result.given_names}} {{result.family_name}}">
+  <div class="avatar avatar-thumb" style="background-image:url(/public/images/mugshots/{{result.mugshot.filename}})" title="{{result.given_names}} {{result.family_name}}">
   </div>
 </div>
 
@@ -42,7 +42,7 @@
   {% if result.identifying_marks.length %}
     <dl class="marks">
       <dt>Identifying marks:</dt>
-      <dd>     
+      <dd>
           {{ result.identifying_marks.join(', ') }}
       </dd>
     </dl>
