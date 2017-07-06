@@ -2,6 +2,7 @@
 var ocgs = require('../assets/data/dummy-ocgs.json').ocgs;
 var nominals = require('../assets/data/dummy-nominals.json').nominals;
 var nominalRoles = require('../../app/sources/roles.json').roles;
+var search = require('./search.js');
 
 var nominal = {
   getAge: function(dob) {
@@ -41,43 +42,10 @@ var nominal = {
     return nominalsInPrison;
   },
 
-  filter: function(array, params) {
-    var results = [];
-    for( var i=0; i < array.length; i++ ){
-      if( this.matches(array[i], params) ){
-        results.push(array[i]);
-      }
-    }
-    return results;
-  },
-
   search: function(params) {
     // note: search is basic sub-string match only
-    var filteredNominals = this.filter(this.ensureIndex(nominals), params);
+    var filteredNominals = search.filter(nominals, params);
     return filteredNominals;
-  },
-
-
-  matches: function(object, params) {
-    for( key in params ){
-      if( params[key] && key in object ){
-        var tokens = params[key].toLowerCase().split(/[ ,]+/);
-        var value = object[key].toString().toLowerCase();
-
-        for( var i=0; i < tokens.length; i++ ){
-          if( value.indexOf(tokens[i]) == -1 ){
-            return false;
-          }
-        }
-      }
-    }
-    return true;
-  },
-
-  ensureIndex: function(array) {
-    return array.map( function(element, index){ 
-      element['index'] = index; return element; 
-    });
   }
 };
 
