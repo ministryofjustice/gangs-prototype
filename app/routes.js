@@ -9,6 +9,7 @@ var updateTools = require('./modules/update-tools.js');
 
 var nominals = require('./assets/data/dummy-nominals.json').nominals;
 var ocgs = require('./assets/data/dummy-ocgs.json').ocgs;
+var prisons = require('./sources/prisons.json').prisons;
 
 var paginator = require('./modules/paginator.js')
 
@@ -25,6 +26,8 @@ router.get('/signout', function (req, res) {
   res.redirect('/');
 });
 
+
+
 // home page with updates
 router.get('/home', function (req, res) {
   var updatesToDisplay = updateTools.updatesForDisplay(10);
@@ -32,8 +35,6 @@ router.get('/home', function (req, res) {
     updates: updatesToDisplay
   });
 });
-
-
 
 // all updates page
 router.get('/updates', function (req, res) {
@@ -51,7 +52,23 @@ router.get('/nominal/rand/', function(req, res) {
   res.redirect('/nominal/' + n);
 });
 
-// search-related routes
+router.get('/nominal/:index', function(req, res) {
+  var nominal = nominals[req.params.index];
+  res.render('nominal/show', {
+    next: nav.next(req.params.index, nominals.length),
+    prev: nav.prev(req.params.index, nominals.length),
+    nominal: nominal,
+    age: nominalTools.getAge(nominal.dob),
+    affiliations: nominalTools.getAffiliations(nominal.affiliations),
+    prisonName: prisons[nominal.incarceration]
+  });
+});
+
+router.get('/nominal/', function(req, res) {
+  res.redirect('/nominal/search/new');
+});
+
+// nominal search-related routes
 router.get('/nominal/search/', function(req, res) {
   res.redirect('/nominal/search/new');
 });
@@ -72,43 +89,6 @@ router.get('/nominal/search/results', function(req, res) {
     pages: pages,
     per_page: per_page
   });
-});
-
-router.get('/ocg/search/', function(req, res) {
-  res.redirect('/ocg/search/new');
-});
-router.get('/ocg/search/new', function(req, res) {
-  res.render('ocg/search/new', {search: {}});
-});
-router.get('/ocg/search/results', function(req, res) {
-  var results = ocgTools.search(req.params);
-  var page=req.query['page'] || 1;
-  var per_page=req.query['per_page'] || 20;
-  var pages=results.length / (per_page > 0 ? per_page : 1);
-
-  var paginated_results = paginator.visibleElements(results, page, per_page);
-
-  res.render('ocg/search/results', {
-    search_results: paginated_results,
-    page: page,
-    pages: pages,
-    per_page: per_page
-  });
-});
-
-router.get('/nominal/:index', function(req, res) {
-  var nominal = nominals[req.params.index];
-  res.render('nominal/show', {
-    next: nav.next(req.params.index, nominals.length),
-    prev: nav.prev(req.params.index, nominals.length),
-    nominal: nominal,
-    age: nominalTools.getAge(nominal.dob),
-    affiliations: nominalTools.getAffiliations(nominal.affiliations)
-  });
-});
-
-router.get('/nominal/', function(req, res) {
-  res.redirect('/nominal/search/new');
 });
 
 
@@ -134,6 +114,42 @@ router.get('/ocg/:index', function(req, res) {
 
 router.get('/ocg/', function(req, res) {
   res.redirect('/ocg/search/new');
+});
+
+// ocg search-related routes
+router.get('/ocg/search/', function(req, res) {
+  res.redirect('/ocg/search/new');
+});
+router.get('/ocg/search/new', function(req, res) {
+  res.render('ocg/search/new', {search: {}});
+});
+router.get('/ocg/search/results', function(req, res) {
+  var results = ocgTools.search(req.params);
+  var page=req.query['page'] || 1;
+  var per_page=req.query['per_page'] || 20;
+  var pages=results.length / (per_page > 0 ? per_page : 1);
+
+  var paginated_results = paginator.visibleElements(results, page, per_page);
+
+  res.render('ocg/search/results', {
+    search_results: paginated_results,
+    page: page,
+    pages: pages,
+    per_page: per_page
+  });
+});
+
+
+
+// prisons
+router.get('/prison/:index', function(req, res) {
+  var prison = prisons[req.params.index];
+  var nominalsInPrison = nominalTools.getNominalsInPrison(req.params.index);
+
+  res.render('prison/show', {
+    prison: prison,
+    nominalsInPrison: nominalsInPrison
+  });
 });
 
 

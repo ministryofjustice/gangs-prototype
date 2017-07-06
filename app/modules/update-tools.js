@@ -4,6 +4,7 @@ var humanize = require('humanize');
 var ocgs = require('../assets/data/dummy-ocgs.json').ocgs;
 var nominals = require('../assets/data/dummy-nominals.json').nominals;
 var updates = require('../assets/data/updates.json').updateEvents;
+var prisons = require('../sources/prisons.json').prisons;
 var quantities = require('../sources/quantities.json');
 
 var updateTools = {
@@ -31,7 +32,7 @@ var updateTools = {
       case 'incarceration':
         inner += self.bold(self.link(nominals[update.nominal].given_names + ' ' + nominals[update.nominal].family_name, 'nominal', update.nominal));
         inner += ' was incarcerated at ';
-        inner += self.bold(update.location);
+        inner += self.bold(self.link(prisons[update.location], 'prison', update.location));
         break;
       case 'tension-change':
         inner += 'Tension between ';

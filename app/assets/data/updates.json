@@ -1,276 +1,273 @@
 {
   "updateEvents": [
     {
-      "type": "incarceration",
-      "nominal": 58,
-      "location": "Lewis"
-    },
-    {
       "type": "tension-change",
-      "ocg1": 13,
-      "ocg2": 6,
-      "newTensionLevel": "low"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 9,
-      "ocg2": 16,
+      "ocg1": 3,
+      "ocg2": 4,
       "newTensionLevel": "medium"
     },
     {
       "type": "tension-change",
-      "ocg1": 6,
-      "ocg2": 12,
+      "ocg1": 0,
+      "ocg2": 6,
       "newTensionLevel": "high"
     },
     {
       "type": "affiliation",
-      "nominal": 40,
-      "ocg": 10
+      "nominal": 35,
+      "ocg": 5
     },
     {
       "type": "incarceration",
-      "nominal": 11,
-      "location": "Feltham"
+      "nominal": 43,
+      "location": 23
     },
     {
       "type": "affiliation",
-      "nominal": 80,
-      "ocg": 13
+      "nominal": 78,
+      "ocg": 5
     },
     {
       "type": "affiliation",
-      "nominal": 15,
+      "nominal": 89,
+      "ocg": 2
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 17,
+      "ocg2": 8,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 18,
+      "ocg2": 8,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "incarceration",
+      "nominal": 37,
+      "location": 21
+    },
+    {
+      "type": "affiliation",
+      "nominal": 6,
+      "ocg": 4
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 16,
+      "ocg2": 15,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 67,
       "ocg": 6
     },
     {
       "type": "tension-change",
       "ocg1": 14,
-      "ocg2": 1,
+      "ocg2": 4,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "incarceration",
+      "nominal": 88,
+      "location": 16
+    },
+    {
+      "type": "incarceration",
+      "nominal": 53,
+      "location": 8
+    },
+    {
+      "type": "incarceration",
+      "nominal": 31,
+      "location": 18
+    },
+    {
+      "type": "incarceration",
+      "nominal": 41,
+      "location": 5
+    },
+    {
+      "type": "affiliation",
+      "nominal": 6,
+      "ocg": 11
+    },
+    {
+      "type": "incarceration",
+      "nominal": 54,
+      "location": 10
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 9,
+      "ocg2": 0,
       "newTensionLevel": "medium"
     },
     {
       "type": "tension-change",
-      "ocg1": 14,
-      "ocg2": 5,
-      "newTensionLevel": "high"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 11,
-      "ocg2": 13,
-      "newTensionLevel": "high"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 18,
-      "ocg2": 13,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 61,
-      "ocg": 19
-    },
-    {
-      "type": "incarceration",
-      "nominal": 84,
-      "location": "Wormwood Scrubs"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 99,
-      "ocg": 9
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 6,
-      "ocg2": 8,
-      "newTensionLevel": "high"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 64,
-      "location": "Feltham"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 11,
-      "ocg2": 19,
-      "newTensionLevel": "high"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 5,
-      "ocg": 4
-    },
-    {
-      "type": "incarceration",
-      "nominal": 13,
-      "location": "Belmarsh"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 10,
-      "ocg": 16
-    },
-    {
-      "type": "affiliation",
-      "nominal": 93,
-      "ocg": 12
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 0,
-      "ocg2": 18,
-      "newTensionLevel": "high"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 14,
-      "location": "Oakwood"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 55,
-      "location": "Gartree"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 79,
-      "location": "Kirkham"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 7,
-      "ocg2": 19,
+      "ocg1": 3,
+      "ocg2": 0,
       "newTensionLevel": "low"
     },
     {
       "type": "affiliation",
-      "nominal": 13,
-      "ocg": 3
-    },
-    {
-      "type": "affiliation",
-      "nominal": 92,
+      "nominal": 53,
       "ocg": 7
     },
     {
-      "type": "incarceration",
-      "nominal": 38,
-      "location": "Kirkham"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 2,
-      "location": "Wandsworth"
-    },
-    {
       "type": "affiliation",
-      "nominal": 18,
+      "nominal": 7,
       "ocg": 10
     },
     {
-      "type": "tension-change",
-      "ocg1": 15,
-      "ocg2": 1,
-      "newTensionLevel": "low"
+      "type": "affiliation",
+      "nominal": 24,
+      "ocg": 8
+    },
+    {
+      "type": "incarceration",
+      "nominal": 58,
+      "location": 8
     },
     {
       "type": "affiliation",
-      "nominal": 54,
-      "ocg": 18
-    },
-    {
-      "type": "incarceration",
-      "nominal": 81,
-      "location": "Gartree"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 81,
-      "location": "Leyhill"
+      "nominal": 3,
+      "ocg": 14
     },
     {
       "type": "tension-change",
       "ocg1": 6,
-      "ocg2": 0,
+      "ocg2": 4,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 76,
+      "ocg": 1
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 9,
+      "ocg2": 14,
       "newTensionLevel": "low"
+    },
+    {
+      "type": "incarceration",
+      "nominal": 20,
+      "location": 0
+    },
+    {
+      "type": "incarceration",
+      "nominal": 68,
+      "location": 12
     },
     {
       "type": "incarceration",
       "nominal": 71,
-      "location": "Brixton"
+      "location": 24
     },
     {
-      "type": "tension-change",
-      "ocg1": 16,
-      "ocg2": 12,
-      "newTensionLevel": "high"
+      "type": "incarceration",
+      "nominal": 80,
+      "location": 19
     },
     {
       "type": "tension-change",
       "ocg1": 13,
-      "ocg2": 0,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 36,
-      "location": "Wetherby"
+      "ocg2": 7,
+      "newTensionLevel": "low"
     },
     {
       "type": "tension-change",
-      "ocg1": 4,
+      "ocg1": 3,
       "ocg2": 19,
       "newTensionLevel": "high"
     },
     {
+      "type": "affiliation",
+      "nominal": 60,
+      "ocg": 4
+    },
+    {
+      "type": "incarceration",
+      "nominal": 34,
+      "location": 3
+    },
+    {
       "type": "tension-change",
-      "ocg1": 15,
-      "ocg2": 1,
+      "ocg1": 6,
+      "ocg2": 11,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 18,
+      "ocg2": 10,
       "newTensionLevel": "high"
     },
     {
       "type": "incarceration",
-      "nominal": 39,
-      "location": "Whitemoor"
+      "nominal": 53,
+      "location": 14
     },
     {
       "type": "tension-change",
-      "ocg1": 0,
-      "ocg2": 9,
-      "newTensionLevel": "low"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 22,
-      "location": "Gartree"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 16,
-      "ocg2": 1,
+      "ocg1": 8,
+      "ocg2": 19,
       "newTensionLevel": "medium"
     },
     {
-      "type": "tension-change",
-      "ocg1": 7,
-      "ocg2": 2,
-      "newTensionLevel": "low"
+      "type": "incarceration",
+      "nominal": 49,
+      "location": 11
+    },
+    {
+      "type": "incarceration",
+      "nominal": 57,
+      "location": 0
+    },
+    {
+      "type": "affiliation",
+      "nominal": 55,
+      "ocg": 8
+    },
+    {
+      "type": "incarceration",
+      "nominal": 44,
+      "location": 13
     },
     {
       "type": "tension-change",
-      "ocg1": 7,
-      "ocg2": 17,
+      "ocg1": 10,
+      "ocg2": 1,
       "newTensionLevel": "high"
     },
     {
       "type": "tension-change",
-      "ocg1": 17,
-      "ocg2": 7,
+      "ocg1": 2,
+      "ocg2": 0,
       "newTensionLevel": "high"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 7,
+      "ocg2": 16,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "incarceration",
+      "nominal": 99,
+      "location": 19
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 15,
+      "ocg2": 19,
+      "newTensionLevel": "medium"
     }
   ]
 }

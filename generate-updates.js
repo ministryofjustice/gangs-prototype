@@ -1,6 +1,9 @@
 var path = require('path');
 var fs = require('fs');
 var quantities = require('./app/sources/quantities.json');
+var prisons = require('./app/sources/prisons.json').prisons;
+
+var randomPicker = require('./app/modules/random-picker.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -17,7 +20,8 @@ var data = {
 },
     numUpdates = quantities.updates,
     numOcgs = quantities.ocgs,
-    numNominals = quantities.nominals;
+    numNominals = quantities.nominals,
+    numPrisons = prisons.length;
 
 function init() {
   // generate updates
@@ -85,11 +89,10 @@ function generateNewAffiliation() {
   return update;
 }
 function generateIncarceration() {
-  var dummyPrisons = ['Feltham', 'Lewis', 'Brixton', 'Pentonville', 'The Mount', 'Belmarsh', 'Dartmoor', 'Gartree', 'Kirkham', 'Wormwood Scrubs', 'Wandsworth', 'Whitemoor', 'Wetherby', 'Oakwood', 'Leyhill'];
   var update = {
     type: 'incarceration',
     nominal: Math.floor(Math.random() * numNominals),
-    location: dummyPrisons[Math.floor(Math.random() * dummyPrisons.length)]
+    location: Math.floor(Math.random() * numPrisons)
   };
 
   return update;

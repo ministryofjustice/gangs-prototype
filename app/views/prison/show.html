@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Prison detail: {{prison}}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% include 'includes/phase_banner_prototype.html' %}
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-xlarge">
+        HMP {{prison}}
+      </h1>
+
+      <h2 class="heading-medium">Nominals known to be in this facility:</h2>
+
+      {% if nominalsInPrison.length %}
+        <ul class="list list-bullet">
+          {% for nominal in nominalsInPrison %}
+          <li><a href="/nominal/{{nominal.index}}">{{nominal.given_names}} {{nominal.family_name}}</a></li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>None</p>
+      {% endif %}
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
+
+

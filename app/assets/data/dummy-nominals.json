@@ -1,2482 +1,381 @@
 {
   "nominals": [
     {
-      "given_names": "Kaia",
-      "family_name": "Dooley",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/15.png"
-      },
-      "dob": {
-        "day": 17,
-        "month": 12,
-        "year": 1973,
-        "displayDob": "17 Dec 1973"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right shoulder"
-      ],
-      "offender_id": 196,
-      "nomis_id": "O4126UY",
-      "pnc_id": "24/029368Y",
-      "aliases": [
-        "Lucky K",
-        "K Pain"
-      ],
-      "affiliations": [
-        [
-          4,
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Bernadine",
-      "family_name": "Feest",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/5.png"
-      },
-      "dob": {
-        "day": 24,
-        "month": 9,
-        "year": 1964,
-        "displayDob": "24 Sep 1964"
-      },
-      "identifying_marks": [
-        "birthmark on right forearm",
-        "scar on right cheek"
-      ],
-      "offender_id": 197,
-      "nomis_id": "F0287MK",
-      "pnc_id": "23/647293S",
-      "aliases": [
-        "Strider",
-        "Tiny"
-      ],
-      "affiliations": [
-        [
-          4
-        ]
-      ]
-    },
-    {
-      "given_names": "Lawrence",
-      "family_name": "Leffler",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/9.png"
-      },
-      "dob": {
-        "day": 2,
-        "month": 1,
-        "year": 1987,
-        "displayDob": "2 Jan 1987"
-      },
-      "identifying_marks": [],
-      "offender_id": 198,
-      "nomis_id": "B2011AM",
-      "pnc_id": "62/230258W",
-      "aliases": [
-        "Big Lawrence"
-      ],
-      "affiliations": [
-        [
-          6
-        ]
-      ]
-    },
-    {
-      "given_names": "Ettie",
-      "family_name": "Casper",
+      "index": 0,
+      "given_names": "Maximilian",
+      "family_name": "Keeling",
       "gender": "M",
       "mugshot": {
         "gender": "male",
         "filename": "male/8.png"
       },
       "dob": {
-        "day": 7,
-        "month": 5,
-        "year": 1964,
-        "displayDob": "7 May 1964"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left cheek"
-      ],
-      "offender_id": 199,
-      "nomis_id": "E9718NL",
-      "pnc_id": "71/264578L",
-      "aliases": [
-        "Bricktop",
-        "Moonie"
-      ],
-      "affiliations": [
-        [
-          16
-        ]
-      ]
-    },
-    {
-      "given_names": "Taryn",
-      "family_name": "Runte",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/1.png"
-      },
-      "dob": {
-        "day": 4,
-        "month": 11,
-        "year": 2002,
-        "displayDob": "4 Nov 2002"
-      },
-      "identifying_marks": [
-        "birthmark on left shoulder",
-        "tattoo of a spiderweb on left forearm"
-      ],
-      "offender_id": 200,
-      "nomis_id": "F3161SL",
-      "pnc_id": "83/096379T",
-      "aliases": [
-        "Spindles",
-        "T Bomb"
-      ],
-      "affiliations": [
-        [
-          2
-        ]
-      ]
-    },
-    {
-      "given_names": "Ole",
-      "family_name": "Prohaska",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/9.png"
-      },
-      "dob": {
-        "day": 24,
-        "month": 12,
-        "year": 1999,
-        "displayDob": "24 Dec 1999"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on left wrist",
-        "celtic tattoo on right forearm"
-      ],
-      "offender_id": 201,
-      "nomis_id": "J9836EZ",
-      "pnc_id": "34/517819L",
-      "aliases": [
-        "Lil O",
-        "Needles"
-      ],
-      "affiliations": [
-        [
-          9,
-          4
-        ]
-      ]
-    },
-    {
-      "given_names": "Sharon",
-      "family_name": "Swift",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/6.png"
-      },
-      "dob": {
-        "day": 2,
-        "month": 2,
-        "year": 1976,
-        "displayDob": "2 Feb 1976"
-      },
-      "identifying_marks": [],
-      "offender_id": 202,
-      "nomis_id": "A8763VK",
-      "pnc_id": "77/368417C",
-      "aliases": [
-        "Fast S",
-        "Brains"
-      ],
-      "affiliations": [
-        [
-          4
-        ]
-      ]
-    },
-    {
-      "given_names": "Una",
-      "family_name": "O'Keefe",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/7.png"
-      },
-      "dob": {
-        "day": 15,
+        "day": 12,
         "month": 4,
-        "year": 1997,
-        "displayDob": "15 Apr 1997"
-      },
-      "identifying_marks": [
-        "birthmark on left shoulder",
-        "scar on right cheek"
-      ],
-      "offender_id": 203,
-      "nomis_id": "P1431GJ",
-      "pnc_id": "64/293501R",
-      "aliases": [
-        "Bugsy",
-        "Shanks"
-      ],
-      "affiliations": [
-        [
-          9
-        ]
-      ]
-    },
-    {
-      "given_names": "Noble",
-      "family_name": "Schimmel",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/2.png"
-      },
-      "dob": {
-        "day": 4,
-        "month": 5,
-        "year": 1962,
-        "displayDob": "4 May 1962"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left shoulder",
-        "celtic tattoo on right wrist"
-      ],
-      "offender_id": 204,
-      "nomis_id": "C6568BS",
-      "pnc_id": "57/165365P",
-      "aliases": [
-        "Ice N",
-        "Monkey"
-      ],
-      "affiliations": [
-        [
-          6
-        ]
-      ]
-    },
-    {
-      "given_names": "Tyra",
-      "family_name": "Schroeder",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/7.png"
-      },
-      "dob": {
-        "day": 14,
-        "month": 7,
-        "year": 1985,
-        "displayDob": "14 Jul 1985"
+        "year": 1967,
+        "displayDob": "12 Apr 1967"
       },
       "identifying_marks": [],
-      "offender_id": 205,
-      "nomis_id": "E4001AE",
-      "pnc_id": "87/230097P",
+      "offender_id": 188,
+      "nomis_id": "T0436XM",
+      "pnc_id": "52/993946U",
       "aliases": [
-        "Strider"
+        "M Bomb"
       ],
       "affiliations": [
         [
-          13,
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Harley",
-      "family_name": "Maggio",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/7.png"
-      },
-      "dob": {
-        "day": 6,
-        "month": 7,
-        "year": 1984,
-        "displayDob": "6 Jul 1984"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right forearm",
-        "tattoo of a spiderweb on left forearm"
-      ],
-      "offender_id": 206,
-      "nomis_id": "T6929ZE",
-      "pnc_id": "92/904992A",
-      "aliases": [],
-      "affiliations": [
-        [
-          10
+          15
         ],
         [
-          7
-        ]
-      ]
-    },
-    {
-      "given_names": "Kaycee",
-      "family_name": "Sipes",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/8.png"
-      },
-      "dob": {
-        "day": 27,
-        "month": 12,
-        "year": 1968,
-        "displayDob": "27 Dec 1968"
-      },
-      "identifying_marks": [],
-      "offender_id": 207,
-      "nomis_id": "J8106SI",
-      "pnc_id": "49/915329E",
-      "aliases": [
-        "Big Kaycee"
-      ],
-      "affiliations": [
-        [
-          19
-        ]
-      ]
-    },
-    {
-      "given_names": "Bartholome",
-      "family_name": "Fadel",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/15.png"
-      },
-      "dob": {
-        "day": 23,
-        "month": 9,
-        "year": 1982,
-        "displayDob": "23 Sep 1982"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right forearm",
-        "scar on left cheek"
-      ],
-      "offender_id": 208,
-      "nomis_id": "G1653RE",
-      "pnc_id": "45/942975R",
-      "aliases": [],
-      "affiliations": [
-        [
-          0
-        ],
-        [
-          11,
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Madie",
-      "family_name": "Hessel",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/13.png"
-      },
-      "dob": {
-        "day": 26,
-        "month": 9,
-        "year": 1984,
-        "displayDob": "26 Sep 1984"
-      },
-      "identifying_marks": [],
-      "offender_id": 209,
-      "nomis_id": "L7095NX",
-      "pnc_id": "61/942918A",
-      "aliases": [],
-      "affiliations": [
-        [
-          18
-        ]
-      ]
-    },
-    {
-      "given_names": "Lucinda",
-      "family_name": "Rau",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/9.png"
-      },
-      "dob": {
-        "day": 6,
-        "month": 9,
-        "year": 1980,
-        "displayDob": "6 Sep 1980"
-      },
-      "identifying_marks": [],
-      "offender_id": 210,
-      "nomis_id": "U3141US",
-      "pnc_id": "54/910626H",
-      "aliases": [],
-      "affiliations": [
-        [
-          17
-        ]
-      ]
-    },
-    {
-      "given_names": "Blaze",
-      "family_name": "Lueilwitz",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/15.png"
-      },
-      "dob": {
-        "day": 6,
-        "month": 1,
-        "year": 1985,
-        "displayDob": "6 Jan 1985"
-      },
-      "identifying_marks": [],
-      "offender_id": 211,
-      "nomis_id": "S4665EE",
-      "pnc_id": "37/963110H",
-      "aliases": [],
-      "affiliations": [
-        [
-          19
-        ]
-      ]
-    },
-    {
-      "given_names": "Emilio",
-      "family_name": "Frami",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/2.png"
-      },
-      "dob": {
-        "day": 9,
-        "month": 12,
-        "year": 1973,
-        "displayDob": "9 Dec 1973"
-      },
-      "identifying_marks": [
-        "birthmark on right shoulder",
-        "scar on left forearm"
-      ],
-      "offender_id": 212,
-      "nomis_id": "E0240IN",
-      "pnc_id": "68/354890M",
-      "aliases": [
-        "Moonie",
-        "Frosty"
-      ],
-      "affiliations": [
-        [
-          12,
+          2,
           3
         ]
-      ]
+      ],
+      "incarceration": false
     },
     {
-      "given_names": "Brenna",
-      "family_name": "Cummerata",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/11.png"
-      },
-      "dob": {
-        "day": 23,
-        "month": 9,
-        "year": 1979,
-        "displayDob": "23 Sep 1979"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left forearm"
-      ],
-      "offender_id": 213,
-      "nomis_id": "H2586YR",
-      "pnc_id": "30/351771M",
-      "aliases": [
-        "Cool B"
-      ],
-      "affiliations": [
-        [
-          5
-        ]
-      ]
-    },
-    {
-      "given_names": "Kaitlin",
-      "family_name": "Lang",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/2.png"
-      },
-      "dob": {
-        "day": 4,
-        "month": 4,
-        "year": 1986,
-        "displayDob": "4 Apr 1986"
-      },
-      "identifying_marks": [
-        "birthmark on left wrist",
-        "celtic tattoo on left wrist"
-      ],
-      "offender_id": 214,
-      "nomis_id": "E0444RF",
-      "pnc_id": "85/794389G",
-      "aliases": [
-        "Spindles",
-        "Foxy"
-      ],
-      "affiliations": [
-        [
-          5
-        ]
-      ]
-    },
-    {
-      "given_names": "Otto",
-      "family_name": "Predovic",
+      "index": 1,
+      "given_names": "Ernesto",
+      "family_name": "Russel",
       "gender": "M",
       "mugshot": {
         "gender": "male",
         "filename": "male/13.png"
       },
       "dob": {
-        "day": 22,
-        "month": 11,
-        "year": 1989,
-        "displayDob": "22 Nov 1989"
+        "day": 27,
+        "month": 10,
+        "year": 1994,
+        "displayDob": "27 Oct 1994"
+      },
+      "identifying_marks": [
+        "birthmark on left shoulder",
+        "celtic tattoo on left shoulder"
+      ],
+      "offender_id": 189,
+      "nomis_id": "F7737IG",
+      "pnc_id": "47/086731Y",
+      "aliases": [
+        "Monkey"
+      ],
+      "affiliations": [
+        [
+          17
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 2,
+      "given_names": "Aletha",
+      "family_name": "Thompson",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/13.png"
+      },
+      "dob": {
+        "day": 7,
+        "month": 4,
+        "year": 1982,
+        "displayDob": "7 Apr 1982"
       },
       "identifying_marks": [],
-      "offender_id": 215,
-      "nomis_id": "U9188CZ",
-      "pnc_id": "96/642492Y",
+      "offender_id": 190,
+      "nomis_id": "B2057OC",
+      "pnc_id": "13/321967N",
       "aliases": [
-        "Shanks"
+        "Soap"
       ],
       "affiliations": [
         [
           5
-        ],
-        [
-          17
         ]
-      ]
+      ],
+      "incarceration": false
     },
     {
-      "given_names": "Susie",
-      "family_name": "Paucek",
+      "index": 3,
+      "given_names": "Lori",
+      "family_name": "Maggio",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/6.png"
+      },
+      "dob": {
+        "day": 6,
+        "month": 9,
+        "year": 1974,
+        "displayDob": "6 Sep 1974"
+      },
+      "identifying_marks": [
+        "scar on left wrist",
+        "scar on right wrist"
+      ],
+      "offender_id": 191,
+      "nomis_id": "K5450JH",
+      "pnc_id": "75/545759R",
+      "aliases": [
+        "L Bomb"
+      ],
+      "affiliations": [
+        [
+          19
+        ]
+      ],
+      "incarceration": 18
+    },
+    {
+      "index": 4,
+      "given_names": "Sammie",
+      "family_name": "Hackett",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/12.png"
+      },
+      "dob": {
+        "day": 5,
+        "month": 4,
+        "year": 1984,
+        "displayDob": "5 Apr 1984"
+      },
+      "identifying_marks": [],
+      "offender_id": 192,
+      "nomis_id": "M4337JN",
+      "pnc_id": "16/548808D",
+      "aliases": [
+        "Lil S"
+      ],
+      "affiliations": [
+        [
+          13
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 5,
+      "given_names": "Pansy",
+      "family_name": "Feil",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/1.png"
+      },
+      "dob": {
+        "day": 19,
+        "month": 1,
+        "year": 1968,
+        "displayDob": "19 Jan 1968"
+      },
+      "identifying_marks": [],
+      "offender_id": 193,
+      "nomis_id": "S4837NI",
+      "pnc_id": "41/868744X",
+      "aliases": [],
+      "affiliations": [
+        [
+          13,
+          0
+        ],
+        [
+          14
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 6,
+      "given_names": "Aurelio",
+      "family_name": "Schoen",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/13.png"
+      },
+      "dob": {
+        "day": 11,
+        "month": 2,
+        "year": 1986,
+        "displayDob": "11 Feb 1986"
+      },
+      "identifying_marks": [
+        "celtic tattoo on left cheek",
+        "celtic tattoo on left wrist"
+      ],
+      "offender_id": 194,
+      "nomis_id": "F2715LE",
+      "pnc_id": "39/620120Z",
+      "aliases": [
+        "Goose",
+        "Ice A"
+      ],
+      "affiliations": [
+        [
+          2,
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 7,
+      "given_names": "Parker",
+      "family_name": "Stark",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/12.png"
+      },
+      "dob": {
+        "day": 16,
+        "month": 7,
+        "year": 1989,
+        "displayDob": "16 Jul 1989"
+      },
+      "identifying_marks": [],
+      "offender_id": 195,
+      "nomis_id": "Q0217DB",
+      "pnc_id": "62/525094C",
+      "aliases": [
+        "Young P",
+        "Plank"
+      ],
+      "affiliations": [
+        [
+          19
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 8,
+      "given_names": "Junior",
+      "family_name": "Borer",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/7.png"
+      },
+      "dob": {
+        "day": 15,
+        "month": 10,
+        "year": 1997,
+        "displayDob": "15 Oct 1997"
+      },
+      "identifying_marks": [],
+      "offender_id": 196,
+      "nomis_id": "T4646PT",
+      "pnc_id": "12/847962J",
+      "aliases": [],
+      "affiliations": [
+        [
+          11
+        ]
+      ],
+      "incarceration": 12
+    },
+    {
+      "index": 9,
+      "given_names": "Naomie",
+      "family_name": "Nicolas",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/14.png"
+      },
+      "dob": {
+        "day": 2,
+        "month": 4,
+        "year": 1967,
+        "displayDob": "2 Apr 1967"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on right forearm",
+        "scar on left forearm"
+      ],
+      "offender_id": 197,
+      "nomis_id": "N8658MI",
+      "pnc_id": "86/589435Q",
+      "aliases": [
+        "Bacon"
+      ],
+      "affiliations": [
+        [
+          11,
+          2
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 10,
+      "given_names": "Molly",
+      "family_name": "Jaskolski",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/3.png"
+      },
+      "dob": {
+        "day": 6,
+        "month": 7,
+        "year": 1988,
+        "displayDob": "6 Jul 1988"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on left cheek",
+        "tattoo of a spiderweb on right wrist"
+      ],
+      "offender_id": 198,
+      "nomis_id": "J0129CT",
+      "pnc_id": "37/429318G",
+      "aliases": [],
+      "affiliations": [
+        [
+          8
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 11,
+      "given_names": "Estelle",
+      "family_name": "Auer",
       "gender": "F",
       "mugshot": {
         "gender": "female",
         "filename": "female/12.png"
       },
       "dob": {
-        "day": 15,
-        "month": 9,
-        "year": 1999,
-        "displayDob": "15 Sep 1999"
-      },
-      "identifying_marks": [],
-      "offender_id": 216,
-      "nomis_id": "A3587VM",
-      "pnc_id": "34/996262K",
-      "aliases": [],
-      "affiliations": [
-        [
-          11,
-          2
-        ]
-      ]
-    },
-    {
-      "given_names": "Maurice",
-      "family_name": "Nicolas",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/8.png"
-      },
-      "dob": {
-        "day": 9,
-        "month": 12,
-        "year": 1988,
-        "displayDob": "9 Dec 1988"
-      },
-      "identifying_marks": [],
-      "offender_id": 217,
-      "nomis_id": "M5674LJ",
-      "pnc_id": "77/775355Q",
-      "aliases": [
-        "Monkey",
-        "Spindles"
-      ],
-      "affiliations": [
-        [
-          13
-        ]
-      ]
-    },
-    {
-      "given_names": "Evan",
-      "family_name": "Collins",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/7.png"
-      },
-      "dob": {
-        "day": 2,
-        "month": 3,
-        "year": 1986,
-        "displayDob": "2 Mar 1986"
-      },
-      "identifying_marks": [],
-      "offender_id": 218,
-      "nomis_id": "Q4562KF",
-      "pnc_id": "70/827238F",
-      "aliases": [],
-      "affiliations": [
-        [
-          17
-        ]
-      ]
-    },
-    {
-      "given_names": "Julio",
-      "family_name": "Doyle",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/12.png"
-      },
-      "dob": {
-        "day": 19,
-        "month": 1,
-        "year": 1999,
-        "displayDob": "19 Jan 1999"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right wrist"
-      ],
-      "offender_id": 219,
-      "nomis_id": "O4150CS",
-      "pnc_id": "13/135395T",
-      "aliases": [
-        "Razor"
-      ],
-      "affiliations": [
-        [
-          4
-        ]
-      ]
-    },
-    {
-      "given_names": "Micaela",
-      "family_name": "Prosacco",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/11.png"
-      },
-      "dob": {
-        "day": 2,
-        "month": 6,
-        "year": 1999,
-        "displayDob": "2 Jun 1999"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right shoulder"
-      ],
-      "offender_id": 220,
-      "nomis_id": "P5391ZN",
-      "pnc_id": "16/180812N",
-      "aliases": [
-        "Fast M",
-        "Hatchet Micaela"
-      ],
-      "affiliations": [
-        [
-          19
-        ]
-      ]
-    },
-    {
-      "given_names": "Bertha",
-      "family_name": "Koss",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/5.png"
-      },
-      "dob": {
-        "day": 2,
-        "month": 9,
-        "year": 1994,
-        "displayDob": "2 Sep 1994"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right cheek",
-        "tattoo of a spiderweb on left forearm"
-      ],
-      "offender_id": 221,
-      "nomis_id": "V8015SL",
-      "pnc_id": "91/410006Z",
-      "aliases": [
-        "Mumbles",
-        "Shadow"
-      ],
-      "affiliations": [
-        [
-          9
-        ]
-      ]
-    },
-    {
-      "given_names": "Janelle",
-      "family_name": "Jones",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/1.png"
-      },
-      "dob": {
-        "day": 15,
-        "month": 9,
-        "year": 1987,
-        "displayDob": "15 Sep 1987"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right shoulder",
-        "birthmark on right cheek"
-      ],
-      "offender_id": 222,
-      "nomis_id": "P4455DZ",
-      "pnc_id": "80/757720Y",
-      "aliases": [
-        "Goose"
-      ],
-      "affiliations": [
-        [
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Derrick",
-      "family_name": "Bernier",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/14.png"
-      },
-      "dob": {
-        "day": 27,
-        "month": 9,
-        "year": 1980,
-        "displayDob": "27 Sep 1980"
-      },
-      "identifying_marks": [],
-      "offender_id": 223,
-      "nomis_id": "Q9261QQ",
-      "pnc_id": "95/623361H",
-      "aliases": [],
-      "affiliations": [
-        [
-          8,
-          5
-        ]
-      ]
-    },
-    {
-      "given_names": "Grayce",
-      "family_name": "Bartell",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/9.png"
-      },
-      "dob": {
-        "day": 28,
-        "month": 3,
-        "year": 1998,
-        "displayDob": "28 Mar 1998"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on left wrist",
-        "tattoo of a spiderweb on left cheek"
-      ],
-      "offender_id": 224,
-      "nomis_id": "Z7069LB",
-      "pnc_id": "53/573846G",
-      "aliases": [],
-      "affiliations": [
-        [
-          2
-        ]
-      ]
-    },
-    {
-      "given_names": "Coralie",
-      "family_name": "Huel",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/3.png"
-      },
-      "dob": {
-        "day": 23,
-        "month": 6,
-        "year": 1998,
-        "displayDob": "23 Jun 1998"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right cheek",
-        "scar on right cheek"
-      ],
-      "offender_id": 225,
-      "nomis_id": "Q2316RD",
-      "pnc_id": "72/481295M",
-      "aliases": [
-        "Ice C",
-        "Bubbles"
-      ],
-      "affiliations": [
-        [
-          1,
-          1
-        ],
-        [
-          10
-        ]
-      ]
-    },
-    {
-      "given_names": "Jevon",
-      "family_name": "Lubowitz",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/1.png"
-      },
-      "dob": {
-        "day": 2,
-        "month": 1,
-        "year": 1974,
-        "displayDob": "2 Jan 1974"
-      },
-      "identifying_marks": [],
-      "offender_id": 226,
-      "nomis_id": "H7392DY",
-      "pnc_id": "93/427149G",
-      "aliases": [],
-      "affiliations": [
-        [
-          4
-        ]
-      ]
-    },
-    {
-      "given_names": "Vella",
-      "family_name": "Heaney",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/7.png"
-      },
-      "dob": {
-        "day": 19,
-        "month": 8,
-        "year": 1962,
-        "displayDob": "19 Aug 1962"
-      },
-      "identifying_marks": [
-        "birthmark on left wrist"
-      ],
-      "offender_id": 227,
-      "nomis_id": "E8680ZH",
-      "pnc_id": "48/449171B",
-      "aliases": [
-        "Maverick"
-      ],
-      "affiliations": [
-        [
-          17
-        ],
-        [
-          12
-        ]
-      ]
-    },
-    {
-      "given_names": "Broderick",
-      "family_name": "Nienow",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/3.png"
-      },
-      "dob": {
-        "day": 11,
-        "month": 3,
-        "year": 1968,
-        "displayDob": "11 Mar 1968"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left forearm"
-      ],
-      "offender_id": 228,
-      "nomis_id": "S4690QL",
-      "pnc_id": "42/794446I",
-      "aliases": [
-        "B Pain",
-        "Lucky B"
-      ],
-      "affiliations": [
-        [
-          16
-        ]
-      ]
-    },
-    {
-      "given_names": "Lurline",
-      "family_name": "Hartmann",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/4.png"
-      },
-      "dob": {
-        "day": 16,
-        "month": 3,
-        "year": 1976,
-        "displayDob": "16 Mar 1976"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on left forearm"
-      ],
-      "offender_id": 229,
-      "nomis_id": "S3953VN",
-      "pnc_id": "15/058381Z",
-      "aliases": [
-        "Lil L"
-      ],
-      "affiliations": [
-        [
-          19
-        ]
-      ]
-    },
-    {
-      "given_names": "Cara",
-      "family_name": "Lockman",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/14.png"
-      },
-      "dob": {
-        "day": 25,
-        "month": 1,
-        "year": 1983,
-        "displayDob": "25 Jan 1983"
-      },
-      "identifying_marks": [
-        "birthmark on right wrist"
-      ],
-      "offender_id": 230,
-      "nomis_id": "Z5574VQ",
-      "pnc_id": "82/456681F",
-      "aliases": [],
-      "affiliations": [
-        [
-          6
-        ]
-      ]
-    },
-    {
-      "given_names": "Eldon",
-      "family_name": "Hamill",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/3.png"
-      },
-      "dob": {
-        "day": 9,
-        "month": 9,
-        "year": 1982,
-        "displayDob": "9 Sep 1982"
-      },
-      "identifying_marks": [],
-      "offender_id": 231,
-      "nomis_id": "I0991EF",
-      "pnc_id": "24/320002I",
-      "aliases": [],
-      "affiliations": [
-        [
-          9
-        ]
-      ]
-    },
-    {
-      "given_names": "Kelsie",
-      "family_name": "Conn",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/6.png"
-      },
-      "dob": {
-        "day": 23,
-        "month": 3,
-        "year": 1984,
-        "displayDob": "23 Mar 1984"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left shoulder"
-      ],
-      "offender_id": 232,
-      "nomis_id": "Z1594EW",
-      "pnc_id": "31/042288U",
-      "aliases": [
-        "Mumbles"
-      ],
-      "affiliations": [
-        [
-          15
-        ]
-      ]
-    },
-    {
-      "given_names": "Leanna",
-      "family_name": "Nolan",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/8.png"
-      },
-      "dob": {
-        "day": 18,
-        "month": 8,
-        "year": 1978,
-        "displayDob": "18 Aug 1978"
-      },
-      "identifying_marks": [
-        "birthmark on left wrist",
-        "birthmark on left cheek"
-      ],
-      "offender_id": 233,
-      "nomis_id": "A9778EN",
-      "pnc_id": "80/378098R",
-      "aliases": [
-        "Fast L"
-      ],
-      "affiliations": [
-        [
-          4,
-          3
-        ]
-      ]
-    },
-    {
-      "given_names": "Deron",
-      "family_name": "Lueilwitz",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/5.png"
-      },
-      "dob": {
-        "day": 4,
-        "month": 1,
-        "year": 1985,
-        "displayDob": "4 Jan 1985"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left forearm"
-      ],
-      "offender_id": 234,
-      "nomis_id": "M8000OG",
-      "pnc_id": "95/958422Y",
-      "aliases": [
-        "Soap"
-      ],
-      "affiliations": [
-        [
-          19
-        ]
-      ]
-    },
-    {
-      "given_names": "Kelly",
-      "family_name": "Feeney",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/6.png"
-      },
-      "dob": {
-        "day": 11,
-        "month": 11,
-        "year": 1968,
-        "displayDob": "11 Nov 1968"
-      },
-      "identifying_marks": [],
-      "offender_id": 235,
-      "nomis_id": "A5486DD",
-      "pnc_id": "85/214672V",
-      "aliases": [],
-      "affiliations": [
-        [
-          18,
-          4
-        ]
-      ]
-    },
-    {
-      "given_names": "Glennie",
-      "family_name": "Grady",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/7.png"
-      },
-      "dob": {
-        "day": 10,
-        "month": 1,
-        "year": 1963,
-        "displayDob": "10 Jan 1963"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right shoulder",
-        "birthmark on left shoulder"
-      ],
-      "offender_id": 236,
-      "nomis_id": "K0909OM",
-      "pnc_id": "19/562702Z",
-      "aliases": [],
-      "affiliations": [
-        [
-          19
-        ]
-      ]
-    },
-    {
-      "given_names": "Marley",
-      "family_name": "Turner",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/11.png"
-      },
-      "dob": {
-        "day": 18,
-        "month": 10,
-        "year": 1982,
-        "displayDob": "18 Oct 1982"
-      },
-      "identifying_marks": [
-        "scar on right cheek"
-      ],
-      "offender_id": 237,
-      "nomis_id": "Z2924MV",
-      "pnc_id": "91/518938Z",
-      "aliases": [
-        "Smokey",
-        "Monkey"
-      ],
-      "affiliations": [
-        [
-          11
-        ]
-      ]
-    },
-    {
-      "given_names": "Guillermo",
-      "family_name": "Wunsch",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/5.png"
-      },
-      "dob": {
-        "day": 19,
-        "month": 1,
-        "year": 1992,
-        "displayDob": "19 Jan 1992"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right forearm"
-      ],
-      "offender_id": 238,
-      "nomis_id": "R5050TC",
-      "pnc_id": "57/261083G",
-      "aliases": [],
-      "affiliations": [
-        [
-          9
-        ]
-      ]
-    },
-    {
-      "given_names": "Sigmund",
-      "family_name": "Beatty",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/3.png"
-      },
-      "dob": {
-        "day": 8,
-        "month": 4,
-        "year": 1970,
-        "displayDob": "8 Apr 1970"
-      },
-      "identifying_marks": [
-        "birthmark on left forearm",
-        "birthmark on right forearm"
-      ],
-      "offender_id": 239,
-      "nomis_id": "W1663YN",
-      "pnc_id": "54/625734O",
-      "aliases": [],
-      "affiliations": [
-        [
-          16
-        ]
-      ]
-    },
-    {
-      "given_names": "Philip",
-      "family_name": "Paucek",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/9.png"
-      },
-      "dob": {
         "day": 12,
-        "month": 7,
-        "year": 1982,
-        "displayDob": "12 Jul 1982"
-      },
-      "identifying_marks": [],
-      "offender_id": 240,
-      "nomis_id": "T8511CC",
-      "pnc_id": "40/599497L",
-      "aliases": [
-        "Hatchet Philip",
-        "Chuckles"
-      ],
-      "affiliations": [
-        [
-          9,
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Ava",
-      "family_name": "Daniel",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/8.png"
-      },
-      "dob": {
-        "day": 11,
-        "month": 4,
-        "year": 1973,
-        "displayDob": "11 Apr 1973"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on left shoulder"
-      ],
-      "offender_id": 241,
-      "nomis_id": "D4237NU",
-      "pnc_id": "41/465079F",
-      "aliases": [],
-      "affiliations": [
-        [
-          4
-        ]
-      ]
-    },
-    {
-      "given_names": "Karina",
-      "family_name": "Fahey",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/14.png"
-      },
-      "dob": {
-        "day": 2,
-        "month": 1,
-        "year": 1976,
-        "displayDob": "2 Jan 1976"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right forearm",
-        "celtic tattoo on left forearm"
-      ],
-      "offender_id": 242,
-      "nomis_id": "B8284TP",
-      "pnc_id": "36/902935U",
-      "aliases": [],
-      "affiliations": [
-        [
-          3
-        ]
-      ]
-    },
-    {
-      "given_names": "Beulah",
-      "family_name": "Volkman",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/10.png"
-      },
-      "dob": {
-        "day": 5,
-        "month": 5,
-        "year": 1999,
-        "displayDob": "5 May 1999"
-      },
-      "identifying_marks": [],
-      "offender_id": 243,
-      "nomis_id": "S7871PT",
-      "pnc_id": "50/800837V",
-      "aliases": [],
-      "affiliations": [
-        [
-          18
-        ]
-      ]
-    },
-    {
-      "given_names": "Marcelina",
-      "family_name": "Johnson",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/10.png"
-      },
-      "dob": {
-        "day": 9,
-        "month": 3,
-        "year": 1997,
-        "displayDob": "9 Mar 1997"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left cheek"
-      ],
-      "offender_id": 244,
-      "nomis_id": "O7812QO",
-      "pnc_id": "98/385468F",
-      "aliases": [
-        "Lil M"
-      ],
-      "affiliations": [
-        [
-          14
-        ]
-      ]
-    },
-    {
-      "given_names": "Shemar",
-      "family_name": "Gleason",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/9.png"
-      },
-      "dob": {
-        "day": 9,
-        "month": 10,
-        "year": 1994,
-        "displayDob": "9 Oct 1994"
-      },
-      "identifying_marks": [
-        "birthmark on right shoulder"
-      ],
-      "offender_id": 245,
-      "nomis_id": "F6751HV",
-      "pnc_id": "61/179644G",
-      "aliases": [
-        "Bugs"
-      ],
-      "affiliations": [
-        [
-          15,
-          0
-        ]
-      ]
-    },
-    {
-      "given_names": "Helmer",
-      "family_name": "Weimann",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/5.png"
-      },
-      "dob": {
-        "day": 1,
-        "month": 7,
-        "year": 1973,
-        "displayDob": "1 Jul 1973"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right shoulder",
-        "celtic tattoo on left wrist"
-      ],
-      "offender_id": 246,
-      "nomis_id": "C1165AW",
-      "pnc_id": "68/398785U",
-      "aliases": [
-        "Blaze",
-        "Chuckles"
-      ],
-      "affiliations": [
-        [
-          11,
-          3
-        ],
-        [
-          12,
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Lina",
-      "family_name": "Herman",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/13.png"
-      },
-      "dob": {
-        "day": 23,
-        "month": 11,
-        "year": 1974,
-        "displayDob": "23 Nov 1974"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right cheek"
-      ],
-      "offender_id": 247,
-      "nomis_id": "V5557GN",
-      "pnc_id": "01/098669M",
-      "aliases": [],
-      "affiliations": [
-        [
-          3
-        ]
-      ]
-    },
-    {
-      "given_names": "Theresia",
-      "family_name": "Robel",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/9.png"
-      },
-      "dob": {
-        "day": 6,
-        "month": 5,
-        "year": 1964,
-        "displayDob": "6 May 1964"
-      },
-      "identifying_marks": [
-        "birthmark on right shoulder"
-      ],
-      "offender_id": 248,
-      "nomis_id": "R9485MM",
-      "pnc_id": "62/853532E",
-      "aliases": [
-        "Lucky",
-        "Big Theresia"
-      ],
-      "affiliations": [
-        [
-          15
-        ]
-      ]
-    },
-    {
-      "given_names": "Gordon",
-      "family_name": "Treutel",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/3.png"
-      },
-      "dob": {
-        "day": 27,
-        "month": 6,
-        "year": 1999,
-        "displayDob": "27 Jun 1999"
-      },
-      "identifying_marks": [
-        "scar on right cheek",
-        "tattoo of a spiderweb on left cheek"
-      ],
-      "offender_id": 249,
-      "nomis_id": "M0811IS",
-      "pnc_id": "81/659297K",
-      "aliases": [
-        "Spoonie",
-        "Iceman"
-      ],
-      "affiliations": [
-        [
-          14,
-          5
-        ]
-      ]
-    },
-    {
-      "given_names": "Ebony",
-      "family_name": "Hoeger",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/5.png"
-      },
-      "dob": {
-        "day": 17,
-        "month": 12,
-        "year": 1988,
-        "displayDob": "17 Dec 1988"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right wrist",
-        "tattoo of a spiderweb on right shoulder"
-      ],
-      "offender_id": 250,
-      "nomis_id": "B0291KC",
-      "pnc_id": "32/989414B",
-      "aliases": [],
-      "affiliations": [
-        [
-          5,
-          0
-        ]
-      ]
-    },
-    {
-      "given_names": "Braulio",
-      "family_name": "Conn",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/3.png"
-      },
-      "dob": {
-        "day": 12,
-        "month": 3,
-        "year": 1994,
-        "displayDob": "12 Mar 1994"
-      },
-      "identifying_marks": [
-        "scar on left wrist",
-        "tattoo of a spiderweb on left forearm"
-      ],
-      "offender_id": 251,
-      "nomis_id": "B2276FF",
-      "pnc_id": "65/976125L",
-      "aliases": [
-        "Soap"
-      ],
-      "affiliations": [
-        [
-          7
-        ]
-      ]
-    },
-    {
-      "given_names": "Jules",
-      "family_name": "Collier",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/13.png"
-      },
-      "dob": {
-        "day": 15,
-        "month": 11,
-        "year": 1961,
-        "displayDob": "15 Nov 1961"
-      },
-      "identifying_marks": [],
-      "offender_id": 252,
-      "nomis_id": "O9368UD",
-      "pnc_id": "69/903240J",
-      "aliases": [],
-      "affiliations": [
-        [
-          8,
-          0
-        ]
-      ]
-    },
-    {
-      "given_names": "Adam",
-      "family_name": "Koelpin",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/1.png"
-      },
-      "dob": {
-        "day": 21,
-        "month": 6,
-        "year": 1978,
-        "displayDob": "21 Jun 1978"
-      },
-      "identifying_marks": [
-        "birthmark on left wrist"
-      ],
-      "offender_id": 253,
-      "nomis_id": "F2582UV",
-      "pnc_id": "93/842015R",
-      "aliases": [
-        "Lucky"
-      ],
-      "affiliations": [
-        [
-          7
-        ]
-      ]
-    },
-    {
-      "given_names": "Newton",
-      "family_name": "Lindgren",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/6.png"
-      },
-      "dob": {
-        "day": 20,
-        "month": 8,
-        "year": 1993,
-        "displayDob": "20 Aug 1993"
-      },
-      "identifying_marks": [],
-      "offender_id": 254,
-      "nomis_id": "Z6149GE",
-      "pnc_id": "25/747909W",
-      "aliases": [
-        "Shanks"
-      ],
-      "affiliations": [
-        [
-          4,
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Verdie",
-      "family_name": "Dibbert",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/13.png"
-      },
-      "dob": {
-        "day": 22,
-        "month": 1,
-        "year": 1982,
-        "displayDob": "22 Jan 1982"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left forearm",
-        "tattoo of a spiderweb on right wrist"
-      ],
-      "offender_id": 255,
-      "nomis_id": "X4171BR",
-      "pnc_id": "41/288359P",
-      "aliases": [],
-      "affiliations": [
-        [
-          5
-        ]
-      ]
-    },
-    {
-      "given_names": "Arnulfo",
-      "family_name": "Kilback",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/2.png"
-      },
-      "dob": {
-        "day": 1,
-        "month": 6,
-        "year": 1985,
-        "displayDob": "1 Jun 1985"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on left wrist"
-      ],
-      "offender_id": 256,
-      "nomis_id": "B9227VI",
-      "pnc_id": "90/891119Q",
-      "aliases": [],
-      "affiliations": [
-        [
-          9
-        ]
-      ]
-    },
-    {
-      "given_names": "Leonie",
-      "family_name": "D'Amore",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/4.png"
-      },
-      "dob": {
-        "day": 14,
-        "month": 1,
-        "year": 2001,
-        "displayDob": "14 Jan 2001"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right cheek",
-        "tattoo of a spiderweb on right forearm"
-      ],
-      "offender_id": 257,
-      "nomis_id": "U5521GL",
-      "pnc_id": "50/890303V",
-      "aliases": [
-        "Ice L",
-        "Cheesy"
-      ],
-      "affiliations": [
-        [
-          7,
-          3
-        ]
-      ]
-    },
-    {
-      "given_names": "Kolby",
-      "family_name": "Walsh",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/2.png"
-      },
-      "dob": {
-        "day": 23,
-        "month": 3,
-        "year": 1988,
-        "displayDob": "23 Mar 1988"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right wrist",
-        "celtic tattoo on right forearm"
-      ],
-      "offender_id": 258,
-      "nomis_id": "T0939BS",
-      "pnc_id": "25/923714N",
-      "aliases": [
-        "Bad K",
-        "Mumbles"
-      ],
-      "affiliations": [
-        [
-          8,
-          2
-        ],
-        [
-          17
-        ]
-      ]
-    },
-    {
-      "given_names": "Bobbie",
-      "family_name": "Christiansen",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/1.png"
-      },
-      "dob": {
-        "day": 11,
-        "month": 7,
-        "year": 2000,
-        "displayDob": "11 Jul 2000"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right forearm"
-      ],
-      "offender_id": 259,
-      "nomis_id": "L1079LP",
-      "pnc_id": "34/905798B",
-      "aliases": [
-        "Little Bobbie"
-      ],
-      "affiliations": [
-        [
-          8
-        ]
-      ]
-    },
-    {
-      "given_names": "Raul",
-      "family_name": "Vandervort",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/5.png"
-      },
-      "dob": {
-        "day": 18,
-        "month": 5,
-        "year": 1993,
-        "displayDob": "18 May 1993"
-      },
-      "identifying_marks": [
-        "birthmark on right wrist",
-        "scar on right shoulder"
-      ],
-      "offender_id": 260,
-      "nomis_id": "L3859RK",
-      "pnc_id": "43/779400R",
-      "aliases": [],
-      "affiliations": [
-        [
-          9,
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Branson",
-      "family_name": "Carter",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/5.png"
-      },
-      "dob": {
-        "day": 19,
-        "month": 6,
-        "year": 1979,
-        "displayDob": "19 Jun 1979"
-      },
-      "identifying_marks": [
-        "scar on left cheek",
-        "scar on right cheek"
-      ],
-      "offender_id": 261,
-      "nomis_id": "O9542XN",
-      "pnc_id": "92/489717W",
-      "aliases": [
-        "Playa B",
-        "Smokey"
-      ],
-      "affiliations": [
-        [
-          9,
-          2
-        ]
-      ]
-    },
-    {
-      "given_names": "Dayne",
-      "family_name": "Jenkins",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/3.png"
-      },
-      "dob": {
-        "day": 21,
-        "month": 4,
-        "year": 1984,
-        "displayDob": "21 Apr 1984"
-      },
-      "identifying_marks": [],
-      "offender_id": 262,
-      "nomis_id": "W5922PR",
-      "pnc_id": "43/691006I",
-      "aliases": [
-        "D Bomb"
-      ],
-      "affiliations": [
-        [
-          10
-        ],
-        [
-          13
-        ]
-      ]
-    },
-    {
-      "given_names": "Helga",
-      "family_name": "Welch",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/1.png"
-      },
-      "dob": {
-        "day": 3,
-        "month": 8,
-        "year": 1995,
-        "displayDob": "3 Aug 1995"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on left wrist"
-      ],
-      "offender_id": 263,
-      "nomis_id": "K0406ZR",
-      "pnc_id": "67/949130A",
-      "aliases": [],
-      "affiliations": [
-        [
-          0
-        ]
-      ]
-    },
-    {
-      "given_names": "Madie",
-      "family_name": "Schoen",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/4.png"
-      },
-      "dob": {
-        "day": 7,
-        "month": 5,
-        "year": 1987,
-        "displayDob": "7 May 1987"
-      },
-      "identifying_marks": [],
-      "offender_id": 264,
-      "nomis_id": "A7062MZ",
-      "pnc_id": "76/988836H",
-      "aliases": [
-        "Ice M"
-      ],
-      "affiliations": [
-        [
-          5,
-          3
-        ]
-      ]
-    },
-    {
-      "given_names": "Santiago",
-      "family_name": "Simonis",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/8.png"
-      },
-      "dob": {
-        "day": 11,
-        "month": 7,
-        "year": 1964,
-        "displayDob": "11 Jul 1964"
-      },
-      "identifying_marks": [
-        "birthmark on left cheek"
-      ],
-      "offender_id": 265,
-      "nomis_id": "G8099YG",
-      "pnc_id": "16/824437Q",
-      "aliases": [],
-      "affiliations": [
-        [
-          10
-        ]
-      ]
-    },
-    {
-      "given_names": "Rose",
-      "family_name": "Kub",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/3.png"
-      },
-      "dob": {
-        "day": 8,
-        "month": 8,
-        "year": 1975,
-        "displayDob": "8 Aug 1975"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right forearm"
-      ],
-      "offender_id": 266,
-      "nomis_id": "P3495XH",
-      "pnc_id": "78/832634I",
-      "aliases": [
-        "Bugsy"
-      ],
-      "affiliations": [
-        [
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Clay",
-      "family_name": "Kohler",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/14.png"
-      },
-      "dob": {
-        "day": 16,
-        "month": 4,
-        "year": 1990,
-        "displayDob": "16 Apr 1990"
-      },
-      "identifying_marks": [],
-      "offender_id": 267,
-      "nomis_id": "H7414NB",
-      "pnc_id": "26/565034U",
-      "aliases": [
-        "C Bomb"
-      ],
-      "affiliations": [
-        [
-          18
-        ]
-      ]
-    },
-    {
-      "given_names": "Troy",
-      "family_name": "Sawayn",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/15.png"
-      },
-      "dob": {
-        "day": 5,
-        "month": 10,
-        "year": 1987,
-        "displayDob": "5 Oct 1987"
-      },
-      "identifying_marks": [],
-      "offender_id": 268,
-      "nomis_id": "H4187FK",
-      "pnc_id": "53/722944I",
-      "aliases": [
-        "Bad T",
-        "Greasy"
-      ],
-      "affiliations": [
-        [
-          3
-        ]
-      ]
-    },
-    {
-      "given_names": "Ansel",
-      "family_name": "Gleason",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/10.png"
-      },
-      "dob": {
-        "day": 24,
-        "month": 11,
-        "year": 1980,
-        "displayDob": "24 Nov 1980"
-      },
-      "identifying_marks": [],
-      "offender_id": 269,
-      "nomis_id": "Y5214FO",
-      "pnc_id": "57/957360F",
-      "aliases": [
-        "Lucky A",
-        "Lucky"
-      ],
-      "affiliations": [
-        [
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Anahi",
-      "family_name": "Zulauf",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/15.png"
-      },
-      "dob": {
-        "day": 26,
-        "month": 5,
-        "year": 1965,
-        "displayDob": "26 May 1965"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right forearm"
-      ],
-      "offender_id": 270,
-      "nomis_id": "U8540XT",
-      "pnc_id": "95/915500N",
-      "aliases": [
-        "Frosty",
-        "Bricktop"
-      ],
-      "affiliations": [
-        [
-          7
-        ]
-      ]
-    },
-    {
-      "given_names": "Jensen",
-      "family_name": "Gorczany",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/2.png"
-      },
-      "dob": {
-        "day": 24,
-        "month": 10,
-        "year": 1971,
-        "displayDob": "24 Oct 1971"
-      },
-      "identifying_marks": [
-        "scar on right wrist",
-        "tattoo of a spiderweb on right shoulder"
-      ],
-      "offender_id": 271,
-      "nomis_id": "R9869YN",
-      "pnc_id": "36/899718C",
-      "aliases": [],
-      "affiliations": [
-        [
-          17,
-          0
-        ]
-      ]
-    },
-    {
-      "given_names": "Jared",
-      "family_name": "Wyman",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/1.png"
-      },
-      "dob": {
-        "day": 18,
-        "month": 8,
-        "year": 2002,
-        "displayDob": "18 Aug 2002"
-      },
-      "identifying_marks": [],
-      "offender_id": 272,
-      "nomis_id": "M1648GC",
-      "pnc_id": "90/537100L",
-      "aliases": [
-        "Blaze"
-      ],
-      "affiliations": [
-        [
-          6,
-          4
-        ],
-        [
-          12
-        ]
-      ]
-    },
-    {
-      "given_names": "Valentina",
-      "family_name": "Baumbach",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/7.png"
-      },
-      "dob": {
-        "day": 11,
-        "month": 8,
-        "year": 1994,
-        "displayDob": "11 Aug 1994"
-      },
-      "identifying_marks": [
-        "scar on left shoulder",
-        "tattoo of a spiderweb on left wrist"
-      ],
-      "offender_id": 273,
-      "nomis_id": "U8720UZ",
-      "pnc_id": "59/343473C",
-      "aliases": [
-        "Chewy"
-      ],
-      "affiliations": [
-        [
-          0
-        ]
-      ]
-    },
-    {
-      "given_names": "Laila",
-      "family_name": "Oberbrunner",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/1.png"
-      },
-      "dob": {
-        "day": 24,
-        "month": 7,
-        "year": 1964,
-        "displayDob": "24 Jul 1964"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right cheek"
-      ],
-      "offender_id": 274,
-      "nomis_id": "D5680JS",
-      "pnc_id": "79/244654R",
-      "aliases": [
-        "Fingers",
-        "L Bomb"
-      ],
-      "affiliations": [
-        [
-          1
-        ],
-        [
-          15
-        ]
-      ]
-    },
-    {
-      "given_names": "Bert",
-      "family_name": "Kertzmann",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/5.png"
-      },
-      "dob": {
-        "day": 11,
-        "month": 6,
-        "year": 1975,
-        "displayDob": "11 Jun 1975"
-      },
-      "identifying_marks": [
-        "tattoo of a spiderweb on right cheek"
-      ],
-      "offender_id": 275,
-      "nomis_id": "R1896LD",
-      "pnc_id": "49/292142M",
-      "aliases": [
-        "Chase",
-        "Buggy"
-      ],
-      "affiliations": [
-        [
-          14,
-          3
-        ]
-      ]
-    },
-    {
-      "given_names": "Alek",
-      "family_name": "Stracke",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/11.png"
-      },
-      "dob": {
-        "day": 4,
         "month": 6,
         "year": 1972,
-        "displayDob": "4 Jun 1972"
+        "displayDob": "12 Jun 1972"
       },
       "identifying_marks": [
-        "celtic tattoo on left cheek"
+        "scar on right forearm",
+        "tattoo of a spiderweb on left shoulder"
       ],
-      "offender_id": 276,
-      "nomis_id": "G1731LL",
-      "pnc_id": "21/910779K",
+      "offender_id": 199,
+      "nomis_id": "P2051VB",
+      "pnc_id": "07/695567Y",
       "aliases": [
-        "Maverick",
-        "Chuckles"
+        "Strider"
       ],
       "affiliations": [
         [
-          0
-        ],
-        [
-          7,
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Hyman",
-      "family_name": "Bartell",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/12.png"
-      },
-      "dob": {
-        "day": 8,
-        "month": 11,
-        "year": 1985,
-        "displayDob": "8 Nov 1985"
-      },
-      "identifying_marks": [
-        "birthmark on left shoulder",
-        "tattoo of a spiderweb on right forearm"
-      ],
-      "offender_id": 277,
-      "nomis_id": "S1270DU",
-      "pnc_id": "45/604747R",
-      "aliases": [
-        "Bad H",
-        "Chuckles"
-      ],
-      "affiliations": [
-        [
-          11,
-          3
-        ]
-      ]
-    },
-    {
-      "given_names": "Henry",
-      "family_name": "Krajcik",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/10.png"
-      },
-      "dob": {
-        "day": 9,
-        "month": 2,
-        "year": 1963,
-        "displayDob": "9 Feb 1963"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right shoulder"
-      ],
-      "offender_id": 278,
-      "nomis_id": "E6239ST",
-      "pnc_id": "04/479983W",
-      "aliases": [
-        "Foxy",
-        "Maverick"
-      ],
-      "affiliations": [
-        [
-          7
-        ]
-      ]
-    },
-    {
-      "given_names": "Travon",
-      "family_name": "Schinner",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/15.png"
-      },
-      "dob": {
-        "day": 14,
-        "month": 11,
-        "year": 1996,
-        "displayDob": "14 Nov 1996"
-      },
-      "identifying_marks": [
-        "birthmark on left cheek",
-        "celtic tattoo on right forearm"
-      ],
-      "offender_id": 279,
-      "nomis_id": "T1298ZB",
-      "pnc_id": "96/648438R",
-      "aliases": [],
-      "affiliations": [
-        [
+          0,
           0
         ]
-      ]
+      ],
+      "incarceration": false
     },
     {
-      "given_names": "Rey",
-      "family_name": "Glover",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/5.png"
-      },
-      "dob": {
-        "day": 1,
-        "month": 11,
-        "year": 1988,
-        "displayDob": "1 Nov 1988"
-      },
-      "identifying_marks": [],
-      "offender_id": 280,
-      "nomis_id": "P7200TD",
-      "pnc_id": "53/686816U",
-      "aliases": [],
-      "affiliations": [
-        [
-          14
-        ]
-      ]
-    },
-    {
-      "given_names": "Delphia",
+      "index": 12,
+      "given_names": "Nella",
       "family_name": "Windler",
       "gender": "F",
       "mugshot": {
@@ -2484,446 +383,2720 @@
         "filename": "female/2.png"
       },
       "dob": {
-        "day": 11,
-        "month": 9,
-        "year": 1972,
-        "displayDob": "11 Sep 1972"
+        "day": 12,
+        "month": 5,
+        "year": 1979,
+        "displayDob": "12 May 1979"
       },
-      "identifying_marks": [],
-      "offender_id": 281,
-      "nomis_id": "N5594PF",
-      "pnc_id": "13/619621G",
+      "identifying_marks": [
+        "scar on left wrist"
+      ],
+      "offender_id": 200,
+      "nomis_id": "Z2340HD",
+      "pnc_id": "56/687129L",
       "aliases": [
-        "Little Delphia",
-        "Spider"
+        "Chewy",
+        "Smokey"
       ],
       "affiliations": [
         [
-          6,
-          5
-        ],
-        [
-          4
+          12
         ]
-      ]
+      ],
+      "incarceration": false
     },
     {
-      "given_names": "Talon",
-      "family_name": "Predovic",
+      "index": 13,
+      "given_names": "Madisyn",
+      "family_name": "Hilll",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/3.png"
+      },
+      "dob": {
+        "day": 22,
+        "month": 8,
+        "year": 1991,
+        "displayDob": "22 Aug 1991"
+      },
+      "identifying_marks": [
+        "scar on right wrist",
+        "birthmark on left shoulder"
+      ],
+      "offender_id": 201,
+      "nomis_id": "S7215VA",
+      "pnc_id": "69/639259I",
+      "aliases": [],
+      "affiliations": [
+        [
+          15
+        ],
+        [
+          17,
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 14,
+      "given_names": "Creola",
+      "family_name": "Breitenberg",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/8.png"
+      },
+      "dob": {
+        "day": 3,
+        "month": 2,
+        "year": 1976,
+        "displayDob": "3 Feb 1976"
+      },
+      "identifying_marks": [
+        "birthmark on right wrist"
+      ],
+      "offender_id": 202,
+      "nomis_id": "X2953TK",
+      "pnc_id": "49/142744A",
+      "aliases": [
+        "Young C"
+      ],
+      "affiliations": [
+        [
+          10
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 15,
+      "given_names": "Rodger",
+      "family_name": "Ratke",
       "gender": "M",
       "mugshot": {
         "gender": "male",
         "filename": "male/1.png"
       },
       "dob": {
-        "day": 4,
-        "month": 6,
-        "year": 1979,
-        "displayDob": "4 Jun 1979"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left wrist",
-        "celtic tattoo on left cheek"
-      ],
-      "offender_id": 282,
-      "nomis_id": "V2651ID",
-      "pnc_id": "58/763387J",
-      "aliases": [],
-      "affiliations": [
-        [
-          1
-        ]
-      ]
-    },
-    {
-      "given_names": "Kimberly",
-      "family_name": "Legros",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/5.png"
-      },
-      "dob": {
-        "day": 25,
-        "month": 5,
-        "year": 1979,
-        "displayDob": "25 May 1979"
-      },
-      "identifying_marks": [
-        "birthmark on left forearm",
-        "celtic tattoo on right wrist"
-      ],
-      "offender_id": 283,
-      "nomis_id": "U1282BR",
-      "pnc_id": "09/798444P",
-      "aliases": [
-        "Moonie",
-        "Monkey"
-      ],
-      "affiliations": [
-        [
-          18,
-          0
-        ]
-      ]
-    },
-    {
-      "given_names": "Lula",
-      "family_name": "West",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/14.png"
-      },
-      "dob": {
-        "day": 2,
-        "month": 5,
-        "year": 1970,
-        "displayDob": "2 May 1970"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right wrist",
-        "tattoo of a spiderweb on left wrist"
-      ],
-      "offender_id": 284,
-      "nomis_id": "T9718HG",
-      "pnc_id": "59/059561S",
-      "aliases": [
-        "Big Lula"
-      ],
-      "affiliations": [
-        [
-          18,
-          2
-        ],
-        [
-          1,
-          2
-        ]
-      ]
-    },
-    {
-      "given_names": "Austen",
-      "family_name": "Daniel",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/13.png"
-      },
-      "dob": {
-        "day": 3,
-        "month": 4,
-        "year": 1970,
-        "displayDob": "3 Apr 1970"
-      },
-      "identifying_marks": [
-        "celtic tattoo on left cheek"
-      ],
-      "offender_id": 285,
-      "nomis_id": "E3653OG",
-      "pnc_id": "51/225902Y",
-      "aliases": [
-        "Monkey"
-      ],
-      "affiliations": [
-        [
-          12,
-          0
-        ]
-      ]
-    },
-    {
-      "given_names": "Amparo",
-      "family_name": "Denesik",
-      "gender": "F",
-      "mugshot": {
-        "gender": "female",
-        "filename": "female/14.png"
-      },
-      "dob": {
-        "day": 4,
-        "month": 5,
-        "year": 1967,
-        "displayDob": "4 May 1967"
-      },
-      "identifying_marks": [
-        "birthmark on right cheek",
-        "celtic tattoo on left forearm"
-      ],
-      "offender_id": 286,
-      "nomis_id": "N6034MA",
-      "pnc_id": "79/727747W",
-      "aliases": [],
-      "affiliations": [
-        [
-          6
-        ]
-      ]
-    },
-    {
-      "given_names": "Sim",
-      "family_name": "Reynolds",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/8.png"
-      },
-      "dob": {
-        "day": 10,
-        "month": 6,
-        "year": 1998,
-        "displayDob": "10 Jun 1998"
-      },
-      "identifying_marks": [
-        "celtic tattoo on right wrist",
-        "celtic tattoo on left wrist"
-      ],
-      "offender_id": 287,
-      "nomis_id": "B2034QO",
-      "pnc_id": "53/363125M",
-      "aliases": [
-        "Foxy"
-      ],
-      "affiliations": [
-        [
-          13,
-          0
-        ]
-      ]
-    },
-    {
-      "given_names": "Nick",
-      "family_name": "Weissnat",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/9.png"
-      },
-      "dob": {
-        "day": 14,
-        "month": 2,
+        "day": 13,
+        "month": 9,
         "year": 1992,
-        "displayDob": "14 Feb 1992"
+        "displayDob": "13 Sep 1992"
       },
       "identifying_marks": [
-        "birthmark on left wrist",
-        "scar on right forearm"
+        "scar on right shoulder"
       ],
-      "offender_id": 288,
-      "nomis_id": "W0731OC",
-      "pnc_id": "93/935914B",
+      "offender_id": 203,
+      "nomis_id": "G9694ZQ",
+      "pnc_id": "14/895637Q",
+      "aliases": [
+        "Bad R",
+        "Monkey"
+      ],
+      "affiliations": [
+        [
+          9,
+          4
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 16,
+      "given_names": "Arvid",
+      "family_name": "Sporer",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/4.png"
+      },
+      "dob": {
+        "day": 7,
+        "month": 5,
+        "year": 1986,
+        "displayDob": "7 May 1986"
+      },
+      "identifying_marks": [
+        "scar on right cheek",
+        "celtic tattoo on right forearm"
+      ],
+      "offender_id": 204,
+      "nomis_id": "R4150EG",
+      "pnc_id": "98/425301L",
       "aliases": [],
       "affiliations": [
         [
-          1
+          4
         ]
-      ]
+      ],
+      "incarceration": false
     },
     {
-      "given_names": "Jo",
-      "family_name": "Gibson",
+      "index": 17,
+      "given_names": "Holly",
+      "family_name": "Jaskolski",
       "gender": "F",
       "mugshot": {
         "gender": "female",
-        "filename": "female/5.png"
+        "filename": "female/1.png"
       },
       "dob": {
-        "day": 3,
-        "month": 12,
-        "year": 1964,
-        "displayDob": "3 Dec 1964"
+        "day": 23,
+        "month": 6,
+        "year": 1973,
+        "displayDob": "23 Jun 1973"
       },
       "identifying_marks": [],
-      "offender_id": 289,
-      "nomis_id": "M2473AK",
-      "pnc_id": "03/115476W",
-      "aliases": [
-        "Chewy"
-      ],
+      "offender_id": 205,
+      "nomis_id": "G4253HA",
+      "pnc_id": "21/443325Q",
+      "aliases": [],
       "affiliations": [
         [
-          8
+          1
         ]
-      ]
+      ],
+      "incarceration": false
     },
     {
-      "given_names": "Austyn",
-      "family_name": "Runolfsdottir",
+      "index": 18,
+      "given_names": "Alfred",
+      "family_name": "Ryan",
       "gender": "M",
       "mugshot": {
         "gender": "male",
         "filename": "male/15.png"
       },
       "dob": {
-        "day": 2,
-        "month": 11,
-        "year": 1976,
-        "displayDob": "2 Nov 1976"
+        "day": 14,
+        "month": 1,
+        "year": 1962,
+        "displayDob": "14 Jan 1962"
       },
-      "identifying_marks": [
-        "celtic tattoo on right shoulder"
-      ],
-      "offender_id": 290,
-      "nomis_id": "D8934DY",
-      "pnc_id": "55/925730K",
-      "aliases": [],
-      "affiliations": [
-        [
-          19
-        ]
-      ]
-    },
-    {
-      "given_names": "Tyson",
-      "family_name": "Cole",
-      "gender": "M",
-      "mugshot": {
-        "gender": "male",
-        "filename": "male/3.png"
-      },
-      "dob": {
-        "day": 2,
-        "month": 12,
-        "year": 1973,
-        "displayDob": "2 Dec 1973"
-      },
-      "identifying_marks": [
-        "scar on left shoulder",
-        "celtic tattoo on left cheek"
-      ],
-      "offender_id": 291,
-      "nomis_id": "X7657BK",
-      "pnc_id": "81/570468J",
+      "identifying_marks": [],
+      "offender_id": 206,
+      "nomis_id": "Z5938OH",
+      "pnc_id": "93/061120S",
       "aliases": [
-        "Spindles"
+        "Brains",
+        "Tasty A"
       ],
       "affiliations": [
         [
-          11
+          1
         ]
-      ]
+      ],
+      "incarceration": false
     },
     {
-      "given_names": "Vallie",
-      "family_name": "Lubowitz",
+      "index": 19,
+      "given_names": "Magdalen",
+      "family_name": "Welch",
       "gender": "F",
       "mugshot": {
         "gender": "female",
-        "filename": "female/7.png"
+        "filename": "female/1.png"
       },
       "dob": {
-        "day": 24,
-        "month": 11,
-        "year": 1995,
-        "displayDob": "24 Nov 1995"
+        "day": 15,
+        "month": 6,
+        "year": 1963,
+        "displayDob": "15 Jun 1963"
       },
-      "identifying_marks": [
-        "celtic tattoo on right forearm",
-        "scar on right shoulder"
-      ],
-      "offender_id": 292,
-      "nomis_id": "R5614SM",
-      "pnc_id": "59/141175Y",
+      "identifying_marks": [],
+      "offender_id": 207,
+      "nomis_id": "G2291AY",
+      "pnc_id": "57/215453X",
       "aliases": [
-        "Creepy V",
-        "Bricktop"
+        "Bugsy"
       ],
       "affiliations": [
         [
           0
         ]
-      ]
+      ],
+      "incarceration": false
     },
     {
-      "given_names": "Russ",
-      "family_name": "Roob",
+      "index": 20,
+      "given_names": "Lorena",
+      "family_name": "Weber",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/13.png"
+      },
+      "dob": {
+        "day": 27,
+        "month": 1,
+        "year": 1972,
+        "displayDob": "27 Jan 1972"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right shoulder"
+      ],
+      "offender_id": 208,
+      "nomis_id": "M2195AT",
+      "pnc_id": "51/023566B",
+      "aliases": [
+        "Young L"
+      ],
+      "affiliations": [
+        [
+          16
+        ]
+      ],
+      "incarceration": 0
+    },
+    {
+      "index": 21,
+      "given_names": "Bruce",
+      "family_name": "Erdman",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/6.png"
+      },
+      "dob": {
+        "day": 20,
+        "month": 3,
+        "year": 1992,
+        "displayDob": "20 Mar 1992"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on left shoulder"
+      ],
+      "offender_id": 209,
+      "nomis_id": "D9152TB",
+      "pnc_id": "60/814219B",
+      "aliases": [
+        "Cheesy",
+        "B Pain"
+      ],
+      "affiliations": [
+        [
+          7
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 22,
+      "given_names": "Pamela",
+      "family_name": "Wolff",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/5.png"
+      },
+      "dob": {
+        "day": 27,
+        "month": 12,
+        "year": 1961,
+        "displayDob": "27 Dec 1961"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on right shoulder",
+        "birthmark on right forearm"
+      ],
+      "offender_id": 210,
+      "nomis_id": "D9844OJ",
+      "pnc_id": "04/669673M",
+      "aliases": [
+        "Playa P"
+      ],
+      "affiliations": [
+        [
+          9
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 23,
+      "given_names": "Gavin",
+      "family_name": "Morar",
       "gender": "M",
       "mugshot": {
         "gender": "male",
         "filename": "male/7.png"
       },
       "dob": {
-        "day": 22,
-        "month": 7,
-        "year": 1990,
-        "displayDob": "22 Jul 1990"
+        "day": 19,
+        "month": 3,
+        "year": 1984,
+        "displayDob": "19 Mar 1984"
       },
-      "identifying_marks": [
-        "celtic tattoo on left shoulder",
-        "birthmark on right wrist"
-      ],
-      "offender_id": 293,
-      "nomis_id": "O4368XR",
-      "pnc_id": "40/759786S",
+      "identifying_marks": [],
+      "offender_id": 211,
+      "nomis_id": "P1568QH",
+      "pnc_id": "23/858376V",
       "aliases": [],
       "affiliations": [
         [
-          9,
-          1
+          7
         ]
-      ]
+      ],
+      "incarceration": false
     },
     {
-      "given_names": "Hulda",
-      "family_name": "O'Conner",
+      "index": 24,
+      "given_names": "Idella",
+      "family_name": "Hagenes",
       "gender": "F",
       "mugshot": {
         "gender": "female",
-        "filename": "female/14.png"
+        "filename": "female/5.png"
+      },
+      "dob": {
+        "day": 24,
+        "month": 2,
+        "year": 1976,
+        "displayDob": "24 Feb 1976"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right wrist"
+      ],
+      "offender_id": 212,
+      "nomis_id": "E0522CX",
+      "pnc_id": "78/129118M",
+      "aliases": [],
+      "affiliations": [
+        [
+          11
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 25,
+      "given_names": "Israel",
+      "family_name": "Rice",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/7.png"
+      },
+      "dob": {
+        "day": 26,
+        "month": 11,
+        "year": 1997,
+        "displayDob": "26 Nov 1997"
+      },
+      "identifying_marks": [],
+      "offender_id": 213,
+      "nomis_id": "S9404QG",
+      "pnc_id": "41/979606V",
+      "aliases": [
+        "Little Israel"
+      ],
+      "affiliations": [
+        [
+          3,
+          2
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 26,
+      "given_names": "Kurt",
+      "family_name": "Schmitt",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/2.png"
+      },
+      "dob": {
+        "day": 26,
+        "month": 11,
+        "year": 2001,
+        "displayDob": "26 Nov 2001"
+      },
+      "identifying_marks": [
+        "celtic tattoo on left cheek",
+        "scar on left wrist"
+      ],
+      "offender_id": 214,
+      "nomis_id": "E0120GE",
+      "pnc_id": "43/376811J",
+      "aliases": [
+        "Brains"
+      ],
+      "affiliations": [
+        [
+          18,
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 27,
+      "given_names": "Isabel",
+      "family_name": "Bogan",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/10.png"
+      },
+      "dob": {
+        "day": 6,
+        "month": 7,
+        "year": 1975,
+        "displayDob": "6 Jul 1975"
+      },
+      "identifying_marks": [
+        "birthmark on left cheek"
+      ],
+      "offender_id": 215,
+      "nomis_id": "I3011LR",
+      "pnc_id": "71/496028S",
+      "aliases": [
+        "Maverick"
+      ],
+      "affiliations": [
+        [
+          10
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 28,
+      "given_names": "Johnnie",
+      "family_name": "Deckow",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/14.png"
+      },
+      "dob": {
+        "day": 2,
+        "month": 6,
+        "year": 1969,
+        "displayDob": "2 Jun 1969"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right shoulder"
+      ],
+      "offender_id": 216,
+      "nomis_id": "X8096OT",
+      "pnc_id": "09/231313S",
+      "aliases": [
+        "Spoonie"
+      ],
+      "affiliations": [
+        [
+          19
+        ],
+        [
+          16,
+          1
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 29,
+      "given_names": "Emil",
+      "family_name": "Cartwright",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/2.png"
+      },
+      "dob": {
+        "day": 9,
+        "month": 9,
+        "year": 1966,
+        "displayDob": "9 Sep 1966"
+      },
+      "identifying_marks": [],
+      "offender_id": 217,
+      "nomis_id": "Z2036TI",
+      "pnc_id": "32/062433I",
+      "aliases": [
+        "Sticky E"
+      ],
+      "affiliations": [
+        [
+          4
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 30,
+      "given_names": "Delia",
+      "family_name": "McLaughlin",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/2.png"
+      },
+      "dob": {
+        "day": 27,
+        "month": 12,
+        "year": 1980,
+        "displayDob": "27 Dec 1980"
+      },
+      "identifying_marks": [
+        "scar on left shoulder"
+      ],
+      "offender_id": 218,
+      "nomis_id": "U0232LX",
+      "pnc_id": "08/268024R",
+      "aliases": [],
+      "affiliations": [
+        [
+          2,
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 31,
+      "given_names": "Vicenta",
+      "family_name": "Ruecker",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/12.png"
+      },
+      "dob": {
+        "day": 22,
+        "month": 11,
+        "year": 1995,
+        "displayDob": "22 Nov 1995"
+      },
+      "identifying_marks": [],
+      "offender_id": 219,
+      "nomis_id": "B3851SH",
+      "pnc_id": "71/376230B",
+      "aliases": [
+        "Spoonie"
+      ],
+      "affiliations": [
+        [
+          10,
+          5
+        ]
+      ],
+      "incarceration": 18
+    },
+    {
+      "index": 32,
+      "given_names": "Ferne",
+      "family_name": "Hintz",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/6.png"
+      },
+      "dob": {
+        "day": 25,
+        "month": 12,
+        "year": 1968,
+        "displayDob": "25 Dec 1968"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on right cheek",
+        "celtic tattoo on left wrist"
+      ],
+      "offender_id": 220,
+      "nomis_id": "P2216HX",
+      "pnc_id": "90/683862I",
+      "aliases": [
+        "Creepy F",
+        "Soap"
+      ],
+      "affiliations": [
+        [
+          17
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 33,
+      "given_names": "Janice",
+      "family_name": "Ebert",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/12.png"
+      },
+      "dob": {
+        "day": 12,
+        "month": 1,
+        "year": 1987,
+        "displayDob": "12 Jan 1987"
+      },
+      "identifying_marks": [
+        "scar on left cheek",
+        "scar on left wrist"
+      ],
+      "offender_id": 221,
+      "nomis_id": "O1968VH",
+      "pnc_id": "90/413605V",
+      "aliases": [
+        "Bricktop",
+        "J Pain"
+      ],
+      "affiliations": [
+        [
+          6
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 34,
+      "given_names": "Jordan",
+      "family_name": "Eichmann",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/1.png"
+      },
+      "dob": {
+        "day": 10,
+        "month": 8,
+        "year": 1970,
+        "displayDob": "10 Aug 1970"
+      },
+      "identifying_marks": [
+        "birthmark on left wrist",
+        "tattoo of a spiderweb on left wrist"
+      ],
+      "offender_id": 222,
+      "nomis_id": "Q8276WG",
+      "pnc_id": "51/361787G",
+      "aliases": [],
+      "affiliations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "incarceration": 3
+    },
+    {
+      "index": 35,
+      "given_names": "Ted",
+      "family_name": "Jacobson",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/3.png"
+      },
+      "dob": {
+        "day": 8,
+        "month": 9,
+        "year": 1974,
+        "displayDob": "8 Sep 1974"
+      },
+      "identifying_marks": [
+        "scar on left shoulder",
+        "celtic tattoo on right shoulder"
+      ],
+      "offender_id": 223,
+      "nomis_id": "N8363EG",
+      "pnc_id": "55/580968X",
+      "aliases": [
+        "Young T",
+        "Bad T"
+      ],
+      "affiliations": [
+        [
+          4
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 36,
+      "given_names": "Ferne",
+      "family_name": "Larkin",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/2.png"
+      },
+      "dob": {
+        "day": 6,
+        "month": 8,
+        "year": 1977,
+        "displayDob": "6 Aug 1977"
+      },
+      "identifying_marks": [],
+      "offender_id": 224,
+      "nomis_id": "J0919XJ",
+      "pnc_id": "32/061208M",
+      "aliases": [
+        "Goose"
+      ],
+      "affiliations": [
+        [
+          5,
+          5
+        ]
+      ],
+      "incarceration": 7
+    },
+    {
+      "index": 37,
+      "given_names": "Thora",
+      "family_name": "Nolan",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/12.png"
+      },
+      "dob": {
+        "day": 5,
+        "month": 11,
+        "year": 1961,
+        "displayDob": "5 Nov 1961"
+      },
+      "identifying_marks": [
+        "birthmark on left forearm"
+      ],
+      "offender_id": 225,
+      "nomis_id": "N4674DX",
+      "pnc_id": "29/591432H",
+      "aliases": [],
+      "affiliations": [
+        [
+          8
+        ]
+      ],
+      "incarceration": 21
+    },
+    {
+      "index": 38,
+      "given_names": "Lindsey",
+      "family_name": "Breitenberg",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/13.png"
+      },
+      "dob": {
+        "day": 6,
+        "month": 6,
+        "year": 1965,
+        "displayDob": "6 Jun 1965"
+      },
+      "identifying_marks": [],
+      "offender_id": 226,
+      "nomis_id": "Z6153TH",
+      "pnc_id": "23/508024O",
+      "aliases": [],
+      "affiliations": [
+        [
+          8
+        ],
+        [
+          9
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 39,
+      "given_names": "Dax",
+      "family_name": "Schuppe",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/11.png"
+      },
+      "dob": {
+        "day": 12,
+        "month": 10,
+        "year": 1990,
+        "displayDob": "12 Oct 1990"
+      },
+      "identifying_marks": [
+        "scar on right cheek"
+      ],
+      "offender_id": 227,
+      "nomis_id": "C2542LG",
+      "pnc_id": "16/716440P",
+      "aliases": [
+        "Bugsy",
+        "Tasty D"
+      ],
+      "affiliations": [
+        [
+          3,
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 40,
+      "given_names": "Twila",
+      "family_name": "Lemke",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/8.png"
+      },
+      "dob": {
+        "day": 8,
+        "month": 10,
+        "year": 1970,
+        "displayDob": "8 Oct 1970"
+      },
+      "identifying_marks": [],
+      "offender_id": 228,
+      "nomis_id": "P6203TH",
+      "pnc_id": "25/237754D",
+      "aliases": [
+        "Foxy"
+      ],
+      "affiliations": [
+        [
+          5,
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 41,
+      "given_names": "Clifton",
+      "family_name": "Anderson",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/4.png"
+      },
+      "dob": {
+        "day": 18,
+        "month": 5,
+        "year": 1976,
+        "displayDob": "18 May 1976"
+      },
+      "identifying_marks": [],
+      "offender_id": 229,
+      "nomis_id": "U9118MF",
+      "pnc_id": "40/207913B",
+      "aliases": [
+        "Strider",
+        "Shanks"
+      ],
+      "affiliations": [
+        [
+          1
+        ]
+      ],
+      "incarceration": 5
+    },
+    {
+      "index": 42,
+      "given_names": "Abbigail",
+      "family_name": "Romaguera",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/5.png"
+      },
+      "dob": {
+        "day": 26,
+        "month": 10,
+        "year": 1994,
+        "displayDob": "26 Oct 1994"
+      },
+      "identifying_marks": [
+        "birthmark on right wrist",
+        "scar on left wrist"
+      ],
+      "offender_id": 230,
+      "nomis_id": "P8870XG",
+      "pnc_id": "46/401658A",
+      "aliases": [
+        "Mullett"
+      ],
+      "affiliations": [
+        [
+          19
+        ]
+      ],
+      "incarceration": 24
+    },
+    {
+      "index": 43,
+      "given_names": "Jarrett",
+      "family_name": "Toy",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/9.png"
       },
       "dob": {
         "day": 16,
-        "month": 8,
-        "year": 1962,
-        "displayDob": "16 Aug 1962"
+        "month": 4,
+        "year": 1963,
+        "displayDob": "16 Apr 1963"
       },
-      "identifying_marks": [
-        "tattoo of a spiderweb on left shoulder",
-        "scar on left shoulder"
-      ],
-      "offender_id": 294,
-      "nomis_id": "M7151QW",
-      "pnc_id": "00/586539F",
+      "identifying_marks": [],
+      "offender_id": 231,
+      "nomis_id": "A4453QD",
+      "pnc_id": "34/419815H",
       "aliases": [
-        "Bugsy",
-        "Iceman"
+        "Smokey"
+      ],
+      "affiliations": [
+        [
+          17
+        ]
+      ],
+      "incarceration": 23
+    },
+    {
+      "index": 44,
+      "given_names": "Loy",
+      "family_name": "Ruecker",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/12.png"
+      },
+      "dob": {
+        "day": 24,
+        "month": 10,
+        "year": 1975,
+        "displayDob": "24 Oct 1975"
+      },
+      "identifying_marks": [],
+      "offender_id": 232,
+      "nomis_id": "D6426FH",
+      "pnc_id": "39/869770G",
+      "aliases": [
+        "Foxy",
+        "Plank"
       ],
       "affiliations": [
         [
           11
         ]
-      ]
+      ],
+      "incarceration": 13
     },
     {
-      "given_names": "Alfredo",
-      "family_name": "Corwin",
+      "index": 45,
+      "given_names": "Mariah",
+      "family_name": "Brekke",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/13.png"
+      },
+      "dob": {
+        "day": 24,
+        "month": 12,
+        "year": 1975,
+        "displayDob": "24 Dec 1975"
+      },
+      "identifying_marks": [],
+      "offender_id": 233,
+      "nomis_id": "N6081ZA",
+      "pnc_id": "54/525145W",
+      "aliases": [
+        "Blaze",
+        "M Pain"
+      ],
+      "affiliations": [
+        [
+          7
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 46,
+      "given_names": "Jared",
+      "family_name": "Stamm",
       "gender": "M",
       "mugshot": {
         "gender": "male",
         "filename": "male/5.png"
       },
       "dob": {
+        "day": 7,
+        "month": 2,
+        "year": 1974,
+        "displayDob": "7 Feb 1974"
+      },
+      "identifying_marks": [
+        "birthmark on right wrist",
+        "celtic tattoo on right shoulder"
+      ],
+      "offender_id": 234,
+      "nomis_id": "Z2633AV",
+      "pnc_id": "07/531237O",
+      "aliases": [],
+      "affiliations": [
+        [
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 47,
+      "given_names": "Adaline",
+      "family_name": "Gleason",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/1.png"
+      },
+      "dob": {
+        "day": 4,
+        "month": 10,
+        "year": 1975,
+        "displayDob": "4 Oct 1975"
+      },
+      "identifying_marks": [
+        "celtic tattoo on left forearm"
+      ],
+      "offender_id": 235,
+      "nomis_id": "U8128AW",
+      "pnc_id": "07/325279B",
+      "aliases": [
+        "Moonie",
+        "Sticky A"
+      ],
+      "affiliations": [
+        [
+          10,
+          2
+        ],
+        [
+          5
+        ]
+      ],
+      "incarceration": 9
+    },
+    {
+      "index": 48,
+      "given_names": "Pinkie",
+      "family_name": "Block",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/15.png"
+      },
+      "dob": {
+        "day": 1,
+        "month": 6,
+        "year": 1961,
+        "displayDob": "1 Jun 1961"
+      },
+      "identifying_marks": [
+        "birthmark on right cheek"
+      ],
+      "offender_id": 236,
+      "nomis_id": "E4268QN",
+      "pnc_id": "45/108715O",
+      "aliases": [
+        "Shadow"
+      ],
+      "affiliations": [
+        [
+          16,
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 49,
+      "given_names": "Deja",
+      "family_name": "Adams",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/9.png"
+      },
+      "dob": {
+        "day": 21,
+        "month": 3,
+        "year": 1985,
+        "displayDob": "21 Mar 1985"
+      },
+      "identifying_marks": [],
+      "offender_id": 237,
+      "nomis_id": "B0666GL",
+      "pnc_id": "32/519291B",
+      "aliases": [
+        "Plank",
+        "Goose"
+      ],
+      "affiliations": [
+        [
+          5
+        ]
+      ],
+      "incarceration": 11
+    },
+    {
+      "index": 50,
+      "given_names": "Malcolm",
+      "family_name": "Baumbach",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/8.png"
+      },
+      "dob": {
+        "day": 1,
+        "month": 5,
+        "year": 2001,
+        "displayDob": "1 May 2001"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right forearm",
+        "celtic tattoo on left cheek"
+      ],
+      "offender_id": 238,
+      "nomis_id": "K0168EK",
+      "pnc_id": "51/545792C",
+      "aliases": [
+        "Tiny"
+      ],
+      "affiliations": [
+        [
+          7
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 51,
+      "given_names": "Keith",
+      "family_name": "Ledner",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/15.png"
+      },
+      "dob": {
+        "day": 23,
+        "month": 9,
+        "year": 1965,
+        "displayDob": "23 Sep 1965"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on left shoulder"
+      ],
+      "offender_id": 239,
+      "nomis_id": "Z8332ND",
+      "pnc_id": "74/706541R",
+      "aliases": [
+        "Smokey"
+      ],
+      "affiliations": [
+        [
+          14
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 52,
+      "given_names": "Janae",
+      "family_name": "Leuschke",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/9.png"
+      },
+      "dob": {
+        "day": 22,
+        "month": 10,
+        "year": 1971,
+        "displayDob": "22 Oct 1971"
+      },
+      "identifying_marks": [],
+      "offender_id": 240,
+      "nomis_id": "F2708YY",
+      "pnc_id": "98/283334I",
+      "aliases": [
+        "Goose",
+        "Big Janae"
+      ],
+      "affiliations": [
+        [
+          3
+        ],
+        [
+          19
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 53,
+      "given_names": "Dock",
+      "family_name": "Reynolds",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/5.png"
+      },
+      "dob": {
+        "day": 17,
+        "month": 10,
+        "year": 1996,
+        "displayDob": "17 Oct 1996"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right forearm",
+        "celtic tattoo on left cheek"
+      ],
+      "offender_id": 241,
+      "nomis_id": "W9518OE",
+      "pnc_id": "29/091975J",
+      "aliases": [],
+      "affiliations": [
+        [
+          16,
+          5
+        ]
+      ],
+      "incarceration": 14
+    },
+    {
+      "index": 54,
+      "given_names": "Monique",
+      "family_name": "Pfannerstill",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/4.png"
+      },
+      "dob": {
+        "day": 14,
+        "month": 1,
+        "year": 2000,
+        "displayDob": "14 Jan 2000"
+      },
+      "identifying_marks": [],
+      "offender_id": 242,
+      "nomis_id": "K5876FP",
+      "pnc_id": "41/092307O",
+      "aliases": [
+        "Chase"
+      ],
+      "affiliations": [
+        [
+          2
+        ]
+      ],
+      "incarceration": 10
+    },
+    {
+      "index": 55,
+      "given_names": "Meghan",
+      "family_name": "Swaniawski",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/3.png"
+      },
+      "dob": {
+        "day": 10,
+        "month": 9,
+        "year": 1998,
+        "displayDob": "10 Sep 1998"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right cheek"
+      ],
+      "offender_id": 243,
+      "nomis_id": "R3690RM",
+      "pnc_id": "41/144034Q",
+      "aliases": [
+        "Shanks",
+        "Bugsy"
+      ],
+      "affiliations": [
+        [
+          14
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 56,
+      "given_names": "Gaylord",
+      "family_name": "Gaylord",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/9.png"
+      },
+      "dob": {
+        "day": 15,
+        "month": 10,
+        "year": 1971,
+        "displayDob": "15 Oct 1971"
+      },
+      "identifying_marks": [],
+      "offender_id": 244,
+      "nomis_id": "F5007TZ",
+      "pnc_id": "64/184210Z",
+      "aliases": [],
+      "affiliations": [
+        [
+          16
+        ]
+      ],
+      "incarceration": 10
+    },
+    {
+      "index": 57,
+      "given_names": "Conrad",
+      "family_name": "McClure",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/6.png"
+      },
+      "dob": {
+        "day": 19,
+        "month": 1,
+        "year": 1993,
+        "displayDob": "19 Jan 1993"
+      },
+      "identifying_marks": [],
+      "offender_id": 245,
+      "nomis_id": "K8739PO",
+      "pnc_id": "11/107764X",
+      "aliases": [],
+      "affiliations": [
+        [
+          3
+        ]
+      ],
+      "incarceration": 0
+    },
+    {
+      "index": 58,
+      "given_names": "Augustine",
+      "family_name": "Maggio",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/4.png"
+      },
+      "dob": {
         "day": 6,
-        "month": 11,
-        "year": 1973,
-        "displayDob": "6 Nov 1973"
+        "month": 6,
+        "year": 2002,
+        "displayDob": "6 Jun 2002"
+      },
+      "identifying_marks": [
+        "birthmark on right wrist",
+        "celtic tattoo on left shoulder"
+      ],
+      "offender_id": 246,
+      "nomis_id": "H5406WV",
+      "pnc_id": "07/864021C",
+      "aliases": [
+        "Monkey",
+        "Maverick"
+      ],
+      "affiliations": [
+        [
+          9
+        ]
+      ],
+      "incarceration": 8
+    },
+    {
+      "index": 59,
+      "given_names": "Kip",
+      "family_name": "Larkin",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/13.png"
+      },
+      "dob": {
+        "day": 5,
+        "month": 3,
+        "year": 1979,
+        "displayDob": "5 Mar 1979"
+      },
+      "identifying_marks": [],
+      "offender_id": 247,
+      "nomis_id": "W8222GQ",
+      "pnc_id": "23/124038X",
+      "aliases": [],
+      "affiliations": [
+        [
+          7
+        ],
+        [
+          17
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 60,
+      "given_names": "Vella",
+      "family_name": "O'Reilly",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/15.png"
+      },
+      "dob": {
+        "day": 7,
+        "month": 2,
+        "year": 1975,
+        "displayDob": "7 Feb 1975"
+      },
+      "identifying_marks": [],
+      "offender_id": 248,
+      "nomis_id": "J4348EF",
+      "pnc_id": "47/739839P",
+      "aliases": [
+        "Mumbles",
+        "Monkey"
+      ],
+      "affiliations": [
+        [
+          2,
+          4
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 61,
+      "given_names": "Rickey",
+      "family_name": "Sauer",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/14.png"
+      },
+      "dob": {
+        "day": 19,
+        "month": 4,
+        "year": 2002,
+        "displayDob": "19 Apr 2002"
+      },
+      "identifying_marks": [
+        "scar on right wrist"
+      ],
+      "offender_id": 249,
+      "nomis_id": "E4446AF",
+      "pnc_id": "82/353334S",
+      "aliases": [
+        "Spoonie"
+      ],
+      "affiliations": [
+        [
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 62,
+      "given_names": "Lawrence",
+      "family_name": "Dach",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/3.png"
+      },
+      "dob": {
+        "day": 21,
+        "month": 8,
+        "year": 1969,
+        "displayDob": "21 Aug 1969"
+      },
+      "identifying_marks": [],
+      "offender_id": 250,
+      "nomis_id": "U2256KN",
+      "pnc_id": "74/403297I",
+      "aliases": [
+        "Bacon"
+      ],
+      "affiliations": [
+        [
+          14,
+          4
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 63,
+      "given_names": "Bernardo",
+      "family_name": "Howell",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/14.png"
+      },
+      "dob": {
+        "day": 25,
+        "month": 10,
+        "year": 1981,
+        "displayDob": "25 Oct 1981"
+      },
+      "identifying_marks": [],
+      "offender_id": 251,
+      "nomis_id": "H0536NW",
+      "pnc_id": "78/410061Q",
+      "aliases": [
+        "Smokey",
+        "Hatchet Bernardo"
+      ],
+      "affiliations": [
+        [
+          12
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 64,
+      "given_names": "Jazmin",
+      "family_name": "Boyle",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/11.png"
+      },
+      "dob": {
+        "day": 2,
+        "month": 5,
+        "year": 1988,
+        "displayDob": "2 May 1988"
+      },
+      "identifying_marks": [
+        "birthmark on right forearm"
+      ],
+      "offender_id": 252,
+      "nomis_id": "I7560UN",
+      "pnc_id": "36/667684R",
+      "aliases": [],
+      "affiliations": [
+        [
+          8,
+          5
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 65,
+      "given_names": "Cassandre",
+      "family_name": "Hamill",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/11.png"
+      },
+      "dob": {
+        "day": 10,
+        "month": 6,
+        "year": 1970,
+        "displayDob": "10 Jun 1970"
+      },
+      "identifying_marks": [],
+      "offender_id": 253,
+      "nomis_id": "P0641FI",
+      "pnc_id": "34/879111V",
+      "aliases": [
+        "Sticky C"
+      ],
+      "affiliations": [
+        [
+          5
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 66,
+      "given_names": "Maxwell",
+      "family_name": "Bosco",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/9.png"
+      },
+      "dob": {
+        "day": 15,
+        "month": 6,
+        "year": 1980,
+        "displayDob": "15 Jun 1980"
+      },
+      "identifying_marks": [
+        "celtic tattoo on left cheek"
+      ],
+      "offender_id": 254,
+      "nomis_id": "C4081ZP",
+      "pnc_id": "93/936477U",
+      "aliases": [
+        "Fast M",
+        "Razor"
+      ],
+      "affiliations": [
+        [
+          1
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 67,
+      "given_names": "Halie",
+      "family_name": "King",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/10.png"
+      },
+      "dob": {
+        "day": 28,
+        "month": 1,
+        "year": 1976,
+        "displayDob": "28 Jan 1976"
       },
       "identifying_marks": [
         "celtic tattoo on left wrist",
-        "celtic tattoo on left cheek"
+        "tattoo of a spiderweb on left shoulder"
       ],
-      "offender_id": 295,
-      "nomis_id": "I3840EU",
-      "pnc_id": "12/508984F",
+      "offender_id": 255,
+      "nomis_id": "A5652LW",
+      "pnc_id": "29/349319C",
+      "aliases": [],
+      "affiliations": [
+        [
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 68,
+      "given_names": "Adam",
+      "family_name": "White",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/12.png"
+      },
+      "dob": {
+        "day": 27,
+        "month": 2,
+        "year": 1977,
+        "displayDob": "27 Feb 1977"
+      },
+      "identifying_marks": [],
+      "offender_id": 256,
+      "nomis_id": "W9367ZH",
+      "pnc_id": "15/246326V",
+      "aliases": [],
+      "affiliations": [
+        [
+          6,
+          2
+        ]
+      ],
+      "incarceration": 12
+    },
+    {
+      "index": 69,
+      "given_names": "Haley",
+      "family_name": "Murphy",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/3.png"
+      },
+      "dob": {
+        "day": 19,
+        "month": 12,
+        "year": 1974,
+        "displayDob": "19 Dec 1974"
+      },
+      "identifying_marks": [],
+      "offender_id": 257,
+      "nomis_id": "S9169HN",
+      "pnc_id": "48/455969F",
       "aliases": [
-        "Sticky A",
-        "Bacon"
+        "Ghost",
+        "Mullett"
+      ],
+      "affiliations": [
+        [
+          0,
+          1
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 70,
+      "given_names": "Kiera",
+      "family_name": "Ullrich",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/15.png"
+      },
+      "dob": {
+        "day": 1,
+        "month": 7,
+        "year": 1986,
+        "displayDob": "1 Jul 1986"
+      },
+      "identifying_marks": [],
+      "offender_id": 258,
+      "nomis_id": "K5438JQ",
+      "pnc_id": "44/877191O",
+      "aliases": [],
+      "affiliations": [
+        [
+          13
+        ],
+        [
+          1
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 71,
+      "given_names": "Brown",
+      "family_name": "Aufderhar",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/3.png"
+      },
+      "dob": {
+        "day": 18,
+        "month": 5,
+        "year": 1982,
+        "displayDob": "18 May 1982"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right cheek",
+        "birthmark on left cheek"
+      ],
+      "offender_id": 259,
+      "nomis_id": "C5733UA",
+      "pnc_id": "40/762872H",
+      "aliases": [
+        "Moonie",
+        "Razor"
+      ],
+      "affiliations": [
+        [
+          19,
+          0
+        ]
+      ],
+      "incarceration": 24
+    },
+    {
+      "index": 72,
+      "given_names": "Mariam",
+      "family_name": "Bins",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/9.png"
+      },
+      "dob": {
+        "day": 26,
+        "month": 8,
+        "year": 1961,
+        "displayDob": "26 Aug 1961"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on right shoulder",
+        "celtic tattoo on right wrist"
+      ],
+      "offender_id": 260,
+      "nomis_id": "T6897UF",
+      "pnc_id": "76/802436O",
+      "aliases": [
+        "Bugs",
+        "Maverick"
+      ],
+      "affiliations": [
+        [
+          4
+        ],
+        [
+          16,
+          2
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 73,
+      "given_names": "Brook",
+      "family_name": "Morissette",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/1.png"
+      },
+      "dob": {
+        "day": 3,
+        "month": 5,
+        "year": 1973,
+        "displayDob": "3 May 1973"
+      },
+      "identifying_marks": [
+        "scar on right wrist",
+        "tattoo of a spiderweb on left wrist"
+      ],
+      "offender_id": 261,
+      "nomis_id": "Z2304NQ",
+      "pnc_id": "89/795530L",
+      "aliases": [],
+      "affiliations": [
+        [
+          0
+        ],
+        [
+          11
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 74,
+      "given_names": "Blaze",
+      "family_name": "Marvin",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/9.png"
+      },
+      "dob": {
+        "day": 18,
+        "month": 1,
+        "year": 1991,
+        "displayDob": "18 Jan 1991"
+      },
+      "identifying_marks": [
+        "scar on left forearm",
+        "birthmark on right shoulder"
+      ],
+      "offender_id": 262,
+      "nomis_id": "G3852HG",
+      "pnc_id": "93/336341Y",
+      "aliases": [
+        "Cheesy",
+        "Sticky B"
+      ],
+      "affiliations": [
+        [
+          7,
+          5
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 75,
+      "given_names": "Donny",
+      "family_name": "Borer",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/4.png"
+      },
+      "dob": {
+        "day": 10,
+        "month": 3,
+        "year": 2000,
+        "displayDob": "10 Mar 2000"
+      },
+      "identifying_marks": [
+        "celtic tattoo on left shoulder",
+        "birthmark on left forearm"
+      ],
+      "offender_id": 263,
+      "nomis_id": "P4976GK",
+      "pnc_id": "48/491649I",
+      "aliases": [],
+      "affiliations": [
+        [
+          13,
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 76,
+      "given_names": "Nona",
+      "family_name": "Torp",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/3.png"
+      },
+      "dob": {
+        "day": 17,
+        "month": 7,
+        "year": 1980,
+        "displayDob": "17 Jul 1980"
+      },
+      "identifying_marks": [
+        "scar on right shoulder",
+        "scar on right wrist"
+      ],
+      "offender_id": 264,
+      "nomis_id": "X3531QJ",
+      "pnc_id": "37/087692V",
+      "aliases": [],
+      "affiliations": [
+        [
+          18
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 77,
+      "given_names": "Trevor",
+      "family_name": "Schoen",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/3.png"
+      },
+      "dob": {
+        "day": 5,
+        "month": 12,
+        "year": 1982,
+        "displayDob": "5 Dec 1982"
+      },
+      "identifying_marks": [
+        "scar on left wrist"
+      ],
+      "offender_id": 265,
+      "nomis_id": "M3921FD",
+      "pnc_id": "33/202020N",
+      "aliases": [
+        "Bad T",
+        "Moonie"
+      ],
+      "affiliations": [
+        [
+          10
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 78,
+      "given_names": "Gudrun",
+      "family_name": "Bahringer",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/11.png"
+      },
+      "dob": {
+        "day": 26,
+        "month": 9,
+        "year": 1994,
+        "displayDob": "26 Sep 1994"
+      },
+      "identifying_marks": [
+        "birthmark on right cheek"
+      ],
+      "offender_id": 266,
+      "nomis_id": "R7657HW",
+      "pnc_id": "25/718851M",
+      "aliases": [
+        "Foxy"
+      ],
+      "affiliations": [
+        [
+          13
+        ],
+        [
+          7
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 79,
+      "given_names": "Hope",
+      "family_name": "Bosco",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/13.png"
+      },
+      "dob": {
+        "day": 21,
+        "month": 9,
+        "year": 1963,
+        "displayDob": "21 Sep 1963"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on right forearm"
+      ],
+      "offender_id": 267,
+      "nomis_id": "K1391ZD",
+      "pnc_id": "40/166301W",
+      "aliases": [
+        "Lucky H",
+        "Bricktop"
+      ],
+      "affiliations": [
+        [
+          8
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 80,
+      "given_names": "Malachi",
+      "family_name": "Rempel",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/8.png"
+      },
+      "dob": {
+        "day": 5,
+        "month": 7,
+        "year": 2000,
+        "displayDob": "5 Jul 2000"
+      },
+      "identifying_marks": [],
+      "offender_id": 268,
+      "nomis_id": "Z9435XU",
+      "pnc_id": "53/571353M",
+      "aliases": [],
+      "affiliations": [
+        [
+          5
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "incarceration": 19
+    },
+    {
+      "index": 81,
+      "given_names": "Amari",
+      "family_name": "Hamill",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/12.png"
+      },
+      "dob": {
+        "day": 7,
+        "month": 10,
+        "year": 1964,
+        "displayDob": "7 Oct 1964"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on left cheek",
+        "celtic tattoo on right forearm"
+      ],
+      "offender_id": 269,
+      "nomis_id": "I0704FM",
+      "pnc_id": "98/638599A",
+      "aliases": [
+        "Moonie",
+        "Cheesy"
+      ],
+      "affiliations": [
+        [
+          18
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 82,
+      "given_names": "Osbaldo",
+      "family_name": "Pollich",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/15.png"
+      },
+      "dob": {
+        "day": 24,
+        "month": 5,
+        "year": 1963,
+        "displayDob": "24 May 1963"
+      },
+      "identifying_marks": [
+        "birthmark on right shoulder"
+      ],
+      "offender_id": 270,
+      "nomis_id": "E2987UE",
+      "pnc_id": "74/436309M",
+      "aliases": [],
+      "affiliations": [
+        [
+          14
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 83,
+      "given_names": "Alfreda",
+      "family_name": "Schneider",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/11.png"
+      },
+      "dob": {
+        "day": 6,
+        "month": 2,
+        "year": 1963,
+        "displayDob": "6 Feb 1963"
+      },
+      "identifying_marks": [
+        "scar on left wrist",
+        "celtic tattoo on right wrist"
+      ],
+      "offender_id": 271,
+      "nomis_id": "M0772IP",
+      "pnc_id": "73/281237F",
+      "aliases": [],
+      "affiliations": [
+        [
+          1,
+          3
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 84,
+      "given_names": "Jeanette",
+      "family_name": "Rohan",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/12.png"
+      },
+      "dob": {
+        "day": 5,
+        "month": 8,
+        "year": 1983,
+        "displayDob": "5 Aug 1983"
+      },
+      "identifying_marks": [
+        "birthmark on left cheek"
+      ],
+      "offender_id": 272,
+      "nomis_id": "F3232ZN",
+      "pnc_id": "04/524055B",
+      "aliases": [
+        "Creepy J"
+      ],
+      "affiliations": [
+        [
+          8,
+          5
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 85,
+      "given_names": "Alfonso",
+      "family_name": "Koelpin",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/14.png"
+      },
+      "dob": {
+        "day": 1,
+        "month": 2,
+        "year": 1965,
+        "displayDob": "1 Feb 1965"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on right forearm"
+      ],
+      "offender_id": 273,
+      "nomis_id": "W4421NU",
+      "pnc_id": "37/147127Q",
+      "aliases": [
+        "Bubbles"
+      ],
+      "affiliations": [
+        [
+          1,
+          0
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 86,
+      "given_names": "Rita",
+      "family_name": "Tillman",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/7.png"
+      },
+      "dob": {
+        "day": 8,
+        "month": 7,
+        "year": 2001,
+        "displayDob": "8 Jul 2001"
+      },
+      "identifying_marks": [],
+      "offender_id": 274,
+      "nomis_id": "W6668JG",
+      "pnc_id": "62/146808Q",
+      "aliases": [
+        "Chewy"
+      ],
+      "affiliations": [
+        [
+          19,
+          0
+        ]
+      ],
+      "incarceration": 21
+    },
+    {
+      "index": 87,
+      "given_names": "Robb",
+      "family_name": "Herzog",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/8.png"
+      },
+      "dob": {
+        "day": 11,
+        "month": 12,
+        "year": 1987,
+        "displayDob": "11 Dec 1987"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right shoulder",
+        "celtic tattoo on left shoulder"
+      ],
+      "offender_id": 275,
+      "nomis_id": "R7204VI",
+      "pnc_id": "51/939794B",
+      "aliases": [],
+      "affiliations": [
+        [
+          4
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 88,
+      "given_names": "Marge",
+      "family_name": "Gislason",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/1.png"
+      },
+      "dob": {
+        "day": 21,
+        "month": 10,
+        "year": 1976,
+        "displayDob": "21 Oct 1976"
+      },
+      "identifying_marks": [
+        "birthmark on left cheek",
+        "scar on left cheek"
+      ],
+      "offender_id": 276,
+      "nomis_id": "Q2446BY",
+      "pnc_id": "58/008887L",
+      "aliases": [],
+      "affiliations": [
+        [
+          2
+        ]
+      ],
+      "incarceration": 16
+    },
+    {
+      "index": 89,
+      "given_names": "Connie",
+      "family_name": "Stracke",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/6.png"
+      },
+      "dob": {
+        "day": 7,
+        "month": 9,
+        "year": 1974,
+        "displayDob": "7 Sep 1974"
+      },
+      "identifying_marks": [],
+      "offender_id": 277,
+      "nomis_id": "J1262TI",
+      "pnc_id": "95/544445I",
+      "aliases": [],
+      "affiliations": [
+        [
+          13
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 90,
+      "given_names": "Margaret",
+      "family_name": "Haag",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/4.png"
+      },
+      "dob": {
+        "day": 20,
+        "month": 1,
+        "year": 1975,
+        "displayDob": "20 Jan 1975"
+      },
+      "identifying_marks": [],
+      "offender_id": 278,
+      "nomis_id": "U8802HR",
+      "pnc_id": "84/123567S",
+      "aliases": [],
+      "affiliations": [
+        [
+          2
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 91,
+      "given_names": "Hadley",
+      "family_name": "Witting",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/2.png"
+      },
+      "dob": {
+        "day": 22,
+        "month": 3,
+        "year": 1985,
+        "displayDob": "22 Mar 1985"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on right wrist",
+        "birthmark on right shoulder"
+      ],
+      "offender_id": 279,
+      "nomis_id": "C0850PV",
+      "pnc_id": "73/723943D",
+      "aliases": [
+        "Ghost"
+      ],
+      "affiliations": [
+        [
+          9,
+          0
+        ],
+        [
+          17
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 92,
+      "given_names": "Manley",
+      "family_name": "Kunde",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/8.png"
+      },
+      "dob": {
+        "day": 11,
+        "month": 9,
+        "year": 1966,
+        "displayDob": "11 Sep 1966"
+      },
+      "identifying_marks": [],
+      "offender_id": 280,
+      "nomis_id": "W9766AS",
+      "pnc_id": "52/966965D",
+      "aliases": [
+        "Iceman",
+        "Ghost"
+      ],
+      "affiliations": [
+        [
+          3,
+          4
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 93,
+      "given_names": "Kraig",
+      "family_name": "Kiehn",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/1.png"
+      },
+      "dob": {
+        "day": 12,
+        "month": 1,
+        "year": 1967,
+        "displayDob": "12 Jan 1967"
+      },
+      "identifying_marks": [
+        "tattoo of a spiderweb on right cheek"
+      ],
+      "offender_id": 281,
+      "nomis_id": "Y1299GS",
+      "pnc_id": "59/774265Z",
+      "aliases": [
+        "Spindles",
+        "Spoonie"
+      ],
+      "affiliations": [
+        [
+          19,
+          1
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 94,
+      "given_names": "Izabella",
+      "family_name": "Weissnat",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/14.png"
+      },
+      "dob": {
+        "day": 18,
+        "month": 2,
+        "year": 1961,
+        "displayDob": "18 Feb 1961"
+      },
+      "identifying_marks": [],
+      "offender_id": 282,
+      "nomis_id": "D4887UQ",
+      "pnc_id": "51/968197B",
+      "aliases": [
+        "Lil I",
+        "Cheesy"
+      ],
+      "affiliations": [
+        [
+          2
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 95,
+      "given_names": "Alfonso",
+      "family_name": "Raynor",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/15.png"
+      },
+      "dob": {
+        "day": 17,
+        "month": 10,
+        "year": 1967,
+        "displayDob": "17 Oct 1967"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right cheek"
+      ],
+      "offender_id": 283,
+      "nomis_id": "Y9424JI",
+      "pnc_id": "11/040230M",
+      "aliases": [
+        "Bugs",
+        "Greasy"
+      ],
+      "affiliations": [
+        [
+          15,
+          2
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 96,
+      "given_names": "Rowan",
+      "family_name": "Cronin",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/12.png"
+      },
+      "dob": {
+        "day": 3,
+        "month": 3,
+        "year": 1977,
+        "displayDob": "3 Mar 1977"
+      },
+      "identifying_marks": [
+        "birthmark on left forearm"
+      ],
+      "offender_id": 284,
+      "nomis_id": "Q6025NM",
+      "pnc_id": "73/975895A",
+      "aliases": [
+        "Greasy"
       ],
       "affiliations": [
         [
           16
         ]
-      ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 97,
+      "given_names": "Zena",
+      "family_name": "Nitzsche",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/4.png"
+      },
+      "dob": {
+        "day": 13,
+        "month": 7,
+        "year": 1984,
+        "displayDob": "13 Jul 1984"
+      },
+      "identifying_marks": [
+        "celtic tattoo on right cheek",
+        "birthmark on left shoulder"
+      ],
+      "offender_id": 285,
+      "nomis_id": "F2362NW",
+      "pnc_id": "47/558972G",
+      "aliases": [],
+      "affiliations": [
+        [
+          13
+        ]
+      ],
+      "incarceration": false
+    },
+    {
+      "index": 98,
+      "given_names": "Lyric",
+      "family_name": "Green",
+      "gender": "F",
+      "mugshot": {
+        "gender": "female",
+        "filename": "female/9.png"
+      },
+      "dob": {
+        "day": 2,
+        "month": 12,
+        "year": 1961,
+        "displayDob": "2 Dec 1961"
+      },
+      "identifying_marks": [
+        "scar on right wrist",
+        "birthmark on right wrist"
+      ],
+      "offender_id": 286,
+      "nomis_id": "Y8774JB",
+      "pnc_id": "71/866710B",
+      "aliases": [],
+      "affiliations": [
+        [
+          15
+        ]
+      ],
+      "incarceration": 21
+    },
+    {
+      "index": 99,
+      "given_names": "Ali",
+      "family_name": "Anderson",
+      "gender": "M",
+      "mugshot": {
+        "gender": "male",
+        "filename": "male/13.png"
+      },
+      "dob": {
+        "day": 10,
+        "month": 5,
+        "year": 1975,
+        "displayDob": "10 May 1975"
+      },
+      "identifying_marks": [
+        "scar on left wrist"
+      ],
+      "offender_id": 287,
+      "nomis_id": "D6598FF",
+      "pnc_id": "60/314569V",
+      "aliases": [],
+      "affiliations": [
+        [
+          17
+        ]
+      ],
+      "incarceration": 19
     }
   ]
 }

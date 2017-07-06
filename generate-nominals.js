@@ -5,13 +5,19 @@ var genderGuess = require('gender-guess');
 var unique = require('array-unique');
 var dummyAliases = require('./app/sources/aliases.json');
 var nominalRoles = require('./app/sources/roles.json').roles;
+var prisons = require('./app/sources/prisons.json').prisons;
 
 var mugshots = require('./app/modules/mugshot.js');
 var quantities = require('./app/sources/quantities.json');
 var randomPicker = require('./app/modules/random-picker.js');
 
+var updates = [];
+if(fs.existsSync('./app/assets/data/updates.json')) {
+  updates = require('./app/assets/data/updates.json').updateEvents;
+}
+
 // Check if node_modules folder exists
-const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
+var nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
 if (!nodeModulesExists) {
   console.error('ERROR: Node module folder missing. Try running `npm install`');
   process.exit(0);
@@ -30,6 +36,7 @@ function init() {
   // generate nominals
   for(x = 0; x < numNominals; x++) {
     var nominal = {};
+    nominal.index = x;
     nominal.given_names = faker.name.firstName();
     nominal.family_name = faker.name.lastName();
     nominal.gender = guessGenderFromName(nominal.given_names);
@@ -41,6 +48,7 @@ function init() {
     nominal.pnc_id = generatePncId();
     nominal.aliases = generateAliases(nominal.given_names);
     nominal.affiliations = generateAffiliations();
+    nominal.incarceration = getIncarcerationStatus(x);
 
     data.nominals.push(nominal);
   }
@@ -144,7 +152,28 @@ function generateAffiliations() {
   });
 
   return affiliations;
-};
+}
+
+function getIncarcerationStatus(nominalIndex) {
+  var nominalPrison = false;
+
+  if(Math.random() < 0.2) {
+    nominalPrison = Math.floor(Math.random() * prisons.length);
+    console.log('RANDOM ' + nominalPrison + ' for nominal ' + nominalIndex);
+  }
+
+  // check updates file (if it exists yet) to see if nominal is listed as incarcerated
+  if(updates.length) {
+    updates.forEach(function(update) {
+      if(update.type === 'incarceration' && update.nominal == nominalIndex) {
+        nominalPrison = update.location;
+        console.log('FOUND ' + nominalPrison + ' for nominal ' + nominalIndex);
+      }
+    });
+  }
+
+  return nominalPrison;
+}
 
 function leadingZero(n) {
   return (parseInt(n, 10) < 10 ? '0' + n : n);

@@ -31,6 +31,18 @@ var nominal = {
   search: function(params) {
     var filtered_nominals = nominals.map( function(element, index){ element['index'] = index; return element; } );
     return nominals;
+  },
+
+  getNominalsInPrison: function(prisonIndex) {
+    var nominalsInPrison = [];
+
+    nominals.forEach(function(nominal) {
+      if(nominal.incarceration && nominal.incarceration == prisonIndex) {
+        nominalsInPrison.push(nominal);
+      }
+    });
+
+    return nominalsInPrison;
   }
 };
 

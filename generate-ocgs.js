@@ -28,6 +28,7 @@ function init() {
     var ocg = {},
         name = generateOcgName();
 
+    ocg.index = x;
     ocg.name = nameAsString(name);
     ocg.aliases = generateOCGAliases(name).map(nameAsString);
     ocg.territory = generateTerritory(name);

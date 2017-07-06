@@ -36,6 +36,11 @@
         <dt>Gender:</dt>
         <dd>{{nominal.gender}}</dd>
 
+        {% if nominal.incarceration %}
+          <dt>Currently incarcerated at:</dt>
+            <dd><a href="/prison/{{nominal.incarceration}}">HMP {{prisonName}}</a></dd>
+        {% endif%}
+
         <dt>Offender ID:</dt>
         <dd>{{nominal.offender_id}}</dd>
 
