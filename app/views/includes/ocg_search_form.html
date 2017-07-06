@@ -1,5 +1,5 @@
 
-  <form action="/ocg/search/action" method="POST" id="ocg-search">
+  <form action="/ocg/search/results" method="POST" id="ocg-search">
     <div class="column-full form-section">
       <div class="form-group">
         <fieldset class="inline">
@@ -7,14 +7,19 @@
 
           <div class="form-group">
             <label class="form-label" for="given_names">Name / alias</label>
-            <input type="text" class="form-control" name="name_or_alias" placeholder="e.g. Brixton Crew" value="{{name_or_alias}}" />
+            <input type="text" class="form-control" name="name_or_alias" placeholder="e.g. Brixton Crew" value="{{data['name_or_alias']}}" />
           </div>
         </fieldset>
       </div>
 
       <div class='form-group'>
-        <label class="form-label">Identifying marks:</label>
-        <input type="text" class="form-control" name="identifying_marks" value="{{data['identifying_marks']}}" placeholder="e.g. eagle tattoo" />
+        <label class="form-label">Identifying features:</label>
+        <input type="text" class="form-control" name="identifying_features" value="{{data['identifying_features']}}" placeholder="e.g. eagle tattoo" />
+      </div>
+
+      <div class='form-group'>
+        <label class="form-label">Known activities:</label>
+        <input type="text" class="form-control" name="known_activities" value="{{data['known_activities']}}" placeholder="e.g. drug dealing" />
       </div>
 
       <div class='form-group'>
@@ -24,7 +29,7 @@
 
       <div class='form-group'>
         <label class="form-label">GRITS ID:</label>
-        <input type="text" class="form-control" name="nomis_id" value="{{data['grits_id']}}" placeholder="e.g. A1234BC"/>
+        <input type="text" class="form-control" name="grits_id" value="{{data['grits_id']}}" placeholder="e.g. A1234BC"/>
         <div class="validate grits_id">
           {% include "./tick.html" %}
         </div>
@@ -32,7 +37,7 @@
 
       <div class='form-group'>
         <label class="form-label">PND ID:</label>
-        <input type="text" class="form-control" name="pnc_id" placeholder="e.g. 12/345678A" value="{{data['pnd_id']}}" />
+        <input type="text" class="form-control" name="pnd_id" placeholder="e.g. 12/345678A" value="{{data['pnd_id']}}" />
         <div class="validate pnd_id">
           {% include "./tick.html" %}
         </div>
@@ -47,6 +52,9 @@
       </div>
 
       <input type="submit" class="button" value="Search" />
+      {% if 'name_or_alias' in data %}
+        <a class="clear-search" href="/ocg/search/new">Clear search</a>
+      {% endif %}
     </div>
   </form>
 

@@ -31,7 +31,9 @@ function init() {
     ocg.index = x;
     ocg.name = nameAsString(name);
     ocg.aliases = generateOCGAliases(name).map(nameAsString);
-    ocg.territory = generateTerritory(name);
+    // for search
+    ocg.name_or_alias = [ocg.name, ocg.aliases].toString();
+    ocg.territory = generateTerritory(name) || "";
     ocg.identifying_features = generateIdentifyingFeatures(name);
     ocg.pnd_id = generatePNDID();
     ocg.grits_id = generateGRITSID();

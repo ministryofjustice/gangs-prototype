@@ -15,6 +15,12 @@
     </h1>
   </div>
 
+  {% if search_results.length == 0 %}
+    <div class="panel panel-border-wide">
+      <p>Nothing matches your search</p>
+    </div>
+  {% endif %}
+
   <div class="grid-row">
     <details>
       <summary><span class="summary">Refine your search</span></summary>
@@ -24,19 +30,22 @@
     </details>
   </div>
   
-  {% include 'includes/pagination.html' %}
+  {% if search_results.length %}
   
-  <div class="grid-row">
-    <ol class="results-list">
-    {% for result in search_results %}
-      <li class="search-result">
-        {% include 'includes/ocg_search_result.html' %}
-      </li>
-    {% endfor %}
-    </ol>
-  </div>
+    {% include 'includes/pagination.html' %}
+    
+    <div class="grid-row">
+      <ol class="results-list">
+      {% for result in search_results %}
+        <li class="search-result">
+          {% include 'includes/ocg_search_result.html' %}
+        </li>
+      {% endfor %}
+      </ol>
+    </div>
 
-  {% include 'includes/pagination.html' %}
+    {% include 'includes/pagination.html' %}
+  {% endif %}
 </main>
 
 {% endblock %}

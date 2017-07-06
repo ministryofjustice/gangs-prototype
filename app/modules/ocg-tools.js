@@ -3,6 +3,7 @@ var ocgs = require('../assets/data/dummy-ocgs.json').ocgs;
 var nominals = require('../assets/data/dummy-nominals.json').nominals;
 var tensions = require('../assets/data/ocg-tensions.json').tensions;
 var nominalRoles = require('../../app/sources/roles.json').roles;
+var search = require('./search.js');
 
 var ocg = {
   getNominals: function(ocgIndex) {
@@ -53,9 +54,10 @@ var ocg = {
   },
 
   search: function(params) {
-    var filtered_ocgs = ocgs.map( function(element, index){ element['index'] = index; return element; } );
-    return ocgs;
+    var filtered_ocgs = search.filter(ocgs, params);
+    return filtered_ocgs;
   }
+
 };
 
 module.exports = ocg;
