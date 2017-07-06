@@ -1,5 +1,5 @@
 
-  <form action="/nominal/search/action" method="POST" id="nominal-search">
+  <form action="/nominal/search/results" method="POST" id="nominal-search">
     <div class="column-two-thirds form-section">
       <div class="form-group">
         <h3>Names</h3>
@@ -66,6 +66,11 @@
             <label for="gender-f" class="form-label">Female</label>
           </div>
         </fieldset>
+      </div>
+
+      <div class='form-group'>
+        <label class="form-label">Incarcerated at:</label>
+        <input type="text" class="form-control" name="prison_name" value="{{data['prison_name']}}" placeholder="e.g. 'Feltham' or 'Scrubs'"/>
       </div>
 
       <div class='form-group'>

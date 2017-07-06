@@ -13,6 +13,7 @@ var nominal = {
 
     return elapsedYears;
   },
+
   getAffiliations: function(affiliationsIn) {
     var affiliations = [];
 
@@ -28,9 +29,14 @@ var nominal = {
     return affiliations;
   },
 
-  search: function(params) {
-    var filtered_nominals = nominals.map( function(element, index){ element['index'] = index; return element; } );
-    return nominals;
+  filter: function(array, params) {
+    var results = [];
+    for( var i=0; i < array.length; i++ ){
+      if( this.matches(array[i], params) ){
+        results.push(array[i]);
+      }
+    }
+    return results;
   },
 
   getNominalsInPrison: function(prisonIndex) {
@@ -43,6 +49,36 @@ var nominal = {
     });
 
     return nominalsInPrison;
+  },
+
+  search: function(params) {
+    // note: search is basic sub-string match only
+    var filteredNominals = this.filter(this.ensureIndex(nominals), params);
+    return filteredNominals;
+  },
+
+
+  matches: function(object, params) {
+    for( key in params ){
+      if( params[key] && key in object ){
+        var tokens = params[key].toLowerCase().split(/[ ,]+/);
+        var value = object[key].toString().toLowerCase();
+
+        for( var i=0; i < tokens.length; i++ ){
+          if( value.indexOf(tokens[i]) == -1 ){
+            return false;
+          }
+        }
+      }
+    }
+    return true;
+  },
+
+  ensureIndex: function(array) {
+    return array.map( function(element, index){ 
+      element['index'] = index; return element; 
+    });
+>>>>>>> 06459b8... make nominal search actually do a basic search
   }
 };
 
