@@ -13,6 +13,7 @@
     "generate": "node generate-ocgs && node generate-updates.js && node generate-tensions.js && node generate-nominals.js"
   },
   "dependencies": {
+    "array-unique": "^0.3.2",
     "basic-auth": "^1.0.3",
     "basic-auth-connect": "^1.0.0",
     "body-parser": "^1.14.1",

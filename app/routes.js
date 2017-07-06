@@ -76,7 +76,7 @@ router.get('/nominal/search/new', function(req, res) {
   res.render('nominal/search/new', {search: {}});
 });
 router.get('/nominal/search/results', function(req, res) {
-  var results = nominalTools.search(req.params);
+  var results = nominalTools.search(req.session.data);
   var page=req.query['page'] || 1;
   var per_page=req.query['per_page'] || 20;
   var pages=results.length / (per_page > 0 ? per_page : 1);

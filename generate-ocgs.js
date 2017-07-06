@@ -148,14 +148,10 @@ function generateOCGMURN() {
 function generateOCGActivities() {
   var activities = [];
 
-  if(Math.random() < 0.5) {
-    activities.push(randomPicker.rnd(ocgActivities));
-  }
-  if(Math.random() < 0.2) {
-    activities.push(randomPicker.rnd(ocgActivities));
-  }
-  if(Math.random() < 0.1) {
-    activities.push(randomPicker.rnd(ocgActivities));
+  for( threshold in [0.5, 0.2, 0.1] ){
+    if(Math.random() < threshold) {
+      activities.push(randomPicker.rnd(ocgActivities));
+    }
   }
 
   return unique(activities);
