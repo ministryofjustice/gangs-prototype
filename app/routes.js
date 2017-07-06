@@ -148,7 +148,8 @@ router.get('/prison/:index', function(req, res) {
 
   res.render('prison/show', {
     prison: prison,
-    nominalsInPrison: nominalsInPrison
+    nominalsInPrison: nominalsInPrison,
+    ocgs: ocgs
   });
 });
 

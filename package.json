@@ -10,7 +10,7 @@
     "start": "node start.js",
     "lint": "standard",
     "test": "gulp test && npm run lint",
-    "generate": "node generate-nominals.js && node generate-ocgs && node generate-tensions.js && node generate-updates.js"
+    "generate": "node generate-ocgs && node generate-updates.js && node generate-tensions.js && node generate-nominals.js"
   },
   "dependencies": {
     "basic-auth": "^1.0.3",

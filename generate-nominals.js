@@ -159,7 +159,6 @@ function getIncarcerationStatus(nominalIndex) {
 
   if(Math.random() < 0.2) {
     nominalPrison = Math.floor(Math.random() * prisons.length);
-    console.log('RANDOM ' + nominalPrison + ' for nominal ' + nominalIndex);
   }
 
   // check updates file (if it exists yet) to see if nominal is listed as incarcerated
@@ -167,7 +166,6 @@ function getIncarcerationStatus(nominalIndex) {
     updates.forEach(function(update) {
       if(update.type === 'incarceration' && update.nominal == nominalIndex) {
         nominalPrison = update.location;
-        console.log('FOUND ' + nominalPrison + ' for nominal ' + nominalIndex);
       }
     });
   }
