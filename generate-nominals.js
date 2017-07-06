@@ -15,6 +15,10 @@ var updates = [];
 if(fs.existsSync('./app/assets/data/updates.json')) {
   updates = require('./app/assets/data/updates.json').updateEvents;
 }
+var ocgs = [];
+if(fs.existsSync('./app/assets/data/dummy-ocgs.json')) {
+  ocgs = require('./app/assets/data/dummy-ocgs.json').ocgs;
+}
 
 // Check if node_modules folder exists
 var nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -48,7 +52,14 @@ function init() {
     nominal.pnc_id = generatePncId();
     nominal.aliases = generateAliases(nominal.given_names);
     nominal.affiliations = generateAffiliations();
+    nominal.affiliated_ocg_names = nominal.affiliations.map(
+        function(element){
+          var id = [].concat(element)[0];
+          return ocgs[id].name;
+        }
+      );
     nominal.incarceration = getIncarcerationStatus(x);
+    nominal.prison_name = ( nominal.incarceration ? prisons[nominal.incarceration] : '' );
 
     data.nominals.push(nominal);
   }

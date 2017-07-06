@@ -11,12 +11,17 @@
         <a href="/nominal/{{result.index}}">{{result.given_names}} {{result.family_name}}</a>
       </h3>
     </div>
-    <div class="system-ids">
-      <span>NOMIS ID:</span>
-      <span>{{result.nomis_id}}</span>
-      <span>PNC ID:</span>
-      <span>{{result.pnc_id}}</span>
-    </div>
+  </div>
+  <div class="system-ids">
+    <span>NOMIS ID:</span>
+    <span>{{result.nomis_id}}</span>
+    <span>PNC ID:</span>
+    <span>{{result.pnc_id}}</span>
+    {% if result.incarceration %}
+        <p>Currently in: 
+          <strong><a href="/prison/{{result.incarceration}}">HMP {{result.prison_name}}</a></strong>
+        </p>
+      {% endif%}
   </div>
   <dl>
     <dt>Gender:</dt>

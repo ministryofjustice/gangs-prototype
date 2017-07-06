@@ -29,16 +29,6 @@ var nominal = {
     return affiliations;
   },
 
-  filter: function(array, params) {
-    var results = [];
-    for( var i=0; i < array.length; i++ ){
-      if( this.matches(array[i], params) ){
-        results.push(array[i]);
-      }
-    }
-    return results;
-  },
-
   getNominalsInPrison: function(prisonIndex) {
     var nominalsInPrison = [];
 
@@ -49,6 +39,16 @@ var nominal = {
     });
 
     return nominalsInPrison;
+  },
+
+  filter: function(array, params) {
+    var results = [];
+    for( var i=0; i < array.length; i++ ){
+      if( this.matches(array[i], params) ){
+        results.push(array[i]);
+      }
+    }
+    return results;
   },
 
   search: function(params) {
@@ -78,7 +78,6 @@ var nominal = {
     return array.map( function(element, index){ 
       element['index'] = index; return element; 
     });
->>>>>>> 06459b8... make nominal search actually do a basic search
   }
 };
 

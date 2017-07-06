@@ -109,10 +109,13 @@
 
       <div class='form-group'>
         <label class="form-label">Known affiliations:</label>
-        <input type="text" class="form-control" name="affiliated_ocg_name" value="{{data['affiliated_ocg_name']}}" placeholder="Full or partial OCG name e.g.'Gas Gang'" />
+        <input type="text" class="form-control" name="affiliated_ocg_names" value="{{data['affiliated_ocg_names']}}" placeholder="Full or partial OCG name e.g.'Gas Gang'" />
       </div>
 
       <input type="submit" class="button" value="Search" />
+      {% if 'given_names' in data %}
+        <a class="clear-search" href="/nominal/search/new">Clear search</a>
+      {% endif %}
     </div>
   </form>
 

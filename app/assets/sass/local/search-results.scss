@@ -43,7 +43,7 @@
 
 /* inline dl's for the nominal search results */
 .results-list dl {
-  clear: both;
+  clear: left;
   
   dt, dd {
     clear: none;
@@ -56,5 +56,17 @@
   }
   dt {
     font-weight: normal;
+  }
+}
+
+.clear-search {
+  line-height: 2em;
+  margin-left: 2em;
+  @include media(mobile) {
+    display: block;
+    margin-left: 0;
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
   }
 }
