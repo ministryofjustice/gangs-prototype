@@ -31,6 +31,7 @@ var ocg = {
 
     return ocgNominals;
   },
+
   getOcgTensions: function(ocgIndex) {
     var ocgTensions = [];
 
@@ -51,6 +52,12 @@ var ocg = {
     });
 
     return ocgTensions;
+  },
+
+  getTensionsBetween: function(ocgIndex1, ocgIndex2) {
+    return tensions.filter(function(tension){
+      return tension.indices.includes(ocgIndex1) && tension.indices.includes(ocgIndex2);
+    });
   },
 
   search: function(params) {
