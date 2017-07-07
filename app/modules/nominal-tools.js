@@ -3,6 +3,7 @@ var ocgs = require('../assets/data/dummy-ocgs.json').ocgs;
 var nominals = require('../assets/data/dummy-nominals.json').nominals;
 var nominalRoles = require('../../app/sources/roles.json').roles;
 var search = require('./search.js');
+var ocg = require('./ocg-tools.js');
 
 var nominal = {
   getAge: function(dob) {
@@ -57,6 +58,43 @@ var nominal = {
 
     return nominals.filter( function(nominal){
       return nominal.incarceration == false && nominal.nomis_id;
+    });
+  },
+
+  getTensionsInList: function(givenNominals) {
+    var tensions = [];
+
+    for( var i=0; i < givenNominals.length; i++ ){
+      var thisNominal = nominals[givenNominals[i]];
+      console.log('thisNominal = ' + JSON.stringify(thisNominal))
+
+      for( var j=i+1; j < givenNominals.length; j++ ){
+        var otherNominal = nominals[givenNominals[j]];
+        console.log('  otherNominal = ' + JSON.stringify(otherNominal))
+
+        tensions.concat( this.getTensionsBetween(thisNominal, otherNominal) );
+      }
+    }
+    return tensions;
+  },
+
+  getTensionsBetween: function(nominal1, nominal2) {
+    var nominal1_ocgs = this.ocgIds(nominal1);
+    var nominal2_ocgs = this.ocgIds(nominal2);
+    var ocgTensions = [];
+
+    for( var ocgId1 in nominal1_ocgs ){
+      for( var ocgId2 in nominal2_ocgs ){
+        ocgTensions.push(ocg.getTensionsBetween(ocgId1, ocgId2));
+      }
+    }
+
+    return ocgTensions;
+  },
+
+  ocgIds: function(nominal){
+    return nominal.affiliations.map(function(affiliation){ 
+      return [].concat(affiliation)[0]; 
     });
   },
 
