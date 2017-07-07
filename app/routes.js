@@ -124,7 +124,7 @@ router.get('/ocg/search/new', function(req, res) {
   res.render('ocg/search/new', {search: {}});
 });
 router.get('/ocg/search/results', function(req, res) {
-  var results = ocgTools.search(req.params);
+  var results = ocgTools.search(req.session.data);
   var page=req.query['page'] || 1;
   var per_page=req.query['per_page'] || 20;
   var pages=results.length / (per_page > 0 ? per_page : 1);
