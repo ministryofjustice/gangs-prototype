@@ -39,7 +39,7 @@ function generateUpdates() {
 }
 
 function generateUpdate() {
-  var updateType = Math.floor(Math.random() * 3),
+  var updateType = Math.floor(Math.random() * 4),
       newUpdate;
 
   switch(updateType) {
@@ -51,6 +51,9 @@ function generateUpdate() {
       break;
     case 2:
       newUpdate = generateIncarceration();
+      break;
+    case 3:
+      newUpdate = generateRelease();
       break;
   }
 
@@ -91,6 +94,15 @@ function generateNewAffiliation() {
 function generateIncarceration() {
   var update = {
     type: 'incarceration',
+    nominal: Math.floor(Math.random() * numNominals),
+    location: Math.floor(Math.random() * numPrisons)
+  };
+
+  return update;
+}
+function generateRelease() {
+  var update = {
+    type: 'release',
     nominal: Math.floor(Math.random() * numNominals),
     location: Math.floor(Math.random() * numPrisons)
   };

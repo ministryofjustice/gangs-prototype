@@ -67,5 +67,8 @@ dd {
     &.incarceration {
       background-image: url($path + 'icons/prison-bars.png');
     }
+    &.release {
+      background-image: url($path + 'icons/prison-bars-open.png');
+    }
   }
 }

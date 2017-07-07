@@ -34,6 +34,11 @@ var updateTools = {
         inner += ' was incarcerated at ';
         inner += self.bold(self.link(prisons[update.location], 'prison', update.location));
         break;
+      case 'release':
+        inner += self.bold(self.link(nominals[update.nominal].given_names + ' ' + nominals[update.nominal].family_name, 'nominal', update.nominal));
+        inner += ' was released from ';
+        inner += self.bold(self.link(prisons[update.location], 'prison', update.location));
+        break;
       case 'tension-change':
         inner += 'Tension between ';
         inner += self.bold(self.link(ocgs[update.ocg1].name, 'ocg', update.ocg1));

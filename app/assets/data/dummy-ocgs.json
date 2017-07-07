@@ -2,299 +2,292 @@
   "ocgs": [
     {
       "index": 0,
-      "name": "Hackney Angel Pack",
+      "name": "Belfast Ghost Tribe",
       "aliases": [],
-      "territory": "Trelawny Estate, Mare Street, E5, Lower Clapton",
+      "territory": "Shankhill Road, East Belfast, Portadown",
       "identifying_features": [
-        "loose grey shell suit",
-        "ski goggles",
-        "bleached hair"
+        "loose black t-shirt",
+        "knife tattoo on the back of neck"
       ],
-      "pnd_id": "95/848864E",
-      "grits_id": "J9376FG",
-      "ocgm_urn": "63947568",
-      "known_activities": [
-        "Smuggling"
-      ]
-    },
-    {
-      "index": 1,
-      "name": "Croydon Cash Tribe",
-      "aliases": [],
-      "identifying_features": [
-        "loose bandana",
-        "white shell suit"
-      ],
-      "pnd_id": "23/941484O",
-      "grits_id": "T3995LA",
-      "ocgm_urn": "74617513",
-      "known_activities": [
-        "People trafficking",
-        "Drug dealing"
-      ]
-    },
-    {
-      "index": 2,
-      "name": "Croydon Ghost Group",
-      "aliases": [
-        "Croydon Ghost Posse"
-      ],
-      "territory": "Monks Hill Estate, West Croydon",
-      "identifying_features": [],
-      "pnd_id": "53/291264E",
-      "grits_id": "Y8426CT",
-      "ocgm_urn": "70486689",
+      "pnd_id": "54/650831S",
+      "grits_id": "Z2311ZY",
+      "ocgm_urn": "88012735",
       "known_activities": []
     },
     {
-      "index": 3,
-      "name": "Staines Smart Squad",
+      "index": 1,
+      "name": "Brizzle Paper Boys",
       "aliases": [],
-      "territory": "West Staines",
-      "identifying_features": [
-        "suit"
-      ],
-      "pnd_id": "50/322450Q",
-      "grits_id": "B8322SJ",
-      "ocgm_urn": "28395756",
+      "identifying_features": [],
+      "pnd_id": "32/539953O",
+      "grits_id": "L2509OH",
+      "ocgm_urn": "02952233",
       "known_activities": [
         "Gun violence"
       ]
     },
     {
+      "index": 2,
+      "name": "New Cross Cash Pack",
+      "aliases": [],
+      "identifying_features": [
+        "hockey mask",
+        "rose tattoo on forehead"
+      ],
+      "pnd_id": "19/993141S",
+      "grits_id": "M8666CD",
+      "ocgm_urn": "32051806",
+      "known_activities": []
+    },
+    {
+      "index": 3,
+      "name": "Brizzle Rough Bluds",
+      "aliases": [
+        "Brizzle Shank Bluds"
+      ],
+      "identifying_features": [
+        "jeans",
+        "loose blue suit"
+      ],
+      "pnd_id": "42/961438D",
+      "grits_id": "F5279GO",
+      "ocgm_urn": "70604461",
+      "known_activities": [
+        "People trafficking"
+      ]
+    },
+    {
       "index": 4,
-      "name": "Norwich Steel Riders",
-      "aliases": [
-        "Norwich Chopper Riders"
-      ],
-      "identifying_features": [
-        "jeans",
-        "yellow jeans",
-        "oversize green bandana",
-        "silver rings",
-        "eagle tattoo on back"
-      ],
-      "pnd_id": "34/193249J",
-      "grits_id": "D0290EP",
-      "ocgm_urn": "74321014",
-      "known_activities": []
-    },
-    {
-      "index": 5,
-      "name": "Belfast Shank Skins",
-      "aliases": [],
-      "identifying_features": [
-        "backwards red bandana"
-      ],
-      "pnd_id": "34/463159O",
-      "grits_id": "U0011NF",
-      "ocgm_urn": "52862756",
-      "known_activities": []
-    },
-    {
-      "index": 6,
-      "name": "Mersey Ghetto Collective",
-      "aliases": [
-        "Mersey Joker Collective",
-        "Mersey Ghetto Family"
-      ],
-      "identifying_features": [],
-      "pnd_id": "65/650259J",
-      "grits_id": "X0504JB",
-      "ocgm_urn": "41079758",
-      "known_activities": [
-        "Phone snatching"
-      ]
-    },
-    {
-      "index": 7,
-      "name": "Dublin Wild Fam",
-      "aliases": [],
-      "identifying_features": [
-        "tracksuit top",
-        "black combats",
-        "ghost mask",
-        "braided hair",
-        "rose tattoo, on shaven head"
-      ],
-      "pnd_id": "16/066003T",
-      "grits_id": "H0914ZV",
-      "ocgm_urn": "40733077",
-      "known_activities": []
-    },
-    {
-      "index": 8,
-      "name": "Scarfolk Poor Mob",
-      "aliases": [
-        "Scarfolk Poor Crew"
-      ],
-      "identifying_features": [
-        "red shell suit",
-        "oversize blue baseball cap",
-        "gold chain"
-      ],
-      "pnd_id": "55/273683V",
-      "grits_id": "L2493CK",
-      "ocgm_urn": "57499484",
-      "known_activities": []
-    },
-    {
-      "index": 9,
-      "name": "Croxteth Dark Massiv",
-      "aliases": [
-        "Croxteth Callajeros Massiv"
-      ],
-      "territory": "L11, Croxteth, Norris Green, West Derby",
-      "identifying_features": [
-        "oversize suit",
-        "backwards white tracksuit top"
-      ],
-      "pnd_id": "30/690849S",
-      "grits_id": "M2476JC",
-      "ocgm_urn": "94151395",
-      "known_activities": [
-        "Vehicle theft",
-        "Home invasions"
-      ]
-    },
-    {
-      "index": 10,
-      "name": "Toon Scooter Blades",
-      "aliases": [
-        "Toon Scooter Bluds"
-      ],
-      "identifying_features": [
-        "jeans",
-        "Rolex watch",
-        "tally (of kills) tattoo on the shaven head"
-      ],
-      "pnd_id": "05/999897Z",
-      "grits_id": "X8657AS",
-      "ocgm_urn": "80611520",
-      "known_activities": [
-        "Home invasions"
-      ]
-    },
-    {
-      "index": 11,
-      "name": "Brighton Hard Boys",
-      "aliases": [],
-      "identifying_features": [
-        "green combats"
-      ],
-      "pnd_id": "11/633771C",
-      "grits_id": "O8755MR",
-      "ocgm_urn": "31533315",
-      "known_activities": [
-        "Arms dealing"
-      ]
-    },
-    {
-      "index": 12,
-      "name": "Manc Young Lads",
-      "aliases": [
-        "Manc Young Guns"
-      ],
-      "identifying_features": [],
-      "pnd_id": "50/862356S",
-      "grits_id": "A0844RV",
-      "ocgm_urn": "41828338",
-      "known_activities": []
-    },
-    {
-      "index": 13,
-      "name": "Staines Rough Clan",
-      "aliases": [],
-      "identifying_features": [],
-      "pnd_id": "50/123016T",
-      "grits_id": "I4719OM",
-      "ocgm_urn": "12992940",
-      "known_activities": [
-        "Drug dealing",
-        "Home invasions"
-      ]
-    },
-    {
-      "index": 14,
-      "name": "Toon Money Bloodline",
+      "name": "Toon Blind Thugs",
       "aliases": [],
       "territory": "Gilesgate (Durham), Heaton, Jesmond, Walker",
       "identifying_features": [
-        "excessive jewellery"
+        "braided hairstyle"
       ],
-      "pnd_id": "21/495179F",
-      "grits_id": "H8586DT",
-      "ocgm_urn": "32103444",
+      "pnd_id": "48/489303K",
+      "grits_id": "L2785KL",
+      "ocgm_urn": "75043867",
       "known_activities": [
-        "Arms dealing"
+        "People trafficking"
       ]
     },
     {
-      "index": 15,
-      "name": "Hackney Diamond Firm",
-      "aliases": [],
-      "identifying_features": [],
-      "pnd_id": "28/586986Z",
-      "grits_id": "O5355DM",
-      "ocgm_urn": "37761619",
-      "known_activities": [
-        "Gun violence",
-        "Phone snatching"
-      ]
-    },
-    {
-      "index": 16,
-      "name": "West Coast Tough Cartel",
-      "aliases": [],
-      "identifying_features": [],
-      "pnd_id": "03/635692Q",
-      "grits_id": "O0264VV",
-      "ocgm_urn": "10901689",
-      "known_activities": []
-    },
-    {
-      "index": 17,
-      "name": "Dublin Rich Company",
+      "index": 5,
+      "name": "Toon Wild Lords",
       "aliases": [],
       "identifying_features": [
-        "trainers",
-        "backwards yellow tracksuit top"
+        "loose t-shirt"
       ],
-      "pnd_id": "46/931834Z",
-      "grits_id": "Q3070NZ",
-      "ocgm_urn": "15203972",
-      "known_activities": [
-        "Gun violence",
-        "Home invasions"
-      ]
-    },
-    {
-      "index": 18,
-      "name": "Staines Blind Thugs",
-      "aliases": [],
-      "territory": "West Staines",
-      "identifying_features": [
-        "loose black kagoul"
-      ],
-      "pnd_id": "97/050913R",
-      "grits_id": "O2414QJ",
-      "ocgm_urn": "91894865",
+      "pnd_id": "18/427932V",
+      "grits_id": "C7513MN",
+      "ocgm_urn": "19190246",
       "known_activities": [
         "Smuggling"
       ]
     },
     {
-      "index": 19,
-      "name": "Brizzle Shady Lords",
+      "index": 6,
+      "name": "Mersey Steel Bloodline",
+      "aliases": [],
+      "territory": "Wordsworth street, Jericho Close, Kirkby",
+      "identifying_features": [],
+      "pnd_id": "49/199921H",
+      "grits_id": "X6081YE",
+      "ocgm_urn": "72823150",
+      "known_activities": []
+    },
+    {
+      "index": 7,
+      "name": "Belfast Smart Clan",
+      "aliases": [],
+      "territory": "Shankhill Road, East Belfast, Portadown",
+      "identifying_features": [
+        "backwards yellow jeans"
+      ],
+      "pnd_id": "31/190919Q",
+      "grits_id": "B5993IR",
+      "ocgm_urn": "66462252",
+      "known_activities": [
+        "Vehicle theft",
+        "Drug dealing"
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Deptford Tough Gang",
+      "aliases": [],
+      "identifying_features": [
+        "baseball cap",
+        "oversize puffa jacket"
+      ],
+      "pnd_id": "06/927468G",
+      "grits_id": "B0008VE",
+      "ocgm_urn": "34717602",
+      "known_activities": [
+        "People trafficking"
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Hackney Dark Guns",
+      "aliases": [],
+      "identifying_features": [
+        "oversize red puffa jacket"
+      ],
+      "pnd_id": "75/926075S",
+      "grits_id": "A6534CB",
+      "ocgm_urn": "95130562",
+      "known_activities": []
+    },
+    {
+      "index": 10,
+      "name": "Deptford Royal Crew",
       "aliases": [],
       "identifying_features": [
         "buzz cut hair"
       ],
-      "pnd_id": "51/770436I",
-      "grits_id": "T0130WC",
-      "ocgm_urn": "68529476",
+      "pnd_id": "47/065635W",
+      "grits_id": "P9816XG",
+      "ocgm_urn": "72509123",
       "known_activities": [
         "People trafficking"
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Norwich Hell Riders",
+      "aliases": [
+        "Norwich Shady Riders"
+      ],
+      "identifying_features": [
+        "oversize jeans",
+        "backwards green baseball cap",
+        "braided hair"
+      ],
+      "pnd_id": "80/856465P",
+      "grits_id": "Q7785MG",
+      "ocgm_urn": "43250031",
+      "known_activities": []
+    },
+    {
+      "index": 12,
+      "name": "Glasgow Killa Fam",
+      "aliases": [],
+      "identifying_features": [
+        "loose green suit",
+        "Rolex watch",
+        "braided hairstyle"
+      ],
+      "pnd_id": "55/953876T",
+      "grits_id": "W6894GT",
+      "ocgm_urn": "04012622",
+      "known_activities": [
+        "Gun violence"
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Staines Iron Blades",
+      "aliases": [],
+      "identifying_features": [
+        "red t-shirt"
+      ],
+      "pnd_id": "16/528988X",
+      "grits_id": "B6675JV",
+      "ocgm_urn": "07515072",
+      "known_activities": [
+        "Drug dealing"
+      ]
+    },
+    {
+      "index": 14,
+      "name": "New Cross Money Lads",
+      "aliases": [],
+      "territory": "New Cross Gate, Woodpecker Estate, Ludwick Mews",
+      "identifying_features": [
+        "trainers",
+        "tally (of kills) tattoo on shoulders"
+      ],
+      "pnd_id": "68/109761C",
+      "grits_id": "J1843BU",
+      "ocgm_urn": "22792450",
+      "known_activities": [
+        "Arms dealing",
+        "Phone snatching"
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Croydon Rich Family",
+      "aliases": [],
+      "territory": "Monks Hill Estate, West Croydon",
+      "identifying_features": [
+        "shark tattoo on right hand"
+      ],
+      "pnd_id": "67/675794J",
+      "grits_id": "L0759XH",
+      "ocgm_urn": "76703190",
+      "known_activities": [
+        "Vehicle theft"
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Staines Joker Collective",
+      "aliases": [],
+      "territory": "West Staines",
+      "identifying_features": [
+        "shell suit",
+        "yellow bandana",
+        "gold tooth"
+      ],
+      "pnd_id": "14/314343G",
+      "grits_id": "I3460BE",
+      "ocgm_urn": "02681066",
+      "known_activities": []
+    },
+    {
+      "index": 17,
+      "name": "Glasgow Scooter Firm",
+      "aliases": [],
+      "identifying_features": [
+        "oversize black t-shirt"
+      ],
+      "pnd_id": "74/570068O",
+      "grits_id": "B9840SG",
+      "ocgm_urn": "26717160",
+      "known_activities": [
+        "Vehicle theft"
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Dulwich Young Skins",
+      "aliases": [],
+      "territory": "East Dulwich, Grove Vale",
+      "identifying_features": [
+        "mop top hairstyle",
+        "maze tattoo on chest"
+      ],
+      "pnd_id": "23/510525Q",
+      "grits_id": "L7159AZ",
+      "ocgm_urn": "96945398",
+      "known_activities": []
+    },
+    {
+      "index": 19,
+      "name": "Glasgow Poor Company",
+      "aliases": [],
+      "territory": "Drumchapel, Maryhill, Sighthill",
+      "identifying_features": [
+        "backwards suit",
+        "maze tattoo, on left arm"
+      ],
+      "pnd_id": "45/945525E",
+      "grits_id": "J6077BB",
+      "ocgm_urn": "24524701",
+      "known_activities": [
+        "Phone snatching"
       ]
     }
   ]

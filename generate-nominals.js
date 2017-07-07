@@ -178,6 +178,9 @@ function getIncarcerationStatus(nominalIndex) {
       if(update.type === 'incarceration' && update.nominal == nominalIndex) {
         nominalPrison = update.location;
       }
+      if(update.type === 'release' && update.nominal == nominalIndex) {
+        nominalPrison = false;
+      }
     });
   }
 
