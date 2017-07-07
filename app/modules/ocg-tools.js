@@ -55,9 +55,11 @@ var ocg = {
   },
 
   getTensionsBetween: function(ocgIndex1, ocgIndex2) {
-    return tensions.filter(function(tension){
+    var matches = tensions.filter(function(tension){
       return tension.indices.includes(ocgIndex1) && tension.indices.includes(ocgIndex2);
     });
+    
+    return matches;
   },
 
   search: function(params) {
