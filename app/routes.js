@@ -52,6 +52,22 @@ router.get('/nominal/rand/', function(req, res) {
   res.redirect('/nominal/' + n);
 });
 
+router.get('/nominal/tensions', function(req, res){
+  var indexes = req.query.indexes.split(',').map(Number);
+  var nominalsInList = nominalTools.getList(indexes);
+  var nominals = nominals;
+  var tensions = nominalTools.getTensionsInList(indexes || []);
+
+  console.log('nominalsInList = ' + nominalsInList)
+  console.log('tensions = ' + JSON.stringify(tensions))
+
+  res.render('nominal/tensions', {
+    nominalsInList: nominalsInList,
+    ocgs: ocgs,
+    tensions: tensions
+  });
+});
+
 router.get('/nominal/:index', function(req, res) {
   var nominal = nominals[req.params.index];
   res.render('nominal/show', {
@@ -90,6 +106,7 @@ router.get('/nominal/search/results', function(req, res) {
     per_page: per_page
   });
 });
+
 
 
 // ocgs

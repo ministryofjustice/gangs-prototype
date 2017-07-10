@@ -56,7 +56,8 @@ var ocg = {
 
   getTensionsBetween: function(ocgIndex1, ocgIndex2) {
     var matches = tensions.filter(function(tension){
-      return tension.indices.includes(ocgIndex1) && tension.indices.includes(ocgIndex2);
+      return (tension.indices[0] == ocgIndex1 && tension.indices[1] == ocgIndex2) || 
+        (tension.indices[0] == ocgIndex2 && tension.indices[1] == ocgIndex1);
     });
     
     return matches;
