@@ -58,9 +58,6 @@ router.get('/nominal/tensions', function(req, res){
   var nominals = nominals;
   var tensions = nominalTools.getTensionsInList(indexes || []);
 
-  console.log('nominalsInList = ' + nominalsInList)
-  console.log('tensions = ' + JSON.stringify(tensions))
-
   res.render('nominal/tensions', {
     nominalsInList: nominalsInList,
     ocgs: ocgs,
