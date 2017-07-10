@@ -13,25 +13,41 @@
     @include media(mobile) {
       margin: 0 1em;
     }
-    .ocg, .tension-level {
-      display: block;
-      float: left;
+  }
+  .ocg, .tension-level {
+    display: block;
+    float: left;
+  }
+
+  .ocg:first-child {
+    &::after {
+      content: '  ⟹';
+      font-size: 20px;
     }
-    .tension-level {
+  }
+
+
+  .tension-level {
+    padding: 0 0.2em;
+    font-size: 80%;
+
+    &::after {
+      content: '  ⟸';
+      font-size: 20px;
+    }
+
+    strong{
+      font-size: 120%;
       padding: 0 0.2em;
-      font-size: 80%;
-
-      strong{
-        font-size: 120%;
-        padding: 0 0.2em;
-      }
-
-      &::before {
-        content: '>  ';
-      }
-      &::after {
-        content: '  >'
-      }
     }
+  }
+  .tension-level-high strong{
+    color: #900;
+  }
+  .tension-level-medium strong{
+    color: #FF8c00;
+  }
+  .tension-level-low strong{
+    color: #FFFF00;
   }
 }
