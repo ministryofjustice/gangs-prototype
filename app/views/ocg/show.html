@@ -11,11 +11,12 @@
 
   <div class="grid-row">
     <div class="column-full">
-      <h1 class="heading-xlarge">
-        {{ocg.name}}
+      <h1 class="heading-xlarge detail-heading">
+        <span class="heading-label">OCG</span>
+        <span class="heading-detail">{{ocg.name}}</span>
       </h1>
 
-      <dl>
+      <dl class="ocg-top-details">
       {% if ocg.aliases.length %}
           <dt>Known aliases:</dt>
             <dd>{{ ocg.aliases.join(', ') }}</dd>
@@ -36,44 +37,41 @@
   </div>
 
   <div class="grid-row">
-    <div class="column-half">
-      <h2 class="heading-medium">Known nominals:</h2>
+    <div class="column-half nominals-column">
+      <h2 class="heading-medium detail-subheading detail-subheading-left">Known nominals:</h2>
+      <h2 class="heading-medium detail-subheading detail-subheading-right">Role:</h2>
       {% if nominals.length %}
-        <ul class="list list-bullet">
+        <dl class="detail-aligned">
           {% for nominal in nominals %}
-          <li>
+          <dt>
             <a href="/nominal/{{nominal.index}}">{{nominal.name}}</a>
+          </dt>
             {% if nominal.role %}
-            ({{nominal.role}})
+              <dd>{{nominal.role | capitalize}}</dd>
             {% endif %}
-          </li>
           {% endfor %}
-        </ul>
+        </dl>
       {% else %}
-        <p>none</p>
+        <p class="none">None</p>
       {% endif %}
     </div>
 
-    <div class="column-half">
-      <h2 class="heading-medium">Known tensions:</h2>
+    <div class="column-half tensions-column">
+      <h2 class="heading-medium detail-subheading detail-subheading-left">Known tensions:</h2>
+      <h2 class="heading-medium detail-subheading detail-subheading-right">Level:</h2>
       {% if tensions.length %}
-        <ul class="list list-bullet">
+        <dl class="detail-aligned">
           {% for tension in tensions %}
-          <li><a href="/ocg/{{tension.ocg.index}}">{{tension.ocg.name}}</a> - Tension level: {{tension.tensionLevel}}</li>
+          <dt><a href="/ocg/{{tension.ocg.index}}">{{tension.ocg.name}}</a></dt>
+          <dd class="tension-block tension-{{tension.tensionLevel}}"><span class="visuallyhidden">{{tension.tensionLevel}}</span></dd>
           {% endfor %}
-        </ul>
+        </dl>
       {% else %}
-        <p>none</p>
+        <p class="none">None</p>
       {% endif %}
     </div>
   </div>
-  <div class="grid-row">
-    <ul class="nav-links">
-      <li><a href="/ocg/{{prev}}">Previous</a></li>
-      <li><a href="/ocg/rand/">Random</a></li>
-      <li><a href="/ocg/{{next}}">Next</a></li>
-    </ul>
-  </div>
+
 </main>
 
 {% endblock %}

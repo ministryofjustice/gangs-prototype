@@ -1,0 +1,21 @@
+.nominals-column {
+  border-right: 1px solid $grey-2;
+
+  @include media(mobile) {
+    border-right: none;
+    border-bottom: 1px solid $grey-2;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.nominals-column,
+.tensions-column {
+  @include clearfix;
+
+  .none {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+  }
+}
