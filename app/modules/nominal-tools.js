@@ -63,20 +63,37 @@ var nominal = {
   },
 
   getTensionsInList: function(givenNominalIds) {
-    var tensionsInList = [];
+    var tensionsInList = {};
 
     for( var i=0; i < givenNominalIds.length; i++ ){
       var thisNominal = nominals[givenNominalIds[i]];
+      var thisNominalsTensions = [];
 
       for( var j=i+1; j < givenNominalIds.length; j++ ){
         var otherNominal = nominals[givenNominalIds[j]];
 
-        var tensionsBetweenNominals = this.getTensionsBetween(thisNominal, otherNominal);
-        tensionsInList.push( arrayUtils.flatten(tensionsBetweenNominals) );
+        var tensionsBetweenNominals = arrayUtils.flatten(
+          this.getTensionsBetween(thisNominal, otherNominal)
+        );
+        if( tensionsBetweenNominals.length ){
+          thisNominalsTensions.push({
+            otherNominal: otherNominal,
+            tensions: tensionsBetweenNominals
+          });
+        }
       }
+      tensionsInList[givenNominalIds[i]] = arrayUtils.uniquify(arrayUtils.flatten(thisNominalsTensions));
     }
 
-    return arrayUtils.uniquify(arrayUtils.flatten(tensionsInList));
+    return tensionsInList;
+  },
+
+  get: function(index){
+    return nominals[index];
+  },
+
+  getList: function(indexes) {
+    return indexes.map( function(index){ return nominals[index]; } );
   },
 
   getTensionsBetween: function(nominal1, nominal2) {
@@ -87,7 +104,12 @@ var nominal = {
     for( var ocgId1 of nominal1_ocgs ){
       for( var ocgId2 of nominal2_ocgs ){
         var tensions = ocg.getTensionsBetween(ocgId1, ocgId2);
-        ocgTensions.push(tensions);
+        if( tensions.length ){
+          tensions[0].nominal1_ocg = ocgs[ocgId1];
+          tensions[0].nominal2_ocg = ocgs[ocgId2];
+
+          ocgTensions.push(tensions[0]);
+        }
       }
     }
 

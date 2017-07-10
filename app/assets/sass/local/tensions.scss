@@ -1,0 +1,37 @@
+.tension {
+  border-bottom: 1px solid #ccc;
+  margin-top: 1em;
+
+  h3{
+    margin-top: 0;
+  }
+
+  .ocgs {
+    min-height: 4em;
+    line-height: 3em;
+
+    @include media(mobile) {
+      margin: 0 1em;
+    }
+    .ocg, .tension-level {
+      display: block;
+      float: left;
+    }
+    .tension-level {
+      padding: 0 0.2em;
+      font-size: 80%;
+
+      strong{
+        font-size: 120%;
+        padding: 0 0.2em;
+      }
+
+      &::before {
+        content: '>  ';
+      }
+      &::after {
+        content: '  >'
+      }
+    }
+  }
+}
