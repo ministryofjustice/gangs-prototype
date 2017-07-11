@@ -30,9 +30,11 @@
         <div class="grid-row tension">
           <div class="column-two-thirds">
             {% for ocgTension in tension.tensions %}
-              <span class="ocg"><a href="/ocg/{{ocgTension.nominal1_ocg.index}}">{{ ocgTension.nominal1_ocg.name }}</a></span>
-              <span class="tension-level tension-level-{{ocgTension.tensionLevel}}"><strong>{{ocgTension.tensionLevel}}</strong></span>
-              <span class="ocg"><a href="/ocg/{{ocgTension.nominal2_ocg.index}}">{{ ocgTension.nominal2_ocg.name }}</a></span>
+              <div class="ocg-tension">
+                <span class="ocg"><a href="/ocg/{{ocgTension.nominal1_ocg.index}}">{{ ocgTension.nominal1_ocg.name }}</a></span>
+                <span class="tension-level tension-level-{{ocgTension.tensionLevel}}"><strong>{{ocgTension.tensionLevel}}</strong></span>
+                <span class="ocg"><a href="/ocg/{{ocgTension.nominal2_ocg.index}}">{{ ocgTension.nominal2_ocg.name }}</a></span>
+              </div>
             {% endfor %}
           </div>
           <div class="column-one-third">

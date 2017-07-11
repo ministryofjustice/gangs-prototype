@@ -6,6 +6,10 @@
     margin-top: 0;
   }
 
+  .ocg-tension {
+    display: block;
+    overflow: hidden;
+  }
   .ocgs {
     min-height: 4em;
     line-height: 3em;
@@ -17,6 +21,7 @@
   .ocg, .tension-level {
     display: block;
     float: left;
+    margin-top: 0.2em;
   }
 
   .ocg:first-child {
@@ -48,6 +53,6 @@
     color: #FF8c00;
   }
   .tension-level-low strong{
-    color: #FFFF00;
+    color: #AAAA00;
   }
 }
