@@ -70,6 +70,20 @@ var nominal = {
     return tensionsInList;
   },
 
+  getOcgCentricTensionsInList: function(givenNominalIds) {
+    var nominalsInList = this.getList(givenNominalIds);
+    var affiliationsInList = arrayUtils.flatten(
+      nominalsInList.map(function(e){ 
+        return e.affiliations; 
+      }) 
+    );
+
+    var ocgIdsInList = arrayUtils.uniquify(
+      affiliationsInList.map(function(e){ return e[0] });
+    );
+
+  },
+
   get: function(index){
     return nominals[index];
   },
