@@ -58,6 +58,7 @@ router.get('/nominal/:index', function(req, res) {
     next: nav.next(req.params.index, nominals.length),
     prev: nav.prev(req.params.index, nominals.length),
     nominal: nominal,
+    gender: nominalTools.expandGender(nominal.gender),
     age: nominalTools.getAge(nominal.dob),
     affiliations: nominalTools.getAffiliations(nominal.affiliations),
     prisonName: prisons[nominal.incarceration]

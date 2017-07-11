@@ -1,16 +1,17 @@
 .avatar {
   width: 25vw;
   height: 25vw;
-  border: 2px solid #000;
-  max-width:250px;
-  max-height:250px;
-  border-radius: 12.5vw;
+  max-width: 270px;
+  max-height: 270px;
+  border-radius: 50%;
+  border: 3px solid $black;
   background-position: 50% 50%;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
+
   @include media(mobile) {
-    max-width:none;
-    max-height:none;
+    max-width: 340px;
+    max-height: 340px;
     margin: 0 auto;
 	  width: 70vw;
 	  height: 70vw;
@@ -23,8 +24,8 @@
   height: 10vw;
   @include media(mobile) {
     width: calc(100% - 30px);
-    height: 85vw; 
+    height: 85vw;
     border-radius: 3vw;
-    margin-bottom: 1em;   
+    margin-bottom: 1em;
   }
 }

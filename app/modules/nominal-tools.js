@@ -15,6 +15,16 @@ var nominal = {
     return elapsedYears;
   },
 
+  expandGender: function(abbreviatedGender) {
+    if(abbreviatedGender.toLowerCase() === 'f') {
+      return 'Female';
+    }
+    if(abbreviatedGender.toLowerCase() === 'm') {
+      return 'Male';
+    }
+    return '';
+  },
+
   getAffiliations: function(affiliationsIn) {
     var affiliations = [];
 

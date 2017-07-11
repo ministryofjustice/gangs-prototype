@@ -10,12 +10,11 @@
   {% include 'includes/phase_banner_prototype.html' %}
 
   <div class="grid-row">
-    <div class="column-two-thirds">
-
-      <h1 class="heading-xlarge">
-        {{nominal.given_names}} {{nominal.family_name}}
+    <div class="column-full">
+      <h1 class="heading-xlarge detail-heading">
+        <span class="heading-label">Nominal</span>
+        <span class="heading-detail">{{nominal.given_names}} {{nominal.family_name}}</span>
       </h1>
-
     </div>
   </div>
 
@@ -29,12 +28,12 @@
 
     <div class="column-two-thirds">
 
-      <dl class="cf">
+      <dl class="nominal-detail">
         <dt>Date of birth:</dt>
         <dd>{{nominal.dob.displayDob}} (Age: {{age}})</dd>
 
         <dt>Gender:</dt>
-        <dd>{{nominal.gender}}</dd>
+        <dd>{{gender}}</dd>
 
         {% if nominal.incarceration %}
           <dt>Currently incarcerated at:</dt>
@@ -53,9 +52,9 @@
         <dt>Identifying marks:</dt>
         <dd>
           {% if nominal.identifying_marks.length %}
-            <ul class="list list-bullet">
+            <ul class="list">
               {% for mark in nominal.identifying_marks %}
-              <li>{{mark}}</li>
+              <li>{{mark | capitalize}}</li>
               {% endfor %}
             </ul>
           {% else %}
@@ -66,7 +65,7 @@
         <dt>Known aliases:</dt>
         <dd>
           {% if nominal.aliases.length %}
-            <ul class="list list-bullet">
+            <ul class="list">
               {% for alias in nominal.aliases %}
               <li>{{alias}}</li>
               {% endfor %}
@@ -79,12 +78,12 @@
         <dt>Known affiliations:</dt>
         <dd>
           {% if affiliations.length %}
-            <ul class="list list-bullet">
+            <ul class="list">
               {% for affiliation in affiliations %}
               <li>
                 <a href="/ocg/{{affiliation.index}}">{{affiliation.name}}</a>
                 {% if affiliation.role %}
-                (role: {{affiliation.role}})
+                <span>(role: {{affiliation.role}})</span>
                 {% endif %}
               </li>
               {% endfor %}
@@ -100,19 +99,6 @@
 
   </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
-
-
-      <br><br><br><br>
-      <ul class="nav-links">
-        <li><a href="/nominal/{{prev}}">Previous</a></li>
-        <li><a href="/nominal/rand/">Random</a></li>
-        <li><a href="/nominal/{{next}}">Next</a></li>
-      </ul>
-
-    </div>
-  </div>
 </main>
 
 {% endblock %}
