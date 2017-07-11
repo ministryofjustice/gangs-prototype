@@ -32,6 +32,19 @@ var nominal = {
     return affiliations;
   },
 
+  getNominalsRolesInOcg(nominal, ocgId){
+    var affiliations = nominal.affiliations.filter(
+      function(e){ 
+        return e[0] == ocgId; 
+      }
+    );
+    var roleIds = affiliations.filter(function(e){ return e[1]; }).map(function(e){ return e[1]; });
+    var roleNames = arrayUtils.uniquify(roleIds).map(function(e){
+      return nominalRoles[e];
+    });
+    return roleNames;
+  },
+
   getNominalsInPrison: function(prisonIndex) {
     var nominalsInPrison = [];
 
@@ -83,16 +96,28 @@ var nominal = {
 
     var ocgTensions = [];
 
-    for( var ocgId1 of ocgIdsInList ){
-      for( var ocgId2 of ocgIdsInList ){
+    for( var i=0; i < ocgIdsInList.length; i++ ){
+      var ocgId1 = ocgIdsInList[i];
+
+      for( var j=0; j < ocgIdsInList.length; j++ ){
+        var ocgId2 = ocgIdsInList[j];
+
         var tensions = ocg.getTensionsBetween(ocgId1, ocgId2);
 
         if( tensions.length ){
+          var ocg1_nominals = this.filterNominalsArrayByOcgId(nominalsInList, ocgId1);
+          for( var nominal of ocg1_nominals ){
+            nominal.roles_in_ocg = this.getNominalsRolesInOcg(nominal, ocgId1);
+          }
+          var ocg2_nominals = this.filterNominalsArrayByOcgId(nominalsInList, ocgId2);
+          for( var nominal of ocg2_nominals ){
+            nominal.roles_in_ocg = this.getNominalsRolesInOcg(nominal, ocgId2);
+          }
           ocgTensions.push({
-            ocg1: ocgTools.get(ocgId1),
-            ocg1_nominals: this.filterNominalsArrayByOcgId(nominalsInList, ocgId1),
-            ocg2: ocgTools.get(ocgId2),
-            ocg2_nominals: this.filterNominalsArrayByOcgId(nominalsInList, ocgId2),
+            ocg1: ocg.get(ocgId1),
+            ocg1_nominals: ocg1_nominals,
+            ocg2: ocg.get(ocgId2),
+            ocg2_nominals: ocg2_nominals,
             tensionLevel: tensions[0].tensionLevel            
           });
         }

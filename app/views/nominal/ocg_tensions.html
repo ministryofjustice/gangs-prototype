@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Nominal Tensions
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% include 'includes/phase_banner_prototype.html' %}
+
+  <div class="grid-row">
+    <h1 class="heading-xlarge">
+      Nominal Tensions
+    </h1>
+  </div>
+  
+  {% if nominalsInList.length == 0 %}
+    <div class="panel panel-border-wide">
+      <p>No OCG-related tensions match these nominals</p>
+    </div>
+  {% endif %}
+
+  {% for ocgTension in ocgTensions %}
+    <div class="grid-row tension">
+      <div class="column-one-third">
+        <h3 class="heading-medium ocg">
+          <a href="/ocg/{{ocgTension.ocg1.index}}">{{ocgTension.ocg1.name}}</a>
+        </h3>
+
+        {% for nominal in ocgTension.ocg1_nominals %}
+          <h4 class="heading-small nominal">
+            <a href="/nominal/{{nominal.index}}">{{nominal.given_names}} {{nominal.family_name}}</a>
+            {% if nominal.roles_in_ocg.length > 0 %}
+              <small>({{ nominal.roles_in_ocg }})</small>
+            {% endif %}
+          </h4>
+        {% endfor %}
+      </div>
+
+      <div class="column-one-third">
+        <span class="tension-level tension-level-{{ocgTension.tensionLevel}}">
+          <strong>{{ocgTension.tensionLevel}}</strong>
+        </span>
+      </div>
+
+      <div class="column-one-third">
+        <h3 class="heading-medium ocg">
+          <a href="/ocg/{{ocgTension.ocg2.index}}">{{ocgTension.ocg2.name}}</a>
+        </h3>
+
+        {% for nominal in ocgTension.ocg2_nominals %}
+          <h4 class="heading-small nominal">
+            <a href="/nominal/{{nominal.index}}">{{nominal.given_names}} {{nominal.family_name}}</a>
+          </h4>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</main>
+
+{% endblock %}

@@ -57,11 +57,14 @@ router.get('/nominal/tensions', function(req, res){
   var nominalsInList = nominalTools.getList(indexes);
   var nominals = nominals;
   var tensions = nominalTools.getTensionsInList(indexes || []);
+  var ocgTensions = nominalTools.getOcgCentricTensionsInList(indexes || []);
 
-  res.render('nominal/tensions', {
+  res.render('nominal/ocg_tensions', {
     nominalsInList: nominalsInList,
     ocgs: ocgs,
-    tensions: tensions
+    tensions: tensions,
+    ocgTensions: ocgTensions,
+    nominalTools: nominalTools
   });
 });
 

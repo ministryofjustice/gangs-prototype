@@ -18,32 +18,19 @@
       margin: 0 1em;
     }
   }
-  .ocg, .tension-level {
-    display: block;
-    float: left;
-    margin-top: 0.2em;
+
+  .nominal {
+    margin-left: 1em;
   }
-
-  .ocg:first-child {
-    &::after {
-      content: '  ⟹';
-      font-size: 20px;
-    }
-  }
-
-
   .tension-level {
-    padding: 0 0.2em;
-    font-size: 80%;
-
-    &::after {
-      content: '  ⟸';
-      font-size: 20px;
-    }
+    display: block;
+    line-height: 5em;
+    text-align: center;
 
     strong{
       font-size: 120%;
-      padding: 0 0.2em;
+      line-height: 2em;
+      padding: 0.2em 1em;
     }
   }
   .tension-level-high strong{
