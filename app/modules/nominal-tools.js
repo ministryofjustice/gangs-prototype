@@ -75,13 +75,44 @@ var nominal = {
     var affiliationsInList = arrayUtils.flatten(
       nominalsInList.map(function(e){ 
         return e.affiliations; 
-      }) 
+      })
     );
-
     var ocgIdsInList = arrayUtils.uniquify(
-      affiliationsInList.map(function(e){ return e[0] });
+      affiliationsInList.map( function(e){ return e[0]; } )
     );
 
+    var ocgTensions = [];
+
+    for( var ocgId1 of ocgIdsInList ){
+      for( var ocgId2 of ocgIdsInList ){
+        var tensions = ocg.getTensionsBetween(ocgId1, ocgId2);
+
+        if( tensions.length ){
+          ocgTensions.push({
+            ocg1: ocgTools.get(ocgId1),
+            ocg1_nominals: this.filterNominalsArrayByOcgId(nominalsInList, ocgId1),
+            ocg2: ocgTools.get(ocgId2),
+            ocg2_nominals: this.filterNominalsArrayByOcgId(nominalsInList, ocgId2),
+            tensionLevel: tensions[0].tensionLevel            
+          });
+        }
+      }
+    }
+
+    return ocgTensions;
+  },
+
+  /*
+    Given an array of nominal objects, return a new array
+    containing only those who are affiliated with the
+    given ocgId
+  */
+  filterNominalsArrayByOcgId: function(nominals, ocgId){
+    return nominals.filter(function(e){ 
+      return e.affiliations.map(function(a){
+        return a[0]
+      }).includes(ocgId) 
+    });
   },
 
   get: function(index){

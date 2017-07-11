@@ -63,6 +63,10 @@ var ocg = {
     return matches;
   },
 
+  get: function(index){
+    return ocgs[index];
+  },
+
   search: function(params) {
     var filtered_ocgs = search.filter(ocgs, params);
     return filtered_ocgs;
