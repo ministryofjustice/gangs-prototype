@@ -15,53 +15,48 @@ if (!nodeModulesExists) {
 
 
 
-var data = {
-  updateEvents: []
-},
-    numUpdates = quantities.updates,
+var updateTypes = ['tension', 'affiliation', 'incarceration', 'release'],
+    updates = {},
     numOcgs = quantities.ocgs,
     numNominals = quantities.nominals,
     numPrisons = prisons.length;
 
 function init() {
   // generate updates
-  generateUpdates();
-}
+  for(var type in updateTypes) {
+    updates[updateTypes[type]] = [];
 
-function generateUpdates() {
-  if(data.updateEvents.length < numUpdates) {
-    // generate a new update
-    generateUpdate();
-  } else {
-    // got enough updates, so write file
-    fs.writeFile('./app/assets/data/updates.json', JSON.stringify(data, null, 2), 'utf-8');
+    for(var x = 0; x < quantities.updatesPerType; x++) {
+      updates[updateTypes[type]].push(generateUpdate(updateTypes[type]));
+    }
   }
+
+  fs.writeFile('./app/assets/data/updates.json', JSON.stringify(updates, null, 2), 'utf-8');
 }
 
-function generateUpdate() {
-  var updateType = Math.floor(Math.random() * 4),
-      newUpdate;
+function generateUpdate(type) {
+  var newUpdate = false;
 
-  switch(updateType) {
-    case 0:
-      newUpdate = generateTensionChange();
-      break;
-    case 1:
-      newUpdate = generateNewAffiliation();
-      break;
-    case 2:
+  switch(type) {
+    case 'incarceration':
       newUpdate = generateIncarceration();
       break;
-    case 3:
+    case 'affiliation':
+      newUpdate = generateNewAffiliation();
+      break;
+    case 'tension':
+      newUpdate = generateTensionChange();
+      break;
+    case 'release':
       newUpdate = generateRelease();
       break;
   }
 
   if(newUpdate) {
-    data.updateEvents.push(newUpdate);
+    return newUpdate;
+  } else {
+    generateUpdate(type);
   }
-
-  generateUpdates();
 }
 
 function generateTensionChange() {
@@ -113,4 +108,4 @@ function generateRelease() {
 
 init();
 
-console.log(data.updateEvents);
+console.log(updates);

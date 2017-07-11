@@ -2,5 +2,5 @@
   "nominals": 100,
   "ocgs": 20,
   "tensions": 10,
-  "updates": 50
+  "updatesPerType": 15
 }

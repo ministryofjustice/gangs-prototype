@@ -4,3 +4,27 @@
     cursor: pointer;
 	}
 }
+
+.tension-arrow {
+  position: absolute;
+  right: 30px;
+  top: 3px;
+  width: 0;
+  height: 0;
+}
+.tension-arrow-high {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #96000a;
+}
+.tension-arrow-medium {
+  // fudge this for now - all tension changes to 'medium' are an up arrow
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #bb4e00;
+}
+.tension-arrow-low {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid #00612a;
+}

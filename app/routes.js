@@ -30,9 +30,9 @@ router.get('/signout', function (req, res) {
 
 // home page with updates
 router.get('/home', function (req, res) {
-  var updatesToDisplay = updateTools.updatesForDisplay(10);
+  var updatesToDisplay = updateTools.updatesForDisplay(3);
   res.render('home/index', {
-    updates: updatesToDisplay
+    updatesToDisplay: updatesToDisplay
   });
 });
 
@@ -40,7 +40,7 @@ router.get('/home', function (req, res) {
 router.get('/updates', function (req, res) {
   var updatesToDisplay = updateTools.updatesForDisplay();
   res.render('updates/index', {
-    updates: updatesToDisplay
+    updatesToDisplay: updatesToDisplay
   });
 });
 

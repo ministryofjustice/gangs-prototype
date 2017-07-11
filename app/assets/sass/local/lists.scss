@@ -96,28 +96,27 @@ dd {
 
   li {
     @include clearfix;
-
-    border: 1px solid $grey-3;
     display: block;
-    margin: 0 0 3px 0;
-    padding: 15px;
-    padding-left: 65px;
-    box-shadow: 2px 2px 1px $grey-3;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: 10px 5px;
+    margin: 0 0 10px 0;
 
-    &.affiliation {
-      background-image: url($path + 'icons/affiliation.png');
+    @include media(desktop) {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid $grey-2;
     }
+
+    .update-inner {
+      width: 80%;
+      float: left;
+    }
+    .update-time-ago {
+      float: right;
+      text-align: right;
+      max-width: 25px;
+    }
+
     &.tension-change {
-      background-image: url($path + 'icons/tension.png');
-    }
-    &.incarceration {
-      background-image: url($path + 'icons/prison-bars.png');
-    }
-    &.release {
-      background-image: url($path + 'icons/prison-bars-open.png');
+      position: relative;
     }
   }
 }

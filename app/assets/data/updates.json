@@ -1,267 +1,325 @@
 {
-  "updateEvents": [
-    {
-      "type": "affiliation",
-      "nominal": 64,
-      "ocg": 17
-    },
+  "tension": [
     {
       "type": "tension-change",
-      "ocg1": 5,
-      "ocg2": 11,
-      "newTensionLevel": "low"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 58,
-      "location": 20
-    },
-    {
-      "type": "release",
-      "nominal": 85,
-      "location": 21
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 0,
-      "ocg2": 6,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "release",
-      "nominal": 68,
-      "location": 24
-    },
-    {
-      "type": "release",
-      "nominal": 83,
-      "location": 22
-    },
-    {
-      "type": "incarceration",
-      "nominal": 77,
-      "location": 9
-    },
-    {
-      "type": "affiliation",
-      "nominal": 54,
-      "ocg": 3
-    },
-    {
-      "type": "affiliation",
-      "nominal": 40,
-      "ocg": 11
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 15,
-      "ocg2": 0,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 0,
-      "ocg2": 10,
-      "newTensionLevel": "low"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 16,
-      "location": 4
-    },
-    {
-      "type": "affiliation",
-      "nominal": 94,
-      "ocg": 11
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 3,
-      "ocg2": 4,
-      "newTensionLevel": "low"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 21,
-      "ocg": 7
-    },
-    {
-      "type": "incarceration",
-      "nominal": 1,
-      "location": 26
-    },
-    {
-      "type": "affiliation",
-      "nominal": 24,
-      "ocg": 7
-    },
-    {
-      "type": "incarceration",
-      "nominal": 1,
-      "location": 5
-    },
-    {
-      "type": "release",
-      "nominal": 33,
-      "location": 16
-    },
-    {
-      "type": "incarceration",
-      "nominal": 0,
-      "location": 18
-    },
-    {
-      "type": "release",
-      "nominal": 7,
-      "location": 19
-    },
-    {
-      "type": "release",
-      "nominal": 47,
-      "location": 23
-    },
-    {
-      "type": "incarceration",
-      "nominal": 89,
-      "location": 7
-    },
-    {
-      "type": "incarceration",
-      "nominal": 9,
-      "location": 0
-    },
-    {
-      "type": "release",
-      "nominal": 22,
-      "location": 6
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 19,
-      "ocg2": 6,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 48,
-      "location": 1
-    },
-    {
-      "type": "incarceration",
-      "nominal": 21,
-      "location": 25
-    },
-    {
-      "type": "affiliation",
-      "nominal": 43,
-      "ocg": 3
-    },
-    {
-      "type": "release",
-      "nominal": 75,
-      "location": 22
-    },
-    {
-      "type": "release",
-      "nominal": 21,
-      "location": 8
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 17,
+      "ocg1": 14,
       "ocg2": 0,
       "newTensionLevel": "high"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 56,
-      "location": 17
-    },
-    {
-      "type": "incarceration",
-      "nominal": 92,
-      "location": 7
-    },
-    {
-      "type": "release",
-      "nominal": 33,
-      "location": 0
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 2,
-      "ocg2": 1,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "release",
-      "nominal": 17,
-      "location": 23
-    },
-    {
-      "type": "affiliation",
-      "nominal": 97,
-      "ocg": 17
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 12,
-      "ocg2": 5,
-      "newTensionLevel": "high"
-    },
-    {
-      "type": "release",
-      "nominal": 24,
-      "location": 25
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 15,
-      "ocg2": 4,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 92,
-      "location": 12
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 19,
-      "ocg2": 0,
-      "newTensionLevel": "low"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 35,
-      "location": 8
-    },
-    {
-      "type": "incarceration",
-      "nominal": 35,
-      "location": 18
-    },
-    {
-      "type": "release",
-      "nominal": 49,
-      "location": 4
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 11,
-      "ocg2": 1,
-      "newTensionLevel": "high"
-    },
-    {
-      "type": "incarceration",
-      "nominal": 34,
-      "location": 13
     },
     {
       "type": "tension-change",
       "ocg1": 14,
-      "ocg2": 16,
+      "ocg2": 7,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 19,
+      "ocg2": 9,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 11,
+      "ocg2": 6,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 7,
+      "ocg2": 6,
       "newTensionLevel": "low"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 12,
+      "ocg2": 2,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 6,
+      "ocg2": 0,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 19,
+      "ocg2": 18,
+      "newTensionLevel": "high"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 10,
+      "ocg2": 12,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 12,
+      "ocg2": 11,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 9,
+      "ocg2": 16,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 14,
+      "ocg2": 0,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 16,
+      "ocg2": 14,
+      "newTensionLevel": "low"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 2,
+      "ocg2": 3,
+      "newTensionLevel": "medium"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 12,
+      "ocg2": 14,
+      "newTensionLevel": "medium"
+    }
+  ],
+  "affiliation": [
+    {
+      "type": "affiliation",
+      "nominal": 76,
+      "ocg": 3
+    },
+    {
+      "type": "affiliation",
+      "nominal": 7,
+      "ocg": 2
+    },
+    {
+      "type": "affiliation",
+      "nominal": 16,
+      "ocg": 19
+    },
+    {
+      "type": "affiliation",
+      "nominal": 69,
+      "ocg": 12
+    },
+    {
+      "type": "affiliation",
+      "nominal": 56,
+      "ocg": 0
+    },
+    {
+      "type": "affiliation",
+      "nominal": 23,
+      "ocg": 3
+    },
+    {
+      "type": "affiliation",
+      "nominal": 16,
+      "ocg": 2
+    },
+    {
+      "type": "affiliation",
+      "nominal": 90,
+      "ocg": 7
+    },
+    {
+      "type": "affiliation",
+      "nominal": 35,
+      "ocg": 13
+    },
+    {
+      "type": "affiliation",
+      "nominal": 5,
+      "ocg": 15
+    },
+    {
+      "type": "affiliation",
+      "nominal": 27,
+      "ocg": 12
+    },
+    {
+      "type": "affiliation",
+      "nominal": 95,
+      "ocg": 5
+    },
+    {
+      "type": "affiliation",
+      "nominal": 70,
+      "ocg": 7
+    },
+    {
+      "type": "affiliation",
+      "nominal": 51,
+      "ocg": 11
+    },
+    {
+      "type": "affiliation",
+      "nominal": 52,
+      "ocg": 4
+    }
+  ],
+  "incarceration": [
+    {
+      "type": "incarceration",
+      "nominal": 70,
+      "location": 19
+    },
+    {
+      "type": "incarceration",
+      "nominal": 19,
+      "location": 25
+    },
+    {
+      "type": "incarceration",
+      "nominal": 22,
+      "location": 25
+    },
+    {
+      "type": "incarceration",
+      "nominal": 28,
+      "location": 20
+    },
+    {
+      "type": "incarceration",
+      "nominal": 89,
+      "location": 6
+    },
+    {
+      "type": "incarceration",
+      "nominal": 54,
+      "location": 16
+    },
+    {
+      "type": "incarceration",
+      "nominal": 35,
+      "location": 11
+    },
+    {
+      "type": "incarceration",
+      "nominal": 69,
+      "location": 8
+    },
+    {
+      "type": "incarceration",
+      "nominal": 53,
+      "location": 13
+    },
+    {
+      "type": "incarceration",
+      "nominal": 61,
+      "location": 16
+    },
+    {
+      "type": "incarceration",
+      "nominal": 55,
+      "location": 15
+    },
+    {
+      "type": "incarceration",
+      "nominal": 78,
+      "location": 1
+    },
+    {
+      "type": "incarceration",
+      "nominal": 45,
+      "location": 8
+    },
+    {
+      "type": "incarceration",
+      "nominal": 66,
+      "location": 25
+    },
+    {
+      "type": "incarceration",
+      "nominal": 12,
+      "location": 14
+    }
+  ],
+  "release": [
+    {
+      "type": "release",
+      "nominal": 19,
+      "location": 5
+    },
+    {
+      "type": "release",
+      "nominal": 50,
+      "location": 27
+    },
+    {
+      "type": "release",
+      "nominal": 20,
+      "location": 27
+    },
+    {
+      "type": "release",
+      "nominal": 37,
+      "location": 0
+    },
+    {
+      "type": "release",
+      "nominal": 85,
+      "location": 4
+    },
+    {
+      "type": "release",
+      "nominal": 79,
+      "location": 25
+    },
+    {
+      "type": "release",
+      "nominal": 49,
+      "location": 16
+    },
+    {
+      "type": "release",
+      "nominal": 95,
+      "location": 10
+    },
+    {
+      "type": "release",
+      "nominal": 74,
+      "location": 0
+    },
+    {
+      "type": "release",
+      "nominal": 78,
+      "location": 0
+    },
+    {
+      "type": "release",
+      "nominal": 41,
+      "location": 8
+    },
+    {
+      "type": "release",
+      "nominal": 77,
+      "location": 23
+    },
+    {
+      "type": "release",
+      "nominal": 83,
+      "location": 14
+    },
+    {
+      "type": "release",
+      "nominal": 12,
+      "location": 20
+    },
+    {
+      "type": "release",
+      "nominal": 52,
+      "location": 14
     }
   ]
 }

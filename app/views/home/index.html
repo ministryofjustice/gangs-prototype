@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Mock Home Page
+  Dashboard
 {% endblock %}
 
 {% block content %}
@@ -9,23 +9,39 @@
 <main id="content" role="main">
   {% include 'includes/phase_banner_prototype.html' %}
 
-  <h1 class="heading-xlarge">Dashboard</h1>
+  <h1 class="heading-xlarge detail-heading">
+    <span class="heading-label">Home</span>
+    <span class="heading-detail">Dashboard</span>
+  </h1>
 
-  <div class="grid-row">
+  <div class="grid-row updates-columns">
 
-    <div class="column-two-thirds">
-
-      <h2 class="heading-medium">Recent updates</h2>
-
+    <div class="column column-one-third">
+      <h2 class="heading-medium">Incarcerations</h2>
+      {% set updates = updatesToDisplay.incarceration %}
       {% include 'includes/updates_list.html' %}
-
-      <p>
-        <a href="/updates">More...</a>
-      </p>
-
+    </div>
+    <div class="column column-one-third">
+      <h2 class="heading-medium">Affiliations</h2>
+      {% set updates = updatesToDisplay.affiliation %}
+      {% include 'includes/updates_list.html' %}
+    </div>
+    <div class="column column-one-third">
+      <h2 class="heading-medium">Tensions</h2>
+      {% set updates = updatesToDisplay.tension %}
+      {% include 'includes/updates_list.html' %}
     </div>
 
-    <div class="column-one-third">
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <p class="right"><a href="/updates">See all recent updates</a></p>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
       <h2 class="heading-medium">Common tasks</h2>
 
       <ul class="list list-bullet">
@@ -40,7 +56,6 @@
         <li><a href="/ocg/search">OCG search</a></li>
       </ul>
     </div>
-
   </div>
 
 </main>

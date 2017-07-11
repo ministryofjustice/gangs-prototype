@@ -6,10 +6,13 @@ strong {
   color: $white;
 }
 
+p.right {
+  text-align: right;
+}
+
 .update-time-ago {
   @include core-14;
 
-  color: $grey-1;
   float: right;
   padding-left: 1em;
 }
@@ -44,4 +47,14 @@ span.heading-detail {
 }
 .detail-subheading-right {
   margin-left: 20px;
+}
+
+.tc-high {
+  color: #96000a;
+}
+.tc-medium {
+  color: #bb4e00;
+}
+.tc-low {
+  color: #00612a;
 }
