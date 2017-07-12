@@ -171,12 +171,17 @@ dd {
     margin-bottom: 0.5em;
     margin-left: 0.5em;
   }
+
 }
 
-.remove-from-list {
+.add-to-list, .remove-from-list {
   clear: both;
   float: right;
+  margin-bottom: 1em;
 
+  .form-control {
+    float: none;
+  }
   label {
     color: #888;
   }
