@@ -183,6 +183,12 @@ router.get('/lists/:index/nominals/delete', function(req, res) {
     index: req.params.index
   });
 });
-
+router.get('/lists/:index/tensions', function(req, res) {
+  res.render('list/tensions', {
+    list: list,
+    lists: lists
+    tensions: nominalTools.getTensions(list.nominalIndexes)
+  });
+});
 
 module.exports = router;
