@@ -36,13 +36,13 @@
     {% include 'includes/pagination.html' %}
   
     <div class="grid-row">
-      <ol class="results-list">
-      {% for result in search_results %}
-        <li class="search-result">
-          {% include 'includes/nominal_search_result.html' %}
+      <ol class="results-list nominal-list">
+      {% for nominal in search_results %}
+        <li class="search-result nominal-list-item">
+          {% include 'includes/list_nominal.html' %}
         </li>
       {% endfor %}
-      </ol>  
+      </ol>
     </div>
     {% include 'includes/pagination.html' %}
 

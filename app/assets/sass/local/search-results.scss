@@ -12,13 +12,13 @@
     float:none;
   }
 }
-.search-result {
+.nominal-list-item {
   margin-bottom: 35px;
   margin-top: 20px;
   overflow: hidden;
 }
 
-.search-result-avatar-wrapper {
+.avatar-wrapper {
   display: inline-block;
   float: left;
   margin-right: 25px;
@@ -29,9 +29,10 @@
   }
 }
 
-.search-result-detail {
+.nominal-list-item-detail {
   float: left;
   width:82%;
+
   @include media(mobile) {
     padding: 0 15px;
     width: calc(100% - 30px);
@@ -40,9 +41,32 @@
     margin: 0;
   }
 }
+/* wrapping needs to be adjusted when a list item is 
+  within a three-quarter-width column */
+.column-three-quarters {
+  .nominal-list-item-detail {
+    width: 75%;
 
-/* inline dl's for the nominal search results */
-.results-list dl {
+    @include media(mobile){
+      width: 95%;
+    }
+
+    .system-ids {
+      span {
+        display: inline-block;
+        float: left;
+      }
+      .field {
+        clear: left;
+        margin: 0.2em 0;
+        text-align: right;
+      }
+    }
+  }
+}
+
+/* inline dl's for a list of nominals */
+.nominal-list-item dl {
   clear: left;
   
   dt, dd {

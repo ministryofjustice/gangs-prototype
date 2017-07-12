@@ -191,9 +191,6 @@ function leadingZero(n) {
   return (parseInt(n, 10) < 10 ? '0' + n : n);
 }
 
-
-
-
 init();
 
 console.log(data.nominals);

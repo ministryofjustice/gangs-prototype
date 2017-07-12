@@ -1,0 +1,39 @@
+{
+  "lists": [
+    {
+      "name": "Prisoners In Kirkham",
+      "nominalIndexes": [
+        52,
+        77,
+        79
+      ],
+      "index": 0
+    },
+    {
+      "name": "My Probationers",
+      "nominalIndexes": [
+        43,
+        80,
+        86,
+        99
+      ],
+      "index": 1
+    },
+    {
+      "name": "List 1",
+      "nominalIndexes": [
+        10,
+        19,
+        38,
+        47,
+        58,
+        65,
+        80,
+        82,
+        85,
+        86
+      ],
+      "index": 2
+    }
+  ]
+}

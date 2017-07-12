@@ -52,6 +52,14 @@ var nominal = {
     return nominalsInPrison;
   },
 
+  getProbationers: function() {
+    var probationers = [];
+
+    return nominals.filter( function(nominal){
+      return nominal.incarceration == false && nominal.nomis_id;
+    });
+  },
+
   search: function(params) {
     // note: search is basic sub-string match only
     var filteredNominals = search.filter(nominals, params);

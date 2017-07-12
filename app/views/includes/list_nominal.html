@@ -1,0 +1,70 @@
+<div class="avatar-wrapper">
+  <div class="avatar avatar-thumb" style="background-image:url(/public/images/mugshots/{{nominal.mugshot.filename}})" title="{{nominal.given_names}} {{nominal.family_name}}">
+  </div>
+</div>
+<div class="nominal-list-item-detail">
+  <div class="heading-container">
+    <div class="heading-inner">
+      <h3 class="heading-medium">
+        <a href="/nominal/{{ nominal.index }}">{{ nominal.given_names }} {{nominal.family_name}}</a>
+      </h3>
+    </div>
+  </div>
+  <div class="system-ids">
+    <p class="field">NOMIS ID: {{nominal.nomis_id}}</p>
+    <p class="field">PNC ID: {{nominal.pnc_id}}</p>
+    {% if nominal.incarceration %}
+      <p class="field">In: 
+        <strong><a href="/prison/{{nominal.incarceration}}">HMP {{nominal.prison_name}}</a></strong>
+      </p>
+    {% endif %}
+    {% if end_of_system_ids_content %}{{end_of_system_ids_content | safe}}{% endif %}
+  </div>
+  <dl>
+    <dt>Gender:</dt>
+    <dd>
+      {% if nominal.gender === 'M' %}
+      Male
+      {% else %}
+      Female
+      {% endif %}
+    </dd>
+    <dt>Date of birth:</dt>
+    <dd>{{nominal.dob.displayDob}}</dd>
+  </dl>
+  {% if nominal.aliases.length %}
+    <dl class="aliases">
+      <dt>Known aliases:</dt>
+      <dd>
+          {{ nominal.aliases.join(', ') }}
+      </dd>
+    </dl>
+  {% endif %}
+
+  {% if nominal.identifying_marks.length %}
+    <dl class="marks">
+      <dt>Identifying marks:</dt>
+      <dd>
+          {{ nominal.identifying_marks.join(', ') }}
+      </dd>
+    </dl>
+  {% endif %}
+  {% if nominal.affiliations.length %}
+    <dl class="affiliations">
+      <dt>Known affiliations:</dt>
+      <dd>
+          {% for affiliation in nominal.affiliations %}
+           
+            <a href="/ocg/{{affiliation[0]}}">{{nominal.affiliated_ocg_names[loop.index0]}}</a>
+            {% if affiliation[1] %}
+              ({{roles[affiliation[1]]}})
+            {% endif %}
+            {% if not loop.last %}, {% endif %}
+          {% endfor %}
+     
+      </dd>
+    </dl>
+  {% endif %}
+  {% if end_of_detail_content %}{{end_of_detail_content | safe}}{% endif %}
+</div>
+

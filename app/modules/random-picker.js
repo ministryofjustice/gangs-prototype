@@ -17,6 +17,15 @@ var randomPicker = {
       str += String.fromCharCode(65 + rndLetter);
     }
     return str;
+  },
+
+  // return a new array containing elements from 
+  // the given array, with each element having 
+  // the given probability of being added
+  randomElements: function(arr, probability) {
+    return arr.filter(function(e){
+      return Math.random() < probability;
+    });
   }
 }
 

@@ -148,3 +148,36 @@ dd {
     }
   }
 }
+
+.list-nominal {
+  display: block;
+  overflow: hidden;
+
+  .avatar-wrapper {
+    display: inline-block;
+    float: left;
+  }
+  .detail {
+    float: left;
+  }
+}
+
+.side-nav {
+  margin-bottom: 1em;
+  margin-top: 0;
+  overflow: hidden;
+
+  li {
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+  }
+}
+
+.remove-from-list {
+  clear: both;
+  float: right;
+
+  label {
+    color: #888;
+  }
+}

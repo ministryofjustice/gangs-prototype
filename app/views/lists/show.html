@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ list.name }} | My Lists | SGO Data Sharing Platform
+{% endblock %}
+
+{% block inside_header %}{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% include 'includes/phase_banner_prototype.html' %}
+
+  <h1 class="heading-xlarge">
+    {{ list.name }}
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-three-quarters">
+      <form action="/lists/{{list.index}}/nominals/delete" method="POST">
+        <ul class="nominal-list">
+        {% for nominal in list.nominals %}
+          <li class="nominal-list-item">
+
+            {% set end_of_system_ids_content %}
+              <div class="remove-from-list">
+                <label for="nominal_index_{{nominal.index}}">remove from list</label>
+                <input type="checkbox" id="nominal_index_{{nominal.index}}" name="nominal_index" value="{{nominal.index}}" />
+              </div>
+            {% endset %}
+            {% include 'includes/list_nominal.html' %}
+          </li>
+        {% endfor %}
+        </ul>
+
+        <div class="remove-from-list">
+          <input type="submit" class="button" value="Remove selected" />
+        </div>
+      </form>
+    </div>
+
+    <div class="column-quarter">
+      {% include 'includes/list_side_nav.html' %}
+    </div>
+  </div>
+</main>
+{% endblock %}
