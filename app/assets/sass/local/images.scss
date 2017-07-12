@@ -9,6 +9,34 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  &:after {
+    content: "SAMPLE";
+    font-weight: bold;
+    color: $white;
+    text-shadow:
+       -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+    opacity: 0.3;
+    text-align: center;
+    display: block;
+    margin-top: 40%;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+
+    @include media(mobile) {
+      font-size: 50px;
+    }
+    @include media(tablet) {
+      font-size: 30px;
+    }
+    @include media(desktop) {
+      font-size: 40px;
+    }
+  }
+
   @include media(mobile) {
     max-width: 340px;
     max-height: 340px;
@@ -22,6 +50,23 @@
 .avatar-thumb {
   width: 10vw;
   height: 10vw;
+
+
+  &:after {
+    margin-top: 30px;
+
+    @include media(mobile) {
+      margin-top: 120px;
+      font-size: 50px;
+    }
+    @include media(tablet) {
+      font-size: 13px;
+    }
+    @include media(desktop) {
+      font-size: 20px;
+    }
+  }
+
   @include media(mobile) {
     width: calc(100% - 30px);
     height: 85vw;
