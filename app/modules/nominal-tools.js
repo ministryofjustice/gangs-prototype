@@ -34,7 +34,7 @@ var nominal = {
     affiliationsIn.forEach(function(affiliationIn) {
       var affiliation = {
         index: affiliationIn[0],
-        name: ocgs[affiliationIn[0]].name,
+        name: ocgTools.get(affiliationIn[0]).name,
         role: nominalRoles[affiliationIn[1]]
       };
       affiliations.push(affiliation);
@@ -107,8 +107,8 @@ var nominal = {
         var tensions = ocgTools.getTensionsBetween(ocgId1, ocgId2);
 
         if( tensions.length ){
-          tensions[0].nominal1_ocg = ocgs[ocgId1];
-          tensions[0].nominal2_ocg = ocgs[ocgId2];
+          tensions[0].nominal1_ocg = ocgTools.get(ocgId1);
+          tensions[0].nominal2_ocg = ocgTools.get(ocgId2);
 
           ocgTensions.push(tensions[0]);
         }

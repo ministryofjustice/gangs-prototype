@@ -6,6 +6,10 @@ var nominalRoles = require('../../app/sources/roles.json').roles;
 var search = require('./search.js');
 
 var ocg = {
+  get: function(index) {
+    return ocgs[index];
+  },
+  
   getNominals: function(ocgIndex) {
     var ocgNominals = [];
 

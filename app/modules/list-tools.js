@@ -3,6 +3,10 @@ var lists = require('../assets/data/dummy-lists.json').lists;
 var nominalTools = require('./nominal-tools.js');
 
 var listTools = {
+  get: function(index){
+    return lists[index];
+  },
+
   getAll: function(){
     var listsWithNominals = lists;
     for( list of lists ){

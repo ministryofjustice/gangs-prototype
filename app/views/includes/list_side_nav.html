@@ -1,42 +1,51 @@
 <aside class="panel panel-border-narrow">
-  {% if list %}
-    <h4 class="heading-small">{{list.name}}</h3>
-    <ul class="side-nav">
-      <li><a href="/lists/{{list.index}}/tensions">Show Tensions</a></li>
-      <li>
-        <details>
-          <summary><span class="summary">Delete list</span></summary>
-          <div>
-            <form action="/lists/{{list.index}}/delete" method="DELETE">
-              <em>Are you sure?</em>
-              <input class="button" type="submit" value="Yes, really delete list" />
-            </form>
-          </div>
-        </details>
-      </li>
-      <li class="form-group  ">
-        <details>
-          <summary><span class="summary">Copy to...</span></summary>
-          <div>
-            <form action="/lists/create" method="POST">
-              <input type="hidden" name="copy_from_index" value="{{list.index}}" />
-              <div >
-                <input type="text" class="form-control" name="name" placeholder="New list name" />
-                <input class="button" type="submit" value="Go" />
-              </div>
-            </form>
-          </div>
-        </details>
-      </li>
-    </ul>
-  {% endif %}
-
-  <h4 class="heading-small">Your Lists</h4>
+  <h3 class="heading-small">Your Lists</h3>
   <ul class="side-nav">
   {% for l in lists %}
     <li>
     {% if l.index == list.index %}
-      <strong>{{ l.name }}</strong>
+      <h4 class="heading-small">{{list.name}}</h3>
+      <ul class="panel">
+        <li>
+          {% if current_page == 'nominals' %}
+            <strong>Nominals</strong>
+          {% else %}
+            <a href="/lists/{{list.index}}">Nominals</a>
+          {% endif %}
+        </li>
+        <li>
+          {% if current_page == 'tensions' %}
+            <strong>Tensions</strong>
+          {% else %}
+            <a href="/lists/{{list.index}}/tensions">Tensions</a>
+          {% endif %}
+        </li>
+        <li>
+          <details>
+            <summary><span class="summary">Delete list</span></summary>
+            <div>
+              <form action="/lists/{{list.index}}/delete" method="DELETE">
+                <em>Are you sure?</em>
+                <input class="button" type="submit" value="Yes, delete" />
+              </form>
+            </div>
+          </details>
+        </li>
+        <li class="form-group  ">
+          <details>
+            <summary><span class="summary">Copy to...</span></summary>
+            <div>
+              <form action="/lists/create" method="POST">
+                <input type="hidden" name="copy_from_index" value="{{list.index}}" />
+                <div >
+                  <input type="text" class="form-control" name="name" placeholder="New list name" />
+                  <input class="button" type="submit" value="Go" />
+                </div>
+              </form>
+            </div>
+          </details>
+        </li>
+      </ul>
     {% else %}
       <a href="/lists/{{l.index}}">{{ l.name }}</a>
     {% endif %}

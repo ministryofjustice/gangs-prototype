@@ -6,6 +6,18 @@
     margin-top: 0;
   }
 
+  .other-nominal {
+    text-align: right;
+  }
+
+  .nominal, .other-nominal {
+    @include media(mobile) {
+      text-align: center;
+    }
+  }
+  .ocg-tensions {
+    text-align: center;
+  }
   .ocgs {
     min-height: 4em;
     line-height: 3em;
@@ -14,23 +26,20 @@
       margin: 0 1em;
     }
   }
-  .ocg, .tension-level {
-    display: block;
-    float: left;
-  }
-
-  .ocg:first-child {
-    &::after {
-      content: '  ⟹';
-      font-size: 20px;
+  .ocg {
+    @include media(mobile) {
+      display: block;
     }
   }
-
 
   .tension-level {
     padding: 0 0.2em;
     font-size: 80%;
 
+    &::before {
+      content: '  ⟹';
+      font-size: 20px;
+    }
     &::after {
       content: '  ⟸';
       font-size: 20px;
@@ -42,12 +51,13 @@
     }
   }
   .tension-level-high strong{
-    color: #900;
+    color: #ff2800;
   }
   .tension-level-medium strong{
-    color: #FF8c00;
+    color: #ff8f00;
   }
   .tension-level-low strong{
-    color: #FFFF00;
+    color: #339900;
   }
+
 }

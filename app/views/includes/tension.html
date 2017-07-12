@@ -1,0 +1,19 @@
+<div class="grid-row tension">
+  <div class="column-half nominal">
+    <h3 class="heading-medium ">
+      <a href="/nominal/{{nominal.index}}">{{nominal.given_names}} {{nominal.family_name}}</a>
+    </h3>
+  </div>
+  <div class="column-half other-nominal">
+    <h3 class="heading-medium ">
+      <a href="/nominal/{{tension.otherNominal.index}}">{{tension.otherNominal.given_names}} {{tension.otherNominal.family_name}}</a>
+    </h3>
+  </div>
+  <div class="column-full ocg-tensions">
+    {% for ocgTension in tension.tensions %}
+      <span class="ocg"><a href="/ocg/{{ocgTension.nominal1_ocg.index}}">{{ ocgTension.nominal1_ocg.name }}</a></span>
+      <span class="tension-level tension-level-{{ocgTension.tensionLevel}}"><strong>{{ocgTension.tensionLevel}}</strong></span>
+      <span class="ocg"><a href="/ocg/{{ocgTension.nominal2_ocg.index}}">{{ ocgTension.nominal2_ocg.name }}</a></span>
+    {% endfor %}
+  </div>
+</div>

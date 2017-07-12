@@ -203,11 +203,12 @@ router.get('/lists/:index/nominals/delete', function(req, res) {
 router.get('/lists/:index/tensions', function(req, res) {
   var lists = listTools.getAll();
   var list = lists[req.params.index];
+  var tensions = nominalTools.getTensionsInList(list.nominalIndexes);
 
-  res.render('list/tensions', {
+  res.render('lists/tensions', {
     list: list,
     lists: lists,
-    tensions: nominalTools.getTensionsInList(list.nominalIndexes)
+    tensions: tensions
   });
 });
 

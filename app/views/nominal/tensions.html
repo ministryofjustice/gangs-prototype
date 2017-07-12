@@ -15,36 +15,27 @@
     </h1>
   </div>
   
-  {% if nominalsInList.length == 0 %}
+  {% set tensionCount = 0 %}
+
+  {% for nominal in nominalsInList %}
+    {% if tensions[nominal.index].length %}
+      {% set tensionCount = tensionCount + 1 %}
+      <h3 class="heading-medium">
+        <a href="/nominal/{{nominal.index}}">{{nominal.given_names}} {{nominal.family_name}}</a>
+      </h3>
+      {% for tension in tensions[nominal.index] %}
+        <div class="grid-row tension">
+          {% include 'includes/tension.html' %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+  {% if tensionCount == 0 %}
     <div class="panel panel-border-wide">
       <p>No OCG-related tensions match these nominals</p>
     </div>
   {% endif %}
-
-  {% for nominal in nominalsInList %}
-    <h3 class="heading-medium">
-      <a href="/nominal/{{nominal.index}}">{{nominal.given_names}} {{nominal.family_name}}</a>
-    </h3>
-    {% if tensions[nominal.index].length %}
-      {% for tension in tensions[nominal.index] %}
-        <div class="grid-row tension">
-          <div class="column-two-thirds">
-            {% for ocgTension in tension.tensions %}
-              <span class="ocg"><a href="/ocg/{{ocgTension.nominal1_ocg.index}}">{{ ocgTension.nominal1_ocg.name }}</a></span>
-              <span class="tension-level tension-level-{{ocgTension.tensionLevel}}"><strong>{{ocgTension.tensionLevel}}</strong></span>
-              <span class="ocg"><a href="/ocg/{{ocgTension.nominal2_ocg.index}}">{{ ocgTension.nominal2_ocg.name }}</a></span>
-            {% endfor %}
-          </div>
-          <div class="column-one-third">
-            <h3 class="heading-medium other-nominal">
-              <a href="/nominal/{{tension.otherNominal.index}}">{{tension.otherNominal.given_names}} {{tension.otherNominal.family_name}}</a>
-            </h3>
-          </div>
-        </div>
-      {% endfor %}
-    {% endif %}
-  
-  {% endfor %}
 </main>
 
 {% endblock %}
