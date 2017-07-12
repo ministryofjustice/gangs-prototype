@@ -1,5 +1,6 @@
 // nominal tools module
-var ocgs = require('../assets/data/dummy-ocgs.json').ocgs;
+var ocgTools = require('./ocg-tools.js');
+
 var nominals = require('../assets/data/dummy-nominals.json').nominals;
 var nominalRoles = require('../../app/sources/roles.json').roles;
 var search = require('./search.js');
@@ -103,7 +104,8 @@ var nominal = {
 
     for( var ocgId1 of nominal1_ocgs ){
       for( var ocgId2 of nominal2_ocgs ){
-        var tensions = ocg.getTensionsBetween(ocgId1, ocgId2);
+        var tensions = ocgTools.getTensionsBetween(ocgId1, ocgId2);
+
         if( tensions.length ){
           tensions[0].nominal1_ocg = ocgs[ocgId1];
           tensions[0].nominal2_ocg = ocgs[ocgId2];

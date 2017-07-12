@@ -12,10 +12,14 @@
     float:none;
   }
 }
-.nominal-list-item {
+.nominal-list-item, .ocg-list-item {
   margin-bottom: 35px;
   margin-top: 20px;
   overflow: hidden;
+
+  :hover {
+    background-color: #fcfcff;
+  }
 }
 
 .avatar-wrapper {
@@ -30,13 +34,32 @@
 }
 
 .nominal-list-item-detail {
+  width: 82%;
+}
+.ocg-list-item-detail {
+  width: 100%;
+}
+
+.nominal-list-item-detail, .ocg-list-item-detail {
   float: left;
-  width:82%;
 
   @include media(mobile) {
     padding: 0 15px;
     width: calc(100% - 30px);
   }
+
+  .system-ids {
+    .field {
+      clear: left;
+      margin: 0.2em 0;
+      text-align: right;
+
+      @include media(mobile){
+        display: inline-block;
+      }
+    }
+  }
+
   h3 {
     margin: 0;
   }
@@ -44,42 +67,32 @@
 /* wrapping needs to be adjusted when a list item is 
   within a three-quarter-width column */
 .column-three-quarters {
-  .nominal-list-item-detail {
+  .nominal-list-item-detail, .ocg-list-item-detail {
     width: 75%;
 
     @include media(mobile){
       width: 95%;
     }
-
-    .system-ids {
-      span {
-        display: inline-block;
-        float: left;
-      }
-      .field {
-        clear: left;
-        margin: 0.2em 0;
-        text-align: right;
-      }
-    }
   }
 }
 
 /* inline dl's for a list of nominals */
-.nominal-list-item dl {
-  clear: left;
-  
-  dt, dd {
-    clear: none;
-    display: inline-block;
-    float: none;
-  }
-  dd {
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  dt {
-    font-weight: normal;
+.nominal-list-item, .ocg-list-item {
+  dl {
+    clear: left;
+    
+    dt, dd {
+      clear: none;
+      display: inline-block;
+      float: none;
+    }
+    dd {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    dt {
+      font-weight: normal;
+    }
   }
 }
 

@@ -89,7 +89,10 @@ router.get('/nominal/search/', function(req, res) {
   res.redirect('/nominal/search/new');
 });
 router.get('/nominal/search/new', function(req, res) {
-  res.render('nominal/search/new', {search: {}});
+  res.render('nominal/search/new', {
+    lists: listTools.getAll(),
+    search: {}
+  });
 });
 router.get('/nominal/search/results', function(req, res) {
   var results = nominalTools.search(req.session.data);
@@ -198,10 +201,13 @@ router.get('/lists/:index/nominals/delete', function(req, res) {
   });
 });
 router.get('/lists/:index/tensions', function(req, res) {
+  var lists = listTools.getAll();
+  var list = lists[req.params.index];
+
   res.render('list/tensions', {
     list: list,
-    lists: lists
-    tensions: nominalTools.getTensions(list.nominalIndexes)
+    lists: lists,
+    tensions: nominalTools.getTensionsInList(list.nominalIndexes)
   });
 });
 
