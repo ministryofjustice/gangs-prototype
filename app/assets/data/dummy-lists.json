@@ -1,0 +1,39 @@
+{
+  "lists": [
+    {
+      "name": "Prisoners In Feltham",
+      "nominalIndexes": [
+        1,
+        31,
+        51
+      ],
+      "index": 0
+    },
+    {
+      "name": "My Probationers",
+      "nominalIndexes": [
+        12,
+        17,
+        41,
+        49,
+        84
+      ],
+      "index": 1
+    },
+    {
+      "name": "List 1",
+      "nominalIndexes": [
+        8,
+        46,
+        54,
+        60,
+        66,
+        79,
+        81,
+        88,
+        92
+      ],
+      "index": 2
+    }
+  ]
+}

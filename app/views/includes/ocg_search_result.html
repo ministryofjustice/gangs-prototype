@@ -1,35 +1,32 @@
 
-<div class="search-result-detail">
+<div class="ocg-list-item-detail">
   <div class="heading-container">
     <div class = "heading-inner">
       <h3 class="heading-medium">
-        <a href="/ocg/{{result.index}}">{{result.name}}</a>
+        <a href="/ocg/{{ocg.index}}">{{ocg.name}}</a>
       </h3>
     </div>
     <div class="system-ids">
-      <span>GRITS ID:</span>
-      <span>{{result.grits_id}}</span>
-      <span>PND ID:</span>
-      <span>{{result.pnd_id}}</span>
-      <span>OCGM URN:</span>
-      <span>{{result.ocgm_urn}}</span>
+      <p class="field">GRITS ID: {{ocg.grits_id}}</p>
+      <p class="field">PND ID: {{ocg.pnd_id}}</p>
+      <p class="field">OCGM URN: {{ocg.ocgm_urn}}</p>
     </div>
   </div>
 
-  {% if result.aliases.length %}
+  {% if ocg.aliases.length %}
     <dl class="aliases">
       <dt>Known aliases:</dt>
       <dd>
-          {{ result.aliases.join(', ') }}
+          {{ ocg.aliases.join(', ') }}
       </dd>
     </dl>
   {% endif %}
 
-  {% if result.territory.length %}
+  {% if ocg.territory.length %}
     <dl class="territory">
       <dt>Territory:</dt>
       <dd>     
-          {{ result.territory }}
+          {{ ocg.territory }}
       </dd>
     </dl>
   {% endif %}

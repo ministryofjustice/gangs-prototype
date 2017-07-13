@@ -1,0 +1,69 @@
+<aside class="panel panel-border-narrow">
+  <h2 class="heading-medium">Your Lists</h3>
+  <ul class="side-nav list">
+  {% for l in lists %}
+    <li>
+    {% if l.index == list.index %}
+      <h4 class="heading-small">{{list.name}}</h3>
+      <ul class="subnav list">
+        <li>
+          {% if current_page == 'nominals' %}
+            <strong>Nominals</strong>
+          {% else %}
+            <a href="/lists/{{list.index}}">Nominals</a>
+          {% endif %}
+        </li>
+        <li>
+          {% if current_page == 'tensions' %}
+            <strong>Tensions</strong>
+          {% else %}
+            <a href="/lists/{{list.index}}/tensions">Tensions</a>
+          {% endif %}
+        </li>
+        <li>
+          <details>
+            <summary><span class="summary">Delete list</span></summary>
+            <div>
+              <form action="/lists/{{list.index}}/delete" method="DELETE">
+                <small>Are you sure?</small>
+                <input class="button" type="submit" value="Yes, delete" />
+              </form>
+            </div>
+          </details>
+        </li>
+        <li class="form-group  ">
+          <details>
+            <summary><span class="summary">Copy to...</span></summary>
+            <div>
+              <form action="/lists/create" method="POST">
+                <input type="hidden" name="copy_from_index" value="{{list.index}}" />
+                <div >
+                  <input type="text" class="form-control" name="name" placeholder="New list name" />
+                  <input class="button" type="submit" value="Go" />
+                </div>
+              </form>
+            </div>
+          </details>
+        </li>
+      </ul>
+    {% else %}
+      <a href="/lists/{{l.index}}">{{ l.name }}</a>
+    {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  
+  <div class="form-group  ">
+    <details>
+      <summary><span class="summary">Create a list</span></summary>
+      <div>
+        <form action="/lists/create" method="POST">
+          <div >
+            <input type="text" class="form-control" name="name" placeholder="New list name" />
+            <input class="button" type="submit" value="Go" />
+          </div>
+        </form>
+      </div>
+    </details>
+  </div>
+</aside>

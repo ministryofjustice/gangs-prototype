@@ -36,13 +36,26 @@
     {% include 'includes/pagination.html' %}
   
     <div class="grid-row">
-      <ol class="results-list">
-      {% for result in search_results %}
-        <li class="search-result">
-          {% include 'includes/nominal_search_result.html' %}
-        </li>
-      {% endfor %}
-      </ol>  
+      <form action="/lists/create" method="POST" />
+        <ol class="results-list nominal-list">
+        {% for nominal in search_results %}
+          <li class="search-result nominal-list-item">
+            {% set end_of_system_ids_content %}
+              <div class="add-to-list">
+                <label for="nominal_index_{{nominal.index}}">add to list</label>
+                <input type="checkbox" id="nominal_index_{{nominal.index}}" name="nominal_index" value="{{nominal.index}}" />
+              </div>
+            {% endset %}
+            {% include 'includes/list_nominal.html' %}
+          </li>
+        {% endfor %}
+        </ol>
+        <div class="add-to-list">
+          <label for="list-name">Add to list</label>
+          <input type="text" id="list-name" class="form-control" name="name" placeholder="New list name" />
+          <input type="submit" class="button" value="Add" />
+        </div>
+      </form>
     </div>
     {% include 'includes/pagination.html' %}
 

@@ -1,0 +1,63 @@
+.tension {
+  border-bottom: 1px solid #ccc;
+  margin-top: 1em;
+
+  h3{
+    margin-top: 0;
+  }
+
+  .other-nominal {
+    text-align: right;
+  }
+
+  .nominal, .other-nominal {
+    @include media(mobile) {
+      text-align: center;
+    }
+  }
+  .ocg-tensions {
+    text-align: center;
+  }
+  .ocgs {
+    min-height: 4em;
+    line-height: 3em;
+
+    @include media(mobile) {
+      margin: 0 1em;
+    }
+  }
+  .ocg {
+    @include media(mobile) {
+      display: block;
+    }
+  }
+
+  .tension-level {
+    padding: 0 0.2em;
+    font-size: 80%;
+
+    &::before {
+      content: '  ⟹';
+      font-size: 20px;
+    }
+    &::after {
+      content: '  ⟸';
+      font-size: 20px;
+    }
+
+    strong{
+      font-size: 120%;
+      padding: 0 0.2em;
+    }
+  }
+  .tension-level-high strong{
+    color: #ff2800;
+  }
+  .tension-level-medium strong{
+    color: #ff8f00;
+  }
+  .tension-level-low strong{
+    color: #339900;
+  }
+
+}

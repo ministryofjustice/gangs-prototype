@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Nominal Tensions
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% include 'includes/phase_banner_prototype.html' %}
+
+  <div class="grid-row">
+    <h1 class="heading-xlarge">
+      Nominal Tensions
+    </h1>
+  </div>
+  
+  {% set tensionCount = 0 %}
+
+  {% for nominal in nominalsInList %}
+    {% if tensions[nominal.index].length %}
+      {% set tensionCount = tensionCount + 1 %}
+      <h3 class="heading-medium">
+        <a href="/nominal/{{nominal.index}}">{{nominal.given_names}} {{nominal.family_name}}</a>
+      </h3>
+      {% for tension in tensions[nominal.index] %}
+        <div class="grid-row tension">
+          {% include 'includes/tension.html' %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+  {% if tensionCount == 0 %}
+    <div class="panel panel-border-wide">
+      <p>No OCG-related tensions match these nominals</p>
+    </div>
+  {% endif %}
+</main>
+
+{% endblock %}

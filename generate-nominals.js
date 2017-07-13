@@ -10,6 +10,7 @@ var prisons = require('./app/sources/prisons.json').prisons;
 var mugshots = require('./app/modules/mugshot.js');
 var quantities = require('./app/sources/quantities.json');
 var randomPicker = require('./app/modules/random-picker.js');
+var arrayUtils = require('./app/modules/array-utils.js');
 
 var updates = [];
 if(fs.existsSync('./app/assets/data/updates.json')) {
@@ -54,7 +55,7 @@ function init() {
     nominal.affiliations = generateAffiliations();
     nominal.affiliated_ocg_names = nominal.affiliations.map(
         function(element){
-          var id = [].concat(element)[0];
+          var id = arrayUtils.forceToArray(element)[0];
           return ocgs[id].name;
         }
       );
@@ -173,7 +174,7 @@ function getIncarcerationStatus(nominalIndex) {
   }
 
   // check updates file (if it exists yet) to see if nominal is listed as incarcerated
-  if(updates.length) {
+  if(updates && updates.length) {
     updates.forEach(function(update) {
       if(update.type === 'incarceration' && update.nominal == nominalIndex) {
         nominalPrison = update.location;
@@ -190,9 +191,6 @@ function getIncarcerationStatus(nominalIndex) {
 function leadingZero(n) {
   return (parseInt(n, 10) < 10 ? '0' + n : n);
 }
-
-
-
 
 init();
 

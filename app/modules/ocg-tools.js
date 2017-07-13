@@ -6,6 +6,10 @@ var nominalRoles = require('../../app/sources/roles.json').roles;
 var search = require('./search.js');
 
 var ocg = {
+  get: function(index) {
+    return ocgs[index];
+  },
+  
   getNominals: function(ocgIndex) {
     var ocgNominals = [];
 
@@ -31,6 +35,7 @@ var ocg = {
 
     return ocgNominals;
   },
+
   getOcgTensions: function(ocgIndex) {
     var ocgTensions = [];
 
@@ -51,6 +56,15 @@ var ocg = {
     });
 
     return ocgTensions;
+  },
+
+  getTensionsBetween: function(ocgIndex1, ocgIndex2) {
+    var matches = tensions.filter(function(tension){
+      return (tension.indices[0] == ocgIndex1 && tension.indices[1] == ocgIndex2) || 
+        (tension.indices[0] == ocgIndex2 && tension.indices[1] == ocgIndex1);
+    });
+    
+    return matches;
   },
 
   search: function(params) {

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ list.name }} | My Lists | SGO Data Sharing Platform
+{% endblock %}
+
+{% block inside_header %}{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% include 'includes/phase_banner_prototype.html' %}
+
+  <h1 class="heading-xlarge">
+    {{ list.name }} Tensions
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-three-quarters">
+      {% set tensionCount = 0 %}
+
+      {% for nominal in list.nominals %}
+        {% if tensions[nominal.index].length %}
+          {% set tensionCount = tensionCount + 1 %}
+          {% for tension in tensions[nominal.index] %}
+              {% include 'includes/tension.html' %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
+      {% if tensionCount == 0 %}
+        <div class="panel panel-border-wide">
+          <p>No OCG-related tensions match these nominals</p>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="column-quarter">
+      {% set current_page = 'tensions' %}
+      {% include 'includes/list_side_nav.html' %}
+    </div>
+  </div>
+</main>
+{% endblock %}

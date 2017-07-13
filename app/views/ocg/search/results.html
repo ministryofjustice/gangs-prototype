@@ -22,12 +22,14 @@
   {% endif %}
 
   <div class="grid-row">
-    <details>
-      <summary><span class="summary">Refine your search</span></summary>
-      <div class="panel panel-border-narrow">
-        {% include 'includes/ocg_search_form.html' %}
-      </div>
-    </details>
+    <div class="column-full">
+      <details>
+        <summary><span class="summary">Refine your search</span></summary>
+        <div class="panel panel-border-narrow">
+          {% include 'includes/ocg_search_form.html' %}
+        </div>
+      </details>
+    </div>
   </div>
   
   {% if search_results.length %}
@@ -35,13 +37,15 @@
     {% include 'includes/pagination.html' %}
     
     <div class="grid-row">
-      <ol class="results-list">
-      {% for result in search_results %}
-        <li class="search-result">
-          {% include 'includes/ocg_search_result.html' %}
-        </li>
-      {% endfor %}
-      </ol>
+      <div class="column-full">
+        <ol class="results-list ocg-list">
+        {% for ocg in search_results %}
+          <li class="search-result ocg-list-item">
+            {% include 'includes/ocg_search_result.html' %}
+          </li>
+        {% endfor %}
+        </ol>
+      </div>
     </div>
 
     {% include 'includes/pagination.html' %}
