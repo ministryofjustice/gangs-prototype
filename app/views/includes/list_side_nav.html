@@ -1,11 +1,11 @@
 <aside class="panel panel-border-narrow">
-  <h3 class="heading-small">Your Lists</h3>
-  <ul class="side-nav">
+  <h2 class="heading-medium">Your Lists</h3>
+  <ul class="side-nav list">
   {% for l in lists %}
     <li>
     {% if l.index == list.index %}
       <h4 class="heading-small">{{list.name}}</h3>
-      <ul class="subnav">
+      <ul class="subnav list">
         <li>
           {% if current_page == 'nominals' %}
             <strong>Nominals</strong>
@@ -25,7 +25,7 @@
             <summary><span class="summary">Delete list</span></summary>
             <div>
               <form action="/lists/{{list.index}}/delete" method="DELETE">
-                <em>Are you sure?</em>
+                <small>Are you sure?</small>
                 <input class="button" type="submit" value="Yes, delete" />
               </form>
             </div>
@@ -51,7 +51,9 @@
     {% endif %}
     </li>
   {% endfor %}
-  <li class="form-group  ">
+  </ul>
+  
+  <div class="form-group  ">
     <details>
       <summary><span class="summary">Create a list</span></summary>
       <div>
@@ -63,7 +65,5 @@
         </form>
       </div>
     </details>
-  </li>
-  </ul>
-  
+  </div>
 </aside>

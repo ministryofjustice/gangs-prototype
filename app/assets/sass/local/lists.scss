@@ -170,6 +170,10 @@ dd {
   li {
     margin-bottom: 0.5em;
     margin-left: 0.5em;
+
+    details[open] {
+      margin-bottom: 1em;
+    }
   }
 
 }
