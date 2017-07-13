@@ -10,7 +10,7 @@
     "start": "node start.js",
     "lint": "standard",
     "test": "gulp test && npm run lint",
-    "generate": "node generate-ocgs && node generate-updates.js && node generate-tensions.js && node generate-nominals.js"
+    "generate": "node generate-ocgs && node generate-updates.js && node generate-tensions.js && node generate-nominals.js && node generate-lists.js"
   },
   "dependencies": {
     "array-unique": "^0.3.2",

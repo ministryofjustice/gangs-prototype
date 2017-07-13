@@ -15,11 +15,7 @@ if (!nodeModulesExists) {
 
 
 var updateTypes = ['tension', 'affiliation', 'incarceration', 'release'],
-    updates = {};
-
-var data = {
-  updateEvents: []
-},
+    updates = {},
     numUpdates = quantities.updates,
     numOcgs = quantities.ocgs,
     numNominals = quantities.nominals,

@@ -174,7 +174,7 @@ function getIncarcerationStatus(nominalIndex) {
   }
 
   // check updates file (if it exists yet) to see if nominal is listed as incarcerated
-  if(updates.length) {
+  if(updates && updates.length) {
     updates.forEach(function(update) {
       if(update.type === 'incarceration' && update.nominal == nominalIndex) {
         nominalPrison = update.location;
