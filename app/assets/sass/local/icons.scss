@@ -1,8 +1,9 @@
-.simple-search-outer{
-	.button-search{
-		@include icon('icon-search', 30 , 22 , false);
+.simple-search-outer {
+  .button-search {
+    background: url('/public/images/icons/magnifying-glass-white.svg') center center no-repeat;
+    background-size: 16px 16px;
     cursor: pointer;
-	}
+  }
 }
 
 .tension-arrow {

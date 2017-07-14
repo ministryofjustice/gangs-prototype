@@ -1,11 +1,7 @@
-{% extends "govuk_template.html" %}
+{% extends "layouts/govuk_template_custom.html" %}
 
 {% block head %}
   {% include "includes/head.html" %}
-{% endblock %}
-
-{% block cookie_message %}
-  <p>{{cookieText | safe }}</p>
 {% endblock %}
 
 {% set userType = "prison-officer" %}
@@ -14,26 +10,35 @@
 {% endif %}
 
 {% set homepage_url = "/home" %}
-{% set global_header_text=serviceName %}
-{% block inside_header %}
-
-{% endblock %}
+{% set global_header_text = serviceName %}
+{% set logo_link_title = serviceName + ' homepage' %}
+{% block inside_header %}{% endblock %}
 
 {% block proposition_header %}
-  <div id="user-and-search">
-    <ul class="user-menu">
-      <li>{{userType}}@example.com</li>
-      <li><a href="/signout">Sign out</a></li>
-    </ul>
-    <div class='simple-search-outer'>
-      {% include 'includes/simple_search_form.html' %}
-    </div>
-  </div>
+<ul class="user-menu">
+  <li>{{userType}}@example.com</li>
+  <li><a href="/signout">Sign out</a></li>
+</ul>
 
-  <ul id="proposition-links">
-    <li><a href="/nominal">Nominals</a></li>
-    <li><a href="/ocg">OCGs</a></li>
-  </ul>
+<div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <ul id="proposition-links">
+        <li><a href="/nominal">Nominals</a></li>
+        <li><a href="/ocg">OCGs</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="simple-search-outer">
+  {% include "includes/simple_search_form.html" %}
+</div>
+
+<div class="advanced-search">
+  <a href="#">Advanced search</a>
+</div>
 {% endblock %}
 
 

@@ -1,6 +1,41 @@
 .simple-search-outer {
+
+  .form-group {
+    display: flex;
+  }
+
+  select {
+    height: 28px;
+    border: 1px solid $white;
+    margin-right: 10px;
+    flex: 0 0 0;
+  }
+  .input-wrapper {
+    flex: 1;
+    border: 1px solid $white;
+
+    display: flex;
+
+    input {
+      border: none;
+      height: 26px;
+
+      &[type="text"] {
+        flex: 1;
+        @include media(tablet) {
+          min-width: 300px;
+        }
+      }
+      &[type="submit"] {
+        flex: 0 0 0;
+        min-width: 28px;
+      }
+    }
+  }
+
   @include media(tablet) {
-    float: right;
+    float: left;
+    padding-left: 15px;
     clear: both;
   }
   @include media(mobile) {
@@ -13,78 +48,75 @@
     margin: 0;
   }
   .form-control {
-    height: 2em;
     font-size: 90%;
     width: auto;
     @include media(mobile) {
-      width: 100%;
+
     }
   }
   .button-search {
-    background-color:transparent;
-    background-size: 1.8em;
-    background-position: 0.1em 0.2em;
-    background-repeat: no-repeat;
-    border: 1px outset white;
-    border-left: none;
-    height: 1.75em;
-    margin-left: 0;
-    margin-top: 2px;
-    width: 1.8em;
-
-    @include media(mobile) {
-      background-size: 2em, 2em;
-      background-position: center;
-      border: 1px outset white;
-      margin: 0 0 0 2px;
-      padding: 0;
-      width: calc(100% - 4px);
-    }
+    margin: 0;
+    width: 28px;
+    height: 28px;
   }
+
+
+
 }
 
 #proposition-name {
   display: block;
 }
-#proposition-links {
+.js-enabled #global-header .header-proposition #proposition-links {
   clear: left;
-  display: inline-block;
   float: left;
-  margin-left: 5px;
+  display: none;
+
+  @include media(mobile) {
+    margin: 10px 0;
+  }
+
+  @include media(tablet) {
+    display: block;
+    margin-top: 16px;
+  }
 
   li {
     float: left;
+    padding: 3px 5px 3px 0;
+    margin-left: 5px;
+    width: auto;
+    list-style: none;
+
+    &:before {
+      content: "|";
+      font-weight: bold;
+      display: inline-block;
+      padding-right: 5px;
+      margin-right: 5px;
+    }
+    &:first-of-type {
+      padding-left: 0;
+      margin-left: 0;
+      &:before {
+        content: "";
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
     a {
-      font-weight: 700;
-      padding: 2px 10px;
+      @include bold-19;
       text-decoration: none;
-      width: 7em;
     }
     a:hover {
       text-decoration: underline;
     }
   }
-
-  @include media(mobile) {
-    display: block;
-    float: none;
-    overflow: hidden;
-    width: 100%;
-
-    li {
-      display: inline-block;
-      width: 49%;
-
-      a {
-        display: block;
-      }
-    }
-  }
 }
+
 .js-enabled #proposition-links.js-visible {
   width: 100%;
 }
-
 #global-header.with-proposition .header-wrapper {
   padding: 10px 20px;
 }
@@ -94,39 +126,104 @@
 #global-header.with-proposition .header-wrapper .header-proposition  {
   padding-top: 6px;
   width: 80%;
-  
+
   @include media(mobile) {
     width: 100%;
   }
-
-
 }
 
-#user-and-search {
-  float: right;
-  margin-right: 15px;
-  overflow: hidden;
-  width: auto;
-
+#global-header.with-proposition .header-wrapper .header-proposition .content,
+#global-header .header-wrapper .header-global .header-logo .content {
   @include media(mobile) {
-    float: none;
-    width: 100%;
-  }
-  input {
-    padding: 9px;
+    margin: 0;
   }
 }
-#name-and-menu {
+#global-header .header-proposition a.menu {
+  @include bold-19;
   float: left;
-}
+  display: block;
+  padding: 10px 0;
 
+  &.js-hidden {
+    display: none;
+  }
+
+  @include media(tablet) {
+    display: none;
+  }
+}
+#global-header .header-proposition a.menu:after {
+  content: "";
+  display: none;
+}
+#global-header .header-proposition a.menu:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background: url("/public/images/icons/menu-white.svg") center center no-repeat;
+  background-size: 16px 16px;
+  content: " ";
+}
 
 .user-menu {
-  float: right;
+  float: left;
+  width: 100%;
 
-  li, a {
+  @include media(desktop) {
+    float: right;
+    padding-top: 10px;
+    width: auto;
+    margin-right: 15px;
+  }
+
+  li {
     color: $white;
     display: inline-block;
     list-style-type: none;
+    padding-left: 5px;
+    margin-left: 5px;
+
+    &:before {
+      content: "|";
+      display: inline-block;
+      padding-right: 5px;
+      margin-right: 5px;
+    }
+    &:first-of-type {
+      margin-left: 0;
+      padding-left: 0;
+
+      @include media(tablet) {
+        margin-left: 15px;
+      }
+
+      &:before {
+        content: "";
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  a {
+    color: $white;
+    display: inline-block;
+  }
+}
+
+.advanced-search {
+  a {
+    color: $white;
+    float: right;
+
+    @include media(mobile) {
+      margin-top: 10px;
+    }
+    @include media(tablet) {
+      float: left;
+      margin-left: 12px;
+      margin-top: 5px;
+    }
   }
 }
