@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  {{ list.name }} | My Lists | SGO Data Sharing Platform
+  {{ list.name }} Tensions | Your Lists | SGO Data Sharing Platform
 {% endblock %}
 
 {% block inside_header %}{% endblock %}
@@ -11,6 +11,13 @@
 <main id="content" role="main">
   {% include 'includes/phase_banner_prototype.html' %}
 
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/nominal">Nominals</a></li>
+      <li><a href="/lists/{{list.index}}">{{list.name}}</a></li>
+      <li>Tensions</li>
+    </ol>
+  </div>
   <h1 class="heading-xlarge">
     {{ list.name }} Tensions
   </h1>
