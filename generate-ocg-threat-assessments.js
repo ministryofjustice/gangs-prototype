@@ -2,6 +2,7 @@ var path = require('path');
 var fs = require('fs');
 var faker = require('faker');
 var unique = require('array-unique');
+var humanize = require('humanize');
 var quantities = require('./app/sources/quantities.json');
 var randomPicker = require('./app/modules/random-picker.js');
 var ocgs = require('./app/assets/data/dummy-ocgs.json').ocgs;;
@@ -38,12 +39,15 @@ function init() {
 
 
 function generateRandomOcgThreatAssessment(ocg){
-  var assessment = randomAssessment();
+  var assessment = randomAssessment(),
+      timestamp = dateWithinDaysOfNow(-1000);
+
   return {
     'ocg_index': ocg.index,
     'assessed_by': generatePoliceOfficerTitle(),
     'police_force': randomPoliceForce(),
-    'timestamp': dateWithinDaysOfNow(-1000),
+    'timestamp': timestamp,
+    'timestamp_for_display': humanize.date('jS M Y', timestamp),
     'assessment_type': assessment.type,
     'assessment': assessment.values 
   }
