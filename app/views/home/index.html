@@ -14,25 +14,7 @@
     <span class="heading-detail">Dashboard</span>
   </h1>
 
-  <div class="grid-row updates-columns">
-
-    <div class="column column-one-third">
-      <h2 class="heading-medium">Incarcerations</h2>
-      {% set updates = updatesToDisplay.incarceration %}
-      {% include 'includes/updates_list.html' %}
-    </div>
-    <div class="column column-one-third">
-      <h2 class="heading-medium">Affiliations</h2>
-      {% set updates = updatesToDisplay.affiliation %}
-      {% include 'includes/updates_list.html' %}
-    </div>
-    <div class="column column-one-third">
-      <h2 class="heading-medium">Tensions</h2>
-      {% set updates = updatesToDisplay.tension %}
-      {% include 'includes/updates_list.html' %}
-    </div>
-
-  </div>
+  {% include 'includes/updates_columns.html' %}
 
   <div class="grid-row">
     <div class="column-full">

@@ -24,11 +24,15 @@ var updateTypes = ['tension', 'affiliation', 'incarceration', 'release'],
 function init() {
   // generate updates
   for(var type in updateTypes) {
-    updates[updateTypes[type]] = [];
+    var typeString = updateTypes[type];
+    updates[typeString] = [];
 
     for(var x = 0; x < quantities.updatesPerType; x++) {
-      updates[updateTypes[type]].push(generateUpdate(updateTypes[type]));
+      updates[typeString].push(generateUpdate(typeString));
     }
+
+    // add timeStamps to updates
+    addTimeStamps(type);
   }
 
   fs.writeFile('./app/assets/data/updates.json', JSON.stringify(updates, null, 2), 'utf-8');
@@ -60,12 +64,12 @@ function generateUpdate(type) {
 }
 
 function generateTensionChange() {
-  var ocg1 = Math.floor(Math.random() * numOcgs);
-  var ocg2 = Math.floor(Math.random() * numOcgs);
-  var tensionLevels = ['high', 'medium', 'low'];
+  var ocg1 = Math.floor(Math.random() * numOcgs),
+      ocg2 = ocg1 + (Math.floor(Math.random() * 5) + 5),
+      tensionLevels = ['high', 'medium', 'low'];
 
-  if(ocg1 === ocg2) {
-    return false;
+  if(ocg2 >= numOcgs) {
+    ocg2 -= numOcgs;
   }
 
   var update = {
@@ -99,10 +103,49 @@ function generateRelease() {
   var update = {
     type: 'release',
     nominal: Math.floor(Math.random() * numNominals),
-    location: Math.floor(Math.random() * numPrisons)
+    location: Math.floor(Math.random() * numPrisons),
+    releaseDaysAgo: Math.floor(Math.random() * 7)
   };
 
+  if(update.releaseDaysAgo === 0) {
+    update.releaseString = 'today';
+  } else if(update.releaseDaysAgo === 1) {
+    update.releaseString = 'yesterday';
+  } else {
+    update.releaseString = update.releaseDaysAgo + ' days ago';
+  }
+
   return update;
+}
+
+function addTimeStamps(type) {
+  var typeString = updateTypes[type],
+      minutesArray = [],
+      minMinutes = 1,
+      maxMinutes = 2000;
+
+  for(var x = 0; x < updates[typeString].length; x++) {
+    minutesArray.push(Math.floor(Math.random() * (maxMinutes - minMinutes)) + minMinutes);
+  }
+
+  minutesArray.sort(function(a, b) {
+    return a - b;
+  });
+
+  for(var x = 0; x < updates[typeString].length; x++) {
+    updates[typeString][x].minutesAgo = minutesArray[x];
+    updates[typeString][x].timeAgo = getTimeAgo(minutesArray[x]);
+  }
+}
+
+function getTimeAgo(minutesAgo) {
+  if(minutesAgo < 60) {
+    return minutesAgo + 'm';
+  } else if(minutesAgo < 1440) {
+    return Math.floor(minutesAgo / 60) + 'h';
+  } else {
+    return Math.floor(minutesAgo / 1440) + 'd';
+  }
 }
 
 

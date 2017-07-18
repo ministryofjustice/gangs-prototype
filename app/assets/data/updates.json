@@ -2,324 +2,474 @@
   "tension": [
     {
       "type": "tension-change",
-      "ocg1": 14,
-      "ocg2": 0,
-      "newTensionLevel": "high"
+      "ocg1": 15,
+      "ocg2": 4,
+      "newTensionLevel": "low",
+      "minutesAgo": 395,
+      "timeAgo": "6h"
     },
     {
       "type": "tension-change",
-      "ocg1": 14,
-      "ocg2": 7,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 19,
-      "ocg2": 9,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 11,
-      "ocg2": 6,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 7,
-      "ocg2": 6,
-      "newTensionLevel": "low"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 12,
-      "ocg2": 2,
-      "newTensionLevel": "high"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 6,
-      "ocg2": 0,
-      "newTensionLevel": "medium"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 19,
-      "ocg2": 18,
-      "newTensionLevel": "high"
+      "ocg1": 1,
+      "ocg2": 10,
+      "newTensionLevel": "high",
+      "minutesAgo": 495,
+      "timeAgo": "8h"
     },
     {
       "type": "tension-change",
       "ocg1": 10,
-      "ocg2": 12,
-      "newTensionLevel": "low"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 12,
-      "ocg2": 11,
-      "newTensionLevel": "low"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 9,
       "ocg2": 16,
-      "newTensionLevel": "medium"
+      "newTensionLevel": "medium",
+      "minutesAgo": 706,
+      "timeAgo": "11h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 11,
+      "ocg2": 18,
+      "newTensionLevel": "medium",
+      "minutesAgo": 791,
+      "timeAgo": "13h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 13,
+      "ocg2": 0,
+      "newTensionLevel": "medium",
+      "minutesAgo": 913,
+      "timeAgo": "15h"
     },
     {
       "type": "tension-change",
       "ocg1": 14,
-      "ocg2": 0,
-      "newTensionLevel": "medium"
+      "ocg2": 1,
+      "newTensionLevel": "medium",
+      "minutesAgo": 928,
+      "timeAgo": "15h"
     },
     {
       "type": "tension-change",
-      "ocg1": 16,
+      "ocg1": 17,
+      "ocg2": 3,
+      "newTensionLevel": "high",
+      "minutesAgo": 949,
+      "timeAgo": "15h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 5,
       "ocg2": 14,
-      "newTensionLevel": "low"
+      "newTensionLevel": "medium",
+      "minutesAgo": 1149,
+      "timeAgo": "19h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 17,
+      "ocg2": 3,
+      "newTensionLevel": "low",
+      "minutesAgo": 1264,
+      "timeAgo": "21h"
     },
     {
       "type": "tension-change",
       "ocg1": 2,
-      "ocg2": 3,
-      "newTensionLevel": "medium"
+      "ocg2": 10,
+      "newTensionLevel": "medium",
+      "minutesAgo": 1391,
+      "timeAgo": "23h"
     },
     {
       "type": "tension-change",
-      "ocg1": 12,
+      "ocg1": 1,
+      "ocg2": 9,
+      "newTensionLevel": "medium",
+      "minutesAgo": 1416,
+      "timeAgo": "23h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 6,
+      "ocg2": 15,
+      "newTensionLevel": "low",
+      "minutesAgo": 1568,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 4,
+      "ocg2": 11,
+      "newTensionLevel": "high",
+      "minutesAgo": 1643,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 7,
       "ocg2": 14,
-      "newTensionLevel": "medium"
+      "newTensionLevel": "high",
+      "minutesAgo": 1793,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 2,
+      "ocg2": 9,
+      "newTensionLevel": "high",
+      "minutesAgo": 1947,
+      "timeAgo": "1d"
     }
   ],
   "affiliation": [
     {
       "type": "affiliation",
-      "nominal": 76,
-      "ocg": 3
-    },
-    {
-      "type": "affiliation",
-      "nominal": 7,
-      "ocg": 2
-    },
-    {
-      "type": "affiliation",
-      "nominal": 16,
-      "ocg": 19
-    },
-    {
-      "type": "affiliation",
-      "nominal": 69,
-      "ocg": 12
-    },
-    {
-      "type": "affiliation",
-      "nominal": 56,
-      "ocg": 0
-    },
-    {
-      "type": "affiliation",
-      "nominal": 23,
-      "ocg": 3
-    },
-    {
-      "type": "affiliation",
-      "nominal": 16,
-      "ocg": 2
-    },
-    {
-      "type": "affiliation",
-      "nominal": 90,
-      "ocg": 7
-    },
-    {
-      "type": "affiliation",
-      "nominal": 35,
-      "ocg": 13
-    },
-    {
-      "type": "affiliation",
-      "nominal": 5,
-      "ocg": 15
-    },
-    {
-      "type": "affiliation",
-      "nominal": 27,
-      "ocg": 12
-    },
-    {
-      "type": "affiliation",
-      "nominal": 95,
-      "ocg": 5
-    },
-    {
-      "type": "affiliation",
-      "nominal": 70,
-      "ocg": 7
-    },
-    {
-      "type": "affiliation",
-      "nominal": 51,
-      "ocg": 11
+      "nominal": 21,
+      "ocg": 19,
+      "minutesAgo": 73,
+      "timeAgo": "1h"
     },
     {
       "type": "affiliation",
       "nominal": 52,
-      "ocg": 4
+      "ocg": 9,
+      "minutesAgo": 225,
+      "timeAgo": "3h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 23,
+      "ocg": 12,
+      "minutesAgo": 645,
+      "timeAgo": "10h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 98,
+      "ocg": 16,
+      "minutesAgo": 826,
+      "timeAgo": "13h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 68,
+      "ocg": 3,
+      "minutesAgo": 1075,
+      "timeAgo": "17h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 8,
+      "ocg": 19,
+      "minutesAgo": 1294,
+      "timeAgo": "21h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 77,
+      "ocg": 6,
+      "minutesAgo": 1310,
+      "timeAgo": "21h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 5,
+      "ocg": 19,
+      "minutesAgo": 1315,
+      "timeAgo": "21h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 2,
+      "ocg": 2,
+      "minutesAgo": 1484,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 43,
+      "ocg": 12,
+      "minutesAgo": 1528,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 58,
+      "ocg": 4,
+      "minutesAgo": 1565,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 17,
+      "ocg": 9,
+      "minutesAgo": 1586,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 23,
+      "ocg": 3,
+      "minutesAgo": 1916,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 60,
+      "ocg": 14,
+      "minutesAgo": 1978,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 45,
+      "ocg": 12,
+      "minutesAgo": 1980,
+      "timeAgo": "1d"
     }
   ],
   "incarceration": [
     {
       "type": "incarceration",
-      "nominal": 70,
-      "location": 19
+      "nominal": 4,
+      "location": 6,
+      "minutesAgo": 7,
+      "timeAgo": "7m"
     },
     {
       "type": "incarceration",
-      "nominal": 19,
-      "location": 25
+      "nominal": 83,
+      "location": 3,
+      "minutesAgo": 61,
+      "timeAgo": "1h"
     },
     {
       "type": "incarceration",
-      "nominal": 22,
-      "location": 25
+      "nominal": 44,
+      "location": 16,
+      "minutesAgo": 124,
+      "timeAgo": "2h"
     },
     {
       "type": "incarceration",
-      "nominal": 28,
-      "location": 20
+      "nominal": 47,
+      "location": 2,
+      "minutesAgo": 141,
+      "timeAgo": "2h"
     },
     {
       "type": "incarceration",
-      "nominal": 89,
-      "location": 6
+      "nominal": 79,
+      "location": 1,
+      "minutesAgo": 223,
+      "timeAgo": "3h"
     },
     {
       "type": "incarceration",
-      "nominal": 54,
-      "location": 16
+      "nominal": 30,
+      "location": 21,
+      "minutesAgo": 362,
+      "timeAgo": "6h"
     },
     {
       "type": "incarceration",
-      "nominal": 35,
-      "location": 11
+      "nominal": 90,
+      "location": 11,
+      "minutesAgo": 380,
+      "timeAgo": "6h"
     },
     {
       "type": "incarceration",
-      "nominal": 69,
-      "location": 8
+      "nominal": 95,
+      "location": 13,
+      "minutesAgo": 509,
+      "timeAgo": "8h"
     },
     {
       "type": "incarceration",
-      "nominal": 53,
-      "location": 13
+      "nominal": 60,
+      "location": 11,
+      "minutesAgo": 1059,
+      "timeAgo": "17h"
     },
     {
       "type": "incarceration",
-      "nominal": 61,
-      "location": 16
+      "nominal": 87,
+      "location": 5,
+      "minutesAgo": 1066,
+      "timeAgo": "17h"
     },
     {
       "type": "incarceration",
-      "nominal": 55,
-      "location": 15
+      "nominal": 82,
+      "location": 12,
+      "minutesAgo": 1101,
+      "timeAgo": "18h"
     },
     {
       "type": "incarceration",
-      "nominal": 78,
-      "location": 1
+      "nominal": 83,
+      "location": 23,
+      "minutesAgo": 1177,
+      "timeAgo": "19h"
     },
     {
       "type": "incarceration",
-      "nominal": 45,
-      "location": 8
+      "nominal": 99,
+      "location": 25,
+      "minutesAgo": 1567,
+      "timeAgo": "1d"
     },
     {
       "type": "incarceration",
-      "nominal": 66,
-      "location": 25
+      "nominal": 14,
+      "location": 19,
+      "minutesAgo": 1673,
+      "timeAgo": "1d"
     },
     {
       "type": "incarceration",
-      "nominal": 12,
-      "location": 14
+      "nominal": 75,
+      "location": 23,
+      "minutesAgo": 1679,
+      "timeAgo": "1d"
     }
   ],
   "release": [
     {
       "type": "release",
+      "nominal": 38,
+      "location": 6,
+      "releaseDaysAgo": 4,
+      "releaseString": "4 days ago",
+      "minutesAgo": 54,
+      "timeAgo": "54m"
+    },
+    {
+      "type": "release",
+      "nominal": 17,
+      "location": 4,
+      "releaseDaysAgo": 3,
+      "releaseString": "3 days ago",
+      "minutesAgo": 89,
+      "timeAgo": "1h"
+    },
+    {
+      "type": "release",
+      "nominal": 58,
+      "location": 25,
+      "releaseDaysAgo": 0,
+      "releaseString": "today",
+      "minutesAgo": 108,
+      "timeAgo": "1h"
+    },
+    {
+      "type": "release",
+      "nominal": 54,
+      "location": 25,
+      "releaseDaysAgo": 3,
+      "releaseString": "3 days ago",
+      "minutesAgo": 135,
+      "timeAgo": "2h"
+    },
+    {
+      "type": "release",
+      "nominal": 38,
+      "location": 1,
+      "releaseDaysAgo": 0,
+      "releaseString": "today",
+      "minutesAgo": 151,
+      "timeAgo": "2h"
+    },
+    {
+      "type": "release",
+      "nominal": 35,
+      "location": 18,
+      "releaseDaysAgo": 6,
+      "releaseString": "6 days ago",
+      "minutesAgo": 391,
+      "timeAgo": "6h"
+    },
+    {
+      "type": "release",
+      "nominal": 32,
+      "location": 3,
+      "releaseDaysAgo": 3,
+      "releaseString": "3 days ago",
+      "minutesAgo": 472,
+      "timeAgo": "7h"
+    },
+    {
+      "type": "release",
+      "nominal": 84,
+      "location": 2,
+      "releaseDaysAgo": 0,
+      "releaseString": "today",
+      "minutesAgo": 682,
+      "timeAgo": "11h"
+    },
+    {
+      "type": "release",
+      "nominal": 29,
+      "location": 22,
+      "releaseDaysAgo": 2,
+      "releaseString": "2 days ago",
+      "minutesAgo": 918,
+      "timeAgo": "15h"
+    },
+    {
+      "type": "release",
+      "nominal": 0,
+      "location": 8,
+      "releaseDaysAgo": 2,
+      "releaseString": "2 days ago",
+      "minutesAgo": 972,
+      "timeAgo": "16h"
+    },
+    {
+      "type": "release",
       "nominal": 19,
-      "location": 5
+      "location": 12,
+      "releaseDaysAgo": 6,
+      "releaseString": "6 days ago",
+      "minutesAgo": 1118,
+      "timeAgo": "18h"
     },
     {
       "type": "release",
-      "nominal": 50,
-      "location": 27
+      "nominal": 71,
+      "location": 8,
+      "releaseDaysAgo": 1,
+      "releaseString": "yesterday",
+      "minutesAgo": 1274,
+      "timeAgo": "21h"
     },
     {
       "type": "release",
-      "nominal": 20,
-      "location": 27
+      "nominal": 44,
+      "location": 1,
+      "releaseDaysAgo": 2,
+      "releaseString": "2 days ago",
+      "minutesAgo": 1282,
+      "timeAgo": "21h"
     },
     {
       "type": "release",
-      "nominal": 37,
-      "location": 0
+      "nominal": 66,
+      "location": 22,
+      "releaseDaysAgo": 5,
+      "releaseString": "5 days ago",
+      "minutesAgo": 1582,
+      "timeAgo": "1d"
     },
     {
       "type": "release",
-      "nominal": 85,
-      "location": 4
-    },
-    {
-      "type": "release",
-      "nominal": 79,
-      "location": 25
-    },
-    {
-      "type": "release",
-      "nominal": 49,
-      "location": 16
-    },
-    {
-      "type": "release",
-      "nominal": 95,
-      "location": 10
-    },
-    {
-      "type": "release",
-      "nominal": 74,
-      "location": 0
-    },
-    {
-      "type": "release",
-      "nominal": 78,
-      "location": 0
-    },
-    {
-      "type": "release",
-      "nominal": 41,
-      "location": 8
-    },
-    {
-      "type": "release",
-      "nominal": 77,
-      "location": 23
-    },
-    {
-      "type": "release",
-      "nominal": 83,
-      "location": 14
-    },
-    {
-      "type": "release",
-      "nominal": 12,
-      "location": 20
-    },
-    {
-      "type": "release",
-      "nominal": 52,
-      "location": 14
+      "nominal": 4,
+      "location": 12,
+      "releaseDaysAgo": 0,
+      "releaseString": "today",
+      "minutesAgo": 1949,
+      "timeAgo": "1d"
     }
   ]
 }

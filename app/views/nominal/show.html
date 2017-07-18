@@ -37,9 +37,13 @@
         <dt>Gender:</dt>
         <dd>{{gender}}</dd>
 
-        {% if nominal.incarceration %}
+        {% if nominal.incarceration.status == "incarcerated" %}
           <dt>Currently incarcerated at:</dt>
-            <dd><a href="/prison/{{nominal.incarceration}}">HMP {{prisonName}}</a></dd>
+            <dd><a href="/prison/{{nominal.incarceration.prisonIndex}}">HMP {{prisonName}}</a></dd>
+        {% endif%}
+        {% if nominal.incarceration.status == "released" %}
+          <dt>Released from:</dt>
+            <dd><a href="/prison/{{nominal.incarceration.prisonIndex}}">HMP {{prisonName}}</a> {{releaseDaysAgo}}</dd>
         {% endif%}
 
         <dt>Offender ID:</dt>

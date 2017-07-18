@@ -28,6 +28,19 @@ var nominal = {
     return '';
   },
 
+  showReleaseDaysAgo: function(incarcerationObject) {
+    var string = '(' + incarcerationObject.daysAgo + ' days ago)';
+
+    if(incarcerationObject.daysAgo === 1) {
+      string = '(Yesterday)';
+    }
+    if(incarcerationObject.daysAgo === 0) {
+      string = '(Today)';
+    }
+
+    return string;
+  },
+
   getAffiliations: function(affiliationsIn) {
     var affiliations = [];
 
@@ -47,7 +60,7 @@ var nominal = {
     var nominalsInPrison = [];
 
     nominals.forEach(function(nominal) {
-      if(nominal.incarceration && nominal.incarceration == prisonIndex) {
+      if(nominal.incarceration.status === 'incarcerated' && nominal.incarceration.prisonIndex == prisonIndex) {
         nominalsInPrison.push(nominal);
       }
     });
@@ -119,8 +132,8 @@ var nominal = {
   },
 
   ocgIds: function(nominal){
-    return nominal.affiliations.map(function(affiliation){ 
-      return arrayUtils.forceToArray(affiliation)[0]; 
+    return nominal.affiliations.map(function(affiliation){
+      return arrayUtils.forceToArray(affiliation)[0];
     });
   },
 

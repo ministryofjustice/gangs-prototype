@@ -23,7 +23,6 @@ var updateTools = {
       for(var x = 0; x < quantityPerType; x++) {
         displayUpdates[type].push(self.formatUpdate(updates[type][x], x));
       }
-      displayUpdates[type] = self.addTimeStamps(displayUpdates[type]);
     }
 
     return displayUpdates;
@@ -42,6 +41,8 @@ var updateTools = {
         inner += self.link(nominals[update.nominal].given_names + ' ' + nominals[update.nominal].family_name, 'nominal', update.nominal);
         inner += ' was released from ';
         inner += self.link(prisons[update.location], 'prison', update.location);
+        inner += ' ';
+        inner += update.releaseString;
         break;
       case 'tension-change':
         inner += 'Tension between ';
@@ -64,7 +65,8 @@ var updateTools = {
 
     return {
       updateDisplay: inner,
-      updateType: update.type
+      updateType: update.type,
+      timeAgo: update.timeAgo
     };
   },
 
@@ -74,40 +76,6 @@ var updateTools = {
 
   link: function(text, type, index) {
     return '<a href="/' + type + '/' + index + '">' + text + '</a>'
-  },
-
-  addTimeStamps: function(updates) {
-    // generate random timestamps for display each time, so that they remain
-    // recent even when the updates aren't regenerated
-
-    var self = this,
-        minutesArray = [],
-        minMinutes = 1,
-        maxMinutes = 2000;
-
-    for(var x = 0; x < updates.length; x++) {
-      minutesArray.push(Math.floor(Math.random() * (maxMinutes - minMinutes)) + minMinutes);
-    }
-
-    minutesArray.sort(function(a, b) {
-      return a - b;
-    });
-
-    for(var x = 0; x < updates.length; x++) {
-      updates[x].timeAgo = self.getTimeAgo(minutesArray[x]);
-    }
-
-    return updates;
-  },
-
-  getTimeAgo: function(minutesAgo) {
-    if(minutesAgo < 60) {
-      return minutesAgo + 'm';
-    } else if(minutesAgo < 1440) {
-      return Math.floor(minutesAgo / 60) + 'h';
-    } else {
-      return Math.floor(minutesAgo / 1440) + 'd';
-    }
   }
 };
 

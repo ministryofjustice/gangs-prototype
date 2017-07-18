@@ -16,7 +16,7 @@ var data = {
   tensions: []
 },
     numOcgs = quantities.ocgs,
-    numTensions = quantities.tensions,
+    numTensions = (quantities.tensions > quantities.updatesPerType ? quantities.tensions : quantities.updatesPerType),
     tensionLevels = ['high', 'medium', 'low'];
 
 function init() {
@@ -60,10 +60,10 @@ function writeTensionsFile() {
 
 function createTension() {
   var ocg1 = Math.floor(Math.random() * numOcgs),
-      ocg2 = Math.floor(Math.random() * numOcgs);
+      ocg2 = ocg1 + (Math.floor(Math.random() * 5) + 5);
 
-  if(ocg1 === ocg2) {
-    return false;
+  if(ocg2 >= numOcgs) {
+    ocg2 -= numOcgs;
   }
 
   var beef = [ocg1, ocg2];

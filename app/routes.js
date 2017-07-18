@@ -76,7 +76,8 @@ router.get('/nominal/:index', function(req, res) {
     gender: nominalTools.expandGender(nominal.gender),
     age: nominalTools.getAge(nominal.dob),
     affiliations: nominalTools.getAffiliations(nominal.affiliations),
-    prisonName: prisons[nominal.incarceration]
+    releaseDaysAgo: nominalTools.showReleaseDaysAgo(nominal.incarceration),
+    prisonName: nominal.prison_name
   });
 });
 

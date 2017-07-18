@@ -14,7 +14,7 @@ var arrayUtils = require('./app/modules/array-utils.js');
 
 var updates = [];
 if(fs.existsSync('./app/assets/data/updates.json')) {
-  updates = require('./app/assets/data/updates.json').updateEvents;
+  updates = require('./app/assets/data/updates.json');
 }
 var ocgs = [];
 if(fs.existsSync('./app/assets/data/dummy-ocgs.json')) {
@@ -27,8 +27,6 @@ if (!nodeModulesExists) {
   console.error('ERROR: Node module folder missing. Try running `npm install`');
   process.exit(0);
 }
-
-
 
 
 var data = {
@@ -60,7 +58,7 @@ function init() {
         }
       );
     nominal.incarceration = getIncarcerationStatus(x);
-    nominal.prison_name = ( nominal.incarceration ? prisons[nominal.incarceration] : '' );
+    nominal.prison_name = ( nominal.incarceration.status ? prisons[nominal.incarceration.prisonIndex] : '' );
 
     data.nominals.push(nominal);
   }
@@ -167,25 +165,37 @@ function generateAffiliations() {
 }
 
 function getIncarcerationStatus(nominalIndex) {
-  var nominalPrison = false;
+  var incarcerationUpdate = {
+    status: null
+  };
 
   if(Math.random() < 0.2) {
-    nominalPrison = Math.floor(Math.random() * prisons.length);
+    incarcerationUpdate.status = 'incarcerated';
+    incarcerationUpdate.prisonIndex = Math.floor(Math.random() * prisons.length);
   }
 
-  // check updates file (if it exists yet) to see if nominal is listed as incarcerated
-  if(updates && updates.length) {
-    updates.forEach(function(update) {
-      if(update.type === 'incarceration' && update.nominal == nominalIndex) {
-        nominalPrison = update.location;
-      }
-      if(update.type === 'release' && update.nominal == nominalIndex) {
-        nominalPrison = false;
+  // check updates file (if it exists yet) to see if nominal is listed as incarcerated or released
+
+  if(updates && updates.release) {
+    updates.release.forEach(function(update) {
+      if(update.nominal == nominalIndex) {
+        incarcerationUpdate.prisonIndex = update.location;
+        incarcerationUpdate.status = 'released';
+        incarcerationUpdate.daysAgo = update.releaseDaysAgo;
       }
     });
   }
 
-  return nominalPrison;
+  if(updates && updates.incarceration) {
+    updates.incarceration.forEach(function(update) {
+      if(update.nominal == nominalIndex) {
+        incarcerationUpdate.prisonIndex = update.location;
+        incarcerationUpdate.status = 'incarcerated';
+      }
+    });
+  }
+
+  return incarcerationUpdate;
 }
 
 function leadingZero(n) {
