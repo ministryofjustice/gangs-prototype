@@ -4,6 +4,7 @@ var faker = require('faker');
 var unique = require('array-unique');
 var humanize = require('humanize');
 var quantities = require('./app/sources/quantities.json');
+var policeForces = require('./app/sources/police-forces.json');
 var randomPicker = require('./app/modules/random-picker.js');
 var ocgs = require('./app/assets/data/dummy-ocgs.json').ocgs;;
 
@@ -68,48 +69,7 @@ function dateWithinDaysOfNow(days){
 }
 
 function randomPoliceForce() {
-  var forces = [
-    "Avon and Somerset Constabulary",
-    "Bedfordshire Police",
-    "Cambridgeshire Constabulary",
-    "Cheshire Constabulary",
-    "City of London Police",
-    "Cleveland Police",
-    "Cumbria Constabulary",
-    "Derbyshire Constabulary",
-    "Devon & Cornwall Police",
-    "Dorset Police",
-    "Durham Constabulary",
-    "Essex Police",
-    "Gloucestershire Constabulary",
-    "Greater Manchester Police",
-    "Hampshire Constabulary",
-    "Hertfordshire Constabulary",
-    "Humberside Police",
-    "Kent Police",
-    "Lancashire Constabulary",
-    "Leicestershire Police",
-    "Lincolnshire Police",
-    "Merseyside Police",
-    "Metropolitan Police Service",
-    "Norfolk Constabulary",
-    "North Yorkshire Police",
-    "Northamptonshire Police",
-    "Northumbria Police",
-    "Nottinghamshire Police",
-    "South Yorkshire Police",
-    "Staffordshire Police",
-    "Suffolk Constabulary",
-    "Surrey Police",
-    "Sussex Police",
-    "Thames Valley Police",
-    "Warwickshire Police",
-    "West Mercia Police",
-    "West Midlands Police",
-    "West Yorkshire Police",
-    "Wiltshire Police"
-  ];
-  return randomPicker.randomElement(forces);
+  return randomPicker.randomElement(policeForces);
 }
 
 function randomAssessment(){
