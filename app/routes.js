@@ -6,6 +6,7 @@ var nav = require('./modules/navigation.js');
 var nominalTools = require('./modules/nominal-tools.js');
 var ocgTools = require('./modules/ocg-tools.js');
 var ocgThreatAssessmentTools = require('./modules/ocg-threat-assessment-tools.js');
+var nominalThreatAssessmentTools = require('./modules/nominal-threat-assessment-tools.js');
 var updateTools = require('./modules/update-tools.js');
 var listTools = require('./modules/list-tools.js');
 
@@ -70,6 +71,8 @@ router.get('/nominal/tensions', function(req, res){
 
 router.get('/nominal/:index', function(req, res) {
   var nominal = nominals[req.params.index];
+  var nominalThreatAssessments = nominalThreatAssessmentTools.search({nominal_index: req.params.index});
+
   res.render('nominal/show', {
     next: nav.next(req.params.index, nominals.length),
     prev: nav.prev(req.params.index, nominals.length),
@@ -78,7 +81,8 @@ router.get('/nominal/:index', function(req, res) {
     age: nominalTools.getAge(nominal.dob),
     affiliations: nominalTools.getAffiliations(nominal.affiliations),
     releaseDaysAgo: nominalTools.showReleaseDaysAgo(nominal.incarceration),
-    prisonName: nominal.prison_name
+    prisonName: nominal.prison_name,
+    threatAssessments: nominalThreatAssessments
   });
 });
 

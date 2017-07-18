@@ -101,10 +101,33 @@
 
       </dl>
     </div>
-
-
   </div>
 
+  <div class="grid-row">
+    <div class="column-full threat-assessments-column">
+      <h2 class="heading-medium detail-subheading ">Threat assessments</h2>
+
+      {% if threatAssessments.length %}
+        {% for assessment in threatAssessments %}
+          <details>
+            <summary><span class="summary">{{assessment.timestamp_for_display}} - {{assessment.assessment_type}}</span></summary>
+            <div class="panel panel-border-narrow">
+              <dl class="detail-aligned">
+              {% for key, value in assessment.assessment %}
+                <dt>{{ key }}</dt>
+                  <dd>{{ value }}</dd>
+              {% endfor %}
+              </dl>
+              <p class="assessor">Assessed by: {{ assessment.assessed_by }}, {{assessment.police_force}}</p>
+            </div>
+          </details>
+        {% endfor %}
+      {% else %}
+        <br style="clear: both;"/>
+        <p class="none">None</p>
+      {% endif %}
+    </div>
+  </div>
 </main>
 
 {% endblock %}
