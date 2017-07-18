@@ -1,6 +1,15 @@
 
-  <form action="/nominal/search/results" method="POST" id="nominal-search">
-    <div class="form-section">
+  <form action="/nominal/search/results" method="POST" id="nominal-search" enctype="multipart/form-data">
+    <fieldset class="form-section">
+      <legend>Search by Face</legend>
+      <p>Upload an image to match against mugshots</p>
+      <div class="form-group">
+        <label for="image" class="form-label">Your image file:</label>
+        <input type="file" name="image" id="image" />
+        <input type="submit" class="button" value="Search" />
+      </div>
+    </fieldset>
+    <fieldset class="form-section">
       <div class="form-group">
         <h3>Names</h3>
         <fieldset class="inline">
@@ -116,7 +125,7 @@
       {% if 'given_names' in data %}
         <a class="clear-search" href="/nominal/search/new">Clear search</a>
       {% endif %}
-    </div>
+    </fieldset>
   </form>
 
 <script src="/public/javascripts/validation.js"></script>
