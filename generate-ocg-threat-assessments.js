@@ -59,7 +59,7 @@ function generatePoliceOfficerTitle(){
 
 function dateWithinDaysOfNow(days){
   var date = new Date();
-  date.setDate(date.getDate() + days);
+  date.setDate(date.getDate() + (Math.random() * days));
   return date;
 }
 
