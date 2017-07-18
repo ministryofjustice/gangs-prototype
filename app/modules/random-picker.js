@@ -23,6 +23,10 @@ var randomPicker = {
     return str;
   },
 
+  randomElement: function(array) {
+    return this.rnd(array);
+  },
+
   // return a new array containing elements from 
   // the given array, with each element having 
   // the given probability of being added
@@ -37,7 +41,7 @@ var randomPicker = {
   // that array N times, removing the element each time
   randomNElements: function(arr, n){
     var selectedIndices = [], possibleIndices = [];
-    for(var i=0; i<arr.length; i++){ possibleIndices.push(i); }
+    for(var i=0; i < arr.length; i++){ possibleIndices.push(i); }
 
     for(var count=0; count < n; count++){
       var thisIndex = this.rndIndex(possibleIndices);
