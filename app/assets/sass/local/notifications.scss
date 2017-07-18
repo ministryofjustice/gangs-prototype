@@ -1,0 +1,49 @@
+.demo-notification {
+  @include core-14;
+  position: absolute;
+  width: 300px;
+  padding: 12px 24px 12px 12px;
+  background: $white;
+  border: 1px solid $grey-2;
+  box-shadow: 4px 4px 4px 0px rgba(191, 193, 195, 0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+
+  right: -330px;
+  top: 20px;
+
+  &.highlight {
+    animation: pulse 3000ms ease;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+  }
+
+  .notification-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 22px;
+    padding: 3px 4px 6px 5px;
+    color: $grey-1;
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+
+    &:hover {
+      opacity: 0.9;
+      background-color: $grey-3;
+    }
+  }
+}
+
+@keyframes pulse {
+  100% {
+    background-color: $white;
+  }
+  0% {
+    background-color: #ff6;
+  }
+}

@@ -1,6 +1,6 @@
 (function() {
 
-  var SelectUserType = {
+  var selectUserType = {
     radioName: 'select-user-type',
     emailSuffix: '@example.com',
 
@@ -19,5 +19,5 @@
     }
   };
 
-  SelectUserType.init();
+  selectUserType.init();
 })();
