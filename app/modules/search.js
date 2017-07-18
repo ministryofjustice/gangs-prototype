@@ -13,11 +13,17 @@ var search = {
     for( key in params ){
       if( params[key] ){
         if( key in object ){
-          var tokens = params[key].toLowerCase().split(/[ ,]+/);
-          var value = object[key].toString().toLowerCase();
+          if( typeof(object[key]) == 'string') {
+            var tokens = params[key].toLowerCase().split(/[ ,]+/);
+            var value = object[key].toString().toLowerCase();
 
-          for( var i=0; i < tokens.length; i++ ){
-            if( value.indexOf(tokens[i]) == -1 ){
+            for( var i=0; i < tokens.length; i++ ){
+              if( value.indexOf(tokens[i]) == -1 ){
+                return false;
+              }
+            }
+          } else {
+            if( params[key] != object[key] ){ 
               return false;
             }
           }
