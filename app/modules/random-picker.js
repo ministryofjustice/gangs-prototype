@@ -1,6 +1,10 @@
 var randomPicker = {
   rnd: function(array) {
-    return array[Math.floor(Math.random() * array.length)];
+    return array[this.rndIndex(array)];
+  },
+
+  rndIndex: function(array) {
+    return Math.floor(Math.random() * array.length);
   },
 
   rndDigits: function(chars) {
@@ -26,6 +30,22 @@ var randomPicker = {
     return arr.filter(function(e){
       return Math.random() < probability;
     });
+  },
+
+  // Populate an initial array of all the possible
+  // indices, and then choose a random element from
+  // that array N times, removing the element each time
+  randomNElements: function(arr, n){
+    var selectedIndices = [], possibleIndices = [];
+    for(var i=0; i<arr.length; i++){ possibleIndices.push(i); }
+
+    for(var count=0; count < n; count++){
+      var thisIndex = this.rndIndex(possibleIndices);
+      selectedIndices.push(possibleIndices[thisIndex]);
+      possibleIndices.splice(thisIndex, 1);
+    }
+
+    return selectedIndices.map(function(i){ return arr[i]; });
   }
 }
 
