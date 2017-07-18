@@ -60,6 +60,12 @@ router.get('/updates/:type', function (req, res) {
 
 
 // nominals
+
+
+router.get('/nominal/', function(req, res) {
+  res.redirect('/nominal/search/new');
+});
+
 router.get('/nominal/rand/', function(req, res) {
   var n = Math.floor(Math.random() * nominals.length);
   res.redirect('/nominal/' + n);
@@ -99,6 +105,7 @@ router.get('/nominal/', function(req, res) {
   res.redirect('/nominal/search/new');
 });
 
+
 // nominal search-related routes
 router.get('/nominal/search/', function(req, res) {
   res.redirect('/nominal/search/new');
@@ -114,6 +121,7 @@ router.get('/nominal/search/new', function(req, res) {
     search: {}
   });
 });
+
 router.get('/nominal/search/results', function(req, res) {
   var results = nominalTools.search(req.session.data);
   var page=req.query['page'] || 1;
@@ -140,6 +148,20 @@ router.get('/simple_search_action', function(req,res){
   res.redirect( '/' + req.session.data['search-scope'] + '/search/results');
 });
 
+// put this last, so that it doesn't try to find
+// nominals with index 'search', etc
+router.get('/nominal/:index', function(req, res) {
+  var nominal = nominals[req.params.index];
+  res.render('nominal/show', {
+    next: nav.next(req.params.index, nominals.length),
+    prev: nav.prev(req.params.index, nominals.length),
+    nominal: nominal,
+    gender: nominalTools.expandGender(nominal.gender),
+    age: nominalTools.getAge(nominal.dob),
+    affiliations: nominalTools.getAffiliations(nominal.affiliations),
+    prisonName: prisons[nominal.incarceration]
+  });
+});
 
 
 // ocgs
