@@ -5,6 +5,7 @@ var mugshots = require('./modules/mugshot.js');
 var nav = require('./modules/navigation.js');
 var nominalTools = require('./modules/nominal-tools.js');
 var ocgTools = require('./modules/ocg-tools.js');
+var ocgThreatAssessmentTools = require('./modules/ocg-threat-assessment-tools.js');
 var updateTools = require('./modules/update-tools.js');
 var listTools = require('./modules/list-tools.js');
 
@@ -123,14 +124,16 @@ router.get('/ocg/rand/', function(req, res) {
 router.get('/ocg/:index', function(req, res) {
   var ocg = ocgs[req.params.index],
       ocgNominals = ocgTools.getNominals(req.params.index),
-      tensions = ocgTools.getOcgTensions(req.params.index);
+      tensions = ocgTools.getOcgTensions(req.params.index),
+      ocgThreatAssessments = ocgThreatAssessmentTools.search({ocg_index: req.params.index});
 
   res.render('ocg/show', {
     next: nav.next(req.params.index, ocgs.length),
     prev: nav.prev(req.params.index, ocgs.length),
     ocg: ocg,
     nominals: ocgNominals,
-    tensions: tensions
+    tensions: tensions,
+    threatAssessments: ocgThreatAssessments
   });
 });
 

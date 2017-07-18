@@ -2,6 +2,22 @@ dl {
 
 }
 
+.panel {
+  dl {
+    overflow: hidden;
+    :first-child {
+      margin-top: 10px;
+    }
+  }
+
+  .assessor {
+    clear: both;
+    font-style: italic;
+    margin-top: 2em;
+    text-align: right;
+  }
+}
+
 dt {
   float: left;
   clear: both;
@@ -36,6 +52,12 @@ dd {
   dd {
     padding-left: 20px;
   }
+}
+
+.threat-assessments-column {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .detail-aligned {
