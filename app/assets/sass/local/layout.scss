@@ -39,6 +39,12 @@
       padding-left: 20px;
       padding-right: 20px;
 
+      &.column-two-thirds {
+        width: 66%;
+      }
+      &.column-one-half {
+        width: 50%;
+      }
       &.column-one-third {
         width: 33.33333%;
       }
@@ -54,6 +60,10 @@
 
     h2 {
       margin-top: 0;
+    }
+
+    p {
+      margin: 2em 0 0;
     }
   }
 }

@@ -1,26 +1,32 @@
 <div class="grid-row updates-columns">
 
-  <div class="column column-one-third">
+  <div class="column column-one-half">
     <h2 class="heading-medium">Incarcerations</h2>
-    {% set updates = updatesToDisplay.incarceration %}
+    {% set updateType = 'incarceration' %}
     {% include 'includes/updates_list.html' %}
+    {% include 'includes/updates_show_more.html' %}
   </div>
-  <!--
-    <div class="column column-one-third">
-      <h2 class="heading-medium">Releases</h2>
-      {% set updates = updatesToDisplay.release %}
-      {% include 'includes/updates_list.html' %}
-    </div>
-   -->
-  <div class="column column-one-third">
+  <div class="column column-one-half">
+    <h2 class="heading-medium">Releases</h2>
+    {% set updateType = 'release' %}
+    {% include 'includes/updates_list.html' %}
+    {% include 'includes/updates_show_more.html' %}
+  </div>
+
+</div>
+<div class="grid-row updates-columns">
+
+  <div class="column column-one-half">
     <h2 class="heading-medium">Affiliations</h2>
-    {% set updates = updatesToDisplay.affiliation %}
+    {% set updateType = 'affiliation' %}
     {% include 'includes/updates_list.html' %}
+    {% include 'includes/updates_show_more.html' %}
   </div>
-  <div class="column column-one-third">
+  <div class="column column-one-half">
     <h2 class="heading-medium">Tensions</h2>
-    {% set updates = updatesToDisplay.tension %}
+    {% set updateType = 'tension' %}
     {% include 'includes/updates_list.html' %}
+    {% include 'includes/updates_show_more.html' %}
   </div>
 
 </div>

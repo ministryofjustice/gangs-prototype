@@ -40,10 +40,15 @@ router.get('/home', function (req, res) {
   });
 });
 
-// all updates page
-router.get('/updates', function (req, res) {
+
+
+// updates pages per type
+router.get('/updates/:type', function (req, res) {
+  var updateType = req.params.type;
   var updatesToDisplay = updateTools.updatesForDisplay();
-  res.render('updates/index', {
+
+  res.render('updates/show', {
+    updateType: updateType,
     updatesToDisplay: updatesToDisplay
   });
 });

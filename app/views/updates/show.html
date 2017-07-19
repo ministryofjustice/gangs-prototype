@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% set pageTitle = "Recent " + updateType + "s" %}
+{% block page_title %}
+  {{pageTitle}}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% include 'includes/phase_banner_prototype.html' %}
+
+  <h1 class="heading-xlarge detail-heading">
+    <span class="heading-label">Updates</span>
+    <span class="heading-detail">{{pageTitle}}</span>
+  </h1>
+
+  <div class="grid-row updates-columns">
+    <div class="column column-two-thirds">
+      {% include 'includes/updates_list.html' %}
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
