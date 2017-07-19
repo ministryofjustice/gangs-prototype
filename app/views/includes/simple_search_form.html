@@ -3,13 +3,13 @@
   <fieldset>
     <div class="form-group">
       <select name="search-scope" class="form-control">
-      {% for scope in ['Nominals', 'OCGs'] %}
-        <option value='{{ scope | lower }}'>{{ scope }}</option>
+      {% for scope in ['Nominal', 'OCG'] %}
+        <option value='{{ scope | lower }}'>{{ scope }}s</option>
       {% endfor %}
       </select>
-      <label class="visually-hidden" for="q">Search for</label>
+      <label class="visually-hidden" for="search_text">Search for</label>
       <div class="input-wrapper">
-        <input type="text" name="q" id="q" placeholder="search" class="form-control" value="{{data['q']}}" />
+        <input type="text" name="search_text" id="search_text" placeholder="search" class="form-control" value="{{data['q']}}" />
         <input type="submit" class="button-search form-control" value="" />
       </div>
     </div>

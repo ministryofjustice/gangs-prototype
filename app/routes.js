@@ -117,6 +117,10 @@ router.get('/nominal/search/results', function(req, res) {
   });
 });
 
+router.get('/simple_search_action', function(req,res){
+  res.redirect( '/' + req.session.data['search-scope'] + '/search/results');
+});
+
 
 
 // ocgs
