@@ -4,5 +4,7 @@
   "tensions": 10,
   "updatesPerType": 15,
   "ocgsWithThreatAssessments": 12,
-  "maxThreatAssessmentsPerOcg": 5
+  "maxThreatAssessmentsPerOcg": 5,
+  "nominalsWithThreatAssessments": 65,
+  "maxThreatAssessmentsPerNominal": 5
 }
