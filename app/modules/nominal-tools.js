@@ -72,7 +72,7 @@ var nominal = {
     var probationers = [];
 
     return nominals.filter( function(nominal){
-      return nominal.incarceration == false && nominal.nomis_id;
+      return nominal.incarceration.status == null && nominal.nomis_id;
     });
   },
 
