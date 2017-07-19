@@ -3,11 +3,17 @@ var ocgs = require('../assets/data/dummy-ocgs.json').ocgs;
 var nominals = require('../assets/data/dummy-nominals.json').nominals;
 var tensions = require('../assets/data/ocg-tensions.json').tensions;
 var nominalRoles = require('../../app/sources/roles.json').roles;
+
 var search = require('./search.js');
+var ocgThreatAssessmentTools = require('./ocg-threat-assessment-tools.js');
 
 var ocg = {
   get: function(index) {
     return ocgs[index];
+  },
+
+  getAll: function() {
+    return ocgs;
   },
   
   getNominals: function(ocgIndex) {
@@ -69,6 +75,21 @@ var ocg = {
 
   search: function(params) {
     var filtered_ocgs = search.filter(ocgs, params);
+
+    if( params['assessment_fields'] ){
+      var assessmentFilter = ocgThreatAssessmentTools.mapFieldsAndValuesToSearchParams(params['assessment_fields'], params['assessment_field_values'])
+      filtered_ocgs = filtered_ocgs.filter( function(ocg){
+        var ocgAssessments = ocgThreatAssessmentTools.search({"ocg_index": ocg.index});
+        for( var assessment of ocgAssessments ){
+          if( ocgThreatAssessmentTools.assessmentMatches(assessment, assessmentFilter) ){
+            return true;
+          } else {
+            return false;
+          }
+        }
+        return false;
+      });
+    }
     return filtered_ocgs;
   }
 

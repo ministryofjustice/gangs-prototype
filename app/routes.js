@@ -161,10 +161,6 @@ router.get('/ocg/search/', function(req, res) {
   res.redirect('/ocg/search/new');
 });
 router.get('/ocg/search/new', function(req, res) {
-
-  console.log("ocgAssessmentTypes = " + JSON.stringify(ocgAssessmentTypes));
-  console.log("ocgAssessmentFields = " + JSON.stringify(ocgAssessmentFields));
-
   res.render('ocg/search/new', {
     ocgAssessmentFields: ocgAssessmentFields,
     ocgAssessmentTypes: ocgAssessmentTypes,
