@@ -37,6 +37,19 @@ var search = {
     return array.map( function(element, index){ 
       element['index'] = index; return element; 
     });
+  },
+
+  generateSearchText: function(object) {
+    var search_text = [];
+    for( var field in object ){
+      if( typeof(object[field]) != 'number' ){
+        var text = object[field].toString();
+        if( text != '[object Object]' ){
+          search_text.push( text );
+        }
+      }
+    }
+    return search_text.toString();
   }
 }
 

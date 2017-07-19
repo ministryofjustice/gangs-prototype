@@ -6,6 +6,7 @@ var quantities = require('./app/sources/quantities.json');
 var ocgIdentifyingFeatures = require('./app/sources/ocg-identifying-features.json');
 var ocgActivities = require('./app/sources/ocg-activities.json');
 var randomPicker = require('./app/modules/random-picker.js');
+var searchTools = require('./app/modules/search.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -39,6 +40,9 @@ function init() {
     ocg.grits_id = generateGRITSID();
     ocg.ocgm_urn = generateOCGMURN();
     ocg.known_activities = generateOCGActivities();
+
+    ocg.search_text = searchTools.generateSearchText(ocg);
+
     data.ocgs.push(ocg);
   }
 

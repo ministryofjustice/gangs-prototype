@@ -11,6 +11,7 @@ var mugshots = require('./app/modules/mugshot.js');
 var quantities = require('./app/sources/quantities.json');
 var randomPicker = require('./app/modules/random-picker.js');
 var arrayUtils = require('./app/modules/array-utils.js');
+var searchTools = require('./app/modules/search.js');
 
 var updates = [];
 if(fs.existsSync('./app/assets/data/updates.json')) {
@@ -59,6 +60,8 @@ function init() {
       );
     nominal.incarceration = getIncarcerationStatus(x);
     nominal.prison_name = ( nominal.incarceration.status ? prisons[nominal.incarceration.prisonIndex] : '' );
+
+    nominal.search_text = searchTools.generateSearchText(nominal);
 
     data.nominals.push(nominal);
   }
