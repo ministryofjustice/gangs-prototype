@@ -7,7 +7,8 @@ var quantities = require('./app/sources/quantities.json');
 var randomPicker = require('./app/modules/random-picker.js');
 var dateTools = require('./app/modules/date-tools.js');
 var policeTools = require('./app/modules/police-tools.js');
-var ocgs = require('./app/assets/data/dummy-ocgs.json').ocgs;;
+var ocgs = require('./app/assets/data/dummy-ocgs.json').ocgs;
+var ocgmAssessmentFields = require('./app/sources/ocg-assessment-fields.json');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -56,62 +57,28 @@ function generateRandomOcgThreatAssessment(ocg){
 }
 
 function randomAssessment(){
-  var types = ['OCGM', 'DRV', 'Gang Network Threat'];
-  var assessments = [
-    ocgmAssessment,
-    drvAssessment,
-    gangNetworkThreat
-  ];
-  var index = Math.floor(Math.random() * 3);
+  var types = ['ocgm', 'drv', 'gangNetworkThreat'];
+  var labels = {
+    "ocgm": 'OCGM',
+    "drv": 'DRV',
+    "gangNetworkThreat": 'Gang Network Threat'
+  };
+
+  var chosenType = types[Math.floor(Math.random() * 3)];
+
   return {
-    'type': types[index],
-    'values': assessments[index].call()
+    'type': labels[chosenType],
+    'values': generateAssessmentFields(chosenType)
   };
 }
 
-function ocgmAssessment(){
-  var values = ['High', 'Medium', 'Low'];
-  return {
-    "Violent criminal activity": randomPicker.randomElement(values),
-    "Drug activity": randomPicker.randomElement(values),
-    "Fraud and financial crime": randomPicker.randomElement(values),
-    "Organised theft": randomPicker.randomElement(values),
-    "Commodity importation, counterfeiting or illegal supply": randomPicker.randomElement(values),
-    "Sexual offences": randomPicker.randomElement(values),
-    "Organised immigration crime": randomPicker.randomElement(values),
-    "Environmental crime": randomPicker.randomElement(values),
-    "Cash flow/financial worth": randomPicker.randomElement(values),
-    "Multiple enterprises (criminal or legitimate)": randomPicker.randomElement(values),
-    "Links to other OCGs": randomPicker.randomElement(values),
-    "Geographical scope": randomPicker.randomElement(values),
-    "Cohesion": randomPicker.randomElement(values),
-    "Infiltration": randomPicker.randomElement(values),
-    "Expertise": randomPicker.randomElement(values),
-    "Tactical awareness": randomPicker.randomElement(values)
+function generateAssessmentFields(type){
+  var assessment = {};
+  for( var field in ocgmAssessmentFields[type] ){
+    console.log('field = ' + field)
+    assessment[field] = randomPicker.randomElement(ocgmAssessmentFields[type][field]);
   }
-}
-
-function drvAssessment(){
-  var values = ['Yes', 'No'];
-  return {
-    'Has access to weapons (uncorroborated within 18mths)': randomPicker.randomElement(values),
-    'Has access to weapons (confirmed within 18mths)': randomPicker.randomElement(values),
-    'Serious physical violence (evidenced within 8wks)': randomPicker.randomElement(values)
-  }
-}
-
-function gangNetworkThreat(){
-  var values = ['Yes', 'No'];
-  return {
-    'Multiple lines within county': randomPicker.randomElement(values),
-    'Multiple lines within region': randomPicker.randomElement(values),
-    'Multiple lines nationally': randomPicker.randomElement(values),
-    'Confirmed link to mapped gang/OCG': randomPicker.randomElement(values),
-    'Collaboration with other networks': randomPicker.randomElement(values),
-    'Tactical awareness': randomPicker.randomElement(values),
-    'Rival networks operating in force area': randomPicker.randomElement(values),
-    'Has been subject to robbery (last 8 weeks)': randomPicker.randomElement(values)
-  }
+  return assessment;
 }
 
 init();

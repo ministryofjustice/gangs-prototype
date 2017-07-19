@@ -1,697 +1,485 @@
 {
   "ocgThreatAssessments": [
     {
-      "ocg_index": 10,
-      "assessed_by": "DC Toni Witting",
-      "police_force": "North Yorkshire Police",
-      "timestamp": "2017-01-09T16:52:17.467Z",
-      "timestamp_for_display": "9th Jan 2017",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "High",
-        "Drug activity": "High",
-        "Fraud and financial crime": "High",
-        "Organised theft": "High",
-        "Commodity importation, counterfeiting or illegal supply": "Medium",
-        "Sexual offences": "Medium",
-        "Organised immigration crime": "High",
-        "Environmental crime": "High",
-        "Cash flow/financial worth": "Low",
-        "Multiple enterprises (criminal or legitimate)": "Low",
-        "Links to other OCGs": "Medium",
-        "Geographical scope": "Low",
-        "Cohesion": "Medium",
-        "Infiltration": "High",
-        "Expertise": "High",
-        "Tactical awareness": "Low"
-      }
-    },
-    {
-      "ocg_index": 10,
-      "assessed_by": "DCI Phoebe Tremblay",
-      "police_force": "Bedfordshire Police",
-      "timestamp": "2015-12-23T06:11:19.879Z",
-      "timestamp_for_display": "23rd Dec 2015",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "Yes",
-        "Multiple lines within region": "No",
-        "Multiple lines nationally": "No",
-        "Confirmed link to mapped gang/OCG": "Yes",
-        "Collaboration with other networks": "Yes",
-        "Tactical awareness": "Yes",
-        "Rival networks operating in force area": "No",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 19,
-      "assessed_by": "DI Dedric O'Connell",
-      "police_force": "Merseyside Police",
-      "timestamp": "2017-04-10T03:47:55.607Z",
-      "timestamp_for_display": "10th Apr 2017",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "Low",
-        "Drug activity": "Low",
-        "Fraud and financial crime": "Medium",
-        "Organised theft": "Medium",
-        "Commodity importation, counterfeiting or illegal supply": "Low",
-        "Sexual offences": "High",
-        "Organised immigration crime": "High",
-        "Environmental crime": "High",
-        "Cash flow/financial worth": "Medium",
-        "Multiple enterprises (criminal or legitimate)": "High",
-        "Links to other OCGs": "Low",
-        "Geographical scope": "High",
-        "Cohesion": "Low",
-        "Infiltration": "Low",
-        "Expertise": "High",
-        "Tactical awareness": "Low"
-      }
-    },
-    {
-      "ocg_index": 19,
-      "assessed_by": "DC Jovan Ruecker",
-      "police_force": "Wiltshire Police",
-      "timestamp": "2016-10-31T05:47:25.866Z",
-      "timestamp_for_display": "31st Oct 2016",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "Yes",
-        "Has access to weapons (confirmed within 18mths)": "No",
-        "Serious physical violence (evidenced within 8wks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 19,
-      "assessed_by": "DC Laron Walsh",
-      "police_force": "Nottinghamshire Police",
-      "timestamp": "2017-04-03T06:45:19.863Z",
-      "timestamp_for_display": "3rd Apr 2017",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "Yes",
-        "Multiple lines within region": "Yes",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "No",
-        "Collaboration with other networks": "No",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "No",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 19,
-      "assessed_by": "DS Gaetano Rice",
-      "police_force": "Northamptonshire Police",
-      "timestamp": "2016-04-20T13:56:33.769Z",
-      "timestamp_for_display": "20th Apr 2016",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "No",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "Yes",
-        "Collaboration with other networks": "No",
-        "Tactical awareness": "Yes",
-        "Rival networks operating in force area": "Yes",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 19,
-      "assessed_by": "DI Jaylon Fritsch",
-      "police_force": "Humberside Police",
-      "timestamp": "2016-04-12T16:43:13.688Z",
-      "timestamp_for_display": "12th Apr 2016",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "No",
-        "Multiple lines nationally": "No",
-        "Confirmed link to mapped gang/OCG": "Yes",
-        "Collaboration with other networks": "Yes",
-        "Tactical awareness": "Yes",
-        "Rival networks operating in force area": "No",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
       "ocg_index": 11,
-      "assessed_by": "DI Lelah Dicki",
-      "police_force": "West Mercia Police",
-      "timestamp": "2016-05-27T06:25:46.057Z",
-      "timestamp_for_display": "27th May 2016",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "Medium",
-        "Drug activity": "High",
-        "Fraud and financial crime": "Medium",
-        "Organised theft": "Medium",
-        "Commodity importation, counterfeiting or illegal supply": "Low",
-        "Sexual offences": "Medium",
-        "Organised immigration crime": "Low",
-        "Environmental crime": "High",
-        "Cash flow/financial worth": "High",
-        "Multiple enterprises (criminal or legitimate)": "Medium",
-        "Links to other OCGs": "High",
-        "Geographical scope": "High",
-        "Cohesion": "High",
-        "Infiltration": "High",
-        "Expertise": "Low",
-        "Tactical awareness": "Low"
-      }
-    },
-    {
-      "ocg_index": 11,
-      "assessed_by": "DC Hardy Runolfsdottir",
-      "police_force": "Derbyshire Constabulary",
-      "timestamp": "2016-03-02T20:53:09.014Z",
-      "timestamp_for_display": "2nd Mar 2016",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "High",
-        "Drug activity": "High",
-        "Fraud and financial crime": "High",
-        "Organised theft": "Medium",
-        "Commodity importation, counterfeiting or illegal supply": "Low",
-        "Sexual offences": "High",
-        "Organised immigration crime": "High",
-        "Environmental crime": "High",
-        "Cash flow/financial worth": "Medium",
-        "Multiple enterprises (criminal or legitimate)": "High",
-        "Links to other OCGs": "Medium",
-        "Geographical scope": "Low",
-        "Cohesion": "Medium",
-        "Infiltration": "High",
-        "Expertise": "Medium",
-        "Tactical awareness": "Medium"
-      }
-    },
-    {
-      "ocg_index": 5,
-      "assessed_by": "DC Chauncey Schmidt",
-      "police_force": "Cheshire Constabulary",
-      "timestamp": "2016-03-14T23:04:40.767Z",
-      "timestamp_for_display": "14th Mar 2016",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "Yes",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "No",
-        "Collaboration with other networks": "Yes",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "No",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 5,
-      "assessed_by": "DCI Verna Farrell",
-      "police_force": "South Yorkshire Police",
-      "timestamp": "2016-08-14T00:24:05.904Z",
-      "timestamp_for_display": "14th Aug 2016",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "Yes",
-        "Has access to weapons (confirmed within 18mths)": "No",
-        "Serious physical violence (evidenced within 8wks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 5,
-      "assessed_by": "DC Kira White",
-      "police_force": "Metropolitan Police Service",
-      "timestamp": "2015-04-27T15:47:40.993Z",
-      "timestamp_for_display": "27th Apr 2015",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "High",
-        "Drug activity": "Medium",
-        "Fraud and financial crime": "Low",
-        "Organised theft": "High",
-        "Commodity importation, counterfeiting or illegal supply": "Low",
-        "Sexual offences": "Low",
-        "Organised immigration crime": "Medium",
-        "Environmental crime": "Medium",
-        "Cash flow/financial worth": "Low",
-        "Multiple enterprises (criminal or legitimate)": "High",
-        "Links to other OCGs": "Medium",
-        "Geographical scope": "High",
-        "Cohesion": "Low",
-        "Infiltration": "Low",
-        "Expertise": "Medium",
-        "Tactical awareness": "High"
-      }
-    },
-    {
-      "ocg_index": 0,
-      "assessed_by": "DCI Verla Nader",
-      "police_force": "Sussex Police",
-      "timestamp": "2016-01-01T04:48:50.679Z",
-      "timestamp_for_display": "1st Jan 2016",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "Medium",
-        "Drug activity": "Medium",
-        "Fraud and financial crime": "Medium",
-        "Organised theft": "High",
-        "Commodity importation, counterfeiting or illegal supply": "High",
-        "Sexual offences": "High",
-        "Organised immigration crime": "High",
-        "Environmental crime": "Medium",
-        "Cash flow/financial worth": "High",
-        "Multiple enterprises (criminal or legitimate)": "Low",
-        "Links to other OCGs": "High",
-        "Geographical scope": "High",
-        "Cohesion": "High",
-        "Infiltration": "High",
-        "Expertise": "Low",
-        "Tactical awareness": "High"
-      }
-    },
-    {
-      "ocg_index": 0,
-      "assessed_by": "DI Flossie Gerlach",
-      "police_force": "Greater Manchester Police",
-      "timestamp": "2016-04-06T20:51:42.443Z",
-      "timestamp_for_display": "6th Apr 2016",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "Low",
-        "Drug activity": "High",
-        "Fraud and financial crime": "Medium",
-        "Organised theft": "Low",
-        "Commodity importation, counterfeiting or illegal supply": "Medium",
-        "Sexual offences": "High",
-        "Organised immigration crime": "Low",
-        "Environmental crime": "High",
-        "Cash flow/financial worth": "Low",
-        "Multiple enterprises (criminal or legitimate)": "Medium",
-        "Links to other OCGs": "High",
-        "Geographical scope": "High",
-        "Cohesion": "Medium",
-        "Infiltration": "Low",
-        "Expertise": "Medium",
-        "Tactical awareness": "High"
-      }
-    },
-    {
-      "ocg_index": 0,
-      "assessed_by": "DC Phyllis Nitzsche",
-      "police_force": "Metropolitan Police Service",
-      "timestamp": "2014-12-14T16:45:08.948Z",
-      "timestamp_for_display": "14th Dec 2014",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "Medium",
-        "Drug activity": "High",
-        "Fraud and financial crime": "Medium",
-        "Organised theft": "High",
-        "Commodity importation, counterfeiting or illegal supply": "Medium",
-        "Sexual offences": "High",
-        "Organised immigration crime": "High",
-        "Environmental crime": "High",
-        "Cash flow/financial worth": "Low",
-        "Multiple enterprises (criminal or legitimate)": "High",
-        "Links to other OCGs": "Low",
-        "Geographical scope": "Medium",
-        "Cohesion": "Medium",
-        "Infiltration": "High",
-        "Expertise": "High",
-        "Tactical awareness": "Low"
-      }
-    },
-    {
-      "ocg_index": 6,
-      "assessed_by": "DCI Jensen Gerhold",
-      "police_force": "Merseyside Police",
-      "timestamp": "2015-02-18T17:10:34.024Z",
-      "timestamp_for_display": "18th Feb 2015",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "No",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "Yes",
-        "Collaboration with other networks": "Yes",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "No",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 6,
-      "assessed_by": "DS Devonte Hyatt",
-      "police_force": "Nottinghamshire Police",
-      "timestamp": "2015-01-07T19:30:39.732Z",
-      "timestamp_for_display": "7th Jan 2015",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "Yes",
-        "Has access to weapons (confirmed within 18mths)": "Yes",
-        "Serious physical violence (evidenced within 8wks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 6,
-      "assessed_by": "DCI Pansy Bauch",
-      "police_force": "Leicestershire Police",
-      "timestamp": "2016-11-13T14:53:23.956Z",
-      "timestamp_for_display": "13th Nov 2016",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "Yes",
-        "Has access to weapons (confirmed within 18mths)": "Yes",
-        "Serious physical violence (evidenced within 8wks)": "No"
-      }
-    },
-    {
-      "ocg_index": 6,
-      "assessed_by": "DI Maxwell Brown",
-      "police_force": "Cheshire Constabulary",
-      "timestamp": "2015-12-02T12:18:43.755Z",
-      "timestamp_for_display": "2nd Dec 2015",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "No",
-        "Has access to weapons (confirmed within 18mths)": "No",
-        "Serious physical violence (evidenced within 8wks)": "No"
-      }
-    },
-    {
-      "ocg_index": 6,
-      "assessed_by": "DI Frances Bayer",
-      "police_force": "Lincolnshire Police",
-      "timestamp": "2015-08-12T01:17:11.642Z",
-      "timestamp_for_display": "12th Aug 2015",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "No",
-        "Multiple lines nationally": "No",
-        "Confirmed link to mapped gang/OCG": "Yes",
-        "Collaboration with other networks": "Yes",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "Yes",
-        "Has been subject to robbery (last 8 weeks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 6,
-      "assessed_by": "DC Fabian Russel",
-      "police_force": "North Yorkshire Police",
-      "timestamp": "2016-12-29T12:18:16.225Z",
-      "timestamp_for_display": "29th Dec 2016",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "Yes",
-        "Multiple lines within region": "No",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "No",
-        "Collaboration with other networks": "No",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "Yes",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 18,
-      "assessed_by": "DI Zora Hayes",
-      "police_force": "West Midlands Police",
-      "timestamp": "2016-07-05T18:21:30.996Z",
-      "timestamp_for_display": "5th Jul 2016",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "No",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "No",
-        "Collaboration with other networks": "No",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "Yes",
-        "Has been subject to robbery (last 8 weeks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 18,
-      "assessed_by": "DCI Lucius Tromp",
-      "police_force": "Nottinghamshire Police",
-      "timestamp": "2016-11-05T14:33:47.610Z",
-      "timestamp_for_display": "5th Nov 2016",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "No",
-        "Has access to weapons (confirmed within 18mths)": "Yes",
-        "Serious physical violence (evidenced within 8wks)": "No"
-      }
-    },
-    {
-      "ocg_index": 18,
-      "assessed_by": "DS Bethel Leannon",
-      "police_force": "Suffolk Constabulary",
-      "timestamp": "2015-10-03T02:26:33.454Z",
-      "timestamp_for_display": "3rd Oct 2015",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "Yes",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "Yes",
-        "Collaboration with other networks": "Yes",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "Yes",
-        "Has been subject to robbery (last 8 weeks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 18,
-      "assessed_by": "DC Ervin Yost",
-      "police_force": "West Midlands Police",
-      "timestamp": "2015-03-26T15:07:23.493Z",
-      "timestamp_for_display": "26th Mar 2015",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "Yes",
-        "Multiple lines within region": "Yes",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "Yes",
-        "Collaboration with other networks": "No",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "No",
-        "Has been subject to robbery (last 8 weeks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 18,
-      "assessed_by": "DS Trevor Sporer",
-      "police_force": "Dorset Police",
-      "timestamp": "2015-04-11T12:55:26.490Z",
-      "timestamp_for_display": "11th Apr 2015",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "Yes",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "Yes",
-        "Collaboration with other networks": "Yes",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "Yes",
-        "Has been subject to robbery (last 8 weeks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 14,
-      "assessed_by": "DS Lelia Ernser",
-      "police_force": "Thames Valley Police",
-      "timestamp": "2016-11-06T20:32:16.744Z",
-      "timestamp_for_display": "6th Nov 2016",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "Low",
-        "Drug activity": "Low",
-        "Fraud and financial crime": "Low",
-        "Organised theft": "Low",
-        "Commodity importation, counterfeiting or illegal supply": "Low",
-        "Sexual offences": "Low",
-        "Organised immigration crime": "Medium",
-        "Environmental crime": "High",
-        "Cash flow/financial worth": "Low",
-        "Multiple enterprises (criminal or legitimate)": "Medium",
-        "Links to other OCGs": "Low",
-        "Geographical scope": "High",
-        "Cohesion": "Low",
-        "Infiltration": "High",
-        "Expertise": "Medium",
-        "Tactical awareness": "Medium"
-      }
-    },
-    {
-      "ocg_index": 14,
-      "assessed_by": "DI Joanie Harris",
-      "police_force": "Essex Police",
-      "timestamp": "2016-09-05T09:11:05.051Z",
-      "timestamp_for_display": "5th Sep 2016",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "Low",
-        "Drug activity": "Medium",
-        "Fraud and financial crime": "High",
-        "Organised theft": "Medium",
-        "Commodity importation, counterfeiting or illegal supply": "Medium",
-        "Sexual offences": "Low",
-        "Organised immigration crime": "High",
-        "Environmental crime": "High",
-        "Cash flow/financial worth": "Medium",
-        "Multiple enterprises (criminal or legitimate)": "Medium",
-        "Links to other OCGs": "Low",
-        "Geographical scope": "Medium",
-        "Cohesion": "High",
-        "Infiltration": "Low",
-        "Expertise": "Low",
-        "Tactical awareness": "Low"
-      }
-    },
-    {
-      "ocg_index": 14,
-      "assessed_by": "DC Cristobal Wunsch",
-      "police_force": "West Mercia Police",
-      "timestamp": "2016-05-08T20:53:11.080Z",
-      "timestamp_for_display": "8th May 2016",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "Yes",
-        "Multiple lines nationally": "No",
-        "Confirmed link to mapped gang/OCG": "No",
-        "Collaboration with other networks": "No",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "Yes",
-        "Has been subject to robbery (last 8 weeks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 9,
-      "assessed_by": "DS Lily Considine",
-      "police_force": "Bedfordshire Police",
-      "timestamp": "2017-05-16T09:31:54.258Z",
-      "timestamp_for_display": "16th May 2017",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "Yes",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "No",
-        "Collaboration with other networks": "No",
-        "Tactical awareness": "Yes",
-        "Rival networks operating in force area": "No",
-        "Has been subject to robbery (last 8 weeks)": "Yes"
-      }
-    },
-    {
-      "ocg_index": 9,
-      "assessed_by": "DCI Pietro Mertz",
-      "police_force": "Avon and Somerset Constabulary",
-      "timestamp": "2016-09-06T08:02:49.233Z",
-      "timestamp_for_display": "6th Sep 2016",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "High",
-        "Drug activity": "Medium",
-        "Fraud and financial crime": "Low",
-        "Organised theft": "Low",
-        "Commodity importation, counterfeiting or illegal supply": "Medium",
-        "Sexual offences": "Medium",
-        "Organised immigration crime": "Low",
-        "Environmental crime": "Low",
-        "Cash flow/financial worth": "Low",
-        "Multiple enterprises (criminal or legitimate)": "Low",
-        "Links to other OCGs": "Medium",
-        "Geographical scope": "High",
-        "Cohesion": "Medium",
-        "Infiltration": "High",
-        "Expertise": "Low",
-        "Tactical awareness": "Medium"
-      }
-    },
-    {
-      "ocg_index": 9,
-      "assessed_by": "DC Cortney O'Kon",
-      "police_force": "Lancashire Constabulary",
-      "timestamp": "2017-06-10T05:41:09.751Z",
-      "timestamp_for_display": "10th Jun 2017",
-      "assessment_type": "OCGM",
-      "assessment": {
-        "Violent criminal activity": "High",
-        "Drug activity": "High",
-        "Fraud and financial crime": "Low",
-        "Organised theft": "Medium",
-        "Commodity importation, counterfeiting or illegal supply": "High",
-        "Sexual offences": "Medium",
-        "Organised immigration crime": "Medium",
-        "Environmental crime": "Low",
-        "Cash flow/financial worth": "High",
-        "Multiple enterprises (criminal or legitimate)": "Low",
-        "Links to other OCGs": "High",
-        "Geographical scope": "Low",
-        "Cohesion": "Medium",
-        "Infiltration": "Low",
-        "Expertise": "Medium",
-        "Tactical awareness": "Low"
-      }
-    },
-    {
-      "ocg_index": 9,
-      "assessed_by": "DCI Duncan Gusikowski",
-      "police_force": "Suffolk Constabulary",
-      "timestamp": "2015-08-06T12:03:45.260Z",
-      "timestamp_for_display": "6th Aug 2015",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "No",
-        "Has access to weapons (confirmed within 18mths)": "No",
-        "Serious physical violence (evidenced within 8wks)": "No"
-      }
-    },
-    {
-      "ocg_index": 9,
-      "assessed_by": "DI Joshua Friesen",
-      "police_force": "Bedfordshire Police",
-      "timestamp": "2016-07-14T15:09:08.387Z",
-      "timestamp_for_display": "14th Jul 2016",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "Yes",
-        "Multiple lines nationally": "No",
-        "Confirmed link to mapped gang/OCG": "No",
-        "Collaboration with other networks": "Yes",
-        "Tactical awareness": "Yes",
-        "Rival networks operating in force area": "Yes",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 9,
-      "assessed_by": "DCI Alysha McClure",
+      "assessed_by": "DS Lawrence Jast",
       "police_force": "Northumbria Police",
-      "timestamp": "2015-06-11T15:55:10.004Z",
-      "timestamp_for_display": "11th Jun 2015",
+      "timestamp": "2015-10-09T10:00:50.852Z",
+      "timestamp_for_display": "9th Oct 2015",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
+        "Has access to weapons (confirmed within 18mths)": "Yes",
+        "Serious physical violence (evidenced within 8wks)": "No"
+      }
+    },
+    {
+      "ocg_index": 11,
+      "assessed_by": "DC Kaitlyn Labadie",
+      "police_force": "West Midlands Police",
+      "timestamp": "2015-09-15T19:28:21.405Z",
+      "timestamp_for_display": "15th Sep 2015",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
+        "Has access to weapons (confirmed within 18mths)": "No",
+        "Serious physical violence (evidenced within 8wks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 11,
+      "assessed_by": "DS Eldred Bashirian",
+      "police_force": "Cambridgeshire Constabulary",
+      "timestamp": "2017-05-28T19:01:37.720Z",
+      "timestamp_for_display": "28th May 2017",
       "assessment_type": "DRV",
       "assessment": {
         "Has access to weapons (uncorroborated within 18mths)": "Yes",
+        "Has access to weapons (confirmed within 18mths)": "Yes",
+        "Serious physical violence (evidenced within 8wks)": "No"
+      }
+    },
+    {
+      "ocg_index": 11,
+      "assessed_by": "DCI Maryse Zulauf",
+      "police_force": "Cleveland Police",
+      "timestamp": "2016-05-12T07:25:39.211Z",
+      "timestamp_for_display": "12th May 2016",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "No",
+        "Tactical awareness": "Yes",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 19,
+      "assessed_by": "DI Art Sipes",
+      "police_force": "Avon and Somerset Constabulary",
+      "timestamp": "2015-01-27T13:52:44.899Z",
+      "timestamp_for_display": "27th Jan 2015",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "Yes",
+        "Has access to weapons (confirmed within 18mths)": "Yes",
+        "Serious physical violence (evidenced within 8wks)": "No"
+      }
+    },
+    {
+      "ocg_index": 19,
+      "assessed_by": "DI Destin O'Keefe",
+      "police_force": "Thames Valley Police",
+      "timestamp": "2016-06-27T00:43:32.613Z",
+      "timestamp_for_display": "27th Jun 2016",
+      "assessment_type": "OCGM",
+      "assessment": {
+        "Violent criminal activity": "Low",
+        "Drug activity": "Med",
+        "Fraud and financial crime": "Low",
+        "Organised theft": "High",
+        "Commodity importation, counterfeiting or illegal supply": "Med",
+        "Sexual offences": "High",
+        "Organised immigration crime": "Low",
+        "Environmental crime": "High",
+        "Cash flow/financial worth": "Med",
+        "Multiple enterprises (criminal or legitimate)": "High",
+        "Links to other OCGs": "Low",
+        "Geographical scope": "Low",
+        "Cohesion": "High",
+        "Infiltration": "High",
+        "Expertise": "Med",
+        "Tactical awareness": "Low"
+      }
+    },
+    {
+      "ocg_index": 19,
+      "assessed_by": "DC Alphonso Sporer",
+      "police_force": "Essex Police",
+      "timestamp": "2015-03-19T11:17:20.036Z",
+      "timestamp_for_display": "19th Mar 2015",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "No",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "Yes",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "No"
+      }
+    },
+    {
+      "ocg_index": 19,
+      "assessed_by": "DC Candida Prosacco",
+      "police_force": "Cumbria Constabulary",
+      "timestamp": "2015-12-31T00:47:11.445Z",
+      "timestamp_for_display": "31st Dec 2015",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "Yes",
+        "Has access to weapons (confirmed within 18mths)": "No",
+        "Serious physical violence (evidenced within 8wks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 3,
+      "assessed_by": "DI Gabe Monahan",
+      "police_force": "Bedfordshire Police",
+      "timestamp": "2015-02-13T15:17:15.026Z",
+      "timestamp_for_display": "13th Feb 2015",
+      "assessment_type": "OCGM",
+      "assessment": {
+        "Violent criminal activity": "High",
+        "Drug activity": "High",
+        "Fraud and financial crime": "Med",
+        "Organised theft": "Low",
+        "Commodity importation, counterfeiting or illegal supply": "Low",
+        "Sexual offences": "High",
+        "Organised immigration crime": "Med",
+        "Environmental crime": "High",
+        "Cash flow/financial worth": "Low",
+        "Multiple enterprises (criminal or legitimate)": "High",
+        "Links to other OCGs": "Low",
+        "Geographical scope": "Low",
+        "Cohesion": "Low",
+        "Infiltration": "High",
+        "Expertise": "Low",
+        "Tactical awareness": "High"
+      }
+    },
+    {
+      "ocg_index": 3,
+      "assessed_by": "DI Kari Kuvalis",
+      "police_force": "Staffordshire Police",
+      "timestamp": "2016-01-30T11:03:31.167Z",
+      "timestamp_for_display": "30th Jan 2016",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "Yes",
+        "Has access to weapons (confirmed within 18mths)": "Yes",
+        "Serious physical violence (evidenced within 8wks)": "No"
+      }
+    },
+    {
+      "ocg_index": 3,
+      "assessed_by": "DCI Jakayla Cartwright",
+      "police_force": "Warwickshire Police",
+      "timestamp": "2016-06-24T02:39:50.915Z",
+      "timestamp_for_display": "24th Jun 2016",
+      "assessment_type": "OCGM",
+      "assessment": {
+        "Violent criminal activity": "High",
+        "Drug activity": "High",
+        "Fraud and financial crime": "High",
+        "Organised theft": "Med",
+        "Commodity importation, counterfeiting or illegal supply": "High",
+        "Sexual offences": "High",
+        "Organised immigration crime": "High",
+        "Environmental crime": "Med",
+        "Cash flow/financial worth": "Low",
+        "Multiple enterprises (criminal or legitimate)": "High",
+        "Links to other OCGs": "Low",
+        "Geographical scope": "Med",
+        "Cohesion": "Med",
+        "Infiltration": "High",
+        "Expertise": "High",
+        "Tactical awareness": "Med"
+      }
+    },
+    {
+      "ocg_index": 3,
+      "assessed_by": "DCI Jordan Boyer",
+      "police_force": "Nottinghamshire Police",
+      "timestamp": "2015-10-10T17:09:01.111Z",
+      "timestamp_for_display": "10th Oct 2015",
+      "assessment_type": "OCGM",
+      "assessment": {
+        "Violent criminal activity": "Low",
+        "Drug activity": "Med",
+        "Fraud and financial crime": "High",
+        "Organised theft": "Med",
+        "Commodity importation, counterfeiting or illegal supply": "Low",
+        "Sexual offences": "Med",
+        "Organised immigration crime": "Med",
+        "Environmental crime": "Low",
+        "Cash flow/financial worth": "Med",
+        "Multiple enterprises (criminal or legitimate)": "Med",
+        "Links to other OCGs": "High",
+        "Geographical scope": "High",
+        "Cohesion": "Low",
+        "Infiltration": "Low",
+        "Expertise": "Med",
+        "Tactical awareness": "High"
+      }
+    },
+    {
+      "ocg_index": 13,
+      "assessed_by": "DI Neal Lynch",
+      "police_force": "Avon and Somerset Constabulary",
+      "timestamp": "2016-05-25T07:31:33.107Z",
+      "timestamp_for_display": "25th May 2016",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "No",
+        "Multiple lines within region": "No",
+        "Multiple lines nationally": "No",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "No",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 13,
+      "assessed_by": "DS Dakota Mertz",
+      "police_force": "Greater Manchester Police",
+      "timestamp": "2017-03-04T23:02:30.546Z",
+      "timestamp_for_display": "4th Mar 2017",
+      "assessment_type": "OCGM",
+      "assessment": {
+        "Violent criminal activity": "Med",
+        "Drug activity": "High",
+        "Fraud and financial crime": "Med",
+        "Organised theft": "Med",
+        "Commodity importation, counterfeiting or illegal supply": "Low",
+        "Sexual offences": "Low",
+        "Organised immigration crime": "High",
+        "Environmental crime": "High",
+        "Cash flow/financial worth": "Low",
+        "Multiple enterprises (criminal or legitimate)": "Low",
+        "Links to other OCGs": "Med",
+        "Geographical scope": "High",
+        "Cohesion": "Med",
+        "Infiltration": "Med",
+        "Expertise": "High",
+        "Tactical awareness": "Low"
+      }
+    },
+    {
+      "ocg_index": 13,
+      "assessed_by": "DCI Omer Miller",
+      "police_force": "South Yorkshire Police",
+      "timestamp": "2017-04-01T21:46:43.238Z",
+      "timestamp_for_display": "1st Apr 2017",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "No",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "No",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "No",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 5,
+      "assessed_by": "DI Marge Schaefer",
+      "police_force": "Hampshire Constabulary",
+      "timestamp": "2015-04-23T13:26:56.957Z",
+      "timestamp_for_display": "23rd Apr 2015",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "No",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "No",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 5,
+      "assessed_by": "DCI Gabriel O'Reilly",
+      "police_force": "Dorset Police",
+      "timestamp": "2015-03-03T13:18:04.325Z",
+      "timestamp_for_display": "3rd Mar 2015",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
         "Has access to weapons (confirmed within 18mths)": "No",
         "Serious physical violence (evidenced within 8wks)": "No"
       }
     },
     {
-      "ocg_index": 7,
-      "assessed_by": "DS Mavis Auer",
+      "ocg_index": 5,
+      "assessed_by": "DC Eldridge Swaniawski",
+      "police_force": "Nottinghamshire Police",
+      "timestamp": "2016-07-04T03:10:06.058Z",
+      "timestamp_for_display": "4th Jul 2016",
+      "assessment_type": "OCGM",
+      "assessment": {
+        "Violent criminal activity": "Med",
+        "Drug activity": "High",
+        "Fraud and financial crime": "Med",
+        "Organised theft": "Med",
+        "Commodity importation, counterfeiting or illegal supply": "Med",
+        "Sexual offences": "Med",
+        "Organised immigration crime": "Low",
+        "Environmental crime": "Low",
+        "Cash flow/financial worth": "Low",
+        "Multiple enterprises (criminal or legitimate)": "High",
+        "Links to other OCGs": "Med",
+        "Geographical scope": "Med",
+        "Cohesion": "Med",
+        "Infiltration": "Med",
+        "Expertise": "High",
+        "Tactical awareness": "Med"
+      }
+    },
+    {
+      "ocg_index": 5,
+      "assessed_by": "DS Arely Dach",
+      "police_force": "Nottinghamshire Police",
+      "timestamp": "2014-11-07T05:19:44.411Z",
+      "timestamp_for_display": "7th Nov 2014",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "No",
+        "Multiple lines within region": "No",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "Yes",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "Yes",
+        "Rival networks operating in force area": "Yes",
+        "Has been subject to robbery (last 8 weeks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 2,
+      "assessed_by": "DCI Roselyn Abbott",
+      "police_force": "West Yorkshire Police",
+      "timestamp": "2015-11-07T08:15:00.181Z",
+      "timestamp_for_display": "7th Nov 2015",
+      "assessment_type": "OCGM",
+      "assessment": {
+        "Violent criminal activity": "Low",
+        "Drug activity": "High",
+        "Fraud and financial crime": "Med",
+        "Organised theft": "Med",
+        "Commodity importation, counterfeiting or illegal supply": "High",
+        "Sexual offences": "High",
+        "Organised immigration crime": "High",
+        "Environmental crime": "High",
+        "Cash flow/financial worth": "Low",
+        "Multiple enterprises (criminal or legitimate)": "High",
+        "Links to other OCGs": "High",
+        "Geographical scope": "Med",
+        "Cohesion": "High",
+        "Infiltration": "High",
+        "Expertise": "Med",
+        "Tactical awareness": "High"
+      }
+    },
+    {
+      "ocg_index": 2,
+      "assessed_by": "DS Wendy Gislason",
+      "police_force": "Humberside Police",
+      "timestamp": "2015-08-08T15:04:41.386Z",
+      "timestamp_for_display": "8th Aug 2015",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
+        "Has access to weapons (confirmed within 18mths)": "No",
+        "Serious physical violence (evidenced within 8wks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 2,
+      "assessed_by": "DS Diamond Goodwin",
+      "police_force": "Merseyside Police",
+      "timestamp": "2014-10-28T00:03:35.286Z",
+      "timestamp_for_display": "28th Oct 2014",
+      "assessment_type": "OCGM",
+      "assessment": {
+        "Violent criminal activity": "Med",
+        "Drug activity": "High",
+        "Fraud and financial crime": "High",
+        "Organised theft": "High",
+        "Commodity importation, counterfeiting or illegal supply": "Low",
+        "Sexual offences": "Med",
+        "Organised immigration crime": "Low",
+        "Environmental crime": "Med",
+        "Cash flow/financial worth": "High",
+        "Multiple enterprises (criminal or legitimate)": "High",
+        "Links to other OCGs": "High",
+        "Geographical scope": "High",
+        "Cohesion": "Med",
+        "Infiltration": "Med",
+        "Expertise": "Low",
+        "Tactical awareness": "Low"
+      }
+    },
+    {
+      "ocg_index": 2,
+      "assessed_by": "DI Tremaine Reilly",
       "police_force": "Dorset Police",
-      "timestamp": "2015-07-26T01:48:18.133Z",
-      "timestamp_for_display": "26th Jul 2015",
+      "timestamp": "2017-01-19T13:27:16.878Z",
+      "timestamp_for_display": "19th Jan 2017",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "No",
+        "Multiple lines nationally": "No",
+        "Confirmed link to mapped gang/OCG": "Yes",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "Yes",
+        "Has been subject to robbery (last 8 weeks)": "No"
+      }
+    },
+    {
+      "ocg_index": 2,
+      "assessed_by": "DCI Brooklyn Upton",
+      "police_force": "Wiltshire Police",
+      "timestamp": "2015-11-13T03:48:34.789Z",
+      "timestamp_for_display": "13th Nov 2015",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "No",
+        "Multiple lines within region": "No",
+        "Multiple lines nationally": "No",
+        "Confirmed link to mapped gang/OCG": "Yes",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "Yes",
+        "Rival networks operating in force area": "Yes",
+        "Has been subject to robbery (last 8 weeks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 18,
+      "assessed_by": "DCI Jane Bayer",
+      "police_force": "Gloucestershire Constabulary",
+      "timestamp": "2015-12-05T10:08:42.214Z",
+      "timestamp_for_display": "5th Dec 2015",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "Yes",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "Yes",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "No"
+      }
+    },
+    {
+      "ocg_index": 18,
+      "assessed_by": "DS Douglas Gerlach",
+      "police_force": "Dorset Police",
+      "timestamp": "2016-02-13T14:36:46.272Z",
+      "timestamp_for_display": "13th Feb 2016",
       "assessment_type": "DRV",
       "assessment": {
         "Has access to weapons (uncorroborated within 18mths)": "Yes",
@@ -700,117 +488,50 @@
       }
     },
     {
-      "ocg_index": 7,
-      "assessed_by": "DS Freeda Ondricka",
-      "police_force": "South Yorkshire Police",
-      "timestamp": "2015-12-24T11:58:13.406Z",
-      "timestamp_for_display": "24th Dec 2015",
+      "ocg_index": 18,
+      "assessed_by": "DI Oleta Leffler",
+      "police_force": "Merseyside Police",
+      "timestamp": "2016-05-27T03:25:46.732Z",
+      "timestamp_for_display": "27th May 2016",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
+        "Has access to weapons (confirmed within 18mths)": "Yes",
+        "Serious physical violence (evidenced within 8wks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 10,
+      "assessed_by": "DI Giovanni Kling",
+      "police_force": "Derbyshire Constabulary",
+      "timestamp": "2015-09-11T04:26:29.347Z",
+      "timestamp_for_display": "11th Sep 2015",
       "assessment_type": "OCGM",
       "assessment": {
-        "Violent criminal activity": "High",
-        "Drug activity": "Low",
-        "Fraud and financial crime": "High",
+        "Violent criminal activity": "Med",
+        "Drug activity": "High",
+        "Fraud and financial crime": "Med",
         "Organised theft": "Low",
-        "Commodity importation, counterfeiting or illegal supply": "High",
-        "Sexual offences": "Medium",
-        "Organised immigration crime": "Low",
-        "Environmental crime": "High",
+        "Commodity importation, counterfeiting or illegal supply": "Med",
+        "Sexual offences": "Low",
+        "Organised immigration crime": "Med",
+        "Environmental crime": "Med",
         "Cash flow/financial worth": "Low",
-        "Multiple enterprises (criminal or legitimate)": "Medium",
+        "Multiple enterprises (criminal or legitimate)": "High",
         "Links to other OCGs": "High",
-        "Geographical scope": "Medium",
+        "Geographical scope": "Med",
         "Cohesion": "Low",
-        "Infiltration": "Medium",
-        "Expertise": "High",
-        "Tactical awareness": "Medium"
+        "Infiltration": "High",
+        "Expertise": "Med",
+        "Tactical awareness": "High"
       }
     },
     {
-      "ocg_index": 7,
-      "assessed_by": "DS Henri Muller",
-      "police_force": "Cumbria Constabulary",
-      "timestamp": "2016-01-19T03:32:25.923Z",
-      "timestamp_for_display": "19th Jan 2016",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "Yes",
-        "Multiple lines within region": "No",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "Yes",
-        "Collaboration with other networks": "No",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "Yes",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 7,
-      "assessed_by": "DC Amos Hilll",
-      "police_force": "Surrey Police",
-      "timestamp": "2015-06-29T11:08:49.436Z",
-      "timestamp_for_display": "29th Jun 2015",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "No",
-        "Multiple lines within region": "No",
-        "Multiple lines nationally": "No",
-        "Confirmed link to mapped gang/OCG": "No",
-        "Collaboration with other networks": "Yes",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "No",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 7,
-      "assessed_by": "DCI Quincy Pfannerstill",
-      "police_force": "Hertfordshire Constabulary",
-      "timestamp": "2016-08-25T06:04:06.225Z",
-      "timestamp_for_display": "25th Aug 2016",
-      "assessment_type": "Gang Network Threat",
-      "assessment": {
-        "Multiple lines within county": "Yes",
-        "Multiple lines within region": "Yes",
-        "Multiple lines nationally": "Yes",
-        "Confirmed link to mapped gang/OCG": "No",
-        "Collaboration with other networks": "No",
-        "Tactical awareness": "No",
-        "Rival networks operating in force area": "No",
-        "Has been subject to robbery (last 8 weeks)": "No"
-      }
-    },
-    {
-      "ocg_index": 4,
-      "assessed_by": "DCI Camilla Jones",
-      "police_force": "Cheshire Constabulary",
-      "timestamp": "2015-01-17T17:33:45.375Z",
-      "timestamp_for_display": "17th Jan 2015",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "No",
-        "Has access to weapons (confirmed within 18mths)": "No",
-        "Serious physical violence (evidenced within 8wks)": "No"
-      }
-    },
-    {
-      "ocg_index": 4,
-      "assessed_by": "DI Francesca Homenick",
-      "police_force": "West Midlands Police",
-      "timestamp": "2014-12-01T05:25:13.062Z",
-      "timestamp_for_display": "1st Dec 2014",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "No",
-        "Has access to weapons (confirmed within 18mths)": "No",
-        "Serious physical violence (evidenced within 8wks)": "No"
-      }
-    },
-    {
-      "ocg_index": 13,
-      "assessed_by": "DC Casimer Shanahan",
-      "police_force": "Dorset Police",
-      "timestamp": "2016-08-07T21:36:01.453Z",
-      "timestamp_for_display": "7th Aug 2016",
+      "ocg_index": 10,
+      "assessed_by": "DCI Obie Abernathy",
+      "police_force": "Greater Manchester Police",
+      "timestamp": "2017-05-26T02:08:08.420Z",
+      "timestamp_for_display": "26th May 2017",
       "assessment_type": "Gang Network Threat",
       "assessment": {
         "Multiple lines within county": "No",
@@ -818,30 +539,17 @@
         "Multiple lines nationally": "Yes",
         "Confirmed link to mapped gang/OCG": "No",
         "Collaboration with other networks": "Yes",
-        "Tactical awareness": "Yes",
+        "Tactical awareness": "No",
         "Rival networks operating in force area": "No",
         "Has been subject to robbery (last 8 weeks)": "Yes"
       }
     },
     {
-      "ocg_index": 13,
-      "assessed_by": "DCI Lauretta O'Keefe",
-      "police_force": "Kent Police",
-      "timestamp": "2016-01-20T17:06:41.685Z",
-      "timestamp_for_display": "20th Jan 2016",
-      "assessment_type": "DRV",
-      "assessment": {
-        "Has access to weapons (uncorroborated within 18mths)": "No",
-        "Has access to weapons (confirmed within 18mths)": "No",
-        "Serious physical violence (evidenced within 8wks)": "No"
-      }
-    },
-    {
-      "ocg_index": 13,
-      "assessed_by": "DC Noemy Keeling",
-      "police_force": "Bedfordshire Police",
-      "timestamp": "2015-02-12T16:08:27.112Z",
-      "timestamp_for_display": "12th Feb 2015",
+      "ocg_index": 10,
+      "assessed_by": "DC Joe Langworth",
+      "police_force": "Norfolk Constabulary",
+      "timestamp": "2014-11-26T20:59:33.888Z",
+      "timestamp_for_display": "26th Nov 2014",
       "assessment_type": "DRV",
       "assessment": {
         "Has access to weapons (uncorroborated within 18mths)": "No",
@@ -850,29 +558,308 @@
       }
     },
     {
-      "ocg_index": 13,
-      "assessed_by": "DS Eveline Daniel",
-      "police_force": "City of London Police",
-      "timestamp": "2015-02-08T10:12:35.794Z",
-      "timestamp_for_display": "8th Feb 2015",
+      "ocg_index": 10,
+      "assessed_by": "DI Leann Cruickshank",
+      "police_force": "Staffordshire Police",
+      "timestamp": "2016-03-29T13:33:54.834Z",
+      "timestamp_for_display": "29th Mar 2016",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
+        "Has access to weapons (confirmed within 18mths)": "Yes",
+        "Serious physical violence (evidenced within 8wks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 10,
+      "assessed_by": "DI Bernita King",
+      "police_force": "Nottinghamshire Police",
+      "timestamp": "2015-01-28T05:30:05.777Z",
+      "timestamp_for_display": "28th Jan 2015",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
+        "Has access to weapons (confirmed within 18mths)": "Yes",
+        "Serious physical violence (evidenced within 8wks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 10,
+      "assessed_by": "DCI Israel Hoeger",
+      "police_force": "Northumbria Police",
+      "timestamp": "2016-07-13T03:20:38.792Z",
+      "timestamp_for_display": "13th Jul 2016",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "Yes",
+        "Has access to weapons (confirmed within 18mths)": "No",
+        "Serious physical violence (evidenced within 8wks)": "No"
+      }
+    },
+    {
+      "ocg_index": 6,
+      "assessed_by": "DCI Kameron Reynolds",
+      "police_force": "Avon and Somerset Constabulary",
+      "timestamp": "2016-11-03T21:47:58.098Z",
+      "timestamp_for_display": "3rd Nov 2016",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
+        "Has access to weapons (confirmed within 18mths)": "No",
+        "Serious physical violence (evidenced within 8wks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 6,
+      "assessed_by": "DCI Rodolfo Nikolaus",
+      "police_force": "Bedfordshire Police",
+      "timestamp": "2016-08-08T16:45:11.146Z",
+      "timestamp_for_display": "8th Aug 2016",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "No",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "No",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "No",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "Yes",
+        "Has been subject to robbery (last 8 weeks)": "No"
+      }
+    },
+    {
+      "ocg_index": 6,
+      "assessed_by": "DCI Louisa Von",
+      "police_force": "Northumbria Police",
+      "timestamp": "2015-11-22T09:27:39.953Z",
+      "timestamp_for_display": "22nd Nov 2015",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 6,
+      "assessed_by": "DS Meda Hammes",
+      "police_force": "Lincolnshire Police",
+      "timestamp": "2017-02-22T02:40:45.576Z",
+      "timestamp_for_display": "22nd Feb 2017",
       "assessment_type": "OCGM",
       "assessment": {
         "Violent criminal activity": "High",
-        "Drug activity": "Medium",
-        "Fraud and financial crime": "Medium",
-        "Organised theft": "Medium",
-        "Commodity importation, counterfeiting or illegal supply": "High",
-        "Sexual offences": "Low",
-        "Organised immigration crime": "Medium",
-        "Environmental crime": "High",
+        "Drug activity": "Med",
+        "Fraud and financial crime": "Low",
+        "Organised theft": "Med",
+        "Commodity importation, counterfeiting or illegal supply": "Med",
+        "Sexual offences": "High",
+        "Organised immigration crime": "Med",
+        "Environmental crime": "Med",
         "Cash flow/financial worth": "High",
         "Multiple enterprises (criminal or legitimate)": "Low",
         "Links to other OCGs": "High",
-        "Geographical scope": "High",
-        "Cohesion": "High",
+        "Geographical scope": "Med",
+        "Cohesion": "Med",
+        "Infiltration": "Low",
+        "Expertise": "High",
+        "Tactical awareness": "Low"
+      }
+    },
+    {
+      "ocg_index": 17,
+      "assessed_by": "DC Daryl Bogisich",
+      "police_force": "Nottinghamshire Police",
+      "timestamp": "2016-01-07T12:05:51.744Z",
+      "timestamp_for_display": "7th Jan 2016",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "No",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "Yes",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "Yes",
+        "Has been subject to robbery (last 8 weeks)": "No"
+      }
+    },
+    {
+      "ocg_index": 17,
+      "assessed_by": "DC Meda Kautzer",
+      "police_force": "Lancashire Constabulary",
+      "timestamp": "2017-06-24T18:55:42.506Z",
+      "timestamp_for_display": "24th Jun 2017",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "Yes",
+        "Has access to weapons (confirmed within 18mths)": "No",
+        "Serious physical violence (evidenced within 8wks)": "No"
+      }
+    },
+    {
+      "ocg_index": 17,
+      "assessed_by": "DCI Mikayla Beier",
+      "police_force": "Essex Police",
+      "timestamp": "2015-01-13T21:23:51.656Z",
+      "timestamp_for_display": "13th Jan 2015",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "No",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "No"
+      }
+    },
+    {
+      "ocg_index": 17,
+      "assessed_by": "DC Kirsten Gerhold",
+      "police_force": "Greater Manchester Police",
+      "timestamp": "2015-10-08T23:50:02.848Z",
+      "timestamp_for_display": "9th Oct 2015",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
+        "Has access to weapons (confirmed within 18mths)": "Yes",
+        "Serious physical violence (evidenced within 8wks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 17,
+      "assessed_by": "DI Earline Oberbrunner",
+      "police_force": "Derbyshire Constabulary",
+      "timestamp": "2016-09-16T07:34:46.723Z",
+      "timestamp_for_display": "16th Sep 2016",
+      "assessment_type": "OCGM",
+      "assessment": {
+        "Violent criminal activity": "High",
+        "Drug activity": "High",
+        "Fraud and financial crime": "High",
+        "Organised theft": "Low",
+        "Commodity importation, counterfeiting or illegal supply": "Med",
+        "Sexual offences": "Low",
+        "Organised immigration crime": "Med",
+        "Environmental crime": "High",
+        "Cash flow/financial worth": "Low",
+        "Multiple enterprises (criminal or legitimate)": "High",
+        "Links to other OCGs": "Med",
+        "Geographical scope": "Med",
+        "Cohesion": "Low",
         "Infiltration": "Low",
         "Expertise": "Low",
-        "Tactical awareness": "High"
+        "Tactical awareness": "Low"
+      }
+    },
+    {
+      "ocg_index": 16,
+      "assessed_by": "DCI Maximo Ortiz",
+      "police_force": "Cumbria Constabulary",
+      "timestamp": "2015-07-13T14:55:15.148Z",
+      "timestamp_for_display": "13th Jul 2015",
+      "assessment_type": "DRV",
+      "assessment": {
+        "Has access to weapons (uncorroborated within 18mths)": "No",
+        "Has access to weapons (confirmed within 18mths)": "No",
+        "Serious physical violence (evidenced within 8wks)": "No"
+      }
+    },
+    {
+      "ocg_index": 16,
+      "assessed_by": "DCI Citlalli Gaylord",
+      "police_force": "Suffolk Constabulary",
+      "timestamp": "2016-03-15T19:44:07.728Z",
+      "timestamp_for_display": "15th Mar 2016",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "No",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "Yes",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "Yes",
+        "Rival networks operating in force area": "Yes",
+        "Has been subject to robbery (last 8 weeks)": "No"
+      }
+    },
+    {
+      "ocg_index": 16,
+      "assessed_by": "DS Kyleigh Greenholt",
+      "police_force": "Nottinghamshire Police",
+      "timestamp": "2016-11-07T20:41:15.105Z",
+      "timestamp_for_display": "7th Nov 2016",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "No",
+        "Multiple lines nationally": "No",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "Yes",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "Yes",
+        "Has been subject to robbery (last 8 weeks)": "Yes"
+      }
+    },
+    {
+      "ocg_index": 16,
+      "assessed_by": "DC Ruby Kassulke",
+      "police_force": "Surrey Police",
+      "timestamp": "2017-01-10T12:53:23.484Z",
+      "timestamp_for_display": "10th Jan 2017",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "No",
+        "Multiple lines nationally": "No",
+        "Confirmed link to mapped gang/OCG": "Yes",
+        "Collaboration with other networks": "No",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "No"
+      }
+    },
+    {
+      "ocg_index": 12,
+      "assessed_by": "DS Jadon Brekke",
+      "police_force": "Humberside Police",
+      "timestamp": "2015-12-01T11:44:58.037Z",
+      "timestamp_for_display": "1st Dec 2015",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "No",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "No",
+        "Collaboration with other networks": "No",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "No"
+      }
+    },
+    {
+      "ocg_index": 12,
+      "assessed_by": "DCI Emanuel DuBuque",
+      "police_force": "South Yorkshire Police",
+      "timestamp": "2017-07-16T09:55:13.861Z",
+      "timestamp_for_display": "16th Jul 2017",
+      "assessment_type": "Gang Network Threat",
+      "assessment": {
+        "Multiple lines within county": "Yes",
+        "Multiple lines within region": "Yes",
+        "Multiple lines nationally": "Yes",
+        "Confirmed link to mapped gang/OCG": "Yes",
+        "Collaboration with other networks": "No",
+        "Tactical awareness": "No",
+        "Rival networks operating in force area": "No",
+        "Has been subject to robbery (last 8 weeks)": "No"
       }
     }
   ]

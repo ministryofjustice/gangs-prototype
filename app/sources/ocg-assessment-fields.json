@@ -1,0 +1,35 @@
+{
+  "ocgm": {
+    "Violent criminal activity": ["High", "Med", "Low"],
+    "Drug activity": ["High", "Med", "Low"],
+    "Fraud and financial crime": ["High", "Med", "Low"],
+    "Organised theft": ["High", "Med", "Low"],
+    "Commodity importation, counterfeiting or illegal supply": ["High", "Med", "Low"],
+    "Sexual offences": ["High", "Med", "Low"],
+    "Organised immigration crime": ["High", "Med", "Low"],
+    "Environmental crime": ["High", "Med", "Low"],
+    "Cash flow/financial worth": ["High", "Med", "Low"],
+    "Multiple enterprises (criminal or legitimate)": ["High", "Med", "Low"],
+    "Links to other OCGs": ["High", "Med", "Low"],
+    "Geographical scope": ["High", "Med", "Low"],
+    "Cohesion": ["High", "Med", "Low"],
+    "Infiltration": ["High", "Med", "Low"],
+    "Expertise": ["High", "Med", "Low"],
+    "Tactical awareness": ["High", "Med", "Low"]   
+  },
+  "drv": {
+    "Has access to weapons (uncorroborated within 18mths)": ["Yes", "No"],
+    "Has access to weapons (confirmed within 18mths)": ["Yes", "No"],
+    "Serious physical violence (evidenced within 8wks)": ["Yes", "No"]
+  },
+  "gangNetworkThreat": {
+    "Multiple lines within county": ["Yes", "No"],
+    "Multiple lines within region": ["Yes", "No"],
+    "Multiple lines nationally": ["Yes", "No"],
+    "Confirmed link to mapped gang/OCG": ["Yes", "No"],
+    "Collaboration with other networks": ["Yes", "No"],
+    "Tactical awareness": ["Yes", "No"],
+    "Rival networks operating in force area": ["Yes", "No"],
+    "Has been subject to robbery (last 8 weeks)": ["Yes", "No"]
+  }
+}
