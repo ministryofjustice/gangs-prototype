@@ -13,7 +13,11 @@ var search = {
     for( key in params ){
       if( params[key] ){
         if( key in object ){
-          if( typeof(object[key]) == 'string') {
+          if( typeof(object[key]) == 'number') {
+            if( params[key] != object[key] ){ 
+              return false;
+            }
+          } else {
             var tokens = params[key].toLowerCase().split(/[ ,]+/);
             var value = object[key].toString().toLowerCase();
 
@@ -21,10 +25,6 @@ var search = {
               if( value.indexOf(tokens[i]) == -1 ){
                 return false;
               }
-            }
-          } else {
-            if( params[key] != object[key] ){ 
-              return false;
             }
           }
         }
