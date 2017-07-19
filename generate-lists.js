@@ -47,9 +47,9 @@ function generateProbationersList(){
 function generatePrisonersList(){
   var prisonsWithNominals = unique( 
     nominals.filter(function(e){ 
-      return e.incarceration 
+      return e.incarceration.prisonIndex;
     }).map(function(a){
-      return a.incarceration
+      return a.incarceration.prisonIndex;
     }) );
   var randomPrisonIndex = Math.floor(Math.random() * prisonsWithNominals.length);
   var prisoners = nominalTools.getNominalsInPrison(randomPrisonIndex);

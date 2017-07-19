@@ -3,70 +3,133 @@
     {
       "indices": [
         3,
-        13
+        10
+      ],
+      "tensionLevel": "high"
+    },
+    {
+      "indices": [
+        9,
+        14
       ],
       "tensionLevel": "low"
     },
     {
       "indices": [
-        5,
-        12
+        6,
+        11
+      ],
+      "tensionLevel": "low"
+    },
+    {
+      "indices": [
+        1,
+        16
       ],
       "tensionLevel": "high"
     },
     {
       "indices": [
-        1,
-        6
-      ],
-      "tensionLevel": "medium"
-    },
-    {
-      "indices": [
-        12,
-        19
-      ],
-      "tensionLevel": "medium"
-    },
-    {
-      "indices": [
-        1,
+        6,
         18
       ],
-      "tensionLevel": "high"
+      "tensionLevel": "low"
     },
     {
       "indices": [
-        5,
+        9,
         17
       ],
       "tensionLevel": "high"
     },
     {
       "indices": [
-        3,
-        16
+        4,
+        13
       ],
-      "tensionLevel": "medium"
+      "tensionLevel": "low"
     },
     {
       "indices": [
-        0,
-        18
+        4,
+        16
       ],
       "tensionLevel": "high"
     },
     {
       "indices": [
-        2,
-        19
+        4,
+        10
+      ],
+      "tensionLevel": "low"
+    },
+    {
+      "indices": [
+        0,
+        12
+      ],
+      "tensionLevel": "high"
+    },
+    {
+      "indices": [
+        5,
+        13
+      ],
+      "tensionLevel": "high"
+    },
+    {
+      "indices": [
+        4,
+        15
       ],
       "tensionLevel": "medium"
     },
     {
       "indices": [
-        1,
-        11
+        2,
+        15
+      ],
+      "tensionLevel": "low"
+    },
+    {
+      "indices": [
+        2,
+        16
+      ],
+      "tensionLevel": "low"
+    },
+    {
+      "indices": [
+        0,
+        5
+      ],
+      "tensionLevel": "medium"
+    },
+    {
+      "indices": [
+        11,
+        7
+      ],
+      "tensionLevel": "medium"
+    },
+    {
+      "indices": [
+        19,
+        0
+      ],
+      "tensionLevel": "high"
+    },
+    {
+      "indices": [
+        17,
+        8
+      ],
+      "tensionLevel": "medium"
+    },
+    {
+      "indices": [
+        7,
+        2
       ],
       "tensionLevel": "medium"
     }

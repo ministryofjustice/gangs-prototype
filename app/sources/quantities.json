@@ -1,7 +1,7 @@
 {
   "nominals": 100,
   "ocgs": 20,
-  "tensions": 10,
+  "tensions": 15,
   "updatesPerType": 15,
   "ocgsWithThreatAssessments": 12,
   "maxThreatAssessmentsPerOcg": 5,
