@@ -34,12 +34,12 @@ var updateTools = {
     switch(update.type) {
       case 'incarceration':
         inner += self.link(nominals[update.nominal].given_names + ' ' + nominals[update.nominal].family_name, 'nominal', update.nominal);
-        inner += ' was incarcerated at ';
+        inner += ' incarcerated at ';
         inner += self.bold(self.link(prisons[update.location], 'prison', update.location));
         break;
       case 'release':
         inner += self.link(nominals[update.nominal].given_names + ' ' + nominals[update.nominal].family_name, 'nominal', update.nominal);
-        inner += ' was released from ';
+        inner += ' released from ';
         inner += self.link(prisons[update.location], 'prison', update.location);
         inner += ' ';
         inner += update.releaseString;
@@ -56,7 +56,7 @@ var updateTools = {
         break;
       case 'affiliation':
         inner += self.link(nominals[update.nominal].given_names + ' ' + nominals[update.nominal].family_name, 'nominal', update.nominal);
-        inner += ' is now affiliated with ';
+        inner += ' affiliated with ';
         inner += self.link(ocgs[update.ocg].name, 'ocg', update.ocg);
         break;
     }
