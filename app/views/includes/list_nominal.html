@@ -15,7 +15,7 @@
     <p class="field">PNC ID: {{nominal.pnc_id}}</p>
     {% if nominal.incarceration %}
       <p class="field">In: 
-        <strong><a href="/prison/{{nominal.incarceration}}">HMP {{nominal.prison_name}}</a></strong>
+        <strong><a href="/nominal/search/results?prison_name={{nominal.prison_name}}">HMP {{nominal.prison_name}}</a></strong>
       </p>
     {% endif %}
     {% if end_of_system_ids_content %}{{end_of_system_ids_content | safe}}{% endif %}
