@@ -216,3 +216,17 @@ dd {
     color: #888;
   }
 }
+
+.nominals-in-prison {
+  dt {
+    width: 50%;
+    text-align: right;
+  }
+  dd {
+    width: 45%;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}

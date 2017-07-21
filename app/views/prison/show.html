@@ -18,19 +18,21 @@
       <h2 class="heading-medium">Nominals known to be in this facility:</h2>
 
       {% if nominalsInPrison.length %}
-        <ul class="list list-bullet">
+        <dl class="nominals-in-prison">
+          <dt>Nominal</dt>
+          <dd>Affiliations</dd>
           {% for nominal in nominalsInPrison %}
-          <li>
+          <dt>
             <a href="/nominal/{{nominal.index}}">{{nominal.given_names}} {{nominal.family_name}}</a>
+          </dt>
             {% if nominal.affiliations.length %}
-              – Known affiliations:
+              <dd>
+                <ul>
                 {% for affiliation in nominal.affiliations %}
-                  <a href="/ocg/{{affiliation[0]}}">{{ocgs[affiliation[0]].name}}</a>
-                  {% if loop.last %}
-                  {% else %}
-                    <span>, </span>
-                  {% endif %}
+                  <li><a href="/ocg/{{affiliation[0]}}">{{ocgs[affiliation[0]].name}}</a></li>
                 {% endfor %}
+                </ul>
+              </dd>
             {% endif %}
           </li>
           {% endfor %}
