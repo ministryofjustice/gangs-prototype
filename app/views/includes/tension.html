@@ -14,6 +14,7 @@
       <span class="ocg"><a href="/ocg/{{ocgTension.nominal1_ocg.index}}">{{ ocgTension.nominal1_ocg.name }}</a></span>
       <span class="tension-level tension-level-{{ocgTension.tensionLevel}}"><strong>{{ocgTension.tensionLevel}}</strong></span>
       <span class="ocg"><a href="/ocg/{{ocgTension.nominal2_ocg.index}}">{{ ocgTension.nominal2_ocg.name }}</a></span>
+      <p class="updated-by">Updated by {{ocgTension.updatedBy}} {{ocgTension.updateDaysAgoString | capitalize}}</p>
     {% endfor %}
   </div>
 </div>

@@ -6,6 +6,7 @@ var nominalRoles = require('../../app/sources/roles.json').roles;
 var search = require('./search.js');
 var ocg = require('./ocg-tools.js');
 var arrayUtils = require('./array-utils.js');
+var dateTools = require('./date-tools.js');
 
 var nominal = {
   getAge: function(dob) {
@@ -29,16 +30,7 @@ var nominal = {
   },
 
   showReleaseDaysAgo: function(incarcerationObject) {
-    var string = '(' + incarcerationObject.daysAgo + ' days ago)';
-
-    if(incarcerationObject.daysAgo === 1) {
-      string = '(Yesterday)';
-    }
-    if(incarcerationObject.daysAgo === 0) {
-      string = '(Today)';
-    }
-
-    return string;
+    return dateTools.daysAgoString(incarcerationObject.daysAgo);
   },
 
   getAffiliations: function(affiliationsIn) {

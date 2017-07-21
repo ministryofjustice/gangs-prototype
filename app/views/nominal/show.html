@@ -43,7 +43,7 @@
         {% endif%}
         {% if nominal.incarceration.status == "released" %}
           <dt>Released from:</dt>
-            <dd><a href="/prison/{{nominal.incarceration.prisonIndex}}">HMP {{prisonName}}</a> {{releaseDaysAgo}}</dd>
+            <dd><a href="/prison/{{nominal.incarceration.prisonIndex}}">HMP {{prisonName}}</a> ({{releaseDaysAgo | capitalize}})</dd>
         {% endif%}
 
         <dt>Offender ID:</dt>

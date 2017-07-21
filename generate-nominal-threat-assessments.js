@@ -4,8 +4,9 @@ var faker = require('faker');
 var unique = require('array-unique');
 var humanize = require('humanize');
 var quantities = require('./app/sources/quantities.json');
-var policeForces = require('./app/sources/police-forces.json');
 var randomPicker = require('./app/modules/random-picker.js');
+var dateTools = require('./app/modules/date-tools.js');
+var policeTools = require('./app/modules/police-tools.js');
 var nominals = require('./app/assets/data/dummy-nominals.json').nominals;
 
 // Check if node_modules folder exists
@@ -28,7 +29,7 @@ function init() {
 
   for(var nominal of nominalsToGenerateFor) {
     numAssessments = Math.ceil(Math.random() * maxThreatAssessmentsPerNominal);
-    
+
     for( var i = 0; i <= numAssessments; i++ ){
       nominalThreatAssessment = generateRandomNominalThreatAssessment(nominal);
       data.nominalThreatAssessments.push(nominalThreatAssessment);
@@ -41,35 +42,17 @@ function init() {
 
 function generateRandomNominalThreatAssessment(nominal){
   var assessment = randomAssessment(),
-      timestamp = dateWithinDaysOfNow(-1000);
+      timestamp = dateTools.dateWithinDaysOfNow(-1000);
 
   return {
     'nominal_index': nominal.index,
-    'assessed_by': generatePoliceOfficerTitle(),
-    'police_force': randomPoliceForce(),
+    'assessed_by': policeTools.generatePoliceOfficerTitle(),
+    'police_force': policeTools.randomPoliceForce(),
     'timestamp': timestamp,
     'timestamp_for_display': humanize.date('jS M Y', timestamp),
     'assessment_type': assessment.type,
-    'assessment': assessment.values 
+    'assessment': assessment.values
   }
-}
-
-function generatePoliceOfficerTitle(){
-  return [
-    randomPicker.randomElement(['DS', 'DC', 'DCI', 'DI']),
-    faker.name.firstName(),
-    faker.name.lastName()
-  ].join(' ');
-}
-
-function dateWithinDaysOfNow(days){
-  var date = new Date();
-  date.setDate(date.getDate() + (Math.random() * days));
-  return date;
-}
-
-function randomPoliceForce() {
-  return randomPicker.randomElement(policeForces);
 }
 
 function randomAssessment(){

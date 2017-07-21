@@ -4,6 +4,7 @@ var quantities = require('./app/sources/quantities.json');
 var prisons = require('./app/sources/prisons.json').prisons;
 
 var randomPicker = require('./app/modules/random-picker.js');
+var dateTools = require('./app/modules/date-tools.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -100,20 +101,14 @@ function generateIncarceration() {
   return update;
 }
 function generateRelease() {
-  var update = {
-    type: 'release',
-    nominal: Math.floor(Math.random() * numNominals),
-    location: Math.floor(Math.random() * numPrisons),
-    releaseDaysAgo: Math.floor(Math.random() * 7)
+  var daysAgo = Math.floor(Math.random() * 7),
+      update = {
+        type: 'release',
+        nominal: Math.floor(Math.random() * numNominals),
+        location: Math.floor(Math.random() * numPrisons),
+        releaseDaysAgo: daysAgo,
+        releaseString: dateTools.daysAgoString(daysAgo)
   };
-
-  if(update.releaseDaysAgo === 0) {
-    update.releaseString = 'today';
-  } else if(update.releaseDaysAgo === 1) {
-    update.releaseString = 'yesterday';
-  } else {
-    update.releaseString = update.releaseDaysAgo + ' days ago';
-  }
 
   return update;
 }

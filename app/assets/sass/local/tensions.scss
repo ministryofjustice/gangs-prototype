@@ -31,6 +31,12 @@
       display: block;
     }
   }
+  .updated-by {
+    @include core-14;
+    text-align: right;
+    font-style: italic;
+    margin: 16px 0;
+  }
 
   .tension-level {
     padding: 0 0.2em;

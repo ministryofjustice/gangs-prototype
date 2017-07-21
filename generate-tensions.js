@@ -1,6 +1,8 @@
 var path = require('path');
 var fs = require('fs');
 var quantities = require('./app/sources/quantities.json');
+var dateTools = require('./app/modules/date-tools.js');
+var policeTools = require('./app/modules/police-tools.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -33,19 +35,23 @@ function generateNewTension() {
 
   if(data.tensions.length === numTensions) {
     // that's enough tension for now
-    addtensionLevels();
+    addtensionDetails();
   } else {
     // more tension required
     generateNewTension();
   }
 }
 
-function addtensionLevels() {
+function addtensionDetails() {
   data.tensions.forEach(function(tension, tensionIndex) {
     var indices = tension,
+        daysAgo = Math.floor(Math.random() * 30),
         tensionObject = {
           indices: indices,
-          tensionLevel: tensionLevels[Math.floor(Math.random() * tensionLevels.length)]
+          tensionLevel: tensionLevels[Math.floor(Math.random() * tensionLevels.length)],
+          updatedBy: policeTools.generatePoliceOfficerTitle(),
+          updateDaysAgo: daysAgo,
+          updateDaysAgoString: dateTools.daysAgoString(daysAgo)
         };
 
     data.tensions[tensionIndex] = tensionObject;
