@@ -14,6 +14,8 @@ var nominals = require('./assets/data/dummy-nominals.json').nominals;
 var ocgs = require('./assets/data/dummy-ocgs.json').ocgs;
 var prisons = require('./sources/prisons.json').prisons;
 var roles = require('./sources/roles.json').roles;
+var ocgAssessmentTypes = require('./sources/ocg-assessment-types');
+var ocgAssessmentFields = require('./sources/ocg-assessment-fields');
 
 var paginator = require('./modules/paginator.js')
 
@@ -159,7 +161,11 @@ router.get('/ocg/search/', function(req, res) {
   res.redirect('/ocg/search/new');
 });
 router.get('/ocg/search/new', function(req, res) {
-  res.render('ocg/search/new', {search: {}});
+  res.render('ocg/search/new', {
+    ocgAssessmentFields: ocgAssessmentFields,
+    ocgAssessmentTypes: ocgAssessmentTypes,
+    ocgAssessmentValues: ["High", "Med", "Low", "Yes", "No"]
+  });
 });
 router.get('/ocg/search/results', function(req, res) {
   var results = ocgTools.search(req.session.data);
@@ -170,6 +176,9 @@ router.get('/ocg/search/results', function(req, res) {
   var paginated_results = paginator.visibleElements(results, page, per_page);
 
   res.render('ocg/search/results', {
+    ocgAssessmentFields: ocgAssessmentFields,
+    ocgAssessmentTypes: ocgAssessmentTypes,
+    ocgAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
     search_results: paginated_results,
     roles: roles,
     page: page,
