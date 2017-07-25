@@ -9,15 +9,17 @@ var ocgThreatAssessmentTools = require('./modules/ocg-threat-assessment-tools.js
 var nominalThreatAssessmentTools = require('./modules/nominal-threat-assessment-tools.js');
 var updateTools = require('./modules/update-tools.js');
 var listTools = require('./modules/list-tools.js');
+var paginator = require('./modules/paginator.js');
 
 var nominals = require('./assets/data/dummy-nominals.json').nominals;
 var ocgs = require('./assets/data/dummy-ocgs.json').ocgs;
 var prisons = require('./sources/prisons.json').prisons;
 var roles = require('./sources/roles.json').roles;
+
 var ocgAssessmentTypes = require('./sources/ocg-assessment-types');
 var ocgAssessmentFields = require('./sources/ocg-assessment-fields');
-
-var paginator = require('./modules/paginator.js')
+var nominalAssessmentTypes = require('./sources/nominal-assessment-types');
+var nominalAssessmentFields = require('./sources/nominal-assessment-fields');
 
 
 // root - login page
@@ -103,6 +105,11 @@ router.get('/nominal/search/', function(req, res) {
 });
 router.get('/nominal/search/new', function(req, res) {
   res.render('nominal/search/new', {
+
+    nominalAssessmentFields: nominalAssessmentFields,
+    nominalAssessmentTypes: nominalAssessmentTypes,
+    nominalAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
+
     lists: listTools.getAll(),
     search: {}
   });
@@ -116,6 +123,11 @@ router.get('/nominal/search/results', function(req, res) {
   var paginated_results = paginator.visibleElements(results, page, per_page);
 
   res.render('nominal/search/results', {
+
+    nominalAssessmentFields: nominalAssessmentFields,
+    nominalAssessmentTypes: nominalAssessmentTypes,
+    nominalAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
+    
     search_results: paginated_results,
     roles: roles,
     page: page,

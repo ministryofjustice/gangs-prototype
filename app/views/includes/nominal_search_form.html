@@ -1,10 +1,11 @@
 
   <form action="/nominal/search/results" method="POST" id="nominal-search">
-    <div class="form-section">
+    <fieldset class="form-section">
+      <legend>General Identification</legend>
+
       <div class="form-group">
         <h3>Names</h3>
-        <fieldset class="inline">
-          <legend class="visually-hidden">Names</legend>
+        <div class="inline">
 
           <div class="form-group-inline form-group-inline-long">
             <label class="form-label" for="given_names">Given names:</label>
@@ -15,67 +16,75 @@
             <input type="text" class="form-control" name="family_name" placeholder="e.g. Smith" value="{{data['family_name']}}" />
           </div>
 
-        </fieldset>
+        </div>
       </div>
       <div class='form-group'>
-        <fieldset>
-          <legend class="form-label">Date of birth:</legend>
-          <div class="form-date">
-            <div class="form-group form-group-match-type">
-              <label class="label-match-type">type</label>
-              <select name="dob-match-type" id="dob-match-type" class="dob-match-type form-control">
-                {% for type in ['matches', 'before', 'after'] %}
-                  {% if data['dob-match-type'] == type %}
-                    <option value="{{ type }}" selected>
-                  {% else %}
-                    <option value="{{ type }}">
-                  {% endif %}
-                    {{ type }}
-                  </option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="form-group form-group-day">
-              <label for="dob-day">Day</label>
-              <input type="text" class="form-control" name="dob-day" id="dob-day" value="{{data['dob-day']}}" placeholder="1" />
-            </div>
-            <div class="form-group form-group-month">
-              <label for="dob-month">Month</label>
-              <input type="text" class="form-control" name="dob-month" id="dob-month" value="{{data['dob-month']}}" placeholder="1 or Nov" />
-            </div>
-            <div class="form-group form-group-year">
-              <label for="dob-year">Year</label>
-              <input type="text" class="form-control" name="dob-year" id="dob-year" value="{{data['dob-year']}}" placeholder="1" />
-            </div>
+        <h3 class="form-label">Date of birth:</h3>
+        <div class="form-date">
+          <div class="form-group form-group-match-type">
+            <label class="label-match-type">type</label>
+            <select name="dob-match-type" id="dob-match-type" class="dob-match-type form-control">
+              {% for type in ['matches', 'before', 'after'] %}
+                {% if data['dob-match-type'] == type %}
+                  <option value="{{ type }}" selected>{{ type }}</option>
+                {% else %}
+                  <option value="{{ type }}">{{ type }}</option>
+                {% endif %}
+              {% endfor %}
+            </select>
           </div>
-        </fieldset>
-
-
+          <div class="form-group form-group-day">
+            <label for="dob-day">Day</label>
+            <input type="text" class="form-control" name="dob-day" id="dob-day" value="{{data['dob-day']}}" placeholder="1" />
+          </div>
+          <div class="form-group form-group-month">
+            <label for="dob-month">Month</label>
+            <input type="text" class="form-control" name="dob-month" id="dob-month" value="{{data['dob-month']}}" placeholder="1 or Nov" />
+          </div>
+          <div class="form-group form-group-year">
+            <label for="dob-year">Year</label>
+            <input type="text" class="form-control" name="dob-year" id="dob-year" value="{{data['dob-year']}}" placeholder="1" />
+          </div>
+        </div>
       </div>
 
       <div class='form-group'>
         <h3>Gender</h3>
-        <fieldset class="inline">
-          <legend class="visually-hidden">Gender</legend>
-          <div class="multiple-choice">
-            <input type="radio" id="gender-m" name="gender" value="M" selected="{{data['gender'] == 'M'}}" />
-            <label for="gender-m" class="form-label">Male</label>
-          </div>
-          <div class="multiple-choice">
-            <input type="radio" id="gender-f" name="gender" value="F" selected="{{data['gender'] == 'F'}}" />
-            <label for="gender-f" class="form-label">Female</label>
-          </div>
-        </fieldset>
+        <div class="multiple-choice">
+          <input type="radio" id="gender-m" name="gender" value="M" selected="{{data['gender'] == 'M'}}" />
+          <label for="gender-m" class="form-label">Male</label>
+        </div>
+        <div class="multiple-choice">
+          <input type="radio" id="gender-f" name="gender" value="F" selected="{{data['gender'] == 'F'}}" />
+          <label for="gender-f" class="form-label">Female</label>
+        </div>
       </div>
 
       <div class='form-group'>
-        <label class="form-label">Incarcerated at:</label>
+        <label class="form-label">Identifying marks:</label>
+        <input type="text" class="form-control" name="identifying_marks" value="{{data['identifying_marks']}}" placeholder="e.g. scar on right shoulder" />
+      </div>
+
+      <div class='form-group'>
+        <label class="form-label">Known aliases:</label>
+        <input type="text" class="form-control" name="aliases" value="{{data['aliases']}}" placeholder="e.g. Eazy F"/>
+      </div>
+      <div class='form-group'>
+        <label class="form-label">Imprisoned at:</label>
         <input type="text" class="form-control" name="prison_name" value="{{data['prison_name']}}" placeholder="e.g. 'Feltham' or 'Scrubs'"/>
       </div>
+      <div class='form-group'>
+        <label class="form-label">Known affiliations:</label>
+        <input type="text" class="form-control" name="affiliated_ocg_names" value="{{data['affiliated_ocg_names']}}" placeholder="Full or partial OCG name e.g.'Gas Gang'" />
+      </div>
 
+    </fieldset>
+    
+    <fieldset class="form-section">
+      <legend>Reference numbers</legend>
       <div class='form-group'>
         <label class="form-label">Offender ID:</label>
-      <input type="text" class="form-control" name="offender_id" value="{{data['offender_id']}}" placeholder="e.g. 1234567"/>
+        <input type="text" class="form-control" name="offender_id" value="{{data['offender_id']}}" placeholder="e.g. 1234567"/>
         <div class="validate offender_id">
           {% include "./tick.html" %}
         </div>
@@ -96,27 +105,46 @@
           {% include "./tick.html" %}
         </div>
       </div>
-
-      <div class='form-group'>
-        <label class="form-label">Identifying marks:</label>
-        <input type="text" class="form-control" name="identifying_marks" value="{{data['identifying_marks']}}" placeholder="e.g. scar on right shoulder" />
+    </fieldset>
+  
+    <fieldset class="form-section">
+      <legend class="heading-detail-small">Threats</legend>
+      <div class="column-full">
+        <div class="form-group form-group-inline form-group-inline-long">
+          <label class="form-label">Assessment field:</label>
+          <select name="assessment_fields" class="form-control">
+            <option value="">---</option>
+          {% for type, fields in nominalAssessmentFields %}
+            <optgroup label="{{nominalAssessmentTypes[type]}}">
+              {% for field, values in fields %}
+                <option value="{{field}}" {% if data['assessment_fields'] == field %}selected{% endif %}>{{field}}</option>
+              {% endfor %}
+            </optgroup>
+          {% endfor %}
+          </select>
+        </div>
+        <div class="form-group form-group-inline">
+          <label class="form-label">Value:</label>
+            <select name="assessment_field_values" class="form-control">
+              <option value="">---</option>
+            {% for value in nominalAssessmentValues %}
+              <option value="{{value}}" {% if data['assessment_field_values'] == value %}selected{% endif %}>{{value}}</option>
+            {% endfor %}
+            </select>
+            <br style="clear:both;" />
+            <label class="form-label">or min/max:</label>
+            <input name="assessment_field_value_min" class="form-control half" type="text" placeholder="min" value="{{data['assessment_field_value_min']}}" />
+            <input name="assessment_field_value_max" class="form-control half" type="text" placeholder="max" value="{{data['assessment_field_value_max']}}" />
+        </div>
       </div>
+    </fieldset>
 
-      <div class='form-group'>
-        <label class="form-label">Known aliases:</label>
-        <input type="text" class="form-control" name="aliases" value="{{data['aliases']}}" placeholder="e.g. Eazy F"/>
-      </div>
 
-      <div class='form-group'>
-        <label class="form-label">Known affiliations:</label>
-        <input type="text" class="form-control" name="affiliated_ocg_names" value="{{data['affiliated_ocg_names']}}" placeholder="Full or partial OCG name e.g.'Gas Gang'" />
-      </div>
+    <input type="submit" class="button" value="Search" />
+    {% if 'given_names' in data %}
+      <a class="clear-search" href="/nominal/search/new">Clear search</a>
+    {% endif %}
 
-      <input type="submit" class="button" value="Search" />
-      {% if 'given_names' in data %}
-        <a class="clear-search" href="/nominal/search/new">Clear search</a>
-      {% endif %}
-    </div>
-  </form>
+</form>
 
 <script src="/public/javascripts/validation.js"></script>

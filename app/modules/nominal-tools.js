@@ -7,6 +7,7 @@ var search = require('./search.js');
 var ocg = require('./ocg-tools.js');
 var arrayUtils = require('./array-utils.js');
 var dateTools = require('./date-tools.js');
+var nominalThreatAssessmentTools = require('./nominal-threat-assessment-tools.js');
 
 var nominal = {
   getAge: function(dob) {
@@ -132,6 +133,27 @@ var nominal = {
   search: function(params) {
     // note: search is basic sub-string match only
     var filteredNominals = search.filter(nominals, params);
+
+    if( params['assessment_fields'] ){
+      var assessmentFilter = nominalThreatAssessmentTools.mapFieldsAndValuesToSearchParams(
+                                params['assessment_fields'],
+                                params['assessment_field_values'],
+                                params['assessment_field_value_min'],
+                                params['assessment_field_value_max'])
+
+      filteredNominals = filteredNominals.filter( function(nominal){
+        var nominalAssessments = nominalThreatAssessmentTools.search({"nominal_index": nominal.index});
+        for( var assessment of nominalAssessments ){
+          if( nominalThreatAssessmentTools.assessmentMatches(assessment, assessmentFilter) ){
+            return true;
+          } else {
+            return false;
+          }
+        }
+        return false;
+      });
+    }
+
     return filteredNominals;
   }
 };

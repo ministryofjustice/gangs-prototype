@@ -1,0 +1,41 @@
+{
+  "drv": {
+    "Carries/has access to weapons (excluding firearms last 6 months)": ["Yes", "No"],
+    "Threats of physical violence (last 8 weeks)": ["Yes", "No"],
+    "Weapon referenced in threats excluding firearm (last 8 weeks)": ["Yes", "No"],
+    "Serious physical violence evidenced (last 8 weeks)": ["Yes", "No"],
+    "Currently on bail for serious violence": ["Yes", "No"]
+  },
+  "vat": {
+    "Appears on MPS gang matrix?": ["Yes", "No"],
+    "MPS Gang Matrix harm score":  ["integer", 0, 100],
+    "MPS Gang Matrix victim score": ["integer", 0, 100],
+    "Appears on any other force gang matrix?": ["Yes", "No"],
+    "Associated, through family or otherwise, to known gangs?": ["Yes", "No"],
+    "How many times has the nominal been missing?": ["integer", 0, 20],
+    "How many days in total has the nominal been missing?": ["integer", 0, 600],
+    "Currently wanted or missing?": ["Yes", "No"],
+    "Victim of sexual crime (including CRIS)?": ["Yes", "No"],
+    "Flagged on PNC as at risk of CSE?": ["Yes", "No"],
+    "Been witness to sexual crime or serious violence?": ["Yes", "No"],
+    "Is there domestic abuse in their household?": ["Yes", "No"],
+    "Suspected/accused of sexual offences or serious violence?": ["Yes", "No"],
+    "Suspected/accused of other crimes?": ["Yes", "No"],
+    "Suspected/accused of PWITS?": ["Yes", "No"],
+    "Suspected/accused of posession of a weapon?": ["Yes", "No"],
+    "Been identified as part of county lines activity following a stop-check?": ["Yes", "No"],
+    "Been arrested as part of county lines activity?": ["Yes", "No"],
+    "(if under 18) Currently looked after?": ["Yes", "No"],
+    "(if under 18) Has older boyfriend?": ["Yes", "No"],
+    "(if under 18) Displays sexually inappropriate behaviour?": ["Yes", "No"],
+    "(if under 18) Regular truant or excluded from school?": ["Yes", "No"],
+    "Any suicidal or self-harming markers?": ["Yes", "No"],
+    "Any mental health warning markers?": ["Yes", "No"],
+    "(if over 18) Known to adult social services?": ["Yes", "No"],
+    "Known for substance abuse (including alcohol)?": ["Yes", "No"],
+    "Associates with others who are being exploited (sexually or otherwise)?": ["Yes", "No"],
+    "Linked to county line intelligence?": ["Yes", "No"],
+    "Linked to firearms/knife intelligence?": ["Yes", "No"],
+    "Linked to intelligence relating to sexual offences?": ["Yes", "No"]
+  }
+}

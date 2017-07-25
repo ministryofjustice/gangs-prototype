@@ -50,6 +50,11 @@ var randomPicker = {
     }
 
     return selectedIndices.map(function(i){ return arr[i]; });
+  },
+
+  randomIntegerBetween: function(min, max) {
+    var range = max - min;
+    return Math.floor( (Math.random() * (range+1)) ) + min;
   }
 }
 
