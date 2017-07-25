@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "array-unique": "^0.3.2",
+    "aws-sdk": "^2.89.0",
     "basic-auth": "^1.0.3",
     "basic-auth-connect": "^1.0.0",
     "body-parser": "^1.14.1",
