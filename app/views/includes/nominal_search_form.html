@@ -111,6 +111,7 @@
           <div class="form-group form-group-inline form-group-inline-long">
             <label class="form-label">Assessment field:</label>
             <select name="assessment_fields" class="form-control">
+              <option value="">---</option>
             {% for type, fields in nominalAssessmentFields %}
               <optgroup label="{{nominalAssessmentTypes[type]}}">
                 {% for field, values in fields %}
@@ -123,6 +124,7 @@
           <div class="form-group form-group-inline">
             <label class="form-label">Value:</label>
               <select name="assessment_field_values" class="form-control">
+                <option value="">---</option>
               {% for value in nominalAssessmentValues %}
                 <option value="{{value}}" {% if data['assessment_field_values'] == value %}selected{% endif %}>{{value}}</option>
               {% endfor %}
