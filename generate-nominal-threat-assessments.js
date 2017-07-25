@@ -60,9 +60,8 @@ function generateRandomNominalThreatAssessment(nominal){
 function randomAssessment(){
   var types = ['drv', 'vat'];
   var labels = {
-    "ocgm": 'OCGM',
-    "drv": 'DRV',
-    "gangNetworkThreat": 'Gang Network Threat'
+    "drv": 'Drug-Related Violence',
+    "vat": 'Vulnerability And Threats'
   };
 
   var chosenType = types[Math.floor(Math.random() * 3)];
@@ -76,7 +75,6 @@ function randomAssessment(){
 function generateAssessmentFields(type){
   var assessment = {};
   for( var field in nominalAssessmentFields[type] ){
-    console.log('field = ' + field)
     assessment[field] = randomValue(nominalAssessmentFields[type][field]);
   }
   return assessment;

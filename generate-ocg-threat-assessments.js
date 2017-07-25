@@ -75,7 +75,6 @@ function randomAssessment(){
 function generateAssessmentFields(type){
   var assessment = {};
   for( var field in ocgAssessmentFields[type] ){
-    console.log('field = ' + field)
     assessment[field] = randomPicker.randomElement(ocgAssessmentFields[type][field]);
   }
   return assessment;
