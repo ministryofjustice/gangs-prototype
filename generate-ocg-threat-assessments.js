@@ -8,7 +8,7 @@ var randomPicker = require('./app/modules/random-picker.js');
 var dateTools = require('./app/modules/date-tools.js');
 var policeTools = require('./app/modules/police-tools.js');
 var ocgs = require('./app/assets/data/dummy-ocgs.json').ocgs;
-var ocgmAssessmentFields = require('./app/sources/ocg-assessment-fields.json');
+var ocgAssessmentFields = require('./app/sources/ocg-assessment-fields.json');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -74,9 +74,9 @@ function randomAssessment(){
 
 function generateAssessmentFields(type){
   var assessment = {};
-  for( var field in ocgmAssessmentFields[type] ){
+  for( var field in ocgAssessmentFields[type] ){
     console.log('field = ' + field)
-    assessment[field] = randomPicker.randomElement(ocgmAssessmentFields[type][field]);
+    assessment[field] = randomPicker.randomElement(ocgAssessmentFields[type][field]);
   }
   return assessment;
 }

@@ -8,6 +8,7 @@ var randomPicker = require('./app/modules/random-picker.js');
 var dateTools = require('./app/modules/date-tools.js');
 var policeTools = require('./app/modules/police-tools.js');
 var nominals = require('./app/assets/data/dummy-nominals.json').nominals;
+var nominalAssessmentFields = require('./app/sources/nominal-assessment-fields.json');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -55,64 +56,37 @@ function generateRandomNominalThreatAssessment(nominal){
   }
 }
 
+
 function randomAssessment(){
-  var types = ['DRV', 'VAT'];
-  var assessments = [
-    drvAssessment,
-    vatAssessment
-  ];
-  var index = Math.floor(Math.random() * types.length);
+  var types = ['drv', 'vat'];
+  var labels = {
+    "ocgm": 'OCGM',
+    "drv": 'DRV',
+    "gangNetworkThreat": 'Gang Network Threat'
+  };
+
+  var chosenType = types[Math.floor(Math.random() * 3)];
+
   return {
-    'type': types[index],
-    'values': assessments[index].call()
+    'type': labels[chosenType],
+    'values': generateAssessmentFields(chosenType)
   };
 }
 
-
-function drvAssessment(){
-  var values = ['Yes', 'No'];
-  return {
-    'Carries/has access to weapons (excluding firearms last 6 months)': randomPicker.randomElement(values),
-    'Threats of physical violence (last 8 weeks)': randomPicker.randomElement(values),
-    'Weapon referenced in threats excluding firearm (last 8 weeks)': randomPicker.randomElement(values),
-    'Serious physical violence evidenced (last 8 weeks)': randomPicker.randomElement(values),
-    'Currently on bail for serious violence': randomPicker.randomElement(values)
+function generateAssessmentFields(type){
+  var assessment = {};
+  for( var field in nominalAssessmentFields[type] ){
+    console.log('field = ' + field)
+    assessment[field] = randomValue(nominalAssessmentFields[type][field]);
   }
+  return assessment;
 }
 
-function vatAssessment(){
-  var values = ['Yes', 'No'];
-  return {
-    'Appears on MPS gang matrix?': randomPicker.randomElement(values),
-    'MPS Gang Matrix harm score': Math.floor(Math.random() * 100),
-    'MPS Gang Matrix victim score': Math.floor(Math.random() * 100),
-    'Appears on any other force gang matrix?': randomPicker.randomElement(values),
-    'Associated, through family or otherwise, to known gangs?': randomPicker.randomElement(values),
-    'How many times has the nominal been missing?': Math.floor(Math.random() * 20),
-    'How many days in total has the nominal been missing?': Math.floor(Math.random() * 20 * 30),
-    'Currently wanted or missing?': randomPicker.randomElement(values),
-    'Victim of sexual crime (including CRIS)?': randomPicker.randomElement(values),
-    'Flagged on PNC as at risk of CSE?': randomPicker.randomElement(values),
-    'Been witness to sexual crime or serious violence?': randomPicker.randomElement(values),
-    'Is there domestic abuse in their household?': randomPicker.randomElement(values),
-    'Suspected/accused of sexual offences or serious violence?': randomPicker.randomElement(values),
-    'Suspected/accused of other crimes?': randomPicker.randomElement(values),
-    'Suspected/accused of PWITS?': randomPicker.randomElement(values),
-    'Suspected/accused of posession of a weapon?': randomPicker.randomElement(values),
-    'Been identified as part of county lines activity following a stop-check?': randomPicker.randomElement(values),
-    'Been arrested as part of county lines activity?': randomPicker.randomElement(values),
-    '(if under 18) Currently looked after?': randomPicker.randomElement(values),
-    '(if under 18) Has older boyfriend?': randomPicker.randomElement(values),
-    '(if under 18) Displays sexually inappropriate behaviour?': randomPicker.randomElement(values),
-    '(if under 18) Regular truant or excluded from school?': randomPicker.randomElement(values),
-    'Any suicidal or self-harming markers?': randomPicker.randomElement(values),
-    'Any mental health warning markers?': randomPicker.randomElement(values),
-    '(if over 18) Known to adult social services?': randomPicker.randomElement(values),
-    'Known for substance abuse (including alcohol)?': randomPicker.randomElement(values),
-    'Associates with others who are being exploited (sexually or otherwise)?': randomPicker.randomElement(values),
-    'Linked to county line intelligence?': randomPicker.randomElement(values),
-    'Linked to firearms/knife intelligence?': randomPicker.randomElement(values),
-    'Linked to intelligence relating to sexual offences?': randomPicker.randomElement(values)
+function randomValue(values) {
+  if( values[0] == "integer" ) {
+    return randomPicker.randomIntegerBetween(values[1], values[2]);
+  } else {
+    return randomPicker.randomElement(values);
   }
 }
 
