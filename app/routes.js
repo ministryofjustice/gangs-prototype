@@ -21,6 +21,8 @@ var ocgAssessmentFields = require('./sources/ocg-assessment-fields');
 var nominalAssessmentTypes = require('./sources/nominal-assessment-types');
 var nominalAssessmentFields = require('./sources/nominal-assessment-fields');
 
+const S3_BUCKET = process.env.S3_SOURCE_BUCKET_NAME;
+var aws = require('aws-sdk');
 
 // root - login page
 router.get('/', function (req, res) {
@@ -58,10 +60,35 @@ router.get('/updates/:type', function (req, res) {
 });
 
 
+// PoC facial recognition routes
+router.get('/sign-s3', function (req, res) {
+  const s3 = new aws.S3();
+  const fileName = req.query['file-name'];
+  const fileType = req.query['file-type'];
+  const s3Params = {
+    Bucket: S3_BUCKET,
+    Key: fileName,
+    Expires: 60,
+    ContentType: fileType,
+    ACL: 'public-read'
+  };
+
+  console.log('s3Params = ' + JSON.stringify(s3Params));
+  s3.getSignedUrl('putObject', s3Params, (err, data) => {
+    if(err){
+      console.log(err);
+      return res.end();
+    }
+    const returnData = {
+      signedRequest: data,
+      url: `https://${S3_BUCKET}.s3.amazonaws.com/${fileName}`
+    };
+    res.write(JSON.stringify(returnData));
+    res.end();
+  });
+});
 
 // nominals
-
-
 router.get('/nominal/', function(req, res) {
   res.redirect('/nominal/search/new');
 });

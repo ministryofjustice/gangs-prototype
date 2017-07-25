@@ -7,8 +7,10 @@
       <p>Upload an image to match against mugshots</p>
       <div class="form-group">
         <label for="image" class="form-label">Your image file:</label>
-        <input type="file" name="image" id="image" />
+        <input type="file" name="image" id="image-input" />
+        <img id="preview" src="/assets/images/avatar-m-512.png" />
         <input type="submit" class="button" value="Search" />
+        <input type="hidden" id="uploaded-image-url" name="uploaded-image-url" value="" />
       </div>
     </fieldset>
     <fieldset class="form-section">
@@ -158,3 +160,4 @@
   </form>
 
 <script src="/public/javascripts/validation.js"></script>
+<script src="/public/javascripts/modules/upload-on-change.js"></script>
