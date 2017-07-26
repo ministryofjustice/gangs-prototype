@@ -15,7 +15,7 @@ if (!nodeModulesExists) {
 
 
 
-var updateTypes = ['tension', 'affiliation', 'incarceration', 'release'],
+var updateTypes = ['tension', 'affiliation', 'imprisonment', 'release'],
     updates = {},
     numUpdates = quantities.updates,
     numOcgs = quantities.ocgs,
@@ -43,8 +43,8 @@ function generateUpdate(type) {
   var newUpdate = false;
 
   switch(type) {
-    case 'incarceration':
-      newUpdate = generateIncarceration();
+    case 'imprisonment':
+      newUpdate = generateImprisonment();
       break;
     case 'affiliation':
       newUpdate = generateNewAffiliation();
@@ -91,9 +91,9 @@ function generateNewAffiliation() {
 
   return update;
 }
-function generateIncarceration() {
+function generateImprisonment() {
   var update = {
-    type: 'incarceration',
+    type: 'imprisonment',
     nominal: Math.floor(Math.random() * numNominals),
     location: Math.floor(Math.random() * numPrisons)
   };

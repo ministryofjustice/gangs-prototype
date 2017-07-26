@@ -32,9 +32,9 @@ var updateTools = {
         inner = '';
 
     switch(update.type) {
-      case 'incarceration':
+      case 'imprisonment':
         inner += self.link(nominals[update.nominal].given_names + ' ' + nominals[update.nominal].family_name, 'nominal', update.nominal);
-        inner += ' incarcerated at ';
+        inner += ' imprisoned at ';
         inner += self.bold(self.link(prisons[update.location], 'prison', update.location));
         break;
       case 'release':

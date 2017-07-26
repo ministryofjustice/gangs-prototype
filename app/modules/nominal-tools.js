@@ -30,8 +30,8 @@ var nominal = {
     return '';
   },
 
-  showReleaseDaysAgo: function(incarcerationObject) {
-    return dateTools.daysAgoString(incarcerationObject.daysAgo);
+  showReleaseDaysAgo: function(imprisonmentObject) {
+    return dateTools.daysAgoString(imprisonmentObject.daysAgo);
   },
 
   getAffiliations: function(affiliationsIn) {
@@ -53,7 +53,7 @@ var nominal = {
     var nominalsInPrison = [];
 
     nominals.forEach(function(nominal) {
-      if(nominal.incarceration.status === 'incarcerated' && nominal.incarceration.prisonIndex == prisonIndex) {
+      if(nominal.imprisonment.status === 'imprisoned' && nominal.imprisonment.prisonIndex == prisonIndex) {
         nominalsInPrison.push(nominal);
       }
     });
@@ -65,7 +65,7 @@ var nominal = {
     var probationers = [];
 
     return nominals.filter( function(nominal){
-      return nominal.incarceration.status == null && nominal.nomis_id;
+      return nominal.imprisonment.status == null && nominal.nomis_id;
     });
   },
 
