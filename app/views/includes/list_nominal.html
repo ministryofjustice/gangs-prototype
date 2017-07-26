@@ -13,7 +13,7 @@
   <div class="system-ids">
     <p class="field">NOMIS ID: {{nominal.nomis_id}}</p>
     <p class="field">PNC ID: {{nominal.pnc_id}}</p>
-    {% if nominal.incarceration %}
+    {% if nominal.imprisonment %}
       <p class="field">In: 
         <strong><a href="/nominal/search/results?prison_name={{nominal.prison_name}}">HMP {{nominal.prison_name}}</a></strong>
       </p>

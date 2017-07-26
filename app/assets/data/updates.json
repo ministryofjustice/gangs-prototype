@@ -228,107 +228,107 @@
       "timeAgo": "1d"
     }
   ],
-  "incarceration": [
+  "imprisonment": [
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 4,
       "location": 6,
       "minutesAgo": 7,
       "timeAgo": "7m"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 83,
       "location": 3,
       "minutesAgo": 61,
       "timeAgo": "1h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 44,
       "location": 16,
       "minutesAgo": 124,
       "timeAgo": "2h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 47,
       "location": 2,
       "minutesAgo": 141,
       "timeAgo": "2h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 79,
       "location": 1,
       "minutesAgo": 223,
       "timeAgo": "3h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 30,
       "location": 21,
       "minutesAgo": 362,
       "timeAgo": "6h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 90,
       "location": 11,
       "minutesAgo": 380,
       "timeAgo": "6h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 95,
       "location": 13,
       "minutesAgo": 509,
       "timeAgo": "8h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 60,
       "location": 11,
       "minutesAgo": 1059,
       "timeAgo": "17h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 87,
       "location": 5,
       "minutesAgo": 1066,
       "timeAgo": "17h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 82,
       "location": 12,
       "minutesAgo": 1101,
       "timeAgo": "18h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 83,
       "location": 23,
       "minutesAgo": 1177,
       "timeAgo": "19h"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 99,
       "location": 25,
       "minutesAgo": 1567,
       "timeAgo": "1d"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 14,
       "location": 19,
       "minutesAgo": 1673,
       "timeAgo": "1d"
     },
     {
-      "type": "incarceration",
+      "type": "imprisonment",
       "nominal": 75,
       "location": 23,
       "minutesAgo": 1679,

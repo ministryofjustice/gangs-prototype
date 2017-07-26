@@ -89,7 +89,7 @@ router.get('/nominal/:index', function(req, res) {
     gender: nominalTools.expandGender(nominal.gender),
     age: nominalTools.getAge(nominal.dob),
     affiliations: nominalTools.getAffiliations(nominal.affiliations),
-    releaseDaysAgo: nominalTools.showReleaseDaysAgo(nominal.incarceration),
+    releaseDaysAgo: nominalTools.showReleaseDaysAgo(nominal.imprisonment),
     prisonName: nominal.prison_name,
     threatAssessments: nominalThreatAssessments
   });

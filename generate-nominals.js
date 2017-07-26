@@ -58,8 +58,8 @@ function init() {
           return ocgs[id].name;
         }
       );
-    nominal.incarceration = getIncarcerationStatus(x);
-    nominal.prison_name = ( nominal.incarceration.status ? prisons[nominal.incarceration.prisonIndex] : '' );
+    nominal.imprisonment = getImprisonmentStatus(x);
+    nominal.prison_name = ( nominal.imprisonment.status ? prisons[nominal.imprisonment.prisonIndex] : '' );
 
     nominal.search_text = searchTools.generateSearchText(nominal);
 
@@ -167,38 +167,38 @@ function generateAffiliations() {
   return affiliations;
 }
 
-function getIncarcerationStatus(nominalIndex) {
-  var incarcerationUpdate = {
+function getImprisonmentStatus(nominalIndex) {
+  var imprisonmentUpdate = {
     status: null
   };
 
   if(Math.random() < 0.2) {
-    incarcerationUpdate.status = 'incarcerated';
-    incarcerationUpdate.prisonIndex = Math.floor(Math.random() * prisons.length);
+    imprisonmentUpdate.status = 'imprisoned';
+    imprisonmentUpdate.prisonIndex = Math.floor(Math.random() * prisons.length);
   }
 
-  // check updates file (if it exists yet) to see if nominal is listed as incarcerated or released
+  // check updates file (if it exists yet) to see if nominal is listed as imprisoned or released
 
   if(updates && updates.release) {
     updates.release.forEach(function(update) {
       if(update.nominal == nominalIndex) {
-        incarcerationUpdate.prisonIndex = update.location;
-        incarcerationUpdate.status = 'released';
-        incarcerationUpdate.daysAgo = update.releaseDaysAgo;
+        imprisonmentUpdate.prisonIndex = update.location;
+        imprisonmentUpdate.status = 'released';
+        imprisonmentUpdate.daysAgo = update.releaseDaysAgo;
       }
     });
   }
 
-  if(updates && updates.incarceration) {
-    updates.incarceration.forEach(function(update) {
+  if(updates && updates.imprisonment) {
+    updates.imprisonment.forEach(function(update) {
       if(update.nominal == nominalIndex) {
-        incarcerationUpdate.prisonIndex = update.location;
-        incarcerationUpdate.status = 'incarcerated';
+        imprisonmentUpdate.prisonIndex = update.location;
+        imprisonmentUpdate.status = 'imprisoned';
       }
     });
   }
 
-  return incarcerationUpdate;
+  return imprisonmentUpdate;
 }
 
 function leadingZero(n) {
