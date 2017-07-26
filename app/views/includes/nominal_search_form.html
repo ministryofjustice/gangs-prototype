@@ -1,12 +1,16 @@
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 564848c4b4f1fcc2771b16efa87604ab809c375e
   <form action="/nominal/search/results" method="POST" id="nominal-search" enctype="multipart/form-data">
     <fieldset class="form-section">
       <legend>Search by Face</legend>
       <p>Upload an image to match against mugshots</p>
       <div class="form-group">
         <label for="image" class="form-label">Your image file:</label>
+<<<<<<< HEAD
         <input type="file" name="image" id="image-input" />
         <img id="preview" src="/assets/images/avatar-m-512.png" />
         <input type="submit" class="button" value="Search" />
@@ -15,6 +19,13 @@
     </fieldset>
     <fieldset class="form-section">
       <legend>General Identification</legend>
+=======
+        <input type="file" name="image" id="image" />
+        <input type="submit" class="button" value="Search" />
+      </div>
+    </fieldset>
+    <fieldset class="form-section">
+>>>>>>> 564848c4b4f1fcc2771b16efa87604ab809c375e
       <div class="form-group">
         <h3>Names</h3>
         <div class="inline">
@@ -157,6 +168,14 @@
       <a class="clear-search" href="/nominal/search/new">Clear search</a>
     {% endif %}
 
+<<<<<<< HEAD
+=======
+      <input type="submit" class="button" value="Search" />
+      {% if 'given_names' in data %}
+        <a class="clear-search" href="/nominal/search/new">Clear search</a>
+      {% endif %}
+    </fieldset>
+>>>>>>> 564848c4b4f1fcc2771b16efa87604ab809c375e
   </form>
 
 <script src="/public/javascripts/validation.js"></script>

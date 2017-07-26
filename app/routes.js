@@ -110,6 +110,7 @@ router.get('/nominal/tensions', function(req, res){
     tensions: tensions
   });
 });
+
 // nominal search-related routes
 router.get('/nominal/search/', function(req, res) {
   res.redirect('/nominal/search/new');
@@ -149,9 +150,7 @@ router.get('/nominal/search/results', function(req, res) {
   });
 });
 
-router.get('/simple_search_action', function(req,res){
-  res.redirect( '/' + req.session.data['search-scope'] + '/search/results');
-});
+
 
 // put this last, so that it doesn't try to find
 // nominals with index 'search', etc
@@ -166,6 +165,10 @@ router.get('/nominal/:index', function(req, res) {
     affiliations: nominalTools.getAffiliations(nominal.affiliations),
     prisonName: prisons[nominal.incarceration]
   });
+});
+
+router.get('/simple_search_action', function(req,res){
+  res.redirect( '/' + req.session.data['search-scope'] + '/search/results');
 });
 
 
