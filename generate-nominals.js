@@ -52,6 +52,10 @@ function init() {
     nominal.pnc_id = generatePncId();
     nominal.aliases = generateAliases(nominal.given_names);
     nominal.affiliations = generateAffiliations();
+    
+    // these fields are just here to make the mvp search easier
+    // by providing a top-level attribute to filter on
+    nominal.mugshot_filename = nominal.mugshot.filename;
     nominal.affiliated_ocg_names = nominal.affiliations.map(
         function(element){
           var id = arrayUtils.forceToArray(element)[0];

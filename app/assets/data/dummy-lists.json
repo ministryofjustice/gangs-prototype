@@ -1,43 +1,43 @@
 {
   "lists": [
     {
-      "name": "Prisoners In Altcourse",
+      "name": "Prisoners In Stocken",
       "nominalIndexes": [
-        48,
-        76,
-        85,
-        93
+        31,
+        56,
+        81
       ],
       "index": 0
     },
     {
       "name": "My Probationers",
       "nominalIndexes": [
-        2,
-        11,
+        25,
         37,
-        42,
-        46,
-        50,
-        52,
-        65
+        67,
+        73,
+        86,
+        94
       ],
       "index": 1
     },
     {
       "name": "List 1",
       "nominalIndexes": [
-        6,
-        11,
-        16,
-        19,
-        24,
-        33,
-        39,
-        55,
-        65,
-        73,
-        81
+        0,
+        7,
+        13,
+        26,
+        32,
+        34,
+        50,
+        59,
+        60,
+        64,
+        75,
+        82,
+        88,
+        91
       ],
       "index": 2
     }

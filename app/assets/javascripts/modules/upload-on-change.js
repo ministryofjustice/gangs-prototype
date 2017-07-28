@@ -16,7 +16,9 @@ function getSignedRequest(file){
     if(xhr.readyState === 4){
       if(xhr.status === 200){
         const response = JSON.parse(xhr.responseText);
-        this.uploadFile(file, response.signedRequest, response.url);
+        console.log("response  = ");
+        console.log(response);
+        this.uploadFile(file, response.signedRequest, response.url, response.key);
       }
       else{
         alert('Could not get signed URL.');
@@ -26,7 +28,7 @@ function getSignedRequest(file){
   xhr.send();
 }
 
-function uploadFile(file, signedRequest, url){
+function uploadFile(file, signedRequest, url, key){
   const xhr = new XMLHttpRequest();
   xhr.open('PUT', signedRequest);
   xhr.onreadystatechange = () => {
@@ -34,6 +36,8 @@ function uploadFile(file, signedRequest, url){
       if(xhr.status === 200){
         document.getElementById('preview').src = url;
         document.getElementById('uploaded-image-url').value = url;
+        document.getElementById('uploaded-image-key').value = key;
+        console.log("uploaded-image-url = " + document.getElementById('uploaded-image-url').value);
       }
       else{
         alert('Could not upload file.');

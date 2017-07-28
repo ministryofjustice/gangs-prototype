@@ -1,5 +1,5 @@
 
-  <form action="/nominal/search/results" method="POST" id="nominal-search" enctype="multipart/form-data">
+  <form action="/nominal/search/results" method="POST" id="nominal-search">
     <fieldset class="form-section">
       <legend>Search by Face</legend>
       <p>Upload an image to match against mugshots</p>
@@ -9,6 +9,7 @@
         <img id="preview" src="/assets/images/avatar-m-512.png" />
         <input type="submit" class="button" value="Search" />
         <input type="hidden" id="uploaded-image-url" name="uploaded-image-url" value="" />
+        <input type="hidden" id="uploaded-image-key" name="uploaded-image-key" value="" />
       </div>
     </fieldset>
     <fieldset class="form-section">

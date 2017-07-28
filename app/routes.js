@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const uuidv4 = require('uuid/v4');
 
 var mugshots = require('./modules/mugshot.js');
 var nav = require('./modules/navigation.js');
@@ -10,6 +11,7 @@ var nominalThreatAssessmentTools = require('./modules/nominal-threat-assessment-
 var updateTools = require('./modules/update-tools.js');
 var listTools = require('./modules/list-tools.js');
 var paginator = require('./modules/paginator.js');
+var fileUtils = require('./modules/file-utils.js');
 
 var nominals = require('./assets/data/dummy-nominals.json').nominals;
 var ocgs = require('./assets/data/dummy-ocgs.json').ocgs;
@@ -22,6 +24,7 @@ var nominalAssessmentTypes = require('./sources/nominal-assessment-types');
 var nominalAssessmentFields = require('./sources/nominal-assessment-fields');
 
 const S3_BUCKET = process.env.S3_SOURCE_BUCKET_NAME;
+const S3_UPLOAD_PREFIX = process.env.S3_UPLOAD_PREFIX;
 var aws = require('aws-sdk');
 
 // root - login page
@@ -63,11 +66,14 @@ router.get('/updates/:type', function (req, res) {
 // PoC facial recognition routes
 router.get('/sign-s3', function (req, res) {
   const s3 = new aws.S3();
-  const fileName = req.query['file-name'];
+  const fileName = req.query['file-name'], fileExt = fileUtils.fileExt(fileName);
+  const targetFilename = [uuidv4(), fileExt].filter(Boolean).join('.');
+  const targetKey = [S3_UPLOAD_PREFIX, targetFilename].filter(Boolean).join('/')
+  const targetUrl = `https://${S3_BUCKET}.s3.amazonaws.com/${targetKey}`;
   const fileType = req.query['file-type'];
   const s3Params = {
     Bucket: S3_BUCKET,
-    Key: fileName,
+    Key: targetKey,
     Expires: 60,
     ContentType: fileType,
     ACL: 'public-read'
@@ -81,7 +87,8 @@ router.get('/sign-s3', function (req, res) {
     }
     const returnData = {
       signedRequest: data,
-      url: `https://${S3_BUCKET}.s3.amazonaws.com/${fileName}`
+      url: targetUrl,
+      key: targetKey
     };
     res.write(JSON.stringify(returnData));
     res.end();
@@ -133,30 +140,41 @@ router.get('/nominal/search/new', function(req, res) {
   });
 });
 
+
 router.get('/nominal/search/results', function(req, res) {
-  console.log('req.session = ' + JSON.stringify(req.session))
+  var results = nominalTools.search(req.session.data).then( function success(data){
+      var allData = buildSearchResultTemplateParams(data, req);
+    }).then( function success(data){
+      renderSearchResults(res, data);
+    });
+});
 
-  var results = nominalTools.search(req.session.data);
-  var page=req.query['page'] || 1;
-  var per_page=req.query['per_page'] || 20;
-  var pages=results.length / (per_page > 0 ? per_page : 1);
-
-  var paginated_results = paginator.visibleElements(results, page, per_page);
-
-  res.render('nominal/search/results', {
-
+// Factored these bits out to make it easier to wrap them in .then() calls
+function buildSearchResultTemplateParams(results, req){
+  var refData = {
     nominalAssessmentFields: nominalAssessmentFields,
     nominalAssessmentTypes: nominalAssessmentTypes,
     nominalAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
-    
-    search_results: paginated_results,
     roles: roles,
-    page: page,
-    pages: pages,
-    per_page: per_page
-  });
-});
+  };
+  var paginationParams = paginator.paginationParamsWithDefaults(req.query, {});
+  var pages=results.length / (paginationParams['per_page'] > 0 ? paginationParams['per_page'] : 1);
 
+  var paginated_results = paginator.visibleElements(results, paginationParams['page'], paginationParams['per_page']);
+  
+  var data = Object.assign( 
+      {search_results: paginated_results, pages: pages},
+      paginationParams
+    )
+  data = Object.assign(
+      data,
+      refData
+    );
+  return data;
+}
+function renderSearchResults(response, params) {
+  response.render('nominal/search/results', params);
+}
 
 
 router.get('/simple_search_action', function(req,res){

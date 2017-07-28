@@ -18,12 +18,24 @@ var search = {
               return false;
             }
           } else {
-            var tokens = params[key].toLowerCase().split(/[ ,]+/);
             var value = object[key].toString().toLowerCase();
-
-            for( var i=0; i < tokens.length; i++ ){
-              if( value.indexOf(tokens[i]) == -1 ){
+            if( Array.isArray(params[key]) ){
+              // given an array of values, so only reject if 
+              // NONE of the values match
+              if( !params[key].some( function(e){
+                return value.includes(e);
+              })){
                 return false;
+              }
+            } else {
+              // not given an array of values, so split into tokens
+              // and all tokens must match
+              var tokens = params[key].toLowerCase().split(/[ ,]+/);
+
+              for( var i=0; i < tokens.length; i++ ){
+                if( value.indexOf(tokens[i]) == -1 ){
+                  return false;
+                }
               }
             }
           }
