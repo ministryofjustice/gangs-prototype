@@ -141,6 +141,7 @@ router.get('/nominal/search/new', function(req, res) {
 });
 
 
+
 router.get('/nominal/search/results', function(req, res) {
   if( req.session.data['uploaded-image-key'] ){
     var results = nominalTools.search(req.session.data).then( function success(data){
@@ -183,6 +184,9 @@ function buildSearchResultTemplateParams(results, req){
 function renderSearchResults(response, params) {
   response.render('nominal/search/results', params);
 }
+
+
+
 
 
 router.get('/simple_search_action', function(req,res){

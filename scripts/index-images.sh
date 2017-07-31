@@ -47,6 +47,7 @@ MUGSHOTS=`ls /tmp/mugshots`
 for IMAGE_FILE in $MUGSHOTS;
 do
   echo "indexing file ${IMAGE_FILE} in bucket ${S3_SOURCE_BUCKET_NAME}, region ${AWS_REGION}, external-image-id=${EXTERNAL_IMAGE_ID}"
+
   # index the S3 object
   IMAGE_JSON="{\"S3Object\":{\"Bucket\":\"${S3_SOURCE_BUCKET_NAME}\",\"Name\":\"mugshots/${IMAGE_FILE}\"}}"
   aws rekognition index-faces \
