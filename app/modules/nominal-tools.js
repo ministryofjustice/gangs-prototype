@@ -178,8 +178,6 @@ var nominal = {
   },
 
   searchByParams: function(params){
-    console.log("params = "); console.log(params);
-
     // note: search is basic sub-string match only
     var filteredNominals = search.filter(nominals, params);
 

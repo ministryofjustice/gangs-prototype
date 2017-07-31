@@ -1,5 +1,6 @@
 <div class="avatar-wrapper">
-  <div class="avatar avatar-thumb" style="background-image:url(/public/images/mugshots/{{nominal.mugshot.filename}})" title="{{nominal.given_names}} {{nominal.family_name}}">
+  <div class="avatar avatar-thumb" style="background-image:url(/public/images/mugshots/{{nominal.mugshot.filename}})" title="{{nominal.given_names}} {{nominal.family_name}} {% if nominal.confidence %}Facial match: {{ nominal.confidence | percent }}{% endif %} ">
+    
   </div>
 </div>
 <div class="nominal-list-item-detail">

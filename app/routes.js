@@ -144,6 +144,7 @@ router.get('/nominal/search/new', function(req, res) {
 router.get('/nominal/search/results', function(req, res) {
   var results = nominalTools.search(req.session.data).then( function success(data){
       var allData = buildSearchResultTemplateParams(data, req);
+      return allData;
     }).then( function success(data){
       renderSearchResults(res, data);
     });
@@ -173,6 +174,7 @@ function buildSearchResultTemplateParams(results, req){
   return data;
 }
 function renderSearchResults(response, params) {
+
   response.render('nominal/search/results', params);
 }
 
