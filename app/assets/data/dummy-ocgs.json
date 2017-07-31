@@ -2,390 +2,377 @@
   "ocgs": [
     {
       "index": 0,
-      "name": "Glasgow Steel Mob",
+      "name": "Dulwich Dark Lords",
       "aliases": [],
-      "name_or_alias": "Glasgow Steel Mob,",
+      "name_or_alias": "Dulwich Dark Lords,",
       "territory": "",
       "identifying_features": [
-        "afro hair"
+        "axe tattoo on cheek"
       ],
-      "pnd_id": "62/397585B",
-      "grits_id": "K5255RA",
-      "ocgm_urn": "15613264",
+      "pnd_id": "33/121004X",
+      "grits_id": "X0528FN",
+      "ocgm_urn": "59379736",
       "known_activities": [
-        "Home invasions",
-        "Phone snatching"
+        "Vehicle theft",
+        "Drug dealing"
       ],
-      "search_text": "Glasgow Steel Mob,,Glasgow Steel Mob,,,afro hair,62/397585B,K5255RA,15613264,Home invasions,Phone snatching"
+      "search_text": "Dulwich Dark Lords,,Dulwich Dark Lords,,,axe tattoo on cheek,33/121004X,X0528FN,59379736,Vehicle theft,Drug dealing"
     },
     {
       "index": 1,
-      "name": "Bromley Diamond Posse",
+      "name": "Dulwich Angel Firm",
       "aliases": [],
-      "name_or_alias": "Bromley Diamond Posse,",
-      "territory": "Penge Block, Bromley Park",
+      "name_or_alias": "Dulwich Angel Firm,",
+      "territory": "",
       "identifying_features": [
-        "backwards blue kagoul"
+        "rose tattoo on the shaven head"
       ],
-      "pnd_id": "60/134503I",
-      "grits_id": "F2863GD",
-      "ocgm_urn": "23245280",
+      "pnd_id": "99/860781R",
+      "grits_id": "O3734OU",
+      "ocgm_urn": "66371715",
       "known_activities": [
-        "Home invasions",
+        "Vehicle theft",
         "Gun violence"
       ],
-      "search_text": "Bromley Diamond Posse,,Bromley Diamond Posse,,Penge Block, Bromley Park,backwards blue kagoul,60/134503I,F2863GD,23245280,Home invasions,Gun violence"
+      "search_text": "Dulwich Angel Firm,,Dulwich Angel Firm,,,rose tattoo on the shaven head,99/860781R,O3734OU,66371715,Vehicle theft,Gun violence"
     },
     {
       "index": 2,
-      "name": "Southwark Scooter Squad",
+      "name": "Bromley Callajeros Pack",
       "aliases": [],
-      "name_or_alias": "Southwark Scooter Squad,",
-      "territory": "",
-      "identifying_features": [],
-      "pnd_id": "78/387955T",
-      "grits_id": "Z5718YI",
-      "ocgm_urn": "74532856",
-      "known_activities": [
-        "People trafficking",
-        "Smuggling"
+      "name_or_alias": "Bromley Callajeros Pack,",
+      "territory": "Penge Block, Bromley Park",
+      "identifying_features": [
+        "bleached hair"
       ],
-      "search_text": "Southwark Scooter Squad,,Southwark Scooter Squad,,,,78/387955T,Z5718YI,74532856,People trafficking,Smuggling"
+      "pnd_id": "86/048421F",
+      "grits_id": "G0464DE",
+      "ocgm_urn": "27208654",
+      "known_activities": [
+        "Vehicle theft",
+        "Phone snatching"
+      ],
+      "search_text": "Bromley Callajeros Pack,,Bromley Callajeros Pack,,Penge Block, Bromley Park,bleached hair,86/048421F,G0464DE,27208654,Vehicle theft,Phone snatching"
     },
     {
       "index": 3,
-      "name": "Southwark Poor Collective",
-      "aliases": [
-        "Southwark Poor Blades"
-      ],
-      "name_or_alias": "Southwark Poor Collective,Southwark Poor Blades",
-      "territory": "",
+      "name": "Southwark Hell Cartel",
+      "aliases": [],
+      "name_or_alias": "Southwark Hell Cartel,",
+      "territory": "Layard Square, Cathedrals, The Lane",
       "identifying_features": [
-        "oversize bandana",
-        "backwards green hoodie",
-        "braided hairstyle",
-        "maze tattoo on the left arm"
+        "shell suit",
+        "afro hairstyle"
       ],
-      "pnd_id": "57/494426K",
-      "grits_id": "D7993LR",
-      "ocgm_urn": "72754547",
+      "pnd_id": "39/247737N",
+      "grits_id": "J1104BR",
+      "ocgm_urn": "14530837",
       "known_activities": [
-        "Gun violence",
+        "Home invasions",
         "People trafficking"
       ],
-      "search_text": "Southwark Poor Collective,Southwark Poor Blades,Southwark Poor Collective,Southwark Poor Blades,,oversize bandana,backwards green hoodie,braided hairstyle,maze tattoo on the left arm,57/494426K,D7993LR,72754547,Gun violence,People trafficking"
+      "search_text": "Southwark Hell Cartel,,Southwark Hell Cartel,,Layard Square, Cathedrals, The Lane,shell suit,afro hairstyle,39/247737N,J1104BR,14530837,Home invasions,People trafficking"
     },
     {
       "index": 4,
-      "name": "Scarfolk Wild Tribe",
-      "aliases": [],
-      "name_or_alias": "Scarfolk Wild Tribe,",
-      "territory": "",
-      "identifying_features": [
-        "tracksuit top",
-        "backwards hoodie",
-        "backwards yellow baseball cap",
-        "buzz cut hairstyle",
-        "tally (of kills) tattoo on shoulders"
-      ],
-      "pnd_id": "69/717170D",
-      "grits_id": "V3485ZM",
-      "ocgm_urn": "99890535",
-      "known_activities": [
-        "Home invasions",
-        "Gun violence"
-      ],
-      "search_text": "Scarfolk Wild Tribe,,Scarfolk Wild Tribe,,,tracksuit top,backwards hoodie,backwards yellow baseball cap,buzz cut hairstyle,tally (of kills) tattoo on shoulders,69/717170D,V3485ZM,99890535,Home invasions,Gun violence"
-    },
-    {
-      "index": 5,
-      "name": "Norwich Rough Skins",
-      "aliases": [
-        "Norwich Paper Skins"
-      ],
-      "name_or_alias": "Norwich Rough Skins,Norwich Paper Skins",
-      "territory": "Spring Bank, Havelock Road, Canterbury Place",
-      "identifying_features": [],
-      "pnd_id": "61/693746B",
-      "grits_id": "W0490MO",
-      "ocgm_urn": "63370517",
-      "known_activities": [
-        "People trafficking",
-        "Arms dealing"
-      ],
-      "search_text": "Norwich Rough Skins,Norwich Paper Skins,Norwich Rough Skins,Norwich Paper Skins,Spring Bank, Havelock Road, Canterbury Place,,61/693746B,W0490MO,63370517,People trafficking,Arms dealing"
-    },
-    {
-      "index": 6,
-      "name": "Barnet Callajeros Riders",
-      "aliases": [
-        "Barnet Callajeros Fam"
-      ],
-      "name_or_alias": "Barnet Callajeros Riders,Barnet Callajeros Fam",
-      "territory": "",
-      "identifying_features": [
-        "loose green suit"
-      ],
-      "pnd_id": "55/312264N",
-      "grits_id": "O1295KW",
-      "ocgm_urn": "58251277",
-      "known_activities": [
-        "People trafficking",
-        "Vehicle theft"
-      ],
-      "search_text": "Barnet Callajeros Riders,Barnet Callajeros Fam,Barnet Callajeros Riders,Barnet Callajeros Fam,,loose green suit,55/312264N,O1295KW,58251277,People trafficking,Vehicle theft"
-    },
-    {
-      "index": 7,
-      "name": "West Coast Killa Crew",
-      "aliases": [
-        "West Coast Killa Pack"
-      ],
-      "name_or_alias": "West Coast Killa Crew,West Coast Killa Pack",
-      "territory": "Trowbridge, Salisbury, Swindon",
-      "identifying_features": [
-        "buzz cut hair"
-      ],
-      "pnd_id": "57/832221X",
-      "grits_id": "I6303UB",
-      "ocgm_urn": "45440759",
-      "known_activities": [
-        "Gun violence",
-        "Drug dealing"
-      ],
-      "search_text": "West Coast Killa Crew,West Coast Killa Pack,West Coast Killa Crew,West Coast Killa Pack,Trowbridge, Salisbury, Swindon,buzz cut hair,57/832221X,I6303UB,45440759,Gun violence,Drug dealing"
-    },
-    {
-      "index": 8,
-      "name": "New Cross Money Thugs",
-      "aliases": [],
-      "name_or_alias": "New Cross Money Thugs,",
-      "territory": "",
-      "identifying_features": [
-        "ghost mask",
-        "afro hair"
-      ],
-      "pnd_id": "10/191515E",
-      "grits_id": "F4059TC",
-      "ocgm_urn": "79351814",
-      "known_activities": [
-        "Arms dealing",
-        "Gun violence"
-      ],
-      "search_text": "New Cross Money Thugs,,New Cross Money Thugs,,,ghost mask,afro hair,10/191515E,F4059TC,79351814,Arms dealing,Gun violence"
-    },
-    {
-      "index": 9,
-      "name": "Brighton Blind Bloodline",
-      "aliases": [],
-      "name_or_alias": "Brighton Blind Bloodline,",
-      "territory": "West Street, Whitehawk, Moulescoomb, Hove Park Villas",
-      "identifying_features": [
-        "oversize suit"
-      ],
-      "pnd_id": "57/456992A",
-      "grits_id": "N1117YP",
-      "ocgm_urn": "46120911",
-      "known_activities": [
-        "Phone snatching",
-        "People trafficking"
-      ],
-      "search_text": "Brighton Blind Bloodline,,Brighton Blind Bloodline,,West Street, Whitehawk, Moulescoomb, Hove Park Villas,oversize suit,57/456992A,N1117YP,46120911,Phone snatching,People trafficking"
-    },
-    {
-      "index": 10,
-      "name": "New Cross Ghetto Boys",
-      "aliases": [],
-      "name_or_alias": "New Cross Ghetto Boys,",
-      "territory": "",
-      "identifying_features": [
-        "baseball cap",
-        "backwards puffa jacket"
-      ],
-      "pnd_id": "00/868711F",
-      "grits_id": "Z0391XE",
-      "ocgm_urn": "23879706",
-      "known_activities": [
-        "Smuggling"
-      ],
-      "search_text": "New Cross Ghetto Boys,,New Cross Ghetto Boys,,,baseball cap,backwards puffa jacket,00/868711F,Z0391XE,23879706,Smuggling"
-    },
-    {
-      "index": 11,
-      "name": "Croydon Smart Bluds",
-      "aliases": [],
-      "name_or_alias": "Croydon Smart Bluds,",
-      "territory": "Monks Hill Estate, West Croydon",
-      "identifying_features": [
-        "baseball cap",
-        "oversize jeans",
-        "backwards grey jeans",
-        "afro hairstyle"
-      ],
-      "pnd_id": "29/537930N",
-      "grits_id": "G3966ZK",
-      "ocgm_urn": "92071142",
-      "known_activities": [
-        "Gun violence",
-        "Smuggling"
-      ],
-      "search_text": "Croydon Smart Bluds,,Croydon Smart Bluds,,Monks Hill Estate, West Croydon,baseball cap,oversize jeans,backwards grey jeans,afro hairstyle,29/537930N,G3966ZK,92071142,Gun violence,Smuggling"
-    },
-    {
-      "index": 12,
       "name": "Brizzle Shady Company",
       "aliases": [],
       "name_or_alias": "Brizzle Shady Company,",
       "territory": "St Pauls, Easton, Stokes Croft",
       "identifying_features": [
-        "loose bandana",
-        "backwards red tracksuit top",
-        "oakley shades"
+        "backwards suit"
       ],
-      "pnd_id": "53/179378R",
-      "grits_id": "G2443CV",
-      "ocgm_urn": "28929841",
-      "known_activities": [
-        "People trafficking",
-        "Vehicle theft"
-      ],
-      "search_text": "Brizzle Shady Company,,Brizzle Shady Company,,St Pauls, Easton, Stokes Croft,loose bandana,backwards red tracksuit top,oakley shades,53/179378R,G2443CV,28929841,People trafficking,Vehicle theft"
-    },
-    {
-      "index": 13,
-      "name": "Belfast Shank Family",
-      "aliases": [],
-      "name_or_alias": "Belfast Shank Family,",
-      "territory": "",
-      "identifying_features": [
-        "tally (of kills) tattoo on the left arm"
-      ],
-      "pnd_id": "49/525477B",
-      "grits_id": "G4529CE",
-      "ocgm_urn": "31822616",
-      "known_activities": [
-        "Home invasions",
-        "People trafficking"
-      ],
-      "search_text": "Belfast Shank Family,,Belfast Shank Family,,,tally (of kills) tattoo on the left arm,49/525477B,G4529CE,31822616,Home invasions,People trafficking"
-    },
-    {
-      "index": 14,
-      "name": "Dublin Royal Clan",
-      "aliases": [
-        "Dublin Rich Clan"
-      ],
-      "name_or_alias": "Dublin Royal Clan,Dublin Rich Clan",
-      "territory": "Crumlin, Pearse Street, Drimnagh",
-      "identifying_features": [
-        "oakley shades"
-      ],
-      "pnd_id": "48/196606E",
-      "grits_id": "A0432TQ",
-      "ocgm_urn": "50101092",
-      "known_activities": [
-        "Arms dealing",
-        "Phone snatching"
-      ],
-      "search_text": "Dublin Royal Clan,Dublin Rich Clan,Dublin Royal Clan,Dublin Rich Clan,Crumlin, Pearse Street, Drimnagh,oakley shades,48/196606E,A0432TQ,50101092,Arms dealing,Phone snatching"
-    },
-    {
-      "index": 15,
-      "name": "Southwark Chopper Firm",
-      "aliases": [],
-      "name_or_alias": "Southwark Chopper Firm,",
-      "territory": "Layard Square, Cathedrals, The Lane",
-      "identifying_features": [
-        "loose suit"
-      ],
-      "pnd_id": "38/443826M",
-      "grits_id": "D1139HS",
-      "ocgm_urn": "80706687",
-      "known_activities": [
-        "Gun violence"
-      ],
-      "search_text": "Southwark Chopper Firm,,Southwark Chopper Firm,,Layard Square, Cathedrals, The Lane,loose suit,38/443826M,D1139HS,80706687,Gun violence"
-    },
-    {
-      "index": 16,
-      "name": "Deptford Ghost Dogs",
-      "aliases": [],
-      "name_or_alias": "Deptford Ghost Dogs,",
-      "territory": "Aylesbury Estate, New Cross Road",
-      "identifying_features": [
-        "combats",
-        "backwards combats",
-        "loose yellow hoodie"
-      ],
-      "pnd_id": "73/865230J",
-      "grits_id": "L5292DT",
-      "ocgm_urn": "94999489",
+      "pnd_id": "46/578677N",
+      "grits_id": "Q6097QC",
+      "ocgm_urn": "89503844",
       "known_activities": [
         "Gun violence",
         "Smuggling"
       ],
-      "search_text": "Deptford Ghost Dogs,,Deptford Ghost Dogs,,Aylesbury Estate, New Cross Road,combats,backwards combats,loose yellow hoodie,73/865230J,L5292DT,94999489,Gun violence,Smuggling"
+      "search_text": "Brizzle Shady Company,,Brizzle Shady Company,,St Pauls, Easton, Stokes Croft,backwards suit,46/578677N,Q6097QC,89503844,Gun violence,Smuggling"
     },
     {
-      "index": 17,
-      "name": "Bromley Angel Lords",
+      "index": 5,
+      "name": "Staines Wild Bloodline",
       "aliases": [],
-      "name_or_alias": "Bromley Angel Lords,",
-      "territory": "Penge Block, Bromley Park",
+      "name_or_alias": "Staines Wild Bloodline,",
+      "territory": "West Staines",
       "identifying_features": [
-        "loose baseball cap",
-        "white tracksuit top",
-        "eagle tattoo, on shaven head"
+        "backwards yellow suit"
       ],
-      "pnd_id": "94/838038I",
-      "grits_id": "C9757EM",
-      "ocgm_urn": "24400694",
+      "pnd_id": "66/683682E",
+      "grits_id": "R4445BT",
+      "ocgm_urn": "81493006",
       "known_activities": [
+        "People trafficking",
         "Gun violence"
       ],
-      "search_text": "Bromley Angel Lords,,Bromley Angel Lords,,Penge Block, Bromley Park,loose baseball cap,white tracksuit top,eagle tattoo, on shaven head,94/838038I,C9757EM,24400694,Gun violence"
+      "search_text": "Staines Wild Bloodline,,Staines Wild Bloodline,,West Staines,backwards yellow suit,66/683682E,R4445BT,81493006,People trafficking,Gun violence"
     },
     {
-      "index": 18,
-      "name": "New Cross Young Cartel",
+      "index": 6,
+      "name": "Scarfolk Rough Boys",
       "aliases": [
-        "New Cross Young Lads"
+        "Scarfolk Killa Boys"
       ],
-      "name_or_alias": "New Cross Young Cartel,New Cross Young Lads",
+      "name_or_alias": "Scarfolk Rough Boys,Scarfolk Killa Boys",
       "territory": "",
       "identifying_features": [
-        "loose grey puffa jacket",
-        "braided hairstyle"
+        "backwards black trainers",
+        "shark tattoo on the back of neck"
       ],
-      "pnd_id": "95/338430U",
-      "grits_id": "F0147PN",
-      "ocgm_urn": "61943830",
+      "pnd_id": "01/190572F",
+      "grits_id": "B2232BI",
+      "ocgm_urn": "29983417",
       "known_activities": [
-        "People trafficking"
+        "Smuggling",
+        "Home invasions"
       ],
-      "search_text": "New Cross Young Cartel,New Cross Young Lads,New Cross Young Cartel,New Cross Young Lads,,loose grey puffa jacket,braided hairstyle,95/338430U,F0147PN,61943830,People trafficking"
+      "search_text": "Scarfolk Rough Boys,Scarfolk Killa Boys,Scarfolk Rough Boys,Scarfolk Killa Boys,,backwards black trainers,shark tattoo on the back of neck,01/190572F,B2232BI,29983417,Smuggling,Home invasions"
     },
     {
-      "index": 19,
-      "name": "New Cross Dark Massiv",
+      "index": 7,
+      "name": "Glasgow Tough Posse",
       "aliases": [],
-      "name_or_alias": "New Cross Dark Massiv,",
-      "territory": "New Cross Gate, Woodpecker Estate, Ludwick Mews",
+      "name_or_alias": "Glasgow Tough Posse,",
+      "territory": "Drumchapel, Maryhill, Sighthill",
       "identifying_features": [
-        "oversize t-shirt",
-        "yellow shell suit",
-        "oakley shades",
-        "bleached hairstyle",
-        "rose tattoo, on cheek"
+        "kagoul"
       ],
-      "pnd_id": "75/038868Q",
-      "grits_id": "T4174RJ",
-      "ocgm_urn": "87818047",
+      "pnd_id": "87/243314D",
+      "grits_id": "E8498VU",
+      "ocgm_urn": "07325613",
+      "known_activities": [
+        "Drug dealing",
+        "Vehicle theft"
+      ],
+      "search_text": "Glasgow Tough Posse,,Glasgow Tough Posse,,Drumchapel, Maryhill, Sighthill,kagoul,87/243314D,E8498VU,07325613,Drug dealing,Vehicle theft"
+    },
+    {
+      "index": 8,
+      "name": "Southwark Chopper Bluds",
+      "aliases": [],
+      "name_or_alias": "Southwark Chopper Bluds,",
+      "territory": "",
+      "identifying_features": [
+        "oversize suit",
+        "green kagoul"
+      ],
+      "pnd_id": "00/040701F",
+      "grits_id": "X0518NN",
+      "ocgm_urn": "02718595",
+      "known_activities": [
+        "Smuggling",
+        "Vehicle theft"
+      ],
+      "search_text": "Southwark Chopper Bluds,,Southwark Chopper Bluds,,,oversize suit,green kagoul,00/040701F,X0518NN,02718595,Smuggling,Vehicle theft"
+    },
+    {
+      "index": 9,
+      "name": "Dublin Ghost Squad",
+      "aliases": [],
+      "name_or_alias": "Dublin Ghost Squad,",
+      "territory": "Crumlin, Pearse Street, Drimnagh",
+      "identifying_features": [
+        "blue bandana",
+        "loose yellow kagoul",
+        "axe tattoo on the right hand"
+      ],
+      "pnd_id": "69/767980M",
+      "grits_id": "H1087VW",
+      "ocgm_urn": "31402009",
+      "known_activities": [
+        "Smuggling",
+        "Phone snatching"
+      ],
+      "search_text": "Dublin Ghost Squad,,Dublin Ghost Squad,,Crumlin, Pearse Street, Drimnagh,blue bandana,loose yellow kagoul,axe tattoo on the right hand,69/767980M,H1087VW,31402009,Smuggling,Phone snatching"
+    },
+    {
+      "index": 10,
+      "name": "Barnet Shank Mob",
+      "aliases": [],
+      "name_or_alias": "Barnet Shank Mob,",
+      "territory": "East Finchley, N2, N12",
+      "identifying_features": [
+        "grey baseball cap",
+        "loose white jeans",
+        "afro hairstyle"
+      ],
+      "pnd_id": "17/341941C",
+      "grits_id": "C4667LV",
+      "ocgm_urn": "04313762",
+      "known_activities": [
+        "Vehicle theft",
+        "Home invasions"
+      ],
+      "search_text": "Barnet Shank Mob,,Barnet Shank Mob,,East Finchley, N2, N12,grey baseball cap,loose white jeans,afro hairstyle,17/341941C,C4667LV,04313762,Vehicle theft,Home invasions"
+    },
+    {
+      "index": 11,
+      "name": "Scarfolk Scooter Collective",
+      "aliases": [],
+      "name_or_alias": "Scarfolk Scooter Collective,",
+      "territory": "",
+      "identifying_features": [],
+      "pnd_id": "02/707232W",
+      "grits_id": "J0109LV",
+      "ocgm_urn": "55360119",
+      "known_activities": [
+        "Vehicle theft",
+        "Arms dealing"
+      ],
+      "search_text": "Scarfolk Scooter Collective,,Scarfolk Scooter Collective,,,,02/707232W,J0109LV,55360119,Vehicle theft,Arms dealing"
+    },
+    {
+      "index": 12,
+      "name": "Dublin Smart Massiv",
+      "aliases": [],
+      "name_or_alias": "Dublin Smart Massiv,",
+      "territory": "Crumlin, Pearse Street, Drimnagh",
+      "identifying_features": [
+        "white suit"
+      ],
+      "pnd_id": "27/568568K",
+      "grits_id": "E5528JJ",
+      "ocgm_urn": "16307295",
+      "known_activities": [
+        "Arms dealing",
+        "Phone snatching"
+      ],
+      "search_text": "Dublin Smart Massiv,,Dublin Smart Massiv,,Crumlin, Pearse Street, Drimnagh,white suit,27/568568K,E5528JJ,16307295,Arms dealing,Phone snatching"
+    },
+    {
+      "index": 13,
+      "name": "Southwark Joker Thugs",
+      "aliases": [],
+      "name_or_alias": "Southwark Joker Thugs,",
+      "territory": "Layard Square, Cathedrals, The Lane",
+      "identifying_features": [
+        "backwards baseball cap",
+        "green tracksuit top"
+      ],
+      "pnd_id": "22/117717G",
+      "grits_id": "Y5205AN",
+      "ocgm_urn": "31799875",
+      "known_activities": [
+        "Arms dealing",
+        "Home invasions"
+      ],
+      "search_text": "Southwark Joker Thugs,,Southwark Joker Thugs,,Layard Square, Cathedrals, The Lane,backwards baseball cap,green tracksuit top,22/117717G,Y5205AN,31799875,Arms dealing,Home invasions"
+    },
+    {
+      "index": 14,
+      "name": "Glasgow Paper Group",
+      "aliases": [],
+      "name_or_alias": "Glasgow Paper Group,",
+      "territory": "",
+      "identifying_features": [
+        "hockey mask",
+        "rose tattoo on the cheek"
+      ],
+      "pnd_id": "33/683650P",
+      "grits_id": "J5851EP",
+      "ocgm_urn": "67199974",
+      "known_activities": [
+        "Home invasions",
+        "Smuggling"
+      ],
+      "search_text": "Glasgow Paper Group,,Glasgow Paper Group,,,hockey mask,rose tattoo on the cheek,33/683650P,J5851EP,67199974,Home invasions,Smuggling"
+    },
+    {
+      "index": 15,
+      "name": "Staines Money Clan",
+      "aliases": [
+        "Staines Diamond Clan"
+      ],
+      "name_or_alias": "Staines Money Clan,Staines Diamond Clan",
+      "territory": "West Staines",
+      "identifying_features": [
+        "bandana",
+        "black tracksuit top",
+        "ghost mask",
+        "mop top hairstyle",
+        "rose tattoo on the shoulders"
+      ],
+      "pnd_id": "88/198361H",
+      "grits_id": "J3060RS",
+      "ocgm_urn": "36515664",
+      "known_activities": [
+        "Vehicle theft",
+        "Phone snatching"
+      ],
+      "search_text": "Staines Money Clan,Staines Diamond Clan,Staines Money Clan,Staines Diamond Clan,West Staines,bandana,black tracksuit top,ghost mask,mop top hairstyle,rose tattoo on the shoulders,88/198361H,J3060RS,36515664,Vehicle theft,Phone snatching"
+    },
+    {
+      "index": 16,
+      "name": "Norwich Young Fam",
+      "aliases": [],
+      "name_or_alias": "Norwich Young Fam,",
+      "territory": "Spring Bank, Havelock Road, Canterbury Place",
+      "identifying_features": [],
+      "pnd_id": "69/150249I",
+      "grits_id": "X9847MT",
+      "ocgm_urn": "37455740",
       "known_activities": [
         "People trafficking",
         "Phone snatching"
       ],
-      "search_text": "New Cross Dark Massiv,,New Cross Dark Massiv,,New Cross Gate, Woodpecker Estate, Ludwick Mews,oversize t-shirt,yellow shell suit,oakley shades,bleached hairstyle,rose tattoo, on cheek,75/038868Q,T4174RJ,87818047,People trafficking,Phone snatching"
+      "search_text": "Norwich Young Fam,,Norwich Young Fam,,Spring Bank, Havelock Road, Canterbury Place,,69/150249I,X9847MT,37455740,People trafficking,Phone snatching"
+    },
+    {
+      "index": 17,
+      "name": "Southwark Cash Skins",
+      "aliases": [],
+      "name_or_alias": "Southwark Cash Skins,",
+      "territory": "",
+      "identifying_features": [
+        "red baseball cap",
+        "slicked-back hair"
+      ],
+      "pnd_id": "81/625019W",
+      "grits_id": "M0703YN",
+      "ocgm_urn": "34432702",
+      "known_activities": [
+        "People trafficking",
+        "Drug dealing"
+      ],
+      "search_text": "Southwark Cash Skins,,Southwark Cash Skins,,,red baseball cap,slicked-back hair,81/625019W,M0703YN,34432702,People trafficking,Drug dealing"
+    },
+    {
+      "index": 18,
+      "name": "Brighton Steel Crew",
+      "aliases": [
+        "Brighton Royal Crew"
+      ],
+      "name_or_alias": "Brighton Steel Crew,Brighton Royal Crew",
+      "territory": "",
+      "identifying_features": [],
+      "pnd_id": "67/167686V",
+      "grits_id": "E5043RV",
+      "ocgm_urn": "09452060",
+      "known_activities": [
+        "Arms dealing",
+        "People trafficking"
+      ],
+      "search_text": "Brighton Steel Crew,Brighton Royal Crew,Brighton Steel Crew,Brighton Royal Crew,,,67/167686V,E5043RV,09452060,Arms dealing,People trafficking"
+    },
+    {
+      "index": 19,
+      "name": "Norwich Ghetto Dogs",
+      "aliases": [],
+      "name_or_alias": "Norwich Ghetto Dogs,",
+      "territory": "",
+      "identifying_features": [
+        "buzz cut hair"
+      ],
+      "pnd_id": "25/594345B",
+      "grits_id": "O4363EY",
+      "ocgm_urn": "20061791",
+      "known_activities": [
+        "People trafficking",
+        "Gun violence"
+      ],
+      "search_text": "Norwich Ghetto Dogs,,Norwich Ghetto Dogs,,,buzz cut hair,25/594345B,O4363EY,20061791,People trafficking,Gun violence"
     }
   ]
 }
