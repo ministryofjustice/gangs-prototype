@@ -26,6 +26,7 @@ var nominalAssessmentFields = require('./sources/nominal-assessment-fields');
 const S3_BUCKET = process.env.S3_SOURCE_BUCKET_NAME;
 const S3_UPLOAD_PREFIX = process.env.S3_UPLOAD_PREFIX;
 var aws = require('aws-sdk');
+const SHOW_FACIAL_RECOGNITION_SEARCH = (S3_BUCKET && process.env.REKOGNITION_COLLECTION_ID);
 
 // root - login page
 router.get('/', function (req, res) {
@@ -134,6 +135,7 @@ router.get('/nominal/search/new', function(req, res) {
     nominalAssessmentFields: nominalAssessmentFields,
     nominalAssessmentTypes: nominalAssessmentTypes,
     nominalAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
+    showFacialRecognitionSearch: SHOW_FACIAL_RECOGNITION_SEARCH,
 
     lists: listTools.getAll(),
     search: {}
@@ -164,6 +166,7 @@ function buildSearchResultTemplateParams(results, req){
     nominalAssessmentTypes: nominalAssessmentTypes,
     nominalAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
     roles: roles,
+    showFacialRecognitionSearch: SHOW_FACIAL_RECOGNITION_SEARCH
   };
   var paginationParams = paginator.paginationParamsWithDefaults(req.query, {});
   var pages=results.length / (paginationParams['per_page'] > 0 ? paginationParams['per_page'] : 1);
