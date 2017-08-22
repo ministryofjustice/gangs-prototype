@@ -10,7 +10,7 @@ var search = {
   },
 
   matches: function(object, params) {
-    for( key in params ){
+    for( var key in params ){
       if( params[key] ){
         if( key in object ){
           if( typeof(object[key]) == 'number') {
@@ -23,7 +23,7 @@ var search = {
               // given an array of values, so only reject if 
               // NONE of the values match
               if( !params[key].some( function(e){
-                return value.includes(e);
+                return value == e;
               })){
                 return false;
               }
