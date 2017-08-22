@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const uuidv4 = require('uuid/v4');
 
 var mugshots = require('./modules/mugshot.js');
 var nav = require('./modules/navigation.js');
@@ -10,6 +11,7 @@ var nominalThreatAssessmentTools = require('./modules/nominal-threat-assessment-
 var updateTools = require('./modules/update-tools.js');
 var listTools = require('./modules/list-tools.js');
 var paginator = require('./modules/paginator.js');
+var fileUtils = require('./modules/file-utils.js');
 
 var nominals = require('./assets/data/dummy-nominals.json').nominals;
 var ocgs = require('./assets/data/dummy-ocgs.json').ocgs;
@@ -21,6 +23,10 @@ var ocgAssessmentFields = require('./sources/ocg-assessment-fields');
 var nominalAssessmentTypes = require('./sources/nominal-assessment-types');
 var nominalAssessmentFields = require('./sources/nominal-assessment-fields');
 
+const S3_BUCKET = process.env.S3_SOURCE_BUCKET_NAME;
+const S3_UPLOAD_PREFIX = process.env.S3_UPLOAD_PREFIX;
+var aws = require('aws-sdk');
+const SHOW_FACIAL_RECOGNITION_SEARCH = (S3_BUCKET && process.env.REKOGNITION_COLLECTION_ID);
 
 // root - login page
 router.get('/', function (req, res) {
@@ -58,8 +64,43 @@ router.get('/updates/:type', function (req, res) {
 });
 
 
+// PoC facial recognition routes
+router.get('/sign-s3', function (req, res) {
+  const s3 = new aws.S3();
+  const fileName = req.query['file-name'], fileExt = fileUtils.fileExt(fileName);
+  const targetFilename = [uuidv4(), fileExt].filter(Boolean).join('.');
+  const targetKey = [S3_UPLOAD_PREFIX, targetFilename].filter(Boolean).join('/')
+  const targetUrl = `https://${S3_BUCKET}.s3.amazonaws.com/${targetKey}`;
+  const fileType = req.query['file-type'];
+  const s3Params = {
+    Bucket: S3_BUCKET,
+    Key: targetKey,
+    Expires: 60,
+    ContentType: fileType,
+    ACL: 'public-read'
+  };
+
+  console.log('s3Params = ' + JSON.stringify(s3Params));
+  s3.getSignedUrl('putObject', s3Params, (err, data) => {
+    if(err){
+      console.log(err);
+      return res.end();
+    }
+    const returnData = {
+      signedRequest: data,
+      url: targetUrl,
+      key: targetKey
+    };
+    res.write(JSON.stringify(returnData));
+    res.end();
+  });
+});
 
 // nominals
+router.get('/nominal/', function(req, res) {
+  res.redirect('/nominal/search/new');
+});
+
 router.get('/nominal/rand/', function(req, res) {
   var n = Math.floor(Math.random() * nominals.length);
   res.redirect('/nominal/' + n);
@@ -78,6 +119,85 @@ router.get('/nominal/tensions', function(req, res){
   });
 });
 
+
+router.get('/nominal/', function(req, res) {
+  res.redirect('/nominal/search/new');
+});
+
+
+// nominal search-related routes
+router.get('/nominal/search/', function(req, res) {
+  res.redirect('/nominal/search/new');
+});
+router.get('/nominal/search/new', function(req, res) {
+  res.render('nominal/search/new', {
+
+    nominalAssessmentFields: nominalAssessmentFields,
+    nominalAssessmentTypes: nominalAssessmentTypes,
+    nominalAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
+    showFacialRecognitionSearch: SHOW_FACIAL_RECOGNITION_SEARCH,
+
+    lists: listTools.getAll(),
+    search: {}
+  });
+});
+
+
+
+router.get('/nominal/search/results', function(req, res) {
+  if( req.session.data['uploaded-image-key'] ){
+    var results = nominalTools.search(req.session.data).then( function success(data){
+        var allData = buildSearchResultTemplateParams(data, req);
+        return allData;
+      }).then( function success(data){
+        renderSearchResults(res, data);
+      });
+  } else {
+    var results = nominalTools.search(req.session.data);
+    var allData = buildSearchResultTemplateParams(results, req);
+    renderSearchResults(res, allData);
+  }
+});
+
+// Factored these bits out to make it easier to wrap them in .then() calls
+function buildSearchResultTemplateParams(results, req){
+  var refData = {
+    nominalAssessmentFields: nominalAssessmentFields,
+    nominalAssessmentTypes: nominalAssessmentTypes,
+    nominalAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
+    roles: roles,
+    showFacialRecognitionSearch: SHOW_FACIAL_RECOGNITION_SEARCH
+  };
+  var paginationParams = paginator.paginationParamsWithDefaults(req.query, {});
+  var pages=results.length / (paginationParams['per_page'] > 0 ? paginationParams['per_page'] : 1);
+
+  var paginated_results = paginator.visibleElements(results, paginationParams['page'], paginationParams['per_page']);
+  
+  var data = Object.assign( 
+      {search_results: paginated_results, pages: pages},
+      paginationParams
+    )
+  data = Object.assign(
+      data,
+      refData
+    );
+  return data;
+}
+
+function renderSearchResults(response, params) {
+  response.render('nominal/search/results', params);
+}
+
+
+
+
+
+router.get('/simple_search_action', function(req,res){
+  res.redirect( '/' + req.session.data['search-scope'] + '/search/results');
+});
+
+// put this last, so that it doesn't try to find
+// nominals with index 'search', etc
 router.get('/nominal/:index', function(req, res) {
   var nominal = nominals[req.params.index];
   var nominalThreatAssessments = nominalThreatAssessmentTools.search({nominal_index: req.params.index});
@@ -94,53 +214,6 @@ router.get('/nominal/:index', function(req, res) {
     threatAssessments: nominalThreatAssessments
   });
 });
-
-router.get('/nominal/', function(req, res) {
-  res.redirect('/nominal/search/new');
-});
-
-// nominal search-related routes
-router.get('/nominal/search/', function(req, res) {
-  res.redirect('/nominal/search/new');
-});
-router.get('/nominal/search/new', function(req, res) {
-  res.render('nominal/search/new', {
-
-    nominalAssessmentFields: nominalAssessmentFields,
-    nominalAssessmentTypes: nominalAssessmentTypes,
-    nominalAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
-
-    lists: listTools.getAll(),
-    search: {}
-  });
-});
-router.get('/nominal/search/results', function(req, res) {
-  var results = nominalTools.search(req.session.data);
-  var page=req.query['page'] || 1;
-  var per_page=req.query['per_page'] || 20;
-  var pages=results.length / (per_page > 0 ? per_page : 1);
-
-  var paginated_results = paginator.visibleElements(results, page, per_page);
-
-  res.render('nominal/search/results', {
-
-    nominalAssessmentFields: nominalAssessmentFields,
-    nominalAssessmentTypes: nominalAssessmentTypes,
-    nominalAssessmentValues: ["High", "Med", "Low", "Yes", "No"],
-    
-    search_results: paginated_results,
-    roles: roles,
-    page: page,
-    pages: pages,
-    per_page: per_page
-  });
-});
-
-router.get('/simple_search_action', function(req,res){
-  res.redirect( '/' + req.session.data['search-scope'] + '/search/results');
-});
-
-
 
 // ocgs
 router.get('/ocg/rand/', function(req, res) {

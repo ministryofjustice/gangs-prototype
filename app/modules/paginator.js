@@ -7,6 +7,13 @@ var paginator = {
     var end=start + per_page;
 
     return array.slice(start, end);
+  },
+
+  paginationParamsWithDefaults: function(params, defaults) {
+    return {
+      page: params['page'] || defaults['page'] || 1,
+      per_page: params['per_page'] || defaults['per_page'] || 20
+    }
   }
 }
 

@@ -1,8 +1,34 @@
 
   <form action="/nominal/search/results" method="POST" id="nominal-search">
+    {% if showFacialRecognitionSearch %}
+      <details>
+        <summary><span class="summary">Search by facial recognition</span></summary>
+        <div class="panel">
+          <fieldset class="form-section">
+            <legend>Search by Face</legend>
+            <p>Upload an image to match against mugshots</p>
+            <div class="grid-row">
+              <div class="column-half">
+                <div class="form-group">
+                  <label for="image" class="form-label">Your image file:</label>
+                  <input type="file" name="image" id="image-input" class="" value="{{data['image']}}" />
+                </div>
+                <div class="form-group">
+                  <input type="submit" id="image-search-submit" class="button form-control" value="Search" disabled />
+                </div>
+              </div>
+              <div class="column-half">
+                <img id="preview" src="{{ data['uploaded-image-url'] or '/public/images/avatar-m-512.png' }}" />
+              </div>
+              <input type="hidden" id="uploaded-image-url" name="uploaded-image-url" value="" />
+              <input type="hidden" id="uploaded-image-key" name="uploaded-image-key" value="" />
+            </div>
+          </fieldset>
+        </div>
+      </details>
+    {% endif %}
     <fieldset class="form-section">
       <legend>General Identification</legend>
-
       <div class="form-group">
         <h3>Names</h3>
         <div class="inline">
@@ -144,7 +170,7 @@
     {% if 'given_names' in data %}
       <a class="clear-search" href="/nominal/search/new">Clear search</a>
     {% endif %}
-
-</form>
+  </form>
 
 <script src="/public/javascripts/validation.js"></script>
+<script src="/public/javascripts/modules/upload-on-change.js"></script>

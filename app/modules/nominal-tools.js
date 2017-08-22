@@ -9,6 +9,14 @@ var arrayUtils = require('./array-utils.js');
 var dateTools = require('./date-tools.js');
 var nominalThreatAssessmentTools = require('./nominal-threat-assessment-tools.js');
 
+
+var Promise = require('bluebird');
+
+var AWS = require('aws-sdk');
+const S3_BUCKET = process.env.S3_SOURCE_BUCKET_NAME,
+      AWS_REGION = process.env.AWS_REGION,
+      REKOGNITION_COLLECTION_ID = process.env.REKOGNITION_COLLECTION_ID;
+
 var nominal = {
   getAge: function(dob) {
     var now = new Date(),
@@ -130,7 +138,46 @@ var nominal = {
     });
   },
 
-  search: function(params) {
+  facialMatchesAsync: function(key) {
+    var rekognition = new AWS.Rekognition();
+    var params = {
+      CollectionId: REKOGNITION_COLLECTION_ID, 
+      FaceMatchThreshold: 95, 
+      Image: {
+       S3Object: {
+        Bucket: S3_BUCKET, 
+        Name: key
+       }
+      }, 
+      MaxFaces: 5
+     };
+
+     return new Promise(function(resolve,reject){
+        rekognition.searchFacesByImage(params, function(err, data) {
+          if (err) { 
+            // an error occurred
+            console.log(err, err.stack); 
+            return reject(err);
+          } else { 
+            // successful response
+            // NOTE: Rekognition enforces no slashes in externalImageId,
+            // so we have to convert it back from '-' in order to match
+            // against our local filenames
+            var matches = data.FaceMatches.map(function(match){
+              return {
+                externalImageId: match.Face.ExternalImageId.replace('-','/'),
+                confidence: match.Face.Confidence
+              };
+            });
+            resolve(matches);
+          }
+        });
+      
+      
+    });
+  },
+
+  searchByParams: function(params){
     // note: search is basic sub-string match only
     var filteredNominals = search.filter(nominals, params);
 
@@ -155,6 +202,37 @@ var nominal = {
     }
 
     return filteredNominals;
+  },
+
+  search:  function(params) {
+    // if we have an uploaded image, hit rekognition to get an array of
+    // image filenames containing possible facial matches + confidence levels
+    if( params['uploaded-image-key'] ){
+      var searchFunc = this.searchByParams, module = this;
+      var matchedNominals = this.facialMatchesAsync(params['uploaded-image-key']).then(
+        function(matches){
+          // console.log('then matches = ' + JSON.stringify(matches));
+          params['mugshot_filename'] = matches.map(function(e){
+            return e.externalImageId;
+          });
+          // console.log('then searchByParams, params = ' + JSON.stringify(params));  
+          var results = searchFunc.call(module, params);
+          // add on the confidence level to each result based on image filename
+          for(var result of results){
+            var match = matches.find(function(e){
+              return e.externalImageId==result.mugshot_filename
+            })
+            if( match ){
+              result.confidence = match.confidence;
+            }
+          }
+          return results;
+        }
+      );
+      return matchedNominals;
+    } else {
+      return this.searchByParams(params);
+    }
   }
 };
 

@@ -32,7 +32,9 @@
     width: 100%;
   }
 }
-
+#preview {
+  max-width: 100px;
+}
 .nominal-list-item-detail {
   width: 82%;
 }
