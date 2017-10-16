@@ -530,11 +530,11 @@
         "year": 1976,
         "displayDob": "27 Oct 1976"
       },
-      "identifying_marks": [],
+      "identifying_marks": ["dragon tattoo on back"],
       "offender_id": 123,
       "nomis_id": "Y6331VL",
       "pnc_id": "88/021108U",
-      "aliases": [],
+      "aliases": ["Lucky"],
       "affiliations": [
         [
           4
@@ -552,7 +552,7 @@
         "status": null
       },
       "prison_name": "",
-      "search_text": "Marques,Lubowitz,M,,Y6331VL,88/021108U,,4,6,male/15.png,Brizzle Shady Company,Scarfolk Rough Boys,"
+      "search_text": "Marques,Lubowitz,M,dragon tattoo on back,Y6331VL,88/021108U,Lucky,4,6,male/15.png,Brizzle Shady Company,Scarfolk Rough Boys,"
     },
     {
       "index": 14,
