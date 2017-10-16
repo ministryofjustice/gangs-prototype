@@ -38,7 +38,7 @@ function generateProbationersList(){
   var probationers = randomPicker.randomElements(nominalTools.getProbationers(), 0.1);
 
   var list = {
-    name: 'My Probationers',
+    name: 'My Offenders',
     nominalIndexes: probationers.map(function(e){ return e.index; })
   }
   return list;
