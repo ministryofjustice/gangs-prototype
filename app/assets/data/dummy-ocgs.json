@@ -80,7 +80,7 @@
       "name_or_alias": "Brizzle Shady Company,",
       "territory": "St Pauls, Easton, Stokes Croft",
       "identifying_features": [
-        "backwards suit"
+        "black suit"
       ],
       "pnd_id": "46/578677N",
       "grits_id": "Q6097QC",
@@ -89,7 +89,7 @@
         "Gun violence",
         "Smuggling"
       ],
-      "search_text": "Brizzle Shady Company,,Brizzle Shady Company,,St Pauls, Easton, Stokes Croft,backwards suit,46/578677N,Q6097QC,89503844,Gun violence,Smuggling"
+      "search_text": "Brizzle Shady Company,,Brizzle Shady Company,,St Pauls, Easton, Stokes Croft,black suit,46/578677N,Q6097QC,89503844,Gun violence,Smuggling"
     },
     {
       "index": 5,
@@ -98,7 +98,7 @@
       "name_or_alias": "Staines Wild Bloodline,",
       "territory": "West Staines",
       "identifying_features": [
-        "backwards yellow suit"
+        "yellow suit"
       ],
       "pnd_id": "66/683682E",
       "grits_id": "R4445BT",
@@ -107,7 +107,7 @@
         "People trafficking",
         "Gun violence"
       ],
-      "search_text": "Staines Wild Bloodline,,Staines Wild Bloodline,,West Staines,backwards yellow suit,66/683682E,R4445BT,81493006,People trafficking,Gun violence"
+      "search_text": "Staines Wild Bloodline,,Staines Wild Bloodline,,West Staines,yellow suit,66/683682E,R4445BT,81493006,People trafficking,Gun violence"
     },
     {
       "index": 6,
@@ -116,10 +116,10 @@
         "Scarfolk Killa Boys"
       ],
       "name_or_alias": "Scarfolk Rough Boys,Scarfolk Killa Boys",
-      "territory": "",
+      "territory": "West Scarfolk",
       "identifying_features": [
-        "backwards black trainers",
-        "shark tattoo on the back of neck"
+        "black trainers",
+        "dragon tattoo on the back"
       ],
       "pnd_id": "01/190572F",
       "grits_id": "B2232BI",
@@ -128,7 +128,7 @@
         "Smuggling",
         "Home invasions"
       ],
-      "search_text": "Scarfolk Rough Boys,Scarfolk Killa Boys,Scarfolk Rough Boys,Scarfolk Killa Boys,,backwards black trainers,shark tattoo on the back of neck,01/190572F,B2232BI,29983417,Smuggling,Home invasions"
+      "search_text": "Scarfolk Rough Boys,Scarfolk Killa Boys,Scarfolk Rough Boys,Scarfolk Killa Boys,west Scarfolk,black trainers,dragon tattoo on the back,01/190572F,B2232BI,29983417,Smuggling,Home invasions"
     },
     {
       "index": 7,
