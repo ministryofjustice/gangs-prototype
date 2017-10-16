@@ -101,7 +101,7 @@ function generateImprisonment() {
   return update;
 }
 function generateRelease() {
-  var daysAgo = Math.floor(Math.random() * 7),
+  var daysAgo = Math.floor(Math.random() * 14) - 7,
       update = {
         type: 'release',
         nominal: Math.floor(Math.random() * numNominals),

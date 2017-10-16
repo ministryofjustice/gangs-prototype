@@ -11,6 +11,10 @@ var dateTools = {
       string = 'today';
     } else if(daysAgo === 1) {
       string = 'yesterday';
+    } else if(daysAgo === -1) {
+      string = 'tomorrow';
+    } else if(daysAgo < 0) {
+      string = 'in ' + (daysAgo*-1) + ' days';
     }
 
     return string;

@@ -2,473 +2,473 @@
   "tension": [
     {
       "type": "tension-change",
-      "ocg1": 15,
-      "ocg2": 4,
+      "ocg1": 17,
+      "ocg2": 5,
       "newTensionLevel": "low",
-      "minutesAgo": 395,
-      "timeAgo": "6h"
+      "minutesAgo": 33,
+      "timeAgo": "33m"
     },
     {
       "type": "tension-change",
-      "ocg1": 1,
-      "ocg2": 10,
-      "newTensionLevel": "high",
-      "minutesAgo": 495,
-      "timeAgo": "8h"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 10,
-      "ocg2": 16,
+      "ocg1": 15,
+      "ocg2": 0,
       "newTensionLevel": "medium",
-      "minutesAgo": 706,
-      "timeAgo": "11h"
+      "minutesAgo": 114,
+      "timeAgo": "1h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 15,
+      "ocg2": 3,
+      "newTensionLevel": "high",
+      "minutesAgo": 140,
+      "timeAgo": "2h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 17,
+      "ocg2": 2,
+      "newTensionLevel": "medium",
+      "minutesAgo": 221,
+      "timeAgo": "3h"
     },
     {
       "type": "tension-change",
       "ocg1": 11,
-      "ocg2": 18,
+      "ocg2": 17,
       "newTensionLevel": "medium",
-      "minutesAgo": 791,
-      "timeAgo": "13h"
+      "minutesAgo": 264,
+      "timeAgo": "4h"
     },
     {
       "type": "tension-change",
-      "ocg1": 13,
+      "ocg1": 11,
       "ocg2": 0,
       "newTensionLevel": "medium",
-      "minutesAgo": 913,
-      "timeAgo": "15h"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 14,
-      "ocg2": 1,
-      "newTensionLevel": "medium",
-      "minutesAgo": 928,
-      "timeAgo": "15h"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 17,
-      "ocg2": 3,
-      "newTensionLevel": "high",
-      "minutesAgo": 949,
-      "timeAgo": "15h"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 5,
-      "ocg2": 14,
-      "newTensionLevel": "medium",
-      "minutesAgo": 1149,
-      "timeAgo": "19h"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 17,
-      "ocg2": 3,
-      "newTensionLevel": "low",
-      "minutesAgo": 1264,
-      "timeAgo": "21h"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 2,
-      "ocg2": 10,
-      "newTensionLevel": "medium",
-      "minutesAgo": 1391,
-      "timeAgo": "23h"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 1,
-      "ocg2": 9,
-      "newTensionLevel": "medium",
-      "minutesAgo": 1416,
-      "timeAgo": "23h"
+      "minutesAgo": 307,
+      "timeAgo": "5h"
     },
     {
       "type": "tension-change",
       "ocg1": 6,
-      "ocg2": 15,
-      "newTensionLevel": "low",
-      "minutesAgo": 1568,
-      "timeAgo": "1d"
-    },
-    {
-      "type": "tension-change",
-      "ocg1": 4,
       "ocg2": 11,
-      "newTensionLevel": "high",
-      "minutesAgo": 1643,
-      "timeAgo": "1d"
+      "newTensionLevel": "low",
+      "minutesAgo": 346,
+      "timeAgo": "5h"
     },
     {
       "type": "tension-change",
-      "ocg1": 7,
+      "ocg1": 9,
       "ocg2": 14,
       "newTensionLevel": "high",
-      "minutesAgo": 1793,
+      "minutesAgo": 600,
+      "timeAgo": "10h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 5,
+      "ocg2": 13,
+      "newTensionLevel": "medium",
+      "minutesAgo": 855,
+      "timeAgo": "14h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 19,
+      "ocg2": 7,
+      "newTensionLevel": "low",
+      "minutesAgo": 1081,
+      "timeAgo": "18h"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 18,
+      "ocg2": 5,
+      "newTensionLevel": "low",
+      "minutesAgo": 1534,
       "timeAgo": "1d"
     },
     {
       "type": "tension-change",
-      "ocg1": 2,
-      "ocg2": 9,
+      "ocg1": 11,
+      "ocg2": 0,
+      "newTensionLevel": "low",
+      "minutesAgo": 1579,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 1,
+      "ocg2": 7,
       "newTensionLevel": "high",
-      "minutesAgo": 1947,
+      "minutesAgo": 1583,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 11,
+      "ocg2": 16,
+      "newTensionLevel": "high",
+      "minutesAgo": 1846,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "tension-change",
+      "ocg1": 10,
+      "ocg2": 15,
+      "newTensionLevel": "medium",
+      "minutesAgo": 1866,
       "timeAgo": "1d"
     }
   ],
   "affiliation": [
     {
       "type": "affiliation",
-      "nominal": 21,
-      "ocg": 19,
-      "minutesAgo": 73,
-      "timeAgo": "1h"
+      "nominal": 51,
+      "ocg": 4,
+      "minutesAgo": 352,
+      "timeAgo": "5h"
     },
     {
       "type": "affiliation",
-      "nominal": 52,
-      "ocg": 9,
-      "minutesAgo": 225,
-      "timeAgo": "3h"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 23,
-      "ocg": 12,
-      "minutesAgo": 645,
-      "timeAgo": "10h"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 98,
-      "ocg": 16,
-      "minutesAgo": 826,
-      "timeAgo": "13h"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 68,
-      "ocg": 3,
-      "minutesAgo": 1075,
-      "timeAgo": "17h"
+      "nominal": 1,
+      "ocg": 0,
+      "minutesAgo": 465,
+      "timeAgo": "7h"
     },
     {
       "type": "affiliation",
       "nominal": 8,
-      "ocg": 19,
-      "minutesAgo": 1294,
-      "timeAgo": "21h"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 77,
-      "ocg": 6,
-      "minutesAgo": 1310,
-      "timeAgo": "21h"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 5,
-      "ocg": 19,
-      "minutesAgo": 1315,
-      "timeAgo": "21h"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 2,
       "ocg": 2,
+      "minutesAgo": 468,
+      "timeAgo": "7h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 24,
+      "ocg": 3,
+      "minutesAgo": 809,
+      "timeAgo": "13h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 33,
+      "ocg": 15,
+      "minutesAgo": 871,
+      "timeAgo": "14h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 40,
+      "ocg": 15,
+      "minutesAgo": 1247,
+      "timeAgo": "20h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 99,
+      "ocg": 6,
+      "minutesAgo": 1289,
+      "timeAgo": "21h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 26,
+      "ocg": 12,
+      "minutesAgo": 1401,
+      "timeAgo": "23h"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 96,
+      "ocg": 5,
+      "minutesAgo": 1483,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "affiliation",
+      "nominal": 40,
+      "ocg": 7,
       "minutesAgo": 1484,
       "timeAgo": "1d"
     },
     {
       "type": "affiliation",
-      "nominal": 43,
-      "ocg": 12,
-      "minutesAgo": 1528,
+      "nominal": 84,
+      "ocg": 19,
+      "minutesAgo": 1509,
       "timeAgo": "1d"
     },
     {
       "type": "affiliation",
-      "nominal": 58,
-      "ocg": 4,
-      "minutesAgo": 1565,
+      "nominal": 50,
+      "ocg": 0,
+      "minutesAgo": 1529,
       "timeAgo": "1d"
     },
     {
       "type": "affiliation",
-      "nominal": 17,
-      "ocg": 9,
-      "minutesAgo": 1586,
+      "nominal": 63,
+      "ocg": 1,
+      "minutesAgo": 1646,
       "timeAgo": "1d"
     },
     {
       "type": "affiliation",
-      "nominal": 23,
-      "ocg": 3,
-      "minutesAgo": 1916,
+      "nominal": 77,
+      "ocg": 2,
+      "minutesAgo": 1756,
       "timeAgo": "1d"
     },
     {
       "type": "affiliation",
-      "nominal": 60,
-      "ocg": 14,
-      "minutesAgo": 1978,
-      "timeAgo": "1d"
-    },
-    {
-      "type": "affiliation",
-      "nominal": 45,
-      "ocg": 12,
-      "minutesAgo": 1980,
+      "nominal": 37,
+      "ocg": 19,
+      "minutesAgo": 1826,
       "timeAgo": "1d"
     }
   ],
   "imprisonment": [
     {
       "type": "imprisonment",
-      "nominal": 4,
-      "location": 6,
-      "minutesAgo": 7,
-      "timeAgo": "7m"
-    },
-    {
-      "type": "imprisonment",
-      "nominal": 83,
-      "location": 3,
-      "minutesAgo": 61,
-      "timeAgo": "1h"
-    },
-    {
-      "type": "imprisonment",
-      "nominal": 44,
-      "location": 16,
-      "minutesAgo": 124,
-      "timeAgo": "2h"
-    },
-    {
-      "type": "imprisonment",
-      "nominal": 47,
-      "location": 2,
-      "minutesAgo": 141,
-      "timeAgo": "2h"
+      "nominal": 76,
+      "location": 4,
+      "minutesAgo": 12,
+      "timeAgo": "12m"
     },
     {
       "type": "imprisonment",
       "nominal": 79,
-      "location": 1,
-      "minutesAgo": 223,
-      "timeAgo": "3h"
+      "location": 3,
+      "minutesAgo": 49,
+      "timeAgo": "49m"
     },
     {
       "type": "imprisonment",
-      "nominal": 30,
-      "location": 21,
-      "minutesAgo": 362,
-      "timeAgo": "6h"
+      "nominal": 41,
+      "location": 24,
+      "minutesAgo": 303,
+      "timeAgo": "5h"
     },
     {
       "type": "imprisonment",
-      "nominal": 90,
-      "location": 11,
-      "minutesAgo": 380,
-      "timeAgo": "6h"
+      "nominal": 55,
+      "location": 15,
+      "minutesAgo": 310,
+      "timeAgo": "5h"
     },
     {
       "type": "imprisonment",
-      "nominal": 95,
-      "location": 13,
-      "minutesAgo": 509,
-      "timeAgo": "8h"
+      "nominal": 46,
+      "location": 23,
+      "minutesAgo": 464,
+      "timeAgo": "7h"
     },
     {
       "type": "imprisonment",
-      "nominal": 60,
-      "location": 11,
-      "minutesAgo": 1059,
-      "timeAgo": "17h"
+      "nominal": 88,
+      "location": 9,
+      "minutesAgo": 547,
+      "timeAgo": "9h"
     },
     {
       "type": "imprisonment",
-      "nominal": 87,
-      "location": 5,
-      "minutesAgo": 1066,
-      "timeAgo": "17h"
+      "nominal": 23,
+      "location": 4,
+      "minutesAgo": 682,
+      "timeAgo": "11h"
     },
     {
       "type": "imprisonment",
-      "nominal": 82,
-      "location": 12,
-      "minutesAgo": 1101,
+      "nominal": 81,
+      "location": 25,
+      "minutesAgo": 791,
+      "timeAgo": "13h"
+    },
+    {
+      "type": "imprisonment",
+      "nominal": 54,
+      "location": 18,
+      "minutesAgo": 851,
+      "timeAgo": "14h"
+    },
+    {
+      "type": "imprisonment",
+      "nominal": 73,
+      "location": 9,
+      "minutesAgo": 939,
+      "timeAgo": "15h"
+    },
+    {
+      "type": "imprisonment",
+      "nominal": 46,
+      "location": 6,
+      "minutesAgo": 1019,
+      "timeAgo": "16h"
+    },
+    {
+      "type": "imprisonment",
+      "nominal": 34,
+      "location": 24,
+      "minutesAgo": 1081,
       "timeAgo": "18h"
     },
     {
       "type": "imprisonment",
-      "nominal": 83,
-      "location": 23,
-      "minutesAgo": 1177,
-      "timeAgo": "19h"
-    },
-    {
-      "type": "imprisonment",
-      "nominal": 99,
+      "nominal": 13,
       "location": 25,
-      "minutesAgo": 1567,
+      "minutesAgo": 1239,
+      "timeAgo": "20h"
+    },
+    {
+      "type": "imprisonment",
+      "nominal": 31,
+      "location": 22,
+      "minutesAgo": 1883,
       "timeAgo": "1d"
     },
     {
       "type": "imprisonment",
-      "nominal": 14,
-      "location": 19,
-      "minutesAgo": 1673,
-      "timeAgo": "1d"
-    },
-    {
-      "type": "imprisonment",
-      "nominal": 75,
-      "location": 23,
-      "minutesAgo": 1679,
+      "nominal": 86,
+      "location": 11,
+      "minutesAgo": 1911,
       "timeAgo": "1d"
     }
   ],
   "release": [
     {
       "type": "release",
-      "nominal": 38,
-      "location": 6,
-      "releaseDaysAgo": 4,
-      "releaseString": "4 days ago",
-      "minutesAgo": 54,
-      "timeAgo": "54m"
-    },
-    {
-      "type": "release",
-      "nominal": 17,
-      "location": 4,
-      "releaseDaysAgo": 3,
-      "releaseString": "3 days ago",
-      "minutesAgo": 89,
-      "timeAgo": "1h"
-    },
-    {
-      "type": "release",
-      "nominal": 58,
-      "location": 25,
-      "releaseDaysAgo": 0,
-      "releaseString": "today",
-      "minutesAgo": 108,
-      "timeAgo": "1h"
-    },
-    {
-      "type": "release",
-      "nominal": 54,
-      "location": 25,
-      "releaseDaysAgo": 3,
-      "releaseString": "3 days ago",
-      "minutesAgo": 135,
-      "timeAgo": "2h"
-    },
-    {
-      "type": "release",
-      "nominal": 38,
-      "location": 1,
-      "releaseDaysAgo": 0,
-      "releaseString": "today",
-      "minutesAgo": 151,
-      "timeAgo": "2h"
+      "nominal": 56,
+      "location": 23,
+      "releaseDaysAgo": -5,
+      "releaseString": "in 5 days",
+      "minutesAgo": 247,
+      "timeAgo": "4h"
     },
     {
       "type": "release",
       "nominal": 35,
-      "location": 18,
-      "releaseDaysAgo": 6,
-      "releaseString": "6 days ago",
-      "minutesAgo": 391,
-      "timeAgo": "6h"
-    },
-    {
-      "type": "release",
-      "nominal": 32,
-      "location": 3,
-      "releaseDaysAgo": 3,
-      "releaseString": "3 days ago",
-      "minutesAgo": 472,
-      "timeAgo": "7h"
-    },
-    {
-      "type": "release",
-      "nominal": 84,
-      "location": 2,
+      "location": 7,
       "releaseDaysAgo": 0,
       "releaseString": "today",
-      "minutesAgo": 682,
+      "minutesAgo": 298,
+      "timeAgo": "4h"
+    },
+    {
+      "type": "release",
+      "nominal": 54,
+      "location": 1,
+      "releaseDaysAgo": 5,
+      "releaseString": "5 days ago",
+      "minutesAgo": 312,
+      "timeAgo": "5h"
+    },
+    {
+      "type": "release",
+      "nominal": 81,
+      "location": 9,
+      "releaseDaysAgo": 6,
+      "releaseString": "6 days ago",
+      "minutesAgo": 327,
+      "timeAgo": "5h"
+    },
+    {
+      "type": "release",
+      "nominal": 75,
+      "location": 26,
+      "releaseDaysAgo": 5,
+      "releaseString": "5 days ago",
+      "minutesAgo": 344,
+      "timeAgo": "5h"
+    },
+    {
+      "type": "release",
+      "nominal": 18,
+      "location": 27,
+      "releaseDaysAgo": -6,
+      "releaseString": "in 6 days",
+      "minutesAgo": 642,
+      "timeAgo": "10h"
+    },
+    {
+      "type": "release",
+      "nominal": 56,
+      "location": 22,
+      "releaseDaysAgo": 4,
+      "releaseString": "4 days ago",
+      "minutesAgo": 705,
       "timeAgo": "11h"
     },
     {
       "type": "release",
-      "nominal": 29,
-      "location": 22,
-      "releaseDaysAgo": 2,
-      "releaseString": "2 days ago",
-      "minutesAgo": 918,
-      "timeAgo": "15h"
-    },
-    {
-      "type": "release",
-      "nominal": 0,
-      "location": 8,
-      "releaseDaysAgo": 2,
-      "releaseString": "2 days ago",
-      "minutesAgo": 972,
-      "timeAgo": "16h"
-    },
-    {
-      "type": "release",
-      "nominal": 19,
+      "nominal": 30,
       "location": 12,
-      "releaseDaysAgo": 6,
-      "releaseString": "6 days ago",
-      "minutesAgo": 1118,
-      "timeAgo": "18h"
+      "releaseDaysAgo": -1,
+      "releaseString": "tomorrow",
+      "minutesAgo": 767,
+      "timeAgo": "12h"
     },
     {
       "type": "release",
-      "nominal": 71,
-      "location": 8,
+      "nominal": 96,
+      "location": 6,
       "releaseDaysAgo": 1,
       "releaseString": "yesterday",
-      "minutesAgo": 1274,
+      "minutesAgo": 882,
+      "timeAgo": "14h"
+    },
+    {
+      "type": "release",
+      "nominal": 85,
+      "location": 26,
+      "releaseDaysAgo": 28,
+      "releaseString": "28 days ago",
+      "minutesAgo": 40320,
+      "timeAgo": "28d"
+    },
+    {
+      "type": "release",
+      "nominal": 69,
+      "location": 25,
+      "releaseDaysAgo": 0,
+      "releaseString": "today",
+      "minutesAgo": 1293,
       "timeAgo": "21h"
     },
     {
       "type": "release",
-      "nominal": 44,
-      "location": 1,
-      "releaseDaysAgo": 2,
-      "releaseString": "2 days ago",
-      "minutesAgo": 1282,
-      "timeAgo": "21h"
-    },
-    {
-      "type": "release",
-      "nominal": 66,
+      "nominal": 6,
       "location": 22,
-      "releaseDaysAgo": 5,
-      "releaseString": "5 days ago",
-      "minutesAgo": 1582,
+      "releaseDaysAgo": -6,
+      "releaseString": "in 6 days",
+      "minutesAgo": 1318,
+      "timeAgo": "21h"
+    },
+    {
+      "type": "release",
+      "nominal": 61,
+      "location": 19,
+      "releaseDaysAgo": 4,
+      "releaseString": "4 days ago",
+      "minutesAgo": 1496,
       "timeAgo": "1d"
     },
     {
       "type": "release",
-      "nominal": 4,
-      "location": 12,
+      "nominal": 54,
+      "location": 6,
+      "releaseDaysAgo": -6,
+      "releaseString": "in 6 days",
+      "minutesAgo": 1652,
+      "timeAgo": "1d"
+    },
+    {
+      "type": "release",
+      "nominal": 37,
+      "location": 8,
       "releaseDaysAgo": 0,
       "releaseString": "today",
-      "minutesAgo": 1949,
+      "minutesAgo": 1702,
       "timeAgo": "1d"
     }
   ]
