@@ -39,7 +39,7 @@ var updateTools = {
         break;
       case 'release':
         inner += self.link(nominals[update.nominal].given_names + ' ' + nominals[update.nominal].family_name, 'nominal', update.nominal);
-        inner += ' released from ';
+        inner += (update.releaseDaysAgo < 1 ? ' will be' : '') + ' released from ';
         inner += self.link(prisons[update.location], 'prison', update.location);
         inner += ' ';
         inner += update.releaseString;
