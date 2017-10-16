@@ -40,9 +40,9 @@
         {% if nominal.imprisonment.status == "imprisoned" %}
           <dt>Currently imprisoned at:</dt>
             <dd><a href="/prison/{{nominal.imprisonment.prisonIndex}}">HMP {{prisonName}}</a></dd>
-          {% if releaseDaysAgo < 1 %}
+          {% if nominal.imprisonment.daysAgo < 1 %}
             <dt>Release date:</dt>
-              <dd>in {{ releaseDaysAgo * 1 }} days</dd>
+              <dd>in {{ nominal.imprisonment.daysAgo * -1 }} days</dd>
           {% endif %}
         {% endif%}
         {% if nominal.imprisonment.status == "released" %}

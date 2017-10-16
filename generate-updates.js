@@ -2,9 +2,11 @@ var path = require('path');
 var fs = require('fs');
 var quantities = require('./app/sources/quantities.json');
 var prisons = require('./app/sources/prisons.json').prisons;
+var nominals = require('./app/assets/data/dummy-nominals').nominals;
 
 var randomPicker = require('./app/modules/random-picker.js');
 var dateTools = require('./app/modules/date-tools.js');
+var nominalTools = require('./app/modules/nominal-tools.js');
 
 // Check if node_modules folder exists
 const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'));
@@ -15,7 +17,7 @@ if (!nodeModulesExists) {
 
 
 
-var updateTypes = ['tension', 'affiliation', 'imprisonment', 'release'],
+var updateTypes = ['tension', 'affiliation', 'imprisonment'],
     updates = {},
     numUpdates = quantities.updates,
     numOcgs = quantities.ocgs,
@@ -35,8 +37,22 @@ function init() {
     // add timeStamps to updates
     addTimeStamps(type);
   }
+  updates['release'] = generateReleases();
 
   fs.writeFile('./app/assets/data/updates.json', JSON.stringify(updates, null, 2), 'utf-8');
+}
+
+function generateReleases() {
+  var releases = [];
+  for( var nominal of nominals ){
+    console.log('nominal.index = ' + nominal.index);
+    console.log('nominal.imprisonment = ' + JSON.stringify(nominal.imprisonment));
+
+    if(nominal.imprisonment.daysAgo){
+      releases.push(generateRelease(nominal));
+    }
+  }
+  return releases;
 }
 
 function generateUpdate(type) {
@@ -100,14 +116,13 @@ function generateImprisonment() {
 
   return update;
 }
-function generateRelease() {
-  var daysAgo = Math.floor(Math.random() * 14) - 7,
-      update = {
+function generateRelease(nominal) {
+  var update = {
         type: 'release',
-        nominal: Math.floor(Math.random() * numNominals),
-        location: Math.floor(Math.random() * numPrisons),
-        releaseDaysAgo: daysAgo,
-        releaseString: dateTools.daysAgoString(daysAgo)
+        nominal: nominal.index,
+        location: nominal.imprisonment.prisonIndex,
+        releaseDaysAgo: nominal.imprisonment.daysAgo,
+        releaseString: dateTools.daysAgoString(nominal.imprisonment.daysAgo)
   };
 
   return update;
